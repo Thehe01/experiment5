@@ -1,0 +1,26 @@
+experiment:
+  name: experiment5
+  status: initializing
+  current_phase: setup
+
+checkpoint:
+  commit: null
+  last_update: null
+
+completed:
+  - task: repository_created
+    status: verified
+    evidence:
+      repository: Thehe01/experiment5
+
+pending:
+  - priority: P0
+    task: define_experiment_hypothesis
+    status: pending
+    next_action: write hypothesis and evaluation criteria
+
+constraints:
+  - do_not_modify_experiment4
+  - do_not_mix_experiment4_results
+  - freeze_previous_experiment_results
+  - every_stage_must_update_state
