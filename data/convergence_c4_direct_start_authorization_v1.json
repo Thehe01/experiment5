@@ -1,0 +1,17 @@
+{
+  "schema_version": "convergence-c4-direct-start-authorization-v1",
+  "user_instruction": "不要这些直接启动",
+  "submitted_at_local": "2026-10-07T23:04:14+08:00",
+  "submitted_at_utc": "2026-10-07T15:04:14+00:00",
+  "expires_at_utc": "2026-10-08T15:04:14+00:00",
+  "scope": "Start the existing C4 development campaign with the registered five methods, fixed Train/Dev sources, runtime, six rounds per search and seed 42.",
+  "waive_amount_cap_and_price_prerequisites": true,
+  "physical_caps": {"task": 18000, "optimizer": 600},
+  "wall_hours": 24,
+  "unknown_blocks_replay": true,
+  "formal_eligible": false,
+  "test_gate_open": false,
+  "test_documents_allowed": 0,
+  "currency_costs_known": false,
+  "credential_included": false
+}

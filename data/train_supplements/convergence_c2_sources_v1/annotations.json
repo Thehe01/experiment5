@@ -1,0 +1,392 @@
+{
+  "c2-cve-cve-2016-0040": {
+    "doc_id": "c2-cve-cve-2016-0040",
+    "text": "CVE-2016-0040\nThe kernel in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, and Windows 7 SP1 allows local users to gain privileges via a crafted application, aka \"Windows Elevation of Privilege Vulnerability.\"\n",
+    "entities": [
+      {
+        "id": "E1",
+        "type": "Vulnerability",
+        "text": "CVE-2016-0040",
+        "start": 0,
+        "end": 13,
+        "normalized_id": "CVE-2016-0040"
+      },
+      {
+        "id": "E2",
+        "type": "Configuration",
+        "text": "Microsoft Windows Vista",
+        "start": 28,
+        "end": 51,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_vista:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E3",
+        "type": "Configuration",
+        "text": "Windows Server 2008",
+        "start": 57,
+        "end": 76,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_server_2008:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E4",
+        "type": "Configuration",
+        "text": "Windows 7",
+        "start": 97,
+        "end": 106,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_7:*:*:*:*:*:*:*:*"
+      }
+    ],
+    "relations": [],
+    "role": "evaluation",
+    "configuration_review_exclusions": [
+      {
+        "text": "Windows Server 2008 SP2 and R2 SP1",
+        "start": 57,
+        "end": 91,
+        "reason": "Existing mixed base/R2 contract: literal independently supported base prefix remains; no new mixed-generation splitting rule."
+      }
+    ],
+    "annotation_status": "ai_source_reviewed_development_labels_not_human_gold",
+    "prediction_outputs_used": false,
+    "independent_human_review": false,
+    "formal_human_iaa": false,
+    "relation_evaluation_enabled": false,
+    "pending_window_excluded_from_scoring": false,
+    "generic_kernel_and_ntlm_protocol_mentions": "Generic kernel, requests/protocol and vulnerability-name aliases are not additional independently canonical affected products; no guessed component CPE."
+  },
+  "c2-cve-cve-2016-0180": {
+    "doc_id": "c2-cve-cve-2016-0180",
+    "text": "CVE-2016-0180\nThe kernel in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, and Windows 10 Gold and 1511 mishandles symbolic links, which allows local users to gain privileges via a crafted application, aka \"Windows Kernel Elevation of Privilege Vulnerability.\"\n",
+    "entities": [
+      {
+        "id": "E1",
+        "type": "Vulnerability",
+        "text": "CVE-2016-0180",
+        "start": 0,
+        "end": 13,
+        "normalized_id": "CVE-2016-0180"
+      },
+      {
+        "id": "E2",
+        "type": "Configuration",
+        "text": "Microsoft Windows Vista",
+        "start": 28,
+        "end": 51,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_vista:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E3",
+        "type": "Configuration",
+        "text": "Windows Server 2008",
+        "start": 57,
+        "end": 76,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_server_2008:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E4",
+        "type": "Configuration",
+        "text": "Windows 7",
+        "start": 93,
+        "end": 102,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_7:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E5",
+        "type": "Configuration",
+        "text": "Windows 8.1",
+        "start": 108,
+        "end": 119,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_8.1:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E6",
+        "type": "Configuration",
+        "text": "Windows Server 2012",
+        "start": 121,
+        "end": 140,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_server_2012:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E7",
+        "type": "Configuration",
+        "text": "Windows RT 8.1",
+        "start": 154,
+        "end": 168,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_rt_8.1:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E8",
+        "type": "Configuration",
+        "text": "Windows 10",
+        "start": 174,
+        "end": 184,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_10:*:*:*:*:*:*:*:*"
+      }
+    ],
+    "relations": [],
+    "role": "evaluation",
+    "configuration_review_exclusions": [
+      {
+        "text": "Windows Server 2008 SP2 and R2 SP1",
+        "start": 57,
+        "end": 91,
+        "reason": "Existing mixed base/R2 contract: literal independently supported base prefix remains; no new mixed-generation splitting rule."
+      },
+      {
+        "text": "Windows Server 2012 Gold and R2",
+        "start": 121,
+        "end": 152,
+        "reason": "Existing mixed base/R2 contract: literal independently supported base prefix remains; no new mixed-generation splitting rule."
+      }
+    ],
+    "annotation_status": "ai_source_reviewed_development_labels_not_human_gold",
+    "prediction_outputs_used": false,
+    "independent_human_review": false,
+    "formal_human_iaa": false,
+    "relation_evaluation_enabled": false,
+    "pending_window_excluded_from_scoring": false,
+    "generic_kernel_and_ntlm_protocol_mentions": "Generic kernel, requests/protocol and vulnerability-name aliases are not additional independently canonical affected products; no guessed component CPE."
+  },
+  "c2-cve-cve-2016-3352": {
+    "doc_id": "c2-cve-cve-2016-3352",
+    "text": "CVE-2016-3352\nMicrosoft Windows 8.1, Windows RT 8.1, and Windows 10 Gold, 1511, and 1607 do not properly check NTLM SSO requests for MSA logins, which makes it easier for remote attackers to determine passwords via a brute-force attack on NTLM password hashes, aka \"Microsoft Information Disclosure Vulnerability.\"\n",
+    "entities": [
+      {
+        "id": "E1",
+        "type": "Vulnerability",
+        "text": "CVE-2016-3352",
+        "start": 0,
+        "end": 13,
+        "normalized_id": "CVE-2016-3352"
+      },
+      {
+        "id": "E2",
+        "type": "Configuration",
+        "text": "Microsoft Windows 8.1",
+        "start": 14,
+        "end": 35,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_8.1:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E3",
+        "type": "Configuration",
+        "text": "Windows RT 8.1",
+        "start": 37,
+        "end": 51,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_rt_8.1:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E4",
+        "type": "Configuration",
+        "text": "Windows 10",
+        "start": 57,
+        "end": 67,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_10:*:*:*:*:*:*:*:*"
+      }
+    ],
+    "relations": [],
+    "role": "evaluation",
+    "configuration_review_exclusions": [],
+    "annotation_status": "ai_source_reviewed_development_labels_not_human_gold",
+    "prediction_outputs_used": false,
+    "independent_human_review": false,
+    "formal_human_iaa": false,
+    "relation_evaluation_enabled": false,
+    "pending_window_excluded_from_scoring": false,
+    "generic_kernel_and_ntlm_protocol_mentions": "Generic kernel, requests/protocol and vulnerability-name aliases are not additional independently canonical affected products; no guessed component CPE."
+  },
+  "c2-cve-cve-2017-0146": {
+    "doc_id": "c2-cve-cve-2017-0146",
+    "text": "CVE-2017-0146\nThe SMBv1 server in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607; and Windows Server 2016 allows remote attackers to execute arbitrary code via crafted packets, aka \"Windows SMB Remote Code Execution Vulnerability.\" This vulnerability is different from those described in CVE-2017-0143, CVE-2017-0144, CVE-2017-0145, and CVE-2017-0148.\n",
+    "entities": [
+      {
+        "id": "E1",
+        "type": "Vulnerability",
+        "text": "CVE-2017-0146",
+        "start": 0,
+        "end": 13,
+        "normalized_id": "CVE-2017-0146"
+      },
+      {
+        "id": "E2",
+        "type": "Configuration",
+        "text": "SMBv1 server",
+        "start": 18,
+        "end": 30,
+        "normalized_id": "cpe:2.3:a:microsoft:server_message_block:1.0:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E3",
+        "type": "Configuration",
+        "text": "Microsoft Windows Vista",
+        "start": 34,
+        "end": 57,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_vista:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E4",
+        "type": "Configuration",
+        "text": "Windows Server 2008",
+        "start": 63,
+        "end": 82,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_server_2008:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E5",
+        "type": "Configuration",
+        "text": "Windows 7",
+        "start": 99,
+        "end": 108,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_7:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E6",
+        "type": "Configuration",
+        "text": "Windows 8.1",
+        "start": 114,
+        "end": 125,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_8.1:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E7",
+        "type": "Configuration",
+        "text": "Windows Server 2012",
+        "start": 127,
+        "end": 146,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_server_2012:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E8",
+        "type": "Configuration",
+        "text": "Windows RT 8.1",
+        "start": 160,
+        "end": 174,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_rt_8.1:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E9",
+        "type": "Configuration",
+        "text": "Windows 10",
+        "start": 180,
+        "end": 190,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_10:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E10",
+        "type": "Configuration",
+        "text": "Windows Server 2016",
+        "start": 217,
+        "end": 236,
+        "normalized_id": "cpe:2.3:o:microsoft:windows_server_2016:*:*:*:*:*:*:*:*"
+      },
+      {
+        "id": "E11",
+        "type": "Vulnerability",
+        "text": "CVE-2017-0143",
+        "start": 419,
+        "end": 432,
+        "normalized_id": "CVE-2017-0143"
+      },
+      {
+        "id": "E12",
+        "type": "Vulnerability",
+        "text": "CVE-2017-0144",
+        "start": 434,
+        "end": 447,
+        "normalized_id": "CVE-2017-0144"
+      },
+      {
+        "id": "E13",
+        "type": "Vulnerability",
+        "text": "CVE-2017-0145",
+        "start": 449,
+        "end": 462,
+        "normalized_id": "CVE-2017-0145"
+      },
+      {
+        "id": "E14",
+        "type": "Vulnerability",
+        "text": "CVE-2017-0148",
+        "start": 468,
+        "end": 481,
+        "normalized_id": "CVE-2017-0148"
+      }
+    ],
+    "relations": [],
+    "role": "template_challenge",
+    "configuration_review_exclusions": [
+      {
+        "text": "Windows Server 2008 SP2 and R2 SP1",
+        "start": 63,
+        "end": 97,
+        "reason": "Existing mixed base/R2 contract: literal independently supported base prefix remains; no new mixed-generation splitting rule."
+      },
+      {
+        "text": "Windows Server 2012 Gold and R2",
+        "start": 127,
+        "end": 158,
+        "reason": "Existing mixed base/R2 contract: literal independently supported base prefix remains; no new mixed-generation splitting rule."
+      }
+    ],
+    "annotation_status": "ai_source_reviewed_development_labels_not_human_gold",
+    "prediction_outputs_used": false,
+    "independent_human_review": false,
+    "formal_human_iaa": false,
+    "relation_evaluation_enabled": false,
+    "pending_window_excluded_from_scoring": false,
+    "generic_kernel_and_ntlm_protocol_mentions": "Generic kernel, requests/protocol and vulnerability-name aliases are not additional independently canonical affected products; no guessed component CPE."
+  },
+  "c2-cve-cve-2024-7123": {
+    "doc_id": "c2-cve-cve-2024-7123",
+    "text": "CVE-2024-7123\n** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All references and descriptions in this candidate have been removed to prevent accidental usage.\n",
+    "entities": [
+      {
+        "id": "E1",
+        "type": "Vulnerability",
+        "text": "CVE-2024-7123",
+        "start": 0,
+        "end": 13,
+        "normalized_id": "CVE-2024-7123"
+      }
+    ],
+    "relations": [],
+    "role": "zero_configuration_control",
+    "configuration_review_exclusions": [],
+    "annotation_status": "ai_source_reviewed_development_labels_not_human_gold",
+    "prediction_outputs_used": false,
+    "independent_human_review": false,
+    "formal_human_iaa": false,
+    "relation_evaluation_enabled": false,
+    "pending_window_excluded_from_scoring": false,
+    "generic_kernel_and_ntlm_protocol_mentions": "Generic kernel, requests/protocol and vulnerability-name aliases are not additional independently canonical affected products; no guessed component CPE."
+  },
+  "c2-cve-cve-2019-5786": {
+    "doc_id": "c2-cve-cve-2019-5786",
+    "text": "CVE-2019-5786\nObject lifetime issue in Blink in Google Chrome prior to 72.0.3626.121 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page.\n",
+    "entities": [
+      {
+        "id": "E1",
+        "type": "Vulnerability",
+        "text": "CVE-2019-5786",
+        "start": 0,
+        "end": 13,
+        "normalized_id": "CVE-2019-5786"
+      }
+    ],
+    "relations": [],
+    "role": "pending_label",
+    "configuration_review_exclusions": [
+      {
+        "text": "Blink",
+        "reason": "Independent component CPE and boundary unresolved; the entire window, including Chrome, is excluded from all TP/FP/FN."
+      }
+    ],
+    "annotation_status": "ai_source_reviewed_development_labels_not_human_gold",
+    "prediction_outputs_used": false,
+    "independent_human_review": false,
+    "formal_human_iaa": false,
+    "relation_evaluation_enabled": false,
+    "pending_window_excluded_from_scoring": true,
+    "generic_kernel_and_ntlm_protocol_mentions": "Generic kernel, requests/protocol and vulnerability-name aliases are not additional independently canonical affected products; no guessed component CPE."
+  }
+}

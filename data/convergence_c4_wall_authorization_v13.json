@@ -1,0 +1,17 @@
+{
+  "schema_version": "convergence-c4-wall-policy-authorization-v13",
+  "user_instruction": "为什么设截止时间，让他自己跑完不行吗",
+  "received_at_utc": "2026-10-08T15:39:21Z",
+  "interpretation": "Run the already-authorized C4 development comparison to completion within the existing physical caps and renewed authorization. Replace the original 24-hour elapsed wall limit with the existing authorization expiry. No budget reset, new scientific rounds, new algorithm or formal/Test authorization.",
+  "previous_wall_hours": 24,
+  "wall_clock_policy": {
+    "mode": "authorization_expiry",
+    "expires_at_utc": "2026-11-08T15:04:14+00:00"
+  },
+  "physical_caps": {
+    "task": 18000,
+    "optimizer": 600
+  },
+  "preserve_all_history_and_charges": true,
+  "preserve_transport_and_entity_caps": true
+}

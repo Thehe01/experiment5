@@ -1,0 +1,26 @@
+{
+  "template_schema_version": "convergence-c3-adjudication-template-v1",
+  "preparation_status": "draft_unfilled",
+  "formal_eligible": false,
+  "test_gate_open": false,
+  "authorized_new_model_calls": 0,
+  "schema_version": "chapter3-no-capec-v1",
+  "annotation_protocol_version": "4.6-mcpu-mention-fact-dual-layer-v1",
+  "boundary_contract_version": "chapter3-boundary-sync-v2",
+  "independent_input_A_sha256": {},
+  "independent_input_B_sha256": {},
+  "pre_adjudication_iaa_report_sha256": null,
+  "adjudicator_id": null,
+  "started_at_utc": null,
+  "completed_at_utc": null,
+  "disputes": [],
+  "decisions": [],
+  "pending_label_items": [],
+  "adjudicated_gold_paths": [],
+  "adjudicated_gold_sha256": {},
+  "completed": false,
+  "notes": [
+    "Each real dispute records doc_id, span/type/normalized_id or relation key, A/B claims, original text evidence, decision and rationale.",
+    "Retain original submissions unchanged; unresolved identity/CPE/evidence scope is isolated according to the common frozen policy, never selected by model outputs."
+  ]
+}

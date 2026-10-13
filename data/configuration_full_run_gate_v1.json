@@ -1,0 +1,81 @@
+{
+  "schema_version": "configuration-full-run-gate-v1",
+  "status": "passed",
+  "candidate_prompt_sha256": "1ced6523d67b4605402c628d74dbcc56cef34f76d9ad8c930c93cb09c74d5e32",
+  "candidate_prompt_file_sha256_raw_bytes": "b922d3ca170fe69538d279adf04b43e69c9ba8aa1a9f70ed14278402828607c5",
+  "task_runtime_sha256": "229cbb264cc53d8f942cc9b8c089bccd6fc63e0b95b902ca64499ff8e22c4aa1",
+  "configuration_candidate_filter_version": "v3",
+  "required_thresholds": {
+    "pilot_count": 2,
+    "pilot_document_sets_must_be_disjoint": true,
+    "test_documents": 0,
+    "configuration_gold_support_per_pilot_min": 20,
+    "configuration_f1_gain_per_pilot_min": 0.04,
+    "configuration_recall_drop_max": 0.0,
+    "non_target_f1_drop_max": 0.01,
+    "optimizer_model_calls_per_pilot": 0
+  },
+  "pilot_evidence": [
+    {
+      "name": "configuration-filter-v3-pilot-e",
+      "status": "passed",
+      "candidate_prompt_sha256": "1ced6523d67b4605402c628d74dbcc56cef34f76d9ad8c930c93cb09c74d5e32",
+      "task_runtime_sha256": "229cbb264cc53d8f942cc9b8c089bccd6fc63e0b95b902ca64499ff8e22c4aa1",
+      "filter_version": "configuration-candidate-filter-v3",
+      "implementation_commit": "13d900b591e7eb7d63513157a784e26a97fb4e42",
+      "result_file": "results/protegi_optimization/configuration_candidate_filter_v3_pilot_e/summary.json",
+      "result_sha256_raw_bytes": "9f72d31bfe6d80b0ba8ce26484fa6adc9fcded3945926bf3ac24a96c00d44f80",
+      "artifact_manifest_file": "results/protegi_optimization/configuration_candidate_filter_v3_pilot_e/artifact_manifest.json",
+      "artifact_manifest_sha256_raw_bytes": "8baaaab82f91fdaab3d994e15d263e0529c45ac3ec3958e267f4ef8c09e0989e",
+      "documents": [
+        "aa23-165a",
+        "aa23-201a",
+        "aa23-278a",
+        "aa23-339a"
+      ],
+      "test_documents": 0,
+      "configuration_gold_support": 24,
+      "configuration_f1_gain": 0.07432818753573472,
+      "configuration_recall_drop": 0.0,
+      "max_guardrail_f1_drop": 0.0,
+      "task_model_calls": 76,
+      "optimizer_model_calls": 0
+    },
+    {
+      "name": "configuration-filter-v3-pilot-f",
+      "status": "passed",
+      "candidate_prompt_sha256": "1ced6523d67b4605402c628d74dbcc56cef34f76d9ad8c930c93cb09c74d5e32",
+      "task_runtime_sha256": "229cbb264cc53d8f942cc9b8c089bccd6fc63e0b95b902ca64499ff8e22c4aa1",
+      "filter_version": "configuration-candidate-filter-v3",
+      "implementation_commit": "f92743cdf0a518dce9f9c9c7e0fcaad33bb81492",
+      "result_file": "results/protegi_optimization/configuration_candidate_filter_v3_pilot_f/summary.json",
+      "result_sha256_raw_bytes": "00ce9354797af88bf900404cd38c37cbb22a44676b5841ee7d2db89cf1c315a3",
+      "artifact_manifest_file": "results/protegi_optimization/configuration_candidate_filter_v3_pilot_f/artifact_manifest.json",
+      "artifact_manifest_sha256_raw_bytes": "b303f7ce38e14535a124952b650e4a1c303df0d4a95a6a0dca26c67c0e9e4271",
+      "documents": [
+        "apache-httpd-41773-tenable-httpd-41773",
+        "accellion-fta-nvd-accellion-27101",
+        "citrix-adc-tenable-citrix-19781-cve",
+        "goanywhere-nvd-goanywhere-0669",
+        "aa25-163a",
+        "aa25-050a",
+        "aa24-290a",
+        "citrix-adc-cisa-citrix-3519-webshells"
+      ],
+      "test_documents": 0,
+      "configuration_gold_support": 22,
+      "configuration_f1_gain": 0.08080808080808083,
+      "configuration_recall_drop": 0.0,
+      "max_guardrail_f1_drop": 0.0,
+      "task_model_calls": 44,
+      "optimizer_model_calls": 0
+    }
+  ],
+  "notes": [
+    "The gate passed only after two preregistered, prospective, document-disjoint v3 pilots met every threshold.",
+    "The validator recomputes every decision metric from the hash-bound summaries and artifact manifests instead of trusting receipt fields.",
+    "Both pilots used the run10 winner seed, the same effective Task Runtime, zero Optimizer calls, and zero Test documents.",
+    "Passing this receipt authorizes evaluation or a bounded search but does not require another full ProTeGi search.",
+    "Canonical Test remains closed until the complete Stage 1 and Stage 2 promotion path is frozen."
+  ]
+}

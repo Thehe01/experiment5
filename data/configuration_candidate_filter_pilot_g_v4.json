@@ -1,0 +1,74 @@
+{
+  "manifest_version": "configuration-candidate-filter-pilot-g-v4",
+  "purpose": "prospective high-support stress test of frozen deterministic Configuration filter v4",
+  "parent_split_file": "train_dev_test_split_v7.json",
+  "parent_split_sha256": "6cbef622b5e9075e7173559c01d733336adb60195fbc9490ecdbe92c368f5da5",
+  "selection_rule": "After excluding every document used by v3 development and Pilots E/F, select the remaining official-Train document previously excluded solely by the greater-than-10 Configuration-support dominance cap. Selection uses frozen Gold support and window inventory only; predictions were not inspected. This is a one-document stress test and cannot by itself establish document-level generalization.",
+  "train": [
+    "aa23-215a"
+  ],
+  "dev": [],
+  "test": [],
+  "excluded_development_documents": [
+    "aa23-289a",
+    "aa23-339a-coldfusion-cve-26360",
+    "fortios-sslvpn-rapid7-fortinet-targeting",
+    "aa25-266a",
+    "aa24-242a",
+    "proxylogon-microsoft-hafnium-exchange",
+    "aa22-257a",
+    "aa25-239a",
+    "aa23-213a",
+    "aa22-228a",
+    "aa24-326a",
+    "aa22-138b-vmware-cve-22954",
+    "aa22-174a-log4shell-vmware-cve-44228",
+    "aa22-216a",
+    "aa22-277a",
+    "aa22-320a",
+    "aa22-321a",
+    "aa22-321a-hive-exchange",
+    "aa22-335a",
+    "aa23-074a",
+    "aa23-074a-telerik-cve-18935",
+    "aa23-136a",
+    "aa23-158a",
+    "aa23-165a",
+    "aa23-201a",
+    "aa23-278a",
+    "aa23-339a",
+    "apache-httpd-41773-tenable-httpd-41773",
+    "accellion-fta-nvd-accellion-27101",
+    "citrix-adc-tenable-citrix-19781-cve",
+    "goanywhere-nvd-goanywhere-0669",
+    "aa25-163a",
+    "aa25-050a",
+    "aa24-290a",
+    "citrix-adc-cisa-citrix-3519-webshells"
+  ],
+  "window_policy": {
+    "version": "window-split-v3:dense25-1000-120-20-s100",
+    "max_chars": 3000,
+    "overlap": 400,
+    "dense_min_ids": 25,
+    "dense_min_span": 1000,
+    "dense_gap": 120,
+    "dense_max_ids": 20,
+    "dense_seam": 100
+  },
+  "audit_counts": {
+    "documents": 1,
+    "runtime_windows": 15,
+    "configuration_gold_support": 114,
+    "maximum_single_document_support": 114
+  },
+  "budgets": {
+    "task_model_calls_max": 15,
+    "optimizer_model_calls_max": 0
+  },
+  "limitations": [
+    "single-document stress test",
+    "does not independently estimate cross-document generalization",
+    "does not authorize a full Dev rerun or any Test evaluation"
+  ]
+}

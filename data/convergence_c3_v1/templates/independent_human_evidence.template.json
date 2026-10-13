@@ -1,0 +1,46 @@
+{
+  "template_schema_version": "convergence-c3-independent-human-evidence-template-v1",
+  "preparation_status": "draft_unfilled",
+  "formal_eligible": false,
+  "test_gate_open": false,
+  "authorized_new_model_calls": 0,
+  "schema_version": "chapter3-no-capec-v1",
+  "annotation_protocol_version": "4.6-mcpu-mention-fact-dual-layer-v1",
+  "boundary_contract_version": "chapter3-boundary-sync-v2",
+  "independent_human_annotations_completed": false,
+  "common_document_ids": [],
+  "common_source_text_sha256": {},
+  "annotator_A": {
+    "pseudonymous_id": null,
+    "is_real_human": null,
+    "started_at_utc": null,
+    "submitted_at_utc": null,
+    "submitted_annotation_paths": [],
+    "submitted_annotation_sha256": {},
+    "protocol_snapshot_sha256": null,
+    "access_receipt_path": null,
+    "saw_model_predictions": null,
+    "saw_other_annotator_labels": null
+  },
+  "annotator_B": {
+    "pseudonymous_id": null,
+    "is_real_human": null,
+    "started_at_utc": null,
+    "submitted_at_utc": null,
+    "submitted_annotation_paths": [],
+    "submitted_annotation_sha256": {},
+    "protocol_snapshot_sha256": null,
+    "access_receipt_path": null,
+    "saw_model_predictions": null,
+    "saw_other_annotator_labels": null
+  },
+  "independence_evidence_paths": [],
+  "iaa_calculated_before_adjudication": false,
+  "iaa_report_path": null,
+  "iaa_report_sha256": null,
+  "adjudication_started_at_utc": null,
+  "notes": [
+    "Fill with actual pseudonymous human identifiers and contemporaneous access/submission evidence; no credentials or personal contact data.",
+    "AI reviews, final Gold copies and post-adjudication edits cannot stand in for the two independent originals."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "configuration-source-supplement-user-review-completion-v1",
+  "recorded_at_utc": "2026-10-05T03:29:27.140407+00:00",
+  "user_statement": "我已经审核好了，开始修复",
+  "human_review_completed_user_confirmed": true,
+  "context_review_report": "CONFIGURATION_V11_SUPPLEMENT_AI_REVIEW_V1.md",
+  "context_review_report_sha256": "ac69362df3d1f0f3d761b9ca700255cc192fc16cb896b344c6d73857b322b756",
+  "context_existing_configuration_entities": 16,
+  "context_existing_affects_relations": 16,
+  "context_candidate_groups": 6,
+  "individual_human_decisions_supplied": false,
+  "semantic_decision_changes_requested": false,
+  "original_labels_and_dispositions_retained": true,
+  "two_independent_human_annotations_or_IAA_supplied": false,
+  "canonical_gold_modified": false,
+  "notes": "记录用户已完成审核的声明；不由此编造逐项裁决、审核人员或双人IAA，不改写旧冻结AI记录及其历史human_decision字段。"
+}

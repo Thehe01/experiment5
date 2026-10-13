@@ -1,0 +1,60 @@
+{
+  "schema_version": "configuration-v4-integration-gate-v1",
+  "status": "passed_for_cache_and_stage2_train_dev",
+  "allowed_stages": [
+    "build_entity_cache",
+    "relation"
+  ],
+  "test_gate": "closed",
+  "configuration_candidate_filter_version": "v4",
+  "candidate_prompt_sha256": "1ced6523d67b4605402c628d74dbcc56cef34f76d9ad8c930c93cb09c74d5e32",
+  "candidate_prompt_file_sha256_raw_bytes": "b922d3ca170fe69538d279adf04b43e69c9ba8aa1a9f70ed14278402828607c5",
+  "task_runtime_sha256": "229cbb264cc53d8f942cc9b8c089bccd6fc63e0b95b902ca64499ff8e22c4aa1",
+  "v3_prospective_gate_file": "data/configuration_full_run_gate_v1.json",
+  "v3_prospective_gate_sha256_raw_bytes": "6a43e724c8c2b60dd6d4c67bd23661be337b7cdfa31876fe15416844292f6c1b",
+  "implementation_files": {
+    "protegi/configuration_candidate_filter_v4.py": "4837c080b64dc5ccc8822aa9d54f179694a5dfdab4e0c73c1b1f3ee58ebbe320",
+    "protegi/configuration_filter_runtime.py": "4d3306bc03b026a67a1abfd35d81352a643b676b45b96e0105a4841430bed075",
+    "protegi/entity_backfill.py": "fd6355c90e4ae2a1fcd4b3f005be42341bd23ff356d854c2ed1cb1c3e685f551"
+  },
+  "evidence": [
+    {
+      "name": "v4-offline-replay-e",
+      "kind": "offline_replay",
+      "summary_file": "results/protegi_optimization/configuration_candidate_filter_v4_dev_e/summary.json",
+      "summary_sha256_raw_bytes": "8cb61272decfd93de0806ae78b8604713ffd25c284a43f71631e863ef4cff55c",
+      "artifact_manifest_file": "results/protegi_optimization/configuration_candidate_filter_v4_dev_e/artifact_manifest.json",
+      "artifact_manifest_sha256_raw_bytes": "2646ade1dfe39804db92a540131ede2dbfb4b2363e51a20ddabab01f40b011e8",
+      "task_model_calls": 0
+    },
+    {
+      "name": "v4-offline-replay-f",
+      "kind": "offline_replay",
+      "summary_file": "results/protegi_optimization/configuration_candidate_filter_v4_dev_f/summary.json",
+      "summary_sha256_raw_bytes": "df39460aea8f9d071e834abd74a8e355c6964a0e495fbcbe1199e7a9b9496215",
+      "artifact_manifest_file": "results/protegi_optimization/configuration_candidate_filter_v4_dev_f/artifact_manifest.json",
+      "artifact_manifest_sha256_raw_bytes": "b0b0370cb4fab5f3792ad792c30da0f570f5fa0055ff9ed10e56d4f45112bcca",
+      "task_model_calls": 0
+    },
+    {
+      "name": "v4-fresh-train-pilot-h",
+      "kind": "fresh_train_safety_pilot",
+      "summary_file": "results/protegi_optimization/configuration_candidate_filter_v4_pilot_h/summary.json",
+      "summary_sha256_raw_bytes": "0aadbdcf8e8756f324d23a9951f2a1cdc144cf03678c01f6b6dd947d1e5ace76",
+      "artifact_manifest_file": "results/protegi_optimization/configuration_candidate_filter_v4_pilot_h/artifact_manifest.json",
+      "artifact_manifest_sha256_raw_bytes": "181cd21874dd8704dbf7e3176fc0d705d19b861e740efd50369ac9b7a1d91e16",
+      "task_model_calls": 57
+    }
+  ],
+  "decision": {
+    "v4": "approved for frozen Train/Dev entity cache and Stage 2 development",
+    "v5": "not approved; fresh Pilot I did not exercise a v5-specific rule",
+    "v6": "not approved; development-only and lacks fresh positive support",
+    "test": "closed"
+  },
+  "limitations": [
+    "Pilot H is an independent safety/generalization check with only eight Configuration Gold mentions, not a precise effect-size estimate.",
+    "The v4 E/F replays reuse earlier predictions and are development evidence.",
+    "This gate authorizes only Train/Dev cache construction and Stage 2 development; it does not authorize Test or formal promotion."
+  ]
+}

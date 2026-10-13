@@ -1,0 +1,71 @@
+{
+  "schema_version": "convergence-c4-recovery-authorization-v3",
+  "recorded_at_utc": "2026-10-07T17:18:39.726504+00:00",
+  "user_instruction": "为什么中断，帮我恢复并防止再次中断",
+  "destination_authorization": "data/convergence_c4_destination_authorization_v1.json",
+  "authorized_destination": "https://opencode.ai/zen/go/v1",
+  "physical_caps": {
+    "task": 18000,
+    "optimizer": 600
+  },
+  "wall_hours": 24,
+  "expires_at_utc": "2026-10-08T15:04:14+00:00",
+  "review": {
+    "decision": "explicit_user_requested_checkpoint_recovery",
+    "old_registration_path": "data/convergence_c4_execution_v5.json",
+    "old_registration_file_sha256": "8d9b518c53a0cbe7923743f12d6e85dc5e26ed5fa3380f7929a5cd2fdeb286b2",
+    "old_registration_sha256": "a1a80580b67699f30eb1adc5eb54a0cda53f531694ba14593660fed8c7d4dcb6",
+    "old_ledger_path": "results/convergence_c4_v1/recovery_v7_seed/reconciled_ledger.jsonl",
+    "old_ledger_sha256": "7352e0c440ea195e2f239016fac369a82aa563343f3aca9580c5455b7ca619ef",
+    "old_ledger_bytes": 125489,
+    "old_ledger_rows": 252,
+    "old_rows_canonical_sha256": "6949c4d501268fb726422b8ba9c413ff8e24d85f41904acc10a1a0603c5eb1ab",
+    "original_ledger_path": "results/convergence_c4_v1/development_run_v5/campaign/request_ledger.jsonl",
+    "original_ledger_sha256": "520c4eb9c386187aa426894ba6cec90e01a732553d30bf78cbd49dc539cc3ea2",
+    "original_ledger_bytes": 125322,
+    "unknown_sequences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126
+    ],
+    "physical_requests": {
+      "task": 113,
+      "optimizer": 13
+    },
+    "first_reserved_at_utc": "2026-10-07T15:14:00.179678+00:00",
+    "max_counted_replacements_per_old_request": 1,
+    "process_evidence": "Session 49864 is absent; no matching worker process. Kernel ledger and supervisor locks are unheld. Reservation 126 has no saved response. Old files untouched; UNKNOWN appended only in new seed.",
+    "scientific_registration_path": "data/convergence_c4_execution_v4.json",
+    "scientific_registration_file_sha256": "9dd45b984803fc00e40cbde66d9bdbdad53f2d2eabacb1fdd0cfb1eca05ee1e7",
+    "checkpoint_path": "results/convergence_c4_v1/development_run_v4/entity_search/search_checkpoint.json",
+    "checkpoint_sha256": "25dfa103437e83f3de3595ab454139141dd93f0f4b73956352c419f7eb8ca0b2",
+    "checkpoint_next_round": 1
+  },
+  "financial_waiver_still_applies": true,
+  "formal_eligible": false,
+  "test_gate_open": false,
+  "credential_included": false,
+  "automatic_review": {
+    "decision": "rejected_original_session_poll",
+    "stated_reason": "Retained allow lacked sufficient destination and payload context.",
+    "authorization_proof_path": "data/convergence_c4_destination_authorization_v1.json",
+    "authorization_question": "允许将C4的Train/Dev文本、提示词及含标注的优化错误样例发送至 https://opencode.ai/zen/go/v1 吗？",
+    "user_answer": "允许",
+    "subsequent_normal_handle_check": "Unknown process id 49864; no model transport retried",
+    "status": "explicit bound authorization recovered; do not bypass any further rejection"
+  }
+}
