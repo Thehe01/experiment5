@@ -1,0 +1,375 @@
+2026-10-11T11:06:25.1743080Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261021-base", "unique_reserved_units": 1}
+2026-10-11T11:06:26.5066522Z f0-distmult_mixed-s20261021-base epoch=1 dev_mrr=0.206719 best=0.206719 patience=0
+2026-10-11T11:06:28.0025858Z f0-distmult_mixed-s20261021-base epoch=10 dev_mrr=0.276907 best=0.276907 patience=0
+2026-10-11T11:06:29.5611434Z f0-distmult_mixed-s20261021-base epoch=20 dev_mrr=0.302137 best=0.302137 patience=0
+2026-10-11T11:06:31.1086450Z f0-distmult_mixed-s20261021-base epoch=30 dev_mrr=0.327051 best=0.327623 patience=1
+2026-10-11T11:06:32.6676782Z f0-distmult_mixed-s20261021-base epoch=40 dev_mrr=0.346125 best=0.346125 patience=0
+2026-10-11T11:06:34.2806510Z f0-distmult_mixed-s20261021-base epoch=50 dev_mrr=0.364539 best=0.364539 patience=0
+2026-10-11T11:06:35.8378232Z f0-distmult_mixed-s20261021-base epoch=60 dev_mrr=0.364841 best=0.364862 patience=1
+2026-10-11T11:06:37.9352039Z f0-distmult_mixed-s20261021-base epoch=70 dev_mrr=0.364846 best=0.364862 patience=11
+2026-10-11T11:06:39.4937649Z f0-distmult_mixed-s20261021-base epoch=80 dev_mrr=0.361739 best=0.365137 patience=5
+2026-10-11T11:06:41.0561692Z f0-distmult_mixed-s20261021-base epoch=90 dev_mrr=0.374061 best=0.375707 patience=3
+2026-10-11T11:06:42.6080685Z f0-distmult_mixed-s20261021-base epoch=100 dev_mrr=0.373490 best=0.375840 patience=4
+2026-10-11T11:06:45.8247782Z f0-distmult_mixed-s20261021-base epoch=110 dev_mrr=0.376506 best=0.380675 patience=3
+2026-10-11T11:06:47.3646709Z f0-distmult_mixed-s20261021-base epoch=120 dev_mrr=0.387099 best=0.387099 patience=0
+2026-10-11T11:06:48.9000798Z f0-distmult_mixed-s20261021-base epoch=130 dev_mrr=0.380962 best=0.389843 patience=9
+2026-10-11T11:06:50.4595842Z f0-distmult_mixed-s20261021-base epoch=140 dev_mrr=0.380069 best=0.389843 patience=19
+2026-10-11T11:06:51.9947116Z f0-distmult_mixed-s20261021-base epoch=150 dev_mrr=0.375341 best=0.389843 patience=29
+2026-10-11T11:06:52.1871834Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261021-augmented", "unique_reserved_units": 2}
+2026-10-11T11:06:52.7889163Z f0-distmult_mixed-s20261021-augmented epoch=1 dev_mrr=0.283167 best=0.283167 patience=0
+2026-10-11T11:06:55.1642949Z f0-distmult_mixed-s20261021-augmented epoch=10 dev_mrr=0.310128 best=0.310324 patience=1
+2026-10-11T11:06:57.7846991Z f0-distmult_mixed-s20261021-augmented epoch=20 dev_mrr=0.318254 best=0.318254 patience=0
+2026-10-11T11:07:00.3866938Z f0-distmult_mixed-s20261021-augmented epoch=30 dev_mrr=0.325320 best=0.325985 patience=3
+2026-10-11T11:07:03.0087238Z f0-distmult_mixed-s20261021-augmented epoch=40 dev_mrr=0.333683 best=0.333683 patience=0
+2026-10-11T11:07:05.6988393Z f0-distmult_mixed-s20261021-augmented epoch=50 dev_mrr=0.336195 best=0.336900 patience=1
+2026-10-11T11:07:08.3191227Z f0-distmult_mixed-s20261021-augmented epoch=60 dev_mrr=0.358985 best=0.359443 patience=2
+2026-10-11T11:07:10.9295468Z f0-distmult_mixed-s20261021-augmented epoch=70 dev_mrr=0.361351 best=0.362262 patience=4
+2026-10-11T11:07:13.5451903Z f0-distmult_mixed-s20261021-augmented epoch=80 dev_mrr=0.361746 best=0.362262 patience=14
+2026-10-11T11:07:16.1806490Z f0-distmult_mixed-s20261021-augmented epoch=90 dev_mrr=0.361885 best=0.362262 patience=24
+2026-10-11T11:07:17.7730158Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261022-base", "unique_reserved_units": 3}
+2026-10-11T11:07:18.1060874Z f0-distmult_mixed-s20261022-base epoch=1 dev_mrr=0.197031 best=0.197031 patience=0
+2026-10-11T11:07:19.5126419Z f0-distmult_mixed-s20261022-base epoch=10 dev_mrr=0.350185 best=0.350185 patience=0
+2026-10-11T11:07:21.0726446Z f0-distmult_mixed-s20261022-base epoch=20 dev_mrr=0.360985 best=0.360985 patience=0
+2026-10-11T11:07:22.6163210Z f0-distmult_mixed-s20261022-base epoch=30 dev_mrr=0.364502 best=0.364502 patience=0
+2026-10-11T11:07:24.1766545Z f0-distmult_mixed-s20261022-base epoch=40 dev_mrr=0.371288 best=0.371771 patience=2
+2026-10-11T11:07:25.7331609Z f0-distmult_mixed-s20261022-base epoch=50 dev_mrr=0.370548 best=0.372234 patience=7
+2026-10-11T11:07:27.3047748Z f0-distmult_mixed-s20261022-base epoch=60 dev_mrr=0.378516 best=0.383718 patience=3
+2026-10-11T11:07:28.8493419Z f0-distmult_mixed-s20261022-base epoch=70 dev_mrr=0.371802 best=0.383718 patience=13
+2026-10-11T11:07:30.4605932Z f0-distmult_mixed-s20261022-base epoch=80 dev_mrr=0.368732 best=0.383718 patience=23
+2026-10-11T11:07:31.5663616Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261022-augmented", "unique_reserved_units": 4}
+2026-10-11T11:07:32.1626825Z f0-distmult_mixed-s20261022-augmented epoch=1 dev_mrr=0.256094 best=0.256094 patience=0
+2026-10-11T11:07:34.5699628Z f0-distmult_mixed-s20261022-augmented epoch=10 dev_mrr=0.331791 best=0.331791 patience=0
+2026-10-11T11:07:37.1712846Z f0-distmult_mixed-s20261022-augmented epoch=20 dev_mrr=0.337122 best=0.341006 patience=1
+2026-10-11T11:07:39.7612454Z f0-distmult_mixed-s20261022-augmented epoch=30 dev_mrr=0.338823 best=0.346579 patience=7
+2026-10-11T11:07:42.3634826Z f0-distmult_mixed-s20261022-augmented epoch=40 dev_mrr=0.340736 best=0.346579 patience=17
+2026-10-11T11:07:45.0332709Z f0-distmult_mixed-s20261022-augmented epoch=50 dev_mrr=0.352488 best=0.352488 patience=0
+2026-10-11T11:07:47.7688088Z f0-distmult_mixed-s20261022-augmented epoch=60 dev_mrr=0.356324 best=0.362252 patience=7
+2026-10-11T11:07:50.3750821Z f0-distmult_mixed-s20261022-augmented epoch=70 dev_mrr=0.360200 best=0.362252 patience=17
+2026-10-11T11:07:52.9724496Z f0-distmult_mixed-s20261022-augmented epoch=80 dev_mrr=0.360300 best=0.362252 patience=27
+2026-10-11T11:07:53.7875943Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261023-base", "unique_reserved_units": 5}
+2026-10-11T11:07:54.1179599Z f0-distmult_mixed-s20261023-base epoch=1 dev_mrr=0.180306 best=0.180306 patience=0
+2026-10-11T11:07:55.5201443Z f0-distmult_mixed-s20261023-base epoch=10 dev_mrr=0.222931 best=0.222931 patience=0
+2026-10-11T11:07:57.0942466Z f0-distmult_mixed-s20261023-base epoch=20 dev_mrr=0.246206 best=0.246206 patience=0
+2026-10-11T11:07:58.6576616Z f0-distmult_mixed-s20261023-base epoch=30 dev_mrr=0.268325 best=0.268325 patience=0
+2026-10-11T11:08:00.2140598Z f0-distmult_mixed-s20261023-base epoch=40 dev_mrr=0.328963 best=0.328963 patience=0
+2026-10-11T11:08:01.7586593Z f0-distmult_mixed-s20261023-base epoch=50 dev_mrr=0.348660 best=0.351225 patience=3
+2026-10-11T11:08:03.3113778Z f0-distmult_mixed-s20261023-base epoch=60 dev_mrr=0.365076 best=0.365406 patience=2
+2026-10-11T11:08:04.8381735Z f0-distmult_mixed-s20261023-base epoch=70 dev_mrr=0.365188 best=0.365406 patience=12
+2026-10-11T11:08:06.3720262Z f0-distmult_mixed-s20261023-base epoch=80 dev_mrr=0.365335 best=0.365406 patience=22
+2026-10-11T11:08:07.9219971Z f0-distmult_mixed-s20261023-base epoch=90 dev_mrr=0.366038 best=0.366092 patience=1
+2026-10-11T11:08:09.4806543Z f0-distmult_mixed-s20261023-base epoch=100 dev_mrr=0.368024 best=0.368024 patience=0
+2026-10-11T11:08:11.0258792Z f0-distmult_mixed-s20261023-base epoch=110 dev_mrr=0.386284 best=0.386284 patience=0
+2026-10-11T11:08:12.5732937Z f0-distmult_mixed-s20261023-base epoch=120 dev_mrr=0.388551 best=0.390536 patience=5
+2026-10-11T11:08:14.1488171Z f0-distmult_mixed-s20261023-base epoch=130 dev_mrr=0.388411 best=0.392325 patience=8
+2026-10-11T11:08:15.6982297Z f0-distmult_mixed-s20261023-base epoch=140 dev_mrr=0.388266 best=0.392325 patience=18
+2026-10-11T11:08:17.2400653Z f0-distmult_mixed-s20261023-base epoch=150 dev_mrr=0.383672 best=0.392325 patience=28
+2026-10-11T11:08:17.5840486Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261023-augmented", "unique_reserved_units": 6}
+2026-10-11T11:08:18.1779496Z f0-distmult_mixed-s20261023-augmented epoch=1 dev_mrr=0.310155 best=0.310155 patience=0
+2026-10-11T11:08:20.5269113Z f0-distmult_mixed-s20261023-augmented epoch=10 dev_mrr=0.335364 best=0.338750 patience=3
+2026-10-11T11:08:23.2077558Z f0-distmult_mixed-s20261023-augmented epoch=20 dev_mrr=0.334076 best=0.338750 patience=13
+2026-10-11T11:08:25.8147396Z f0-distmult_mixed-s20261023-augmented epoch=30 dev_mrr=0.313582 best=0.338750 patience=23
+2026-10-11T11:08:27.6839707Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261021-base", "unique_reserved_units": 7}
+2026-10-11T11:08:28.0650530Z f0-rgcn_mixed-s20261021-base epoch=1 dev_mrr=0.260041 best=0.260041 patience=0
+2026-10-11T11:08:29.8084684Z f0-rgcn_mixed-s20261021-base epoch=10 dev_mrr=0.326648 best=0.328530 patience=2
+2026-10-11T11:08:31.7370382Z f0-rgcn_mixed-s20261021-base epoch=20 dev_mrr=0.343171 best=0.361659 patience=2
+2026-10-11T11:08:33.6615028Z f0-rgcn_mixed-s20261021-base epoch=30 dev_mrr=0.361859 best=0.361859 patience=0
+2026-10-11T11:08:35.6901219Z f0-rgcn_mixed-s20261021-base epoch=40 dev_mrr=0.364526 best=0.365506 patience=1
+2026-10-11T11:08:37.6206965Z f0-rgcn_mixed-s20261021-base epoch=50 dev_mrr=0.365157 best=0.365842 patience=2
+2026-10-11T11:08:39.5366630Z f0-rgcn_mixed-s20261021-base epoch=60 dev_mrr=0.342037 best=0.367154 patience=9
+2026-10-11T11:08:41.4441903Z f0-rgcn_mixed-s20261021-base epoch=70 dev_mrr=0.315558 best=0.367154 patience=19
+2026-10-11T11:08:43.3506598Z f0-rgcn_mixed-s20261021-base epoch=80 dev_mrr=0.321410 best=0.367154 patience=29
+2026-10-11T11:08:43.5883329Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261021-augmented", "unique_reserved_units": 8}
+2026-10-11T11:08:44.2454818Z f0-rgcn_mixed-s20261021-augmented epoch=1 dev_mrr=0.257999 best=0.257999 patience=0
+2026-10-11T11:08:47.1707484Z f0-rgcn_mixed-s20261021-augmented epoch=10 dev_mrr=0.294616 best=0.299376 patience=2
+2026-10-11T11:08:50.3843958Z f0-rgcn_mixed-s20261021-augmented epoch=20 dev_mrr=0.331322 best=0.331322 patience=0
+2026-10-11T11:08:53.6718752Z f0-rgcn_mixed-s20261021-augmented epoch=30 dev_mrr=0.342756 best=0.342814 patience=3
+2026-10-11T11:08:56.8937900Z f0-rgcn_mixed-s20261021-augmented epoch=40 dev_mrr=0.344992 best=0.347179 patience=6
+2026-10-11T11:09:00.2099663Z f0-rgcn_mixed-s20261021-augmented epoch=50 dev_mrr=0.360989 best=0.361530 patience=4
+2026-10-11T11:09:03.5868569Z f0-rgcn_mixed-s20261021-augmented epoch=60 dev_mrr=0.346716 best=0.361530 patience=14
+2026-10-11T11:09:06.7976649Z f0-rgcn_mixed-s20261021-augmented epoch=70 dev_mrr=0.342452 best=0.361530 patience=24
+2026-10-11T11:09:08.7746757Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261022-base", "unique_reserved_units": 9}
+2026-10-11T11:09:09.1480482Z f0-rgcn_mixed-s20261022-base epoch=1 dev_mrr=0.259451 best=0.259451 patience=0
+2026-10-11T11:09:10.8751781Z f0-rgcn_mixed-s20261022-base epoch=10 dev_mrr=0.339844 best=0.339971 patience=1
+2026-10-11T11:09:12.7836561Z f0-rgcn_mixed-s20261022-base epoch=20 dev_mrr=0.332460 best=0.342510 patience=3
+2026-10-11T11:09:14.7767449Z f0-rgcn_mixed-s20261022-base epoch=30 dev_mrr=0.345682 best=0.345824 patience=1
+2026-10-11T11:09:16.6849701Z f0-rgcn_mixed-s20261022-base epoch=40 dev_mrr=0.373462 best=0.374809 patience=3
+2026-10-11T11:09:18.5831121Z f0-rgcn_mixed-s20261022-base epoch=50 dev_mrr=0.370547 best=0.374809 patience=13
+2026-10-11T11:09:20.4827939Z f0-rgcn_mixed-s20261022-base epoch=60 dev_mrr=0.371556 best=0.377765 patience=1
+2026-10-11T11:09:22.4121843Z f0-rgcn_mixed-s20261022-base epoch=70 dev_mrr=0.358636 best=0.377765 patience=11
+2026-10-11T11:09:24.3327585Z f0-rgcn_mixed-s20261022-base epoch=80 dev_mrr=0.338230 best=0.377765 patience=21
+2026-10-11T11:09:26.0945896Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261022-augmented", "unique_reserved_units": 10}
+2026-10-11T11:09:26.7463757Z f0-rgcn_mixed-s20261022-augmented epoch=1 dev_mrr=0.234592 best=0.234592 patience=0
+2026-10-11T11:09:29.6058869Z f0-rgcn_mixed-s20261022-augmented epoch=10 dev_mrr=0.310150 best=0.318052 patience=3
+2026-10-11T11:09:32.9210762Z f0-rgcn_mixed-s20261022-augmented epoch=20 dev_mrr=0.325786 best=0.325786 patience=0
+2026-10-11T11:09:36.2099938Z f0-rgcn_mixed-s20261022-augmented epoch=30 dev_mrr=0.346467 best=0.346519 patience=2
+2026-10-11T11:09:39.4524307Z f0-rgcn_mixed-s20261022-augmented epoch=40 dev_mrr=0.346889 best=0.346977 patience=2
+2026-10-11T11:09:42.7544256Z f0-rgcn_mixed-s20261022-augmented epoch=50 dev_mrr=0.349820 best=0.351719 patience=5
+2026-10-11T11:09:46.0888097Z f0-rgcn_mixed-s20261022-augmented epoch=60 dev_mrr=0.351194 best=0.352936 patience=3
+2026-10-11T11:09:49.4673978Z f0-rgcn_mixed-s20261022-augmented epoch=70 dev_mrr=0.344806 best=0.352936 patience=13
+2026-10-11T11:09:52.8256605Z f0-rgcn_mixed-s20261022-augmented epoch=80 dev_mrr=0.341364 best=0.352936 patience=23
+2026-10-11T11:09:55.2321147Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261023-base", "unique_reserved_units": 11}
+2026-10-11T11:09:55.6313937Z f0-rgcn_mixed-s20261023-base epoch=1 dev_mrr=0.172811 best=0.172811 patience=0
+2026-10-11T11:09:57.4822464Z f0-rgcn_mixed-s20261023-base epoch=10 dev_mrr=0.361974 best=0.361974 patience=0
+2026-10-11T11:09:59.4066506Z f0-rgcn_mixed-s20261023-base epoch=20 dev_mrr=0.350295 best=0.362045 patience=9
+2026-10-11T11:10:01.3292346Z f0-rgcn_mixed-s20261023-base epoch=30 dev_mrr=0.359917 best=0.362045 patience=19
+2026-10-11T11:10:03.2488298Z f0-rgcn_mixed-s20261023-base epoch=40 dev_mrr=0.363165 best=0.363218 patience=3
+2026-10-11T11:10:05.1636759Z f0-rgcn_mixed-s20261023-base epoch=50 dev_mrr=0.388738 best=0.388738 patience=0
+2026-10-11T11:10:07.0769125Z f0-rgcn_mixed-s20261023-base epoch=60 dev_mrr=0.384205 best=0.388738 patience=10
+2026-10-11T11:10:08.9771447Z f0-rgcn_mixed-s20261023-base epoch=70 dev_mrr=0.377109 best=0.407917 patience=6
+2026-10-11T11:10:10.8682893Z f0-rgcn_mixed-s20261023-base epoch=80 dev_mrr=0.374237 best=0.407917 patience=16
+2026-10-11T11:10:12.7686720Z f0-rgcn_mixed-s20261023-base epoch=90 dev_mrr=0.375640 best=0.407917 patience=26
+2026-10-11T11:10:13.5973806Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261023-augmented", "unique_reserved_units": 12}
+2026-10-11T11:10:14.2463162Z f0-rgcn_mixed-s20261023-augmented epoch=1 dev_mrr=0.225874 best=0.225874 patience=0
+2026-10-11T11:10:17.1507744Z f0-rgcn_mixed-s20261023-augmented epoch=10 dev_mrr=0.315454 best=0.315866 patience=4
+2026-10-11T11:10:20.3622479Z f0-rgcn_mixed-s20261023-augmented epoch=20 dev_mrr=0.322598 best=0.331680 patience=4
+2026-10-11T11:10:23.5796628Z f0-rgcn_mixed-s20261023-augmented epoch=30 dev_mrr=0.347584 best=0.347586 patience=1
+2026-10-11T11:10:26.7667300Z f0-rgcn_mixed-s20261023-augmented epoch=40 dev_mrr=0.346861 best=0.347948 patience=9
+2026-10-11T11:10:29.9663382Z f0-rgcn_mixed-s20261023-augmented epoch=50 dev_mrr=0.360777 best=0.360777 patience=0
+2026-10-11T11:10:33.1770435Z f0-rgcn_mixed-s20261023-augmented epoch=60 dev_mrr=0.361850 best=0.362986 patience=6
+2026-10-11T11:10:36.4786604Z f0-rgcn_mixed-s20261023-augmented epoch=70 dev_mrr=0.360906 best=0.362986 patience=16
+2026-10-11T11:10:39.6155030Z f0-rgcn_mixed-s20261023-augmented epoch=80 dev_mrr=0.349952 best=0.362986 patience=26
+2026-10-11T11:10:40.9396974Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261021-base", "unique_reserved_units": 13}
+2026-10-11T11:10:41.2656581Z f1-distmult_mixed-s20261021-base epoch=1 dev_mrr=0.212918 best=0.212918 patience=0
+2026-10-11T11:10:42.6076462Z f1-distmult_mixed-s20261021-base epoch=10 dev_mrr=0.282425 best=0.282425 patience=0
+2026-10-11T11:10:44.1154296Z f1-distmult_mixed-s20261021-base epoch=20 dev_mrr=0.314318 best=0.317623 patience=3
+2026-10-11T11:10:45.6221694Z f1-distmult_mixed-s20261021-base epoch=30 dev_mrr=0.353227 best=0.353227 patience=0
+2026-10-11T11:10:47.1185469Z f1-distmult_mixed-s20261021-base epoch=40 dev_mrr=0.363294 best=0.364556 patience=5
+2026-10-11T11:10:48.6057708Z f1-distmult_mixed-s20261021-base epoch=50 dev_mrr=0.363679 best=0.364556 patience=15
+2026-10-11T11:10:50.0954985Z f1-distmult_mixed-s20261021-base epoch=60 dev_mrr=0.363689 best=0.364556 patience=25
+2026-10-11T11:10:50.8719543Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261021-augmented", "unique_reserved_units": 14}
+2026-10-11T11:10:51.4584752Z f1-distmult_mixed-s20261021-augmented epoch=1 dev_mrr=0.273556 best=0.273556 patience=0
+2026-10-11T11:10:53.7709564Z f1-distmult_mixed-s20261021-augmented epoch=10 dev_mrr=0.304716 best=0.304716 patience=0
+2026-10-11T11:10:56.3406518Z f1-distmult_mixed-s20261021-augmented epoch=20 dev_mrr=0.315737 best=0.315737 patience=0
+2026-10-11T11:10:58.9218844Z f1-distmult_mixed-s20261021-augmented epoch=30 dev_mrr=0.325094 best=0.325094 patience=0
+2026-10-11T11:11:01.4942359Z f1-distmult_mixed-s20261021-augmented epoch=40 dev_mrr=0.333164 best=0.333164 patience=0
+2026-10-11T11:11:04.0781518Z f1-distmult_mixed-s20261021-augmented epoch=50 dev_mrr=0.346470 best=0.346470 patience=0
+2026-10-11T11:11:06.7460889Z f1-distmult_mixed-s20261021-augmented epoch=60 dev_mrr=0.360267 best=0.364262 patience=5
+2026-10-11T11:11:09.3266201Z f1-distmult_mixed-s20261021-augmented epoch=70 dev_mrr=0.360744 best=0.364262 patience=15
+2026-10-11T11:11:11.9216285Z f1-distmult_mixed-s20261021-augmented epoch=80 dev_mrr=0.358745 best=0.364262 patience=25
+2026-10-11T11:11:13.2587379Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261022-base", "unique_reserved_units": 15}
+2026-10-11T11:11:13.5976071Z f1-distmult_mixed-s20261022-base epoch=1 dev_mrr=0.194405 best=0.194405 patience=0
+2026-10-11T11:11:14.9935728Z f1-distmult_mixed-s20261022-base epoch=10 dev_mrr=0.341164 best=0.341164 patience=0
+2026-10-11T11:11:16.5063529Z f1-distmult_mixed-s20261022-base epoch=20 dev_mrr=0.344687 best=0.345630 patience=3
+2026-10-11T11:11:18.0119069Z f1-distmult_mixed-s20261022-base epoch=30 dev_mrr=0.350538 best=0.350538 patience=0
+2026-10-11T11:11:19.5046459Z f1-distmult_mixed-s20261022-base epoch=40 dev_mrr=0.375394 best=0.375394 patience=0
+2026-10-11T11:11:20.9793642Z f1-distmult_mixed-s20261022-base epoch=50 dev_mrr=0.376196 best=0.377431 patience=6
+2026-10-11T11:11:22.4616564Z f1-distmult_mixed-s20261022-base epoch=60 dev_mrr=0.378638 best=0.378638 patience=0
+2026-10-11T11:11:23.9363422Z f1-distmult_mixed-s20261022-base epoch=70 dev_mrr=0.381966 best=0.384197 patience=1
+2026-10-11T11:11:25.4114007Z f1-distmult_mixed-s20261022-base epoch=80 dev_mrr=0.363686 best=0.394024 patience=8
+2026-10-11T11:11:26.8824109Z f1-distmult_mixed-s20261022-base epoch=90 dev_mrr=0.385152 best=0.394024 patience=18
+2026-10-11T11:11:28.3603293Z f1-distmult_mixed-s20261022-base epoch=100 dev_mrr=0.364294 best=0.394024 patience=28
+2026-10-11T11:11:28.7349166Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261022-augmented", "unique_reserved_units": 16}
+2026-10-11T11:11:29.3190246Z f1-distmult_mixed-s20261022-augmented epoch=1 dev_mrr=0.270861 best=0.270861 patience=0
+2026-10-11T11:11:31.6357011Z f1-distmult_mixed-s20261022-augmented epoch=10 dev_mrr=0.323515 best=0.323515 patience=0
+2026-10-11T11:11:34.1749347Z f1-distmult_mixed-s20261022-augmented epoch=20 dev_mrr=0.310321 best=0.333055 patience=5
+2026-10-11T11:11:36.7748042Z f1-distmult_mixed-s20261022-augmented epoch=30 dev_mrr=0.359609 best=0.359609 patience=0
+2026-10-11T11:11:39.3607799Z f1-distmult_mixed-s20261022-augmented epoch=40 dev_mrr=0.371737 best=0.371737 patience=0
+2026-10-11T11:11:41.9169020Z f1-distmult_mixed-s20261022-augmented epoch=50 dev_mrr=0.374815 best=0.384336 patience=2
+2026-10-11T11:11:44.4951951Z f1-distmult_mixed-s20261022-augmented epoch=60 dev_mrr=0.360663 best=0.384336 patience=12
+2026-10-11T11:11:47.0776279Z f1-distmult_mixed-s20261022-augmented epoch=70 dev_mrr=0.358916 best=0.384336 patience=22
+2026-10-11T11:11:49.2408100Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261023-base", "unique_reserved_units": 17}
+2026-10-11T11:11:49.5732462Z f1-distmult_mixed-s20261023-base epoch=1 dev_mrr=0.176279 best=0.176279 patience=0
+2026-10-11T11:11:50.9280661Z f1-distmult_mixed-s20261023-base epoch=10 dev_mrr=0.235333 best=0.235333 patience=0
+2026-10-11T11:11:52.4417447Z f1-distmult_mixed-s20261023-base epoch=20 dev_mrr=0.252556 best=0.252982 patience=1
+2026-10-11T11:11:53.9529860Z f1-distmult_mixed-s20261023-base epoch=30 dev_mrr=0.261031 best=0.261031 patience=0
+2026-10-11T11:11:55.4528370Z f1-distmult_mixed-s20261023-base epoch=40 dev_mrr=0.287755 best=0.288438 patience=1
+2026-10-11T11:11:56.9615391Z f1-distmult_mixed-s20261023-base epoch=50 dev_mrr=0.357014 best=0.357014 patience=0
+2026-10-11T11:11:58.4636177Z f1-distmult_mixed-s20261023-base epoch=60 dev_mrr=0.363668 best=0.364130 patience=5
+2026-10-11T11:11:59.9707211Z f1-distmult_mixed-s20261023-base epoch=70 dev_mrr=0.363878 best=0.366927 patience=5
+2026-10-11T11:12:01.4693137Z f1-distmult_mixed-s20261023-base epoch=80 dev_mrr=0.363594 best=0.366942 patience=5
+2026-10-11T11:12:02.9661150Z f1-distmult_mixed-s20261023-base epoch=90 dev_mrr=0.363291 best=0.366942 patience=15
+2026-10-11T11:12:04.4693719Z f1-distmult_mixed-s20261023-base epoch=100 dev_mrr=0.364266 best=0.366942 patience=25
+2026-10-11T11:12:05.2536076Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261023-augmented", "unique_reserved_units": 18}
+2026-10-11T11:12:05.8405560Z f1-distmult_mixed-s20261023-augmented epoch=1 dev_mrr=0.308200 best=0.308200 patience=0
+2026-10-11T11:12:08.1658416Z f1-distmult_mixed-s20261023-augmented epoch=10 dev_mrr=0.315562 best=0.327381 patience=1
+2026-10-11T11:12:10.7422294Z f1-distmult_mixed-s20261023-augmented epoch=20 dev_mrr=0.331009 best=0.331009 patience=0
+2026-10-11T11:12:13.3107633Z f1-distmult_mixed-s20261023-augmented epoch=30 dev_mrr=0.331388 best=0.333023 patience=8
+2026-10-11T11:12:15.9022788Z f1-distmult_mixed-s20261023-augmented epoch=40 dev_mrr=0.338023 best=0.338949 patience=1
+2026-10-11T11:12:18.4967083Z f1-distmult_mixed-s20261023-augmented epoch=50 dev_mrr=0.332674 best=0.340457 patience=5
+2026-10-11T11:12:21.0668209Z f1-distmult_mixed-s20261023-augmented epoch=60 dev_mrr=0.357513 best=0.357513 patience=0
+2026-10-11T11:12:23.6345888Z f1-distmult_mixed-s20261023-augmented epoch=70 dev_mrr=0.359509 best=0.361993 patience=6
+2026-10-11T11:12:26.1807003Z f1-distmult_mixed-s20261023-augmented epoch=80 dev_mrr=0.359683 best=0.361993 patience=16
+2026-10-11T11:12:28.7457383Z f1-distmult_mixed-s20261023-augmented epoch=90 dev_mrr=0.359837 best=0.361993 patience=26
+2026-10-11T11:12:29.8193531Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261021-base", "unique_reserved_units": 19}
+2026-10-11T11:12:30.1934292Z f1-rgcn_mixed-s20261021-base epoch=1 dev_mrr=0.260178 best=0.260178 patience=0
+2026-10-11T11:12:31.9386746Z f1-rgcn_mixed-s20261021-base epoch=10 dev_mrr=0.296540 best=0.296540 patience=0
+2026-10-11T11:12:33.9315850Z f1-rgcn_mixed-s20261021-base epoch=20 dev_mrr=0.325055 best=0.328168 patience=1
+2026-10-11T11:12:36.0522992Z f1-rgcn_mixed-s20261021-base epoch=30 dev_mrr=0.316772 best=0.328168 patience=11
+2026-10-11T11:12:37.9956494Z f1-rgcn_mixed-s20261021-base epoch=40 dev_mrr=0.338133 best=0.338133 patience=0
+2026-10-11T11:12:39.9552855Z f1-rgcn_mixed-s20261021-base epoch=50 dev_mrr=0.338997 best=0.349837 patience=5
+2026-10-11T11:12:41.9952008Z f1-rgcn_mixed-s20261021-base epoch=60 dev_mrr=0.372999 best=0.372999 patience=0
+2026-10-11T11:12:43.9200865Z f1-rgcn_mixed-s20261021-base epoch=70 dev_mrr=0.372274 best=0.377360 patience=7
+2026-10-11T11:12:45.8158863Z f1-rgcn_mixed-s20261021-base epoch=80 dev_mrr=0.347969 best=0.377360 patience=17
+2026-10-11T11:12:47.7140731Z f1-rgcn_mixed-s20261021-base epoch=90 dev_mrr=0.312061 best=0.377360 patience=27
+2026-10-11T11:12:48.3331175Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261021-augmented", "unique_reserved_units": 20}
+2026-10-11T11:12:48.9896559Z f1-rgcn_mixed-s20261021-augmented epoch=1 dev_mrr=0.262951 best=0.262951 patience=0
+2026-10-11T11:12:51.8386739Z f1-rgcn_mixed-s20261021-augmented epoch=10 dev_mrr=0.303720 best=0.305035 patience=2
+2026-10-11T11:12:54.9984387Z f1-rgcn_mixed-s20261021-augmented epoch=20 dev_mrr=0.320380 best=0.320633 patience=1
+2026-10-11T11:12:58.1688896Z f1-rgcn_mixed-s20261021-augmented epoch=30 dev_mrr=0.338663 best=0.338663 patience=0
+2026-10-11T11:13:01.3281399Z f1-rgcn_mixed-s20261021-augmented epoch=40 dev_mrr=0.343289 best=0.343448 patience=1
+2026-10-11T11:13:04.4561503Z f1-rgcn_mixed-s20261021-augmented epoch=50 dev_mrr=0.374710 best=0.379577 patience=3
+2026-10-11T11:13:07.5849280Z f1-rgcn_mixed-s20261021-augmented epoch=60 dev_mrr=0.373763 best=0.379577 patience=13
+2026-10-11T11:13:10.7465873Z f1-rgcn_mixed-s20261021-augmented epoch=70 dev_mrr=0.359505 best=0.380094 patience=9
+2026-10-11T11:13:13.9026731Z f1-rgcn_mixed-s20261021-augmented epoch=80 dev_mrr=0.339770 best=0.380094 patience=19
+2026-10-11T11:13:17.0376467Z f1-rgcn_mixed-s20261021-augmented epoch=90 dev_mrr=0.331507 best=0.380094 patience=29
+2026-10-11T11:13:17.3985142Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261022-base", "unique_reserved_units": 21}
+2026-10-11T11:13:17.7664801Z f1-rgcn_mixed-s20261022-base epoch=1 dev_mrr=0.244419 best=0.244419 patience=0
+2026-10-11T11:13:19.5197686Z f1-rgcn_mixed-s20261022-base epoch=10 dev_mrr=0.371476 best=0.371476 patience=0
+2026-10-11T11:13:21.4207216Z f1-rgcn_mixed-s20261022-base epoch=20 dev_mrr=0.355864 best=0.377772 patience=9
+2026-10-11T11:13:23.3228229Z f1-rgcn_mixed-s20261022-base epoch=30 dev_mrr=0.360599 best=0.377772 patience=19
+2026-10-11T11:13:25.2216594Z f1-rgcn_mixed-s20261022-base epoch=40 dev_mrr=0.362765 best=0.377772 patience=29
+2026-10-11T11:13:25.4526742Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261022-augmented", "unique_reserved_units": 22}
+2026-10-11T11:13:26.1816690Z f1-rgcn_mixed-s20261022-augmented epoch=1 dev_mrr=0.253893 best=0.253893 patience=0
+2026-10-11T11:13:29.0762328Z f1-rgcn_mixed-s20261022-augmented epoch=10 dev_mrr=0.285299 best=0.289059 patience=2
+2026-10-11T11:13:32.2576547Z f1-rgcn_mixed-s20261022-augmented epoch=20 dev_mrr=0.284345 best=0.291331 patience=4
+2026-10-11T11:13:35.5347301Z f1-rgcn_mixed-s20261022-augmented epoch=30 dev_mrr=0.340760 best=0.340762 patience=1
+2026-10-11T11:13:38.6804469Z f1-rgcn_mixed-s20261022-augmented epoch=40 dev_mrr=0.343099 best=0.343105 patience=4
+2026-10-11T11:13:41.8367685Z f1-rgcn_mixed-s20261022-augmented epoch=50 dev_mrr=0.340574 best=0.343139 patience=5
+2026-10-11T11:13:45.0017930Z f1-rgcn_mixed-s20261022-augmented epoch=60 dev_mrr=0.339999 best=0.343139 patience=15
+2026-10-11T11:13:48.2111020Z f1-rgcn_mixed-s20261022-augmented epoch=70 dev_mrr=0.350889 best=0.350889 patience=0
+2026-10-11T11:13:51.3717549Z f1-rgcn_mixed-s20261022-augmented epoch=80 dev_mrr=0.353818 best=0.354399 patience=1
+2026-10-11T11:13:54.5012025Z f1-rgcn_mixed-s20261022-augmented epoch=90 dev_mrr=0.345872 best=0.354399 patience=11
+2026-10-11T11:13:57.6326620Z f1-rgcn_mixed-s20261022-augmented epoch=100 dev_mrr=0.314425 best=0.354399 patience=21
+2026-10-11T11:14:00.5212962Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261023-base", "unique_reserved_units": 23}
+2026-10-11T11:14:00.8881830Z f1-rgcn_mixed-s20261023-base epoch=1 dev_mrr=0.174389 best=0.174389 patience=0
+2026-10-11T11:14:02.6054748Z f1-rgcn_mixed-s20261023-base epoch=10 dev_mrr=0.335590 best=0.338547 patience=1
+2026-10-11T11:14:04.4947828Z f1-rgcn_mixed-s20261023-base epoch=20 dev_mrr=0.319522 best=0.365872 patience=6
+2026-10-11T11:14:06.3791388Z f1-rgcn_mixed-s20261023-base epoch=30 dev_mrr=0.345594 best=0.365872 patience=16
+2026-10-11T11:14:08.2662472Z f1-rgcn_mixed-s20261023-base epoch=40 dev_mrr=0.361830 best=0.365872 patience=26
+2026-10-11T11:14:10.1708184Z f1-rgcn_mixed-s20261023-base epoch=50 dev_mrr=0.377805 best=0.379491 patience=3
+2026-10-11T11:14:12.0794523Z f1-rgcn_mixed-s20261023-base epoch=60 dev_mrr=0.392753 best=0.392753 patience=0
+2026-10-11T11:14:13.9758041Z f1-rgcn_mixed-s20261023-base epoch=70 dev_mrr=0.379043 best=0.393015 patience=8
+2026-10-11T11:14:15.8649123Z f1-rgcn_mixed-s20261023-base epoch=80 dev_mrr=0.354473 best=0.393015 patience=18
+2026-10-11T11:14:17.7604000Z f1-rgcn_mixed-s20261023-base epoch=90 dev_mrr=0.345949 best=0.393015 patience=28
+2026-10-11T11:14:18.1860932Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261023-augmented", "unique_reserved_units": 24}
+2026-10-11T11:14:18.9218609Z f1-rgcn_mixed-s20261023-augmented epoch=1 dev_mrr=0.254539 best=0.254539 patience=0
+2026-10-11T11:14:21.8440583Z f1-rgcn_mixed-s20261023-augmented epoch=10 dev_mrr=0.327021 best=0.337574 patience=3
+2026-10-11T11:14:25.0844570Z f1-rgcn_mixed-s20261023-augmented epoch=20 dev_mrr=0.321838 best=0.337574 patience=13
+2026-10-11T11:14:28.3037456Z f1-rgcn_mixed-s20261023-augmented epoch=30 dev_mrr=0.328347 best=0.337574 patience=23
+2026-10-11T11:14:31.5376623Z f1-rgcn_mixed-s20261023-augmented epoch=40 dev_mrr=0.341008 best=0.341059 patience=1
+2026-10-11T11:14:34.8304803Z f1-rgcn_mixed-s20261023-augmented epoch=50 dev_mrr=0.358874 best=0.358874 patience=0
+2026-10-11T11:14:38.0356151Z f1-rgcn_mixed-s20261023-augmented epoch=60 dev_mrr=0.342872 best=0.361613 patience=7
+2026-10-11T11:14:41.2431139Z f1-rgcn_mixed-s20261023-augmented epoch=70 dev_mrr=0.343747 best=0.361613 patience=17
+2026-10-11T11:14:44.4209053Z f1-rgcn_mixed-s20261023-augmented epoch=80 dev_mrr=0.340928 best=0.361613 patience=27
+2026-10-11T11:14:45.4303387Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261021-base", "unique_reserved_units": 25}
+2026-10-11T11:14:45.7539944Z f2-distmult_mixed-s20261021-base epoch=1 dev_mrr=0.214663 best=0.214663 patience=0
+2026-10-11T11:14:47.0972808Z f2-distmult_mixed-s20261021-base epoch=10 dev_mrr=0.283836 best=0.283836 patience=0
+2026-10-11T11:14:48.5775903Z f2-distmult_mixed-s20261021-base epoch=20 dev_mrr=0.317231 best=0.320754 patience=2
+2026-10-11T11:14:50.0696274Z f2-distmult_mixed-s20261021-base epoch=30 dev_mrr=0.350961 best=0.350961 patience=0
+2026-10-11T11:14:51.5631021Z f2-distmult_mixed-s20261021-base epoch=40 dev_mrr=0.365327 best=0.365327 patience=0
+2026-10-11T11:14:53.0552735Z f2-distmult_mixed-s20261021-base epoch=50 dev_mrr=0.368662 best=0.368662 patience=0
+2026-10-11T11:14:54.5356614Z f2-distmult_mixed-s20261021-base epoch=60 dev_mrr=0.367010 best=0.368717 patience=1
+2026-10-11T11:14:56.0033329Z f2-distmult_mixed-s20261021-base epoch=70 dev_mrr=0.363275 best=0.368717 patience=11
+2026-10-11T11:14:57.4772838Z f2-distmult_mixed-s20261021-base epoch=80 dev_mrr=0.363409 best=0.368717 patience=21
+2026-10-11T11:14:58.8381502Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261021-augmented", "unique_reserved_units": 26}
+2026-10-11T11:14:59.4222563Z f2-distmult_mixed-s20261021-augmented epoch=1 dev_mrr=0.275308 best=0.275308 patience=0
+2026-10-11T11:15:01.7316714Z f2-distmult_mixed-s20261021-augmented epoch=10 dev_mrr=0.304705 best=0.304705 patience=0
+2026-10-11T11:15:04.3747004Z f2-distmult_mixed-s20261021-augmented epoch=20 dev_mrr=0.315645 best=0.315645 patience=0
+2026-10-11T11:15:06.9372320Z f2-distmult_mixed-s20261021-augmented epoch=30 dev_mrr=0.326023 best=0.326023 patience=0
+2026-10-11T11:15:09.5126829Z f2-distmult_mixed-s20261021-augmented epoch=40 dev_mrr=0.341170 best=0.341170 patience=0
+2026-10-11T11:15:12.0950519Z f2-distmult_mixed-s20261021-augmented epoch=50 dev_mrr=0.356634 best=0.356932 patience=1
+2026-10-11T11:15:14.6817497Z f2-distmult_mixed-s20261021-augmented epoch=60 dev_mrr=0.355896 best=0.356932 patience=11
+2026-10-11T11:15:17.2444524Z f2-distmult_mixed-s20261021-augmented epoch=70 dev_mrr=0.361096 best=0.361132 patience=1
+2026-10-11T11:15:19.7878955Z f2-distmult_mixed-s20261021-augmented epoch=80 dev_mrr=0.359199 best=0.361132 patience=11
+2026-10-11T11:15:22.3237189Z f2-distmult_mixed-s20261021-augmented epoch=90 dev_mrr=0.358911 best=0.361132 patience=21
+2026-10-11T11:15:24.6416323Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261022-base", "unique_reserved_units": 27}
+2026-10-11T11:15:24.9699117Z f2-distmult_mixed-s20261022-base epoch=1 dev_mrr=0.191219 best=0.191219 patience=0
+2026-10-11T11:15:26.3231513Z f2-distmult_mixed-s20261022-base epoch=10 dev_mrr=0.335125 best=0.335125 patience=0
+2026-10-11T11:15:27.8188866Z f2-distmult_mixed-s20261022-base epoch=20 dev_mrr=0.344455 best=0.344455 patience=0
+2026-10-11T11:15:29.3141489Z f2-distmult_mixed-s20261022-base epoch=30 dev_mrr=0.356295 best=0.356295 patience=0
+2026-10-11T11:15:30.7943968Z f2-distmult_mixed-s20261022-base epoch=40 dev_mrr=0.376969 best=0.376969 patience=0
+2026-10-11T11:15:32.2750159Z f2-distmult_mixed-s20261022-base epoch=50 dev_mrr=0.376029 best=0.377003 patience=7
+2026-10-11T11:15:33.8296157Z f2-distmult_mixed-s20261022-base epoch=60 dev_mrr=0.378590 best=0.379060 patience=2
+2026-10-11T11:15:35.3154187Z f2-distmult_mixed-s20261022-base epoch=70 dev_mrr=0.388046 best=0.388046 patience=0
+2026-10-11T11:15:36.7799543Z f2-distmult_mixed-s20261022-base epoch=80 dev_mrr=0.363775 best=0.388046 patience=10
+2026-10-11T11:15:38.2545856Z f2-distmult_mixed-s20261022-base epoch=90 dev_mrr=0.389266 best=0.395477 patience=1
+2026-10-11T11:15:39.7503696Z f2-distmult_mixed-s20261022-base epoch=100 dev_mrr=0.363793 best=0.395477 patience=11
+2026-10-11T11:15:41.2571140Z f2-distmult_mixed-s20261022-base epoch=110 dev_mrr=0.364370 best=0.395477 patience=21
+2026-10-11T11:15:42.6410731Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261022-augmented", "unique_reserved_units": 28}
+2026-10-11T11:15:43.2298302Z f2-distmult_mixed-s20261022-augmented epoch=1 dev_mrr=0.269459 best=0.269459 patience=0
+2026-10-11T11:15:45.5573190Z f2-distmult_mixed-s20261022-augmented epoch=10 dev_mrr=0.325304 best=0.325304 patience=0
+2026-10-11T11:15:48.1836876Z f2-distmult_mixed-s20261022-augmented epoch=20 dev_mrr=0.317170 best=0.346815 patience=6
+2026-10-11T11:15:50.7483353Z f2-distmult_mixed-s20261022-augmented epoch=30 dev_mrr=0.359017 best=0.364504 patience=2
+2026-10-11T11:15:53.4109759Z f2-distmult_mixed-s20261022-augmented epoch=40 dev_mrr=0.369405 best=0.369666 patience=1
+2026-10-11T11:15:55.9442474Z f2-distmult_mixed-s20261022-augmented epoch=50 dev_mrr=0.384834 best=0.392193 patience=2
+2026-10-11T11:15:58.4768710Z f2-distmult_mixed-s20261022-augmented epoch=60 dev_mrr=0.364011 best=0.392193 patience=12
+2026-10-11T11:16:01.0091406Z f2-distmult_mixed-s20261022-augmented epoch=70 dev_mrr=0.359004 best=0.392193 patience=22
+2026-10-11T11:16:03.0712425Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261023-base", "unique_reserved_units": 29}
+2026-10-11T11:16:03.3934281Z f2-distmult_mixed-s20261023-base epoch=1 dev_mrr=0.176450 best=0.176450 patience=0
+2026-10-11T11:16:04.7296471Z f2-distmult_mixed-s20261023-base epoch=10 dev_mrr=0.236159 best=0.236159 patience=0
+2026-10-11T11:16:06.2168745Z f2-distmult_mixed-s20261023-base epoch=20 dev_mrr=0.253719 best=0.253719 patience=0
+2026-10-11T11:16:07.7121090Z f2-distmult_mixed-s20261023-base epoch=30 dev_mrr=0.264542 best=0.264542 patience=0
+2026-10-11T11:16:09.2011912Z f2-distmult_mixed-s20261023-base epoch=40 dev_mrr=0.298640 best=0.298640 patience=0
+2026-10-11T11:16:10.6848242Z f2-distmult_mixed-s20261023-base epoch=50 dev_mrr=0.358105 best=0.358105 patience=0
+2026-10-11T11:16:12.1732117Z f2-distmult_mixed-s20261023-base epoch=60 dev_mrr=0.363852 best=0.364178 patience=2
+2026-10-11T11:16:13.6536692Z f2-distmult_mixed-s20261023-base epoch=70 dev_mrr=0.363602 best=0.364178 patience=12
+2026-10-11T11:16:15.1486259Z f2-distmult_mixed-s20261023-base epoch=80 dev_mrr=0.367803 best=0.368075 patience=1
+2026-10-11T11:16:16.6359882Z f2-distmult_mixed-s20261023-base epoch=90 dev_mrr=0.362964 best=0.368130 patience=4
+2026-10-11T11:16:18.1053721Z f2-distmult_mixed-s20261023-base epoch=100 dev_mrr=0.364520 best=0.368130 patience=14
+2026-10-11T11:16:19.5701783Z f2-distmult_mixed-s20261023-base epoch=110 dev_mrr=0.366365 best=0.368130 patience=24
+2026-10-11T11:16:20.4945668Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261023-augmented", "unique_reserved_units": 30}
+2026-10-11T11:16:21.0794421Z f2-distmult_mixed-s20261023-augmented epoch=1 dev_mrr=0.314107 best=0.314107 patience=0
+2026-10-11T11:16:23.4506002Z f2-distmult_mixed-s20261023-augmented epoch=10 dev_mrr=0.307165 best=0.324663 patience=8
+2026-10-11T11:16:26.0007579Z f2-distmult_mixed-s20261023-augmented epoch=20 dev_mrr=0.328831 best=0.328831 patience=0
+2026-10-11T11:16:28.5534937Z f2-distmult_mixed-s20261023-augmented epoch=30 dev_mrr=0.331017 best=0.332609 patience=6
+2026-10-11T11:16:31.1179564Z f2-distmult_mixed-s20261023-augmented epoch=40 dev_mrr=0.338312 best=0.338312 patience=0
+2026-10-11T11:16:33.7238112Z f2-distmult_mixed-s20261023-augmented epoch=50 dev_mrr=0.328543 best=0.339442 patience=9
+2026-10-11T11:16:36.2674240Z f2-distmult_mixed-s20261023-augmented epoch=60 dev_mrr=0.355961 best=0.355961 patience=0
+2026-10-11T11:16:38.7949399Z f2-distmult_mixed-s20261023-augmented epoch=70 dev_mrr=0.359204 best=0.360830 patience=6
+2026-10-11T11:16:41.4202770Z f2-distmult_mixed-s20261023-augmented epoch=80 dev_mrr=0.359607 best=0.360830 patience=16
+2026-10-11T11:16:43.9698908Z f2-distmult_mixed-s20261023-augmented epoch=90 dev_mrr=0.359736 best=0.360830 patience=26
+2026-10-11T11:16:45.0257494Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261021-base", "unique_reserved_units": 31}
+2026-10-11T11:16:45.3979042Z f2-rgcn_mixed-s20261021-base epoch=1 dev_mrr=0.266148 best=0.266148 patience=0
+2026-10-11T11:16:47.1411804Z f2-rgcn_mixed-s20261021-base epoch=10 dev_mrr=0.301324 best=0.301324 patience=0
+2026-10-11T11:16:49.0693400Z f2-rgcn_mixed-s20261021-base epoch=20 dev_mrr=0.288317 best=0.328801 patience=2
+2026-10-11T11:16:50.9613297Z f2-rgcn_mixed-s20261021-base epoch=30 dev_mrr=0.317305 best=0.328801 patience=12
+2026-10-11T11:16:52.8562073Z f2-rgcn_mixed-s20261021-base epoch=40 dev_mrr=0.343621 best=0.343641 patience=1
+2026-10-11T11:16:54.7437883Z f2-rgcn_mixed-s20261021-base epoch=50 dev_mrr=0.366095 best=0.379648 patience=3
+2026-10-11T11:16:56.6268738Z f2-rgcn_mixed-s20261021-base epoch=60 dev_mrr=0.372116 best=0.381483 patience=7
+2026-10-11T11:16:58.5116711Z f2-rgcn_mixed-s20261021-base epoch=70 dev_mrr=0.355783 best=0.381483 patience=17
+2026-10-11T11:17:00.4309833Z f2-rgcn_mixed-s20261021-base epoch=80 dev_mrr=0.308757 best=0.381483 patience=27
+2026-10-11T11:17:01.0400809Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261021-augmented", "unique_reserved_units": 32}
+2026-10-11T11:17:01.6926465Z f2-rgcn_mixed-s20261021-augmented epoch=1 dev_mrr=0.260388 best=0.260388 patience=0
+2026-10-11T11:17:04.5293904Z f2-rgcn_mixed-s20261021-augmented epoch=10 dev_mrr=0.305427 best=0.305427 patience=0
+2026-10-11T11:17:07.6482765Z f2-rgcn_mixed-s20261021-augmented epoch=20 dev_mrr=0.320392 best=0.320404 patience=1
+2026-10-11T11:17:10.7767577Z f2-rgcn_mixed-s20261021-augmented epoch=30 dev_mrr=0.329075 best=0.329751 patience=1
+2026-10-11T11:17:14.0339567Z f2-rgcn_mixed-s20261021-augmented epoch=40 dev_mrr=0.343234 best=0.343448 patience=1
+2026-10-11T11:17:17.1916723Z f2-rgcn_mixed-s20261021-augmented epoch=50 dev_mrr=0.373930 best=0.385334 patience=3
+2026-10-11T11:17:20.3392922Z f2-rgcn_mixed-s20261021-augmented epoch=60 dev_mrr=0.384679 best=0.388358 patience=2
+2026-10-11T11:17:23.5120029Z f2-rgcn_mixed-s20261021-augmented epoch=70 dev_mrr=0.357751 best=0.388358 patience=12
+2026-10-11T11:17:26.6856319Z f2-rgcn_mixed-s20261021-augmented epoch=80 dev_mrr=0.343663 best=0.388358 patience=22
+2026-10-11T11:17:29.2741465Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261022-base", "unique_reserved_units": 33}
+2026-10-11T11:17:29.6471693Z f2-rgcn_mixed-s20261022-base epoch=1 dev_mrr=0.262654 best=0.262654 patience=0
+2026-10-11T11:17:31.3811969Z f2-rgcn_mixed-s20261022-base epoch=10 dev_mrr=0.371002 best=0.371421 patience=2
+2026-10-11T11:17:33.3730093Z f2-rgcn_mixed-s20261022-base epoch=20 dev_mrr=0.352490 best=0.379727 patience=6
+2026-10-11T11:17:35.3020257Z f2-rgcn_mixed-s20261022-base epoch=30 dev_mrr=0.360594 best=0.379727 patience=16
+2026-10-11T11:17:37.2236576Z f2-rgcn_mixed-s20261022-base epoch=40 dev_mrr=0.360591 best=0.379727 patience=26
+2026-10-11T11:17:38.1123784Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261022-augmented", "unique_reserved_units": 34}
+2026-10-11T11:17:38.7702840Z f2-rgcn_mixed-s20261022-augmented epoch=1 dev_mrr=0.247691 best=0.247691 patience=0
+2026-10-11T11:17:41.6989646Z f2-rgcn_mixed-s20261022-augmented epoch=10 dev_mrr=0.286983 best=0.287184 patience=2
+2026-10-11T11:17:44.9420173Z f2-rgcn_mixed-s20261022-augmented epoch=20 dev_mrr=0.283974 best=0.291167 patience=9
+2026-10-11T11:17:48.1992867Z f2-rgcn_mixed-s20261022-augmented epoch=30 dev_mrr=0.341259 best=0.341352 patience=2
+2026-10-11T11:17:51.4201640Z f2-rgcn_mixed-s20261022-augmented epoch=40 dev_mrr=0.342728 best=0.343395 patience=6
+2026-10-11T11:17:54.6625820Z f2-rgcn_mixed-s20261022-augmented epoch=50 dev_mrr=0.340739 best=0.343395 patience=16
+2026-10-11T11:17:57.8743150Z f2-rgcn_mixed-s20261022-augmented epoch=60 dev_mrr=0.352518 best=0.352518 patience=0
+2026-10-11T11:18:01.0829090Z f2-rgcn_mixed-s20261022-augmented epoch=70 dev_mrr=0.355753 best=0.355753 patience=0
+2026-10-11T11:18:04.2962348Z f2-rgcn_mixed-s20261022-augmented epoch=80 dev_mrr=0.359747 best=0.361681 patience=6
+2026-10-11T11:18:07.4933893Z f2-rgcn_mixed-s20261022-augmented epoch=90 dev_mrr=0.349588 best=0.361681 patience=16
+2026-10-11T11:18:10.7936874Z f2-rgcn_mixed-s20261022-augmented epoch=100 dev_mrr=0.343025 best=0.361681 patience=26
+2026-10-11T11:18:12.1346976Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261023-base", "unique_reserved_units": 35}
+2026-10-11T11:18:12.5043606Z f2-rgcn_mixed-s20261023-base epoch=1 dev_mrr=0.178721 best=0.178721 patience=0
+2026-10-11T11:18:14.2597967Z f2-rgcn_mixed-s20261023-base epoch=10 dev_mrr=0.264760 best=0.267929 patience=5
+2026-10-11T11:18:16.2005485Z f2-rgcn_mixed-s20261023-base epoch=20 dev_mrr=0.325180 best=0.367075 patience=5
+2026-10-11T11:18:18.1024243Z f2-rgcn_mixed-s20261023-base epoch=30 dev_mrr=0.342511 best=0.367075 patience=15
+2026-10-11T11:18:20.0171958Z f2-rgcn_mixed-s20261023-base epoch=40 dev_mrr=0.361939 best=0.367075 patience=25
+2026-10-11T11:18:21.9302573Z f2-rgcn_mixed-s20261023-base epoch=50 dev_mrr=0.379398 best=0.393788 patience=4
+2026-10-11T11:18:23.8397545Z f2-rgcn_mixed-s20261023-base epoch=60 dev_mrr=0.389534 best=0.393788 patience=14
+2026-10-11T11:18:25.7336588Z f2-rgcn_mixed-s20261023-base epoch=70 dev_mrr=0.387124 best=0.393788 patience=24
+2026-10-11T11:18:26.9299587Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261023-augmented", "unique_reserved_units": 36}
+2026-10-11T11:18:27.5858361Z f2-rgcn_mixed-s20261023-augmented epoch=1 dev_mrr=0.254104 best=0.254104 patience=0
+2026-10-11T11:18:30.5097915Z f2-rgcn_mixed-s20261023-augmented epoch=10 dev_mrr=0.327342 best=0.372735 patience=1
+2026-10-11T11:18:33.7433907Z f2-rgcn_mixed-s20261023-augmented epoch=20 dev_mrr=0.321909 best=0.372735 patience=11
+2026-10-11T11:18:37.0027957Z f2-rgcn_mixed-s20261023-augmented epoch=30 dev_mrr=0.328722 best=0.372735 patience=21
+2026-10-11T11:18:40.0674074Z {"phase": "development_complete", "registered_units": 36, "reserved_units": 36, "completed_units": 36, "model_api_calls": 0, "reserved_holdout_evaluated": false, "confirmation_training_started": false, "registration_sha256": "b8a13ca057048c1a5bd894422323276861565b4bdede433f4812a6b9ad9b8c6a", "data_expansion_gate": {"passed": false, "meaning": "development_data_expansion_gate_only", "reserved_evaluation_started": false, "mean_delta_mrr": -0.017738798696333737, "wins_of_nine": 2, "fixed_major_macro_delta": -0.007676912941000458}}
+2026-10-11T11:18:40.0803384Z {"completed_units": 36, "confirmation_training_started": false, "data_expansion_gate": {"fixed_major_macro_delta": -0.007676912941000458, "mean_delta_mrr": -0.017738798696333737, "meaning": "development_data_expansion_gate_only", "passed": false, "reserved_evaluation_started": false, "wins_of_nine": 2}, "model_api_calls": 0, "phase": "development_complete", "registered_units": 36, "registration_sha256": "b8a13ca057048c1a5bd894422323276861565b4bdede433f4812a6b9ad9b8c6a", "reserved_holdout_evaluated": false, "reserved_units": 36}
+2026-10-11T11:19:18.9252493Z {"phase": "durably_closed", "slot": 1, "campaign": {"completed_units": 36, "confirmation_training_started": false, "data_expansion_gate": {"fixed_major_macro_delta": -0.007676912941000458, "mean_delta_mrr": -0.017738798696333737, "meaning": "development_data_expansion_gate_only", "passed": false, "reserved_evaluation_started": false, "wins_of_nine": 2}, "model_api_calls": 0, "phase": "development_complete", "registered_units": 36, "registration_sha256": "b8a13ca057048c1a5bd894422323276861565b4bdede433f4812a6b9ad9b8c6a", "reserved_holdout_evaluated": false, "reserved_units": 36}}

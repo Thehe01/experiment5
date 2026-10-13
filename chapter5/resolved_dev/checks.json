@@ -1,0 +1,52 @@
+{
+  "commands": [
+    {
+      "command": "PYTHONPATH=source python -m unittest chapter5.resolved_dev.test_data -q (admission stub)",
+      "exit_code": 1,
+      "log": "checks/tdd-red.log",
+      "result": "9 genuine assertion failures before implementation"
+    },
+    {
+      "command": "PYTHONPATH=source python -m unittest chapter5.resolved_dev.test_data -q",
+      "exit_code": 0,
+      "log": "checks/tdd-green.log",
+      "result": "9 admission behavior tests"
+    },
+    {
+      "command": "ATEN_CPU_CAPABILITY=avx2 python -m unittest chapter5.resolved_dev.test_data chapter5.resolved_dev.test_campaign chapter5.resolved_dev.test_archive chapter5.public_dev.test_core chapter5.public_dev.test_model -q",
+      "exit_code": 0,
+      "log": "checks/offline-tests.log",
+      "result": "28 passed; includes synthetic toy numerical tests, not scientific fitting"
+    },
+    {
+      "command": "ATEN_CPU_CAPABILITY=avx2 python -m chapter5.resolved_dev.campaign prepare --repo .",
+      "exit_code": 0,
+      "log": "checks/prepare.log",
+      "result": "36-unit preregistration and six input graphs verified"
+    },
+    {
+      "command": "ATEN_CPU_CAPABILITY=avx2 python -m chapter5.resolved_dev.verify --repo . --receipt verification.json",
+      "exit_code": 0,
+      "log": "checks/integration.log",
+      "result": "six real graphs, mixed sampling/held targets/169 protected IDs, byte-identical rebuild, overwrite and runtime tamper rejected"
+    },
+    {
+      "command": "isolated-copy config/source/unit/runtime tamper probes",
+      "exit_code": 0,
+      "receipt": "negative-gates.json",
+      "result": "4 refusals; no fitting"
+    },
+    {
+      "command": "ATEN_CPU_CAPABILITY=avx2 python scripts/verify_chapter5_expansion_completion_v1.py --repo . --inputs completed --receipt original-completion-verification.json",
+      "exit_code": 0,
+      "log": "checks/original-bindings.log",
+      "result": "original36 units and23 frozen source bindings intact"
+    }
+  ],
+  "corrected_preparation_issue": "First combined synthetic test run had one ImportError for project_base at copied test-only import; corrected to frozen expanded_dev helper. Fresh complete run passes; scientific code was unchanged by this correction.",
+  "model_api_calls": 0,
+  "registration_sha256": "ac19948da5d31cfede901073af08dbbc49c2b99950ff48e3f96bea334e075e5e",
+  "reserved_holdout_evaluated": false,
+  "runtime": "Python3.12.14; Torch2.9.1+cpu; AVX2; two threads",
+  "scientific_model_training_runs_before_activation": 0
+}

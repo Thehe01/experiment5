@@ -1,0 +1,91 @@
+EEEEEEEE
+======================================================================
+ERROR: test_disjoint_author_labels_do_not_replace_ctid (test_alignment.AlignmentTests.test_disjoint_author_labels_do_not_replace_ctid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/test_alignment.py", line 32, in test_disjoint_author_labels_do_not_replace_ctid
+    r=resolve_record("CVE-2021-21166",["T1059","T1203"],[["T1110","T1189"]],actual_evidence("CVE-2021-21166"),SCOPE)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/alignment.py", line 4, in resolve_record
+    raise NotImplementedError("source reconciliation not implemented")
+NotImplementedError: source reconciliation not implemented
+
+======================================================================
+ERROR: test_duplicate_variants_are_not_unioned_into_positives (test_alignment.AlignmentTests.test_duplicate_variants_are_not_unioned_into_positives)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/test_alignment.py", line 37, in test_duplicate_variants_are_not_unioned_into_positives
+    r=resolve_record("CVE-2011-4106",["T1190","T1505"],[["T1059","T1190","T1203","T1505"],["T1190","T1505"]],actual_evidence("CVE-2011-4106"),SCOPE)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/alignment.py", line 4, in resolve_record
+    raise NotImplementedError("source reconciliation not implemented")
+NotImplementedError: source reconciliation not implemented
+
+======================================================================
+ERROR: test_kev_supplement_recovers_documented_user_execution (test_alignment.AlignmentTests.test_kev_supplement_recovers_documented_user_execution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/test_alignment.py", line 27, in test_kev_supplement_recovers_documented_user_execution
+    r=resolve_record("CVE-2008-2992",["T1203","T1204"],[["T1203"]],actual_evidence("CVE-2008-2992"),SCOPE)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/alignment.py", line 4, in resolve_record
+    raise NotImplementedError("source reconciliation not implemented")
+NotImplementedError: source reconciliation not implemented
+
+======================================================================
+ERROR: test_mobile_only_mapping_is_quarantined (test_alignment.AlignmentTests.test_mobile_only_mapping_is_quarantined)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/test_alignment.py", line 49, in test_mobile_only_mapping_is_quarantined
+    r=resolve_record(cve,None,[labels],actual_evidence(cve),SCOPE)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/alignment.py", line 4, in resolve_record
+    raise NotImplementedError("source reconciliation not implemented")
+NotImplementedError: source reconciliation not implemented
+
+======================================================================
+ERROR: test_new_ambiguous_source_does_not_silently_choose_variant (test_alignment.AlignmentTests.test_new_ambiguous_source_does_not_silently_choose_variant)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/test_alignment.py", line 59, in test_new_ambiguous_source_does_not_silently_choose_variant
+    r=resolve_record("CVE-2021-99999",None,[["T1005"],["T1068"]],[],SCOPE)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/alignment.py", line 4, in resolve_record
+    raise NotImplementedError("source reconciliation not implemented")
+NotImplementedError: source reconciliation not implemented
+
+======================================================================
+ERROR: test_new_unmapped_source_labels_remain_partial (test_alignment.AlignmentTests.test_new_unmapped_source_labels_remain_partial)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/test_alignment.py", line 54, in test_new_unmapped_source_labels_remain_partial
+    r=resolve_record("CVE-2021-99999",None,[["T1005"]],[],SCOPE)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/alignment.py", line 4, in resolve_record
+    raise NotImplementedError("source reconciliation not implemented")
+NotImplementedError: source reconciliation not implemented
+
+======================================================================
+ERROR: test_protected_id_rejected_before_inspecting_labels (test_alignment.AlignmentTests.test_protected_id_rejected_before_inspecting_labels)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/test_alignment.py", line 46, in test_protected_id_rejected_before_inspecting_labels
+    resolve_record("CVE-2008-0655",object(),object(),object(),object(),["CVE-2008-0655"])
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/alignment.py", line 4, in resolve_record
+    raise NotImplementedError("source reconciliation not implemented")
+NotImplementedError: source reconciliation not implemented
+
+======================================================================
+ERROR: test_unexpected_authority_conflict_blocks_generation (test_alignment.AlignmentTests.test_unexpected_authority_conflict_blocks_generation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/test_alignment.py", line 43, in test_unexpected_authority_conflict_blocks_generation
+    resolve_record("CVE-2008-2992",["T1203"],[["T1203"]],actual_evidence("CVE-2008-2992"),SCOPE)
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/alignment.py", line 4, in resolve_record
+    raise NotImplementedError("source reconciliation not implemented")
+NotImplementedError: source reconciliation not implemented
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.046s
+
+FAILED (errors=8)

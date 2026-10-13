@@ -1,0 +1,54 @@
+name: Chapter 5 context-pool checkpoint verification recovery
+on:
+  push:
+    branches: [codex/chapter5-public-dev-20261011]
+    paths: [chapter5/context_pool_recovery_20261012/launch.json]
+permissions:
+  contents: write
+concurrency:
+  group: chapter5-context-pool-verification-recovery
+  cancel-in-progress: false
+env:
+  ATEN_CPU_CAPABILITY: avx2
+  PYTHONUNBUFFERED: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - name: Receipt reconciliation and remaining original budget (no model)
+        run: |
+          python -m unittest chapter5.context_pool_recovery_20261012.test_recovery -q
+          python -m chapter5.context_pool_recovery_20261012.recovery verify --repo .
+  recover:
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: codex/chapter5-public-dev-20261011
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - name: Frozen CPU runtime
+        run: |
+          python -m pip install -r chapter5/requirements-cpu.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Reuse trained9, reconcile executed1, verify remaining8, archive (no retraining)
+        run: python -m chapter5.context_pool_recovery_20261012.recovery run --repo . --state "$RUNNER_TEMP/context-pool-recovered-state"
+      - name: Retain completed checkpoint and recovery evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: chapter5-context-pool-recovery-${{ github.run_id }}
+          path: |
+            chapter5/context_pool_recovery_20261012
+            ${{ runner.temp }}/context-pool-recovered-state
+          retention-days: 90

@@ -1,0 +1,30 @@
+{
+  "audit_script_sha256": "6ca279a60c569d4a48684eca30d401d171910b5827e762359733c879aa27f400",
+  "baseline_replays": 36,
+  "input_hashes": {
+    "comparison_git_blob": "447bc69ac0a9caa2fbd670d0d393b64c420c0a1e",
+    "enriched_package_sha256": "0a8dadff1e03dbe55520a77783523016dcb2d97d8f716f3253255f1b33748e6b",
+    "runtime_package_sha256": "224edc37ab105644bec932ab54dc1071783c35fd124728d5a2645c1f00274d10",
+    "source_commit": "417e4c6f7071bc8542d03e6bc0b1a6a71f10c42f",
+    "source_package_sha256": "c00660f6d37cfefa2af35513ed785ca0e77f880746f34220edb204c353bfadbf"
+  },
+  "max_baseline_metric_error": 1.1102230246251565e-16,
+  "max_neighbor_decomposition_error": 1.1102230246251565e-16,
+  "outputs_sha256": {
+    "analysis.json": "02f1ac8bd58357fc44aebda074a0b57ad7171640e4ae5854d4f0f85559cf3a4f",
+    "neighbor-vote-decomposition.jsonl": "0ce6f54f109f88f81d34ce671f4c5b769d7be36163c0c20e479e8774b29ecadd",
+    "overlap-label-review.jsonl": "b00b8cd7ad1c518a314570a494c47489f97968b995b6a9872056177eee598c64"
+  },
+  "passed": true,
+  "protection": {
+    "external_old_pool_overlap": 0,
+    "model_api_calls": 0,
+    "model_inference": 0,
+    "reserved_cves": 155,
+    "reserved_labels_compared": 0,
+    "reserved_scored": 0,
+    "training": 0
+  },
+  "protocol": "chapter5-expanded-source-audit-v1-20261011",
+  "protocol_sha256": "f8afba94ae52457f9c32c59ffd61633d878e1ab11f41be025e058e0e96fa2939"
+}

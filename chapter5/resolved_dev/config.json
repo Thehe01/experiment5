@@ -1,0 +1,92 @@
+{
+  "activation_branch": "codex/chapter5-resolved-activation-20261011",
+  "arms": [
+    "distmult_mixed",
+    "rgcn_mixed"
+  ],
+  "augmented_training_cves_per_fold": [
+    1547,
+    1547,
+    1546
+  ],
+  "authorization": "我已核验开始实验吧; user authorizes this v3 paired development run",
+  "authorized_at": "2026-10-11T23:14:07+08:00",
+  "auxiliary_weight": 1.0,
+  "base_training_cves_per_fold": [
+    691,
+    691,
+    690
+  ],
+  "bases": 4,
+  "candidate_parent_techniques": 31,
+  "conditions": [
+    "base",
+    "augmented"
+  ],
+  "confirmation_training_budget": 0,
+  "data_download_budget": 0,
+  "data_package": "chapter5/resolved_dev/data/paired-parent-v3.zip",
+  "data_sha256": "693deeb60537b51f9d9e6b7a1734a6d74482ad44c310e56092deb58c8f03a16b",
+  "development_cves": 838,
+  "development_seeds": [
+    20261021,
+    20261022,
+    20261023
+  ],
+  "external_training_cves": 856,
+  "fold_seeds": [
+    20261011,
+    20261012,
+    20261013
+  ],
+  "gate": {
+    "major_macro_delta_min": -0.01,
+    "mean_delta_mrr": 0.02,
+    "wins_of_nine": 6
+  },
+  "layers": 2,
+  "major_technique_train_support": 10,
+  "max_epochs": 500,
+  "max_execution_slots": 3,
+  "min_improvement": 1e-08,
+  "model_api_call_budget": 0,
+  "negatives_per_positive": 10,
+  "original_development_cves": 868,
+  "original_validation_cves_per_fold": [
+    152,
+    152,
+    153
+  ],
+  "params": {
+    "dimension": 64,
+    "dropout": 0.3,
+    "learning_rate": 0.003
+  },
+  "patience": 30,
+  "protocol": "chapter5-resolved-dev-v3-20261011",
+  "quarantine_total": 14,
+  "quarantined_original_cves": 12,
+  "reserved_cves": 155,
+  "reserved_holdout_evaluation": false,
+  "slot_seconds": 14400,
+  "smoothing_alphas": [
+    1,
+    5,
+    10
+  ],
+  "source_resolved_v3_sha256": "eb7f7434b61d2abeb5741b27758ac17f1e5f145ca62057e9ded364dc44bb56ac",
+  "threads": 2,
+  "training_unit_budget": 36,
+  "user_verification_attestation": {
+    "independent_human_iaa_evidence_received": false,
+    "quarantine_policy": "retain v3 quarantines",
+    "text": "我已核验开始实验吧",
+    "updated_label_mapping_received": false
+  },
+  "validation_cves_per_fold": [
+    147,
+    147,
+    148
+  ],
+  "weight_decay": 1e-05
+}

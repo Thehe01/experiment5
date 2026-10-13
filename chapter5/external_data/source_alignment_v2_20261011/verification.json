@@ -1,0 +1,48 @@
+{
+  "aligned_overlap": 619,
+  "candidate_cves": 1736,
+  "candidate_label_edges": 3166,
+  "candidate_train_per_fold": 1556,
+  "cwe_cpe_metadata_changed": 0,
+  "dev_per_fold": 150,
+  "domain_quarantine": [
+    "CVE-2017-0493",
+    "CVE-2019-7287"
+  ],
+  "evidence_pointers_verified": true,
+  "frozen_inputs_unchanged": true,
+  "model_api_calls": 0,
+  "model_inference": 0,
+  "negative_probes": [
+    {
+      "exit_code": 1,
+      "probe": "existing output overwrite",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "probe": "tampered CTID source bytes",
+      "rejected": true
+    }
+  ],
+  "original_labels_changed": 0,
+  "passed": true,
+  "repeat_output_bytes_equal": {
+    "author-aligned-overlap.jsonl": true,
+    "folds.json": true,
+    "manifest.json": true,
+    "negative-exclusions.json": true,
+    "quarantine.jsonl": true,
+    "records.jsonl": true,
+    "resolutions.jsonl": true,
+    "summary.json": true,
+    "unknown-author-labels.jsonl": true
+  },
+  "reserved_label_or_scoring_output": 0,
+  "resolution_cves": 73,
+  "source_reconstruction_verified_old_cves": 880,
+  "training": 0,
+  "unknown_cves": 12,
+  "unknown_pairs": 20,
+  "verification_script_sha256": "c97d1efb6a6f96a6ecb05f31945223d97e9c460b7148fd2b43f2fbd3f8e5e294"
+}

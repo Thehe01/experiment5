@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "result": "development_candidate_completed_and_archived",
+  "reviewed_date_utc": "2026-10-12",
+  "branch": "codex/chapter5-public-dev-20261011",
+  "evidence_head": "2148bd154a9356e6b30fb9c51c05559fa7c826ad",
+  "authorization": {
+    "user_instruction": "开始",
+    "user_message_time_utc8": "2026-10-12T15:09:11+08:00",
+    "scope": "registered v3 base context-pool 3 folds x 3 original seeds = 9 units, associated verification and archive"
+  },
+  "scientific_registration_sha256": "29d8c3b89c653229b086a49d45122e05f28570663f858fa2270f83a2066ba713",
+  "scientific_launch_commit": "a1f7fb0984ac0a606c56768a044d162c45b151e5",
+  "execution_history": [
+    {
+      "run_id": 38218792808,
+      "conclusion": "failure",
+      "reason": "RED log assertion used rg unavailable on runner; exit 127",
+      "training_units_consumed": 0
+    },
+    {
+      "run_id": 38219304888,
+      "conclusion": "failure",
+      "verify_job": "success",
+      "training_units_completed": 9,
+      "reason": "first checkpoint replay score error 0, then Git push missing necessary objects; later UNKNOWN publication retained successful receipt",
+      "source_stopped_head": "f6d09c18d1034e413c458dfc0491ded42f860383"
+    },
+    {
+      "run_id": 38221419470,
+      "conclusion": "success",
+      "verify_job_id": 114718327232,
+      "recover_job_id": 114718518448,
+      "trained_units_reused": 9,
+      "new_training": 0,
+      "already_executed_replay_reconciled": 1,
+      "remaining_original_replays_executed": 8,
+      "beyond_original_budget": 0,
+      "unknown_replay_reexecuted": false
+    }
+  ],
+  "accounting": {
+    "original36_training_units_retrained": 0,
+    "new_candidate_training_units": 9,
+    "optimization_forwards": 869,
+    "training_dev_scoring_forwards": 878,
+    "associated_checkpoint_verification_forwards": 9,
+    "verification_reconciled_from_receipt": 1,
+    "verification_remaining_executed": 8,
+    "historical_diagnostic_forwards_unchanged": 288,
+    "model_api_calls": 0,
+    "reserved_scoring": 0
+  },
+  "results": {
+    "baseline_mean_mrr": 0.3816654267922884,
+    "candidate_mean_mrr": 0.4042734051085577,
+    "mean_delta_mrr": 0.02260797831626931,
+    "wins": 7,
+    "pairs": 9,
+    "fixed23_major_macro_mean_delta": 0.004490289159730213,
+    "registered_gate": {
+      "mean_delta_mrr_at_least": 0.02,
+      "wins_at_least": 6,
+      "major_macro_mean_delta_at_least": -0.01,
+      "passed": true
+    },
+    "neighbor_vote_mean_mrr": 0.46533919504374655,
+    "candidate_minus_neighbor_mean_mrr": -0.06106578993518887,
+    "wins_against_neighbor": 0,
+    "coverage": 1,
+    "checkpoint_max_score_error": 0,
+    "cache_metric_max_error": 0,
+    "epoch_range": [
+      55,
+      112
+    ]
+  },
+  "verification": [
+    {
+      "command": "python -m unittest chapter5.context_pool_recovery_20261012.test_recovery -q",
+      "run_id": 38221419470,
+      "exit_code": 0
+    },
+    {
+      "command": "python -m chapter5.context_pool_recovery_20261012.recovery verify --repo .",
+      "run_id": 38221419470,
+      "exit_code": 0
+    },
+    {
+      "command": "python -m chapter5.context_pool_recovery_20261012.recovery run --repo . --state \"$RUNNER_TEMP/context-pool-recovered-state\"",
+      "run_id": 38221419470,
+      "exit_code": 0,
+      "scope": "reconcile1, execute remaining8, cache audit, complete archive; no training"
+    },
+    {
+      "command": "chapter5.context_pool_dev.verify_results.audit(private_sparse_view, downloaded_final_state, False), assert report.md and verification.json byte equality",
+      "scope": "root cache-only audit after verified artifact download; no Torch/model calls",
+      "exit_code": 0,
+      "new_model_forward": 0,
+      "report_and_verification_identical_to_remote": true
+    }
+  ],
+  "persistent_evidence": {
+    "report": "chapter5/context_pool_recovery_20261012/results/report.md",
+    "verification": "chapter5/context_pool_recovery_20261012/results/verification.json",
+    "independent_completed_ledger": "chapter5/context_pool_recovery_20261012/ledger.json",
+    "completion": "chapter5/context_pool_recovery_20261012/completion.json",
+    "original_unit_comparison": "chapter5/context_pool_dev/runs/comparison.json",
+    "archive": "chapter5/context_pool_recovery_20261012/results/complete-evidence.zip",
+    "archive_bytes": 40262873,
+    "archive_members": 79,
+    "archive_checkpoints": 9,
+    "archive_sha256": "591a4ab92e911e63f452e23b7af34d16772e26f1340e990fd1fa7bf8daa2d69c",
+    "manifest": "chapter5/context_pool_recovery_20261012/results/evidence-manifest.json",
+    "artifact_id": 11734388436,
+    "artifact_bytes": 80450032,
+    "artifact_sha256": "f745115c207ecf3341fee81afe23869edcb2107c1a1409bd30eafba4a24c50ec",
+    "artifact_members": 97,
+    "all_archive_members_verified": true,
+    "all23_downloaded_persistent_git_blobs_identical": true,
+    "recovery_registration_sha256": "494a46d5b3b7bb54c93181f9a45051bd0c9afbce4c23647ee7b1c3c08814bfa8",
+    "recovery_ledger_sha256": "e8369d50e6e3ccda9d59b86b4e53aea77f4f2aa3d3a7af8568638efbc8e77763",
+    "verification_sha256": "d0ee389a1a65d4893e55ea3d6ccd1805eb4708e21096cc3cbf740ff762dd9e11"
+  },
+  "immutable_history": {
+    "historical_integrity": {
+      "old_files_checked": 2489,
+      "changes": 0,
+      "diagnostic_and_completed36_preserved": true,
+      "result": "passed"
+    },
+    "candidate_integrity": {
+      "candidate_scientific_files_checked": 15,
+      "changes": 0,
+      "source_commit": "a1f7fb0984ac0a606c56768a044d162c45b151e5",
+      "result": "passed"
+    },
+    "source_unknown_ledger": "chapter5/context_pool_dev/runs/ledger.json",
+    "source_unknown_ledger_sha256": "13c47c7f449b7806a011484a845812277f5b45c815698211c7a4459ee3fdf49b",
+    "source_unknown_ledger_preserved": true,
+    "first_successful_receipt_sha256": "85ec38b544fa1a9a669e42bb04270313d0e1f4e7ad11b2e8c3e4dabadf8ed8f9",
+    "interpretation": "original UNKNOWN record remains byte-exact; successful first replay is reconciled only in independent completed ledger",
+    "protected_refs": {
+      "main": "c71cfbdfcdb41dcd0fb59820619c14d87dadd7d4",
+      "codex/chapter5-resolved-activation-20261011": "a247a950412c517d4c80ff5bab7e46fece8b929e",
+      "codex/chapter5-expanded-activation-20261011": "50905f65a09ec91f8ccedf099b71443e2d22c6f6"
+    },
+    "protected_ids": 169,
+    "reserved_group_ids": 155,
+    "new_gold_labels": 0,
+    "new_human_iaa_claim": false,
+    "main_merged": false
+  },
+  "limits": [
+    "Retrospective transductive Dev comparison; Dev target masked, known Dev background retained in auxiliary graph.",
+    "Dev used for early stopping and prior protocol development; not independent final Test or confirmation.",
+    "Overlapping folds and repeated seeds do not establish independent-sample significance or a unique causal explanation.",
+    "Registered development arithmetic gate passed; all 9 paired candidate scores remain below Neighbor vote.",
+    "Fixed 9-unit campaign closed; no automatic new model, hyperparameter search, reserved-group scoring, activation, or main merge."
+  ]
+}

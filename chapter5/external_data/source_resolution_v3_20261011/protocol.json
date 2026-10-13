@@ -1,0 +1,35 @@
+{
+  "AI_review_is_Gold": false,
+  "attack_version": "19.2",
+  "cwe_policy": [
+    "sourceIdentifier_numeric_CWE",
+    "nvd@nist.gov_numeric_CWE",
+    "CISA_ADP_only_after_exact_official_CVE_confirmation"
+  ],
+  "expected": {
+    "cwe_changed_records": 89,
+    "cwe_disputes": 92,
+    "domain_quarantine": 2,
+    "full_records": 1736,
+    "unknown_cves": 12,
+    "unknown_pairs": 20,
+    "usable_records": 1724
+  },
+  "experimental_model_api_calls": 0,
+  "frozen_v1_v2_overwrite": false,
+  "input_sha256": {
+    "enriched": "0a8dadff1e03dbe55520a77783523016dcb2d97d8f716f3253255f1b33748e6b",
+    "opinions": "e8082a9f9deb411f1a108957410135bb946e018a904b5072e3b6867c14bc7cb4",
+    "sources": "a5b8dcc4893af75f0da376763fadfa8a6cf98967f02c30fa22c55a1b9e8a93ef",
+    "v2": "184c4f0d1ade87252b0203294c81ef2e892234f7591292a6537c3f01f9ce5f0d"
+  },
+  "kind": "offline_data_preparation_not_scientific_registration",
+  "known_disputed_CVE_admission": "quarantine_whole_CVE_if_unknown_labels_nonempty",
+  "missing_labels_are_confirmed_negatives": false,
+  "model_inference": 0,
+  "new_science_registration": false,
+  "protocol": "chapter5-source-resolution-v3-20261011",
+  "reserved_scoring": 0,
+  "technique_scope": "same31EnterpriseParents",
+  "training": 0
+}

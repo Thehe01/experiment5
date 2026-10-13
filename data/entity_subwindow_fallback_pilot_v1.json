@@ -1,0 +1,55 @@
+{
+  "manifest_version": "entity-subwindow-fallback-pilot-v1",
+  "purpose": "bounded cacheability and strict-entity quality check on the known aa23-215a dense-window failure family before any replacement full cache run",
+  "parent_split_file": "train_dev_test_split_v7.json",
+  "parent_split_sha256": "6cbef622b5e9075e7173559c01d733336adb60195fbc9490ecdbe92c368f5da5",
+  "train": [
+    "aa23-215a"
+  ],
+  "sample_ids": [
+    "aa23-215a_w2",
+    "aa23-215a_w3",
+    "aa23-215a_w4",
+    "aa23-215a_w5",
+    "aa23-215a_w10",
+    "aa23-215a_w11"
+  ],
+  "dev": [],
+  "test": [],
+  "selection_rule": "Use the previously registered hard-failure window aa23-215a_w4 plus its five relation-positive dense-family peers. Selection was fixed from the Pilot G failure receipt and frozen Gold relation inventory before new predictions.",
+  "known_failure": {
+    "sample_id": "aa23-215a_w4",
+    "failure_receipt": "results/protegi_optimization/configuration_candidate_filter_v4_pilot_g/failure.json",
+    "failure_type": "WindowBudgetExhaustedError",
+    "max_tokens": 4096
+  },
+  "subwindow_strategy": {
+    "version": "entity-subwindow-fallback-v1",
+    "enabled": true,
+    "chars": 1200,
+    "overlap": 150,
+    "min_identifiers": 30,
+    "ownership": "adjacent-overlap-midpoint-v1",
+    "merge": "parent-relative-exact-span-dedup-v1"
+  },
+  "budgets": {
+    "parent_windows": 6,
+    "task_model_calls_max": 30,
+    "optimizer_model_calls_max": 0,
+    "test_documents": 0
+  },
+  "pass_thresholds": {
+    "completed_parent_windows": 6,
+    "known_failure_window_must_use_fallback": true,
+    "budget_exhausted_parent_windows": 0,
+    "configuration_recall_min": 0.70,
+    "configuration_f1_min": 0.55,
+    "overall_f1_min": 0.70,
+    "non_target_recall_min": 0.60
+  },
+  "limitations": [
+    "This is an official-Train engineering pilot, not an unbiased effect-size estimate.",
+    "A pass authorizes a new frozen Train/Dev entity-cache run only; Test remains closed.",
+    "A fail blocks the full cache and does not authorize changing token budget, model, Gold, split, or Test gate."
+  ]
+}

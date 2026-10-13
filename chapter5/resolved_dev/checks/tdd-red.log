@@ -1,0 +1,94 @@
+======================================================================
+FAIL: test_admission_status_and_role_rejected (chapter5.resolved_dev.test_data.AdmissionTests.test_admission_status_and_role_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/resolved_dev/test_data.py", line 57, in test_admission_status_and_role_rejected
+    with self.assertRaises(ValueError):admitted_views(*f)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_duplicate_id_rejected (chapter5.resolved_dev.test_data.AdmissionTests.test_duplicate_id_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/resolved_dev/test_data.py", line 40, in test_duplicate_id_rejected
+    with self.assertRaisesRegex(ValueError,'duplicate'):admitted_views(*f)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_external_must_not_become_dev (chapter5.resolved_dev.test_data.AdmissionTests.test_external_must_not_become_dev)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/resolved_dev/test_data.py", line 50, in test_external_must_not_become_dev
+    with self.assertRaisesRegex(ValueError,'preview'):admitted_views(*f)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_external_selected_cwe_preserved_and_train_only (chapter5.resolved_dev.test_data.AdmissionTests.test_external_selected_cwe_preserved_and_train_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/resolved_dev/test_data.py", line 31, in test_external_selected_cwe_preserved_and_train_only
+    self.assertEqual([x['id'] for x in e],['c4'])
+AssertionError: Lists differ: ['c1', 'c3', 'c4'] != ['c4']
+
+First differing element 0:
+'c1'
+'c4'
+
+First list contains 2 additional elements.
+First extra element 1:
+'c3'
+
+- ['c1', 'c3', 'c4']
++ ['c4']
+
+======================================================================
+FAIL: test_label_outside_scope_rejected (chapter5.resolved_dev.test_data.AdmissionTests.test_label_outside_scope_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/resolved_dev/test_data.py", line 53, in test_label_outside_scope_rejected
+    with self.assertRaisesRegex(ValueError,'scope'):admitted_views(*f)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_original_label_or_context_mutation_rejected (chapter5.resolved_dev.test_data.AdmissionTests.test_original_label_or_context_mutation_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/resolved_dev/test_data.py", line 47, in test_original_label_or_context_mutation_rejected
+    with self.assertRaisesRegex(ValueError,'original.*changed'):admitted_views(*f)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_reserved_id_rejected (chapter5.resolved_dev.test_data.AdmissionTests.test_reserved_id_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/resolved_dev/test_data.py", line 43, in test_reserved_id_rejected
+    with self.assertRaisesRegex(ValueError,'reserved'):admitted_views(*f)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_unknown_cannot_be_admitted (chapter5.resolved_dev.test_data.AdmissionTests.test_unknown_cannot_be_admitted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/resolved_dev/test_data.py", line 37, in test_unknown_cannot_be_admitted
+    with self.assertRaisesRegex(ValueError,'UNKNOWN'):admitted_views(*f)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_whole_cve_quarantine_nodes_and_all_edges (chapter5.resolved_dev.test_data.AdmissionTests.test_whole_cve_quarantine_nodes_and_all_edges)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/resolved_dev/test_data.py", line 25, in test_whole_cve_quarantine_nodes_and_all_edges
+    self.assertNotIn('c2',{n['id'] for n in b['nodes']})
+AssertionError: 'c2' unexpectedly found in {'c2', 'c1', 'p1', 'c3', 'T1203', 'CWE-1'}
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+FAILED (failures=9)

@@ -1,0 +1,22 @@
+[
+  {
+    "check": "runtime_package_tamper",
+    "result": "rejected"
+  },
+  {
+    "check": "config_tamper",
+    "result": "rejected"
+  },
+  {
+    "check": "workflow_source_tamper",
+    "result": "rejected"
+  },
+  {
+    "check": "existing_data_package_overwrite",
+    "result": "rejected"
+  },
+  {
+    "check": "source_original_zip_tamper",
+    "result": "rejected"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "bytes": 129791,
+  "candidate_cves": 1736,
+  "external_cves": 856,
+  "members": 12,
+  "package": "source-aligned-candidates-v2.zip",
+  "sha256": "184c4f0d1ade87252b0203294c81ef2e892234f7591292a6537c3f01f9ce5f0d",
+  "source_package": "ctid-source-inputs.zip",
+  "source_package_sha256": "554ae91f7d9e7b6fd810aabe801bb637664566711a1a38f974529e0e7e4c2c75",
+  "training_integration_status": "not_started; UNKNOWN exclusions need integration and fresh registration",
+  "verification": "verification.json"
+}

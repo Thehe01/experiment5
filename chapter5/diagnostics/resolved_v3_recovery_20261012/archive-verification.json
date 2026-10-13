@@ -1,0 +1,12 @@
+{
+  "all_part_sha256_and_git_blob_sha_matched": true,
+  "artifact_bytes": 212090493,
+  "artifact_sha256": "15f7f7705188877b68edb2cdd754a92f0e1619427dd827df78701bfc7b6bb6b4",
+  "checkpoint_receipts_verified": 36,
+  "members": 298,
+  "new_forward": 0,
+  "parts": 51,
+  "rebuilt_manifest_exact_match": true,
+  "rebuilt_zip_bytes": 212300186,
+  "rebuilt_zip_sha256": "2fd3c6b2bebf7ba50337f7a29383588e90adbfca7669c5811a4461ace26b0a28"
+}

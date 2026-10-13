@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-11",
+  "enterprise_scope": "existing31parentIDs, frozen19.2",
+  "confirmed_mobile_ids": [
+    {
+      "id": "T1404",
+      "domain": "Mobile",
+      "primary_url": "https://attack.mitre.org/techniques/T1404/",
+      "basis": "Official MITRE Mobile technique page; Android/iOS."
+    },
+    {
+      "id": "T1461",
+      "domain": "Mobile",
+      "primary_url": "https://attack.mitre.org/detectionstrategies/DET0645/",
+      "basis": "Official detection page names Lockscreen Bypass T1461 and Mobile domain; also official Mobile techniques table."
+    },
+    {
+      "id": "T1533",
+      "domain": "Mobile",
+      "primary_url": "https://attack.mitre.org/techniques/T1533/",
+      "basis": "Official MITRE Mobile technique page; Android/iOS."
+    }
+  ],
+  "cases": [
+    {
+      "id": "CVE-2017-0493",
+      "ctid_raw_mobile_ids": [
+        "T1461",
+        "T1533"
+      ],
+      "author_enterprise_ids": [
+        "T1005"
+      ],
+      "decision": "quarantine pending independently supported cross-domain mapping"
+    },
+    {
+      "id": "CVE-2019-7287",
+      "ctid_raw_mobile_ids": [
+        "T1404"
+      ],
+      "author_enterprise_ids": [
+        "T1068"
+      ],
+      "decision": "quarantine pending independently supported cross-domain mapping"
+    }
+  ],
+  "spotcheck": {
+    "id": "CVE-2021-21166",
+    "primary_url": "https://googleprojectzero.github.io/0days-in-the-wild/0day-RCAs/2021/CVE-2021-21166.html",
+    "result": "Google description identifies Chromium audio-object race and out-of-bounds write; consistent with recorded CTID browser/JavaScript explanation. No new technique label inferred or admitted."
+  },
+  "not_a_crosswalk": true,
+  "other_out_of_scope_ids": "fail closed for separate domain review; not automatically classified Mobile"
+}

@@ -1,0 +1,84 @@
+{
+  "authorization": "开始; user authorizes the immediately proposed9-unit base context-pool candidate",
+  "authorized_at": "2026-10-12T15:09:11+08:00",
+  "base_only": true,
+  "config_sha256": "9ce6459d2b49bc5bd414c585f2e7768d219f42f6af9cd455c9c9e37d47b86f78",
+  "files_sha256": {
+    ".github/workflows/chapter5-context-pool-dev.yml": "ec4eb606223059f70ad830c0525275832321c79d48f7cca0d83d6f07d39dc094",
+    "chapter5/context_pool_dev/__init__.py": "71f37fa8f69480f308ee1b636f9627765d6ca4a69e19d8781c508459c04343d9",
+    "chapter5/context_pool_dev/baseline-inputs.json": "d04d36a62f26644244fe864bb353434b641e38922fbf98a23bc3dd88d500ba2d",
+    "chapter5/context_pool_dev/campaign.py": "de1f2efb2c0808cfe9e4ac7eca658fb5133c7840db561ee48f4ad7eafbd0fbb5",
+    "chapter5/context_pool_dev/core.py": "c94125b7c915c328f95ecf827552b95b72d3e57a9a3f9700423341af9af76d67",
+    "chapter5/context_pool_dev/model.py": "af67913a095c9f604e25c591b27882a7b77718a635b90a74c86e1d9ec05ef4bc",
+    "chapter5/context_pool_dev/model_red.py": "b31b962be4f609612ab669dc264623f02e487b4aab8393cb6f719fc4afa98a35",
+    "chapter5/context_pool_dev/plan.md": "5ae860df3768c12f00629d65db0165747dfc6d4ad4d889873e09d6e0e2a4ad6b",
+    "chapter5/context_pool_dev/spec.md": "6a70e8f132bbe18a76363ef7ae34afe641ce7a06986ac9ea3d032899fbc46600",
+    "chapter5/context_pool_dev/test_core.py": "b328fa56df837e1237f853199ed0df5ad12207d7c1c0e70b945314045b960eaa",
+    "chapter5/context_pool_dev/test_model.py": "418f015d97339db4ec4060cb7410de3e3317a07faa1d9efcf578991f36c8e016",
+    "chapter5/context_pool_dev/verify_results.py": "bf65a89a469b59f5e4ba99ccb0bda08250003976663bf1a99641a84b9f433713"
+  },
+  "graphs": {
+    "0": "e9f35618655a0396d21f82c95c336abae517ac978de85e1d7d4a81183888813f",
+    "1": "a78a0720f94dc62540c555c3f9b19796420fa2d69fd57fad928b8c4bedc3450b",
+    "2": "7f583ca95e9725a1d7f12480c41d6bbf0ab86fc355d0908870d6b5dffdbfe60f"
+  },
+  "input_semantics": "known Dev backgrounds participate in original auxiliary transductive graph; no Dev target training",
+  "new_checkpoint_replay_forward_budget": 9,
+  "new_training_unit_budget": 9,
+  "no_reserved_or_confirmation": true,
+  "numeric_runtime": "Python3.12.14/Torch2.9.1+cpu/AVX2/2 threads",
+  "original_registration_sha256": "ac19948da5d31cfede901073af08dbbc49c2b99950ff48e3f96bea334e075e5e",
+  "parent_development_commit": "7dbb854de1eba856cae8d98d559830ea02cf1e79",
+  "prior_diagnostic_forward_consumed": 288,
+  "protected_ids": 169,
+  "protocol": "chapter5-context-pool-base-v1-20261012",
+  "schema": "base-context-pool-candidate-registration-v1",
+  "source_data_sha256": "693deeb60537b51f9d9e6b7a1734a6d74482ad44c310e56092deb58c8f03a16b",
+  "units": [
+    {
+      "fold": 0,
+      "id": "f0-context_pool_mixed-s20261021",
+      "seed": 20261021
+    },
+    {
+      "fold": 0,
+      "id": "f0-context_pool_mixed-s20261022",
+      "seed": 20261022
+    },
+    {
+      "fold": 0,
+      "id": "f0-context_pool_mixed-s20261023",
+      "seed": 20261023
+    },
+    {
+      "fold": 1,
+      "id": "f1-context_pool_mixed-s20261021",
+      "seed": 20261021
+    },
+    {
+      "fold": 1,
+      "id": "f1-context_pool_mixed-s20261022",
+      "seed": 20261022
+    },
+    {
+      "fold": 1,
+      "id": "f1-context_pool_mixed-s20261023",
+      "seed": 20261023
+    },
+    {
+      "fold": 2,
+      "id": "f2-context_pool_mixed-s20261021",
+      "seed": 20261021
+    },
+    {
+      "fold": 2,
+      "id": "f2-context_pool_mixed-s20261022",
+      "seed": 20261022
+    },
+    {
+      "fold": 2,
+      "id": "f2-context_pool_mixed-s20261023",
+      "seed": 20261023
+    }
+  ]
+}

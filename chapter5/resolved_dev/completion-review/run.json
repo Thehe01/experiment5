@@ -1,0 +1,383 @@
+{
+  "run": {
+    "id": 38152196348,
+    "name": "Chapter 5 v3 source-resolved paired development CPU",
+    "node_id": "WFR_kwLOUhLPU88AAAAI4gxQ_A",
+    "head_branch": "codex/chapter5-resolved-activation-20261011",
+    "head_sha": "244e217428e23c9bd019084171de40c49999c389",
+    "path": ".github/workflows/chapter5-resolved-dev.yml",
+    "display_title": "Start registered Chapter 5 v3 source-resolved development run",
+    "run_number": 1,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 381367930,
+    "check_suite_id": 103366780215,
+    "check_suite_node_id": "CS_kwDOUhLPU88AAAAYESPlNw",
+    "url": "https://api.github.com/repos/Thehe01/experiment4/actions/runs/38152196348",
+    "html_url": "https://github.com/Thehe01/experiment4/actions/runs/38152196348",
+    "pull_requests": [],
+    "created_at": "2026-10-11T15:39:33Z",
+    "updated_at": "2026-10-11T15:57:15Z",
+    "actor": {
+      "login": "Thehe01",
+      "id": 99018878,
+      "node_id": "U_kgDOBebofg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99018878?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Thehe01",
+      "html_url": "https://github.com/Thehe01",
+      "followers_url": "https://api.github.com/users/Thehe01/followers",
+      "following_url": "https://api.github.com/users/Thehe01/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Thehe01/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Thehe01/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Thehe01/subscriptions",
+      "organizations_url": "https://api.github.com/users/Thehe01/orgs",
+      "repos_url": "https://api.github.com/users/Thehe01/repos",
+      "events_url": "https://api.github.com/users/Thehe01/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Thehe01/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2026-10-11T15:39:33Z",
+    "triggering_actor": {
+      "login": "Thehe01",
+      "id": 99018878,
+      "node_id": "U_kgDOBebofg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99018878?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Thehe01",
+      "html_url": "https://github.com/Thehe01",
+      "followers_url": "https://api.github.com/users/Thehe01/followers",
+      "following_url": "https://api.github.com/users/Thehe01/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Thehe01/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Thehe01/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Thehe01/subscriptions",
+      "organizations_url": "https://api.github.com/users/Thehe01/orgs",
+      "repos_url": "https://api.github.com/users/Thehe01/repos",
+      "events_url": "https://api.github.com/users/Thehe01/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Thehe01/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/Thehe01/experiment4/actions/runs/38152196348/jobs",
+    "logs_url": "https://api.github.com/repos/Thehe01/experiment4/actions/runs/38152196348/logs",
+    "check_suite_url": "https://api.github.com/repos/Thehe01/experiment4/check-suites/103366780215",
+    "artifacts_url": "https://api.github.com/repos/Thehe01/experiment4/actions/runs/38152196348/artifacts",
+    "cancel_url": "https://api.github.com/repos/Thehe01/experiment4/actions/runs/38152196348/cancel",
+    "rerun_url": "https://api.github.com/repos/Thehe01/experiment4/actions/runs/38152196348/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/Thehe01/experiment4/actions/workflows/381367930",
+    "head_commit": {
+      "id": "244e217428e23c9bd019084171de40c49999c389",
+      "tree_id": "4e169b7478713374ce237cd8baa2998e9c0fee93",
+      "message": "Start registered Chapter 5 v3 source-resolved development run\n\nActivate the frozen 36-unit paired experiment authorized by the user; preserve original runs and quarantine boundaries.",
+      "timestamp": "2026-10-11T15:39:14Z",
+      "author": {
+        "name": "Thehe01",
+        "email": "99018878+Thehe01@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "Thehe01",
+        "email": "99018878+Thehe01@users.noreply.github.com"
+      }
+    },
+    "repository": {
+      "id": 1376964435,
+      "node_id": "R_kgDOUhLPUw",
+      "name": "experiment4",
+      "full_name": "Thehe01/experiment4",
+      "private": true,
+      "owner": {
+        "login": "Thehe01",
+        "id": 99018878,
+        "node_id": "U_kgDOBebofg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/99018878?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Thehe01",
+        "html_url": "https://github.com/Thehe01",
+        "followers_url": "https://api.github.com/users/Thehe01/followers",
+        "following_url": "https://api.github.com/users/Thehe01/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Thehe01/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Thehe01/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Thehe01/subscriptions",
+        "organizations_url": "https://api.github.com/users/Thehe01/orgs",
+        "repos_url": "https://api.github.com/users/Thehe01/repos",
+        "events_url": "https://api.github.com/users/Thehe01/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Thehe01/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/Thehe01/experiment4",
+      "description": null,
+      "fork": false,
+      "url": "https://api.github.com/repos/Thehe01/experiment4",
+      "forks_url": "https://api.github.com/repos/Thehe01/experiment4/forks",
+      "keys_url": "https://api.github.com/repos/Thehe01/experiment4/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/Thehe01/experiment4/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/Thehe01/experiment4/teams",
+      "hooks_url": "https://api.github.com/repos/Thehe01/experiment4/hooks",
+      "issue_events_url": "https://api.github.com/repos/Thehe01/experiment4/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/Thehe01/experiment4/events",
+      "assignees_url": "https://api.github.com/repos/Thehe01/experiment4/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/Thehe01/experiment4/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/Thehe01/experiment4/tags",
+      "blobs_url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/Thehe01/experiment4/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/Thehe01/experiment4/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/Thehe01/experiment4/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/Thehe01/experiment4/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/Thehe01/experiment4/languages",
+      "stargazers_url": "https://api.github.com/repos/Thehe01/experiment4/stargazers",
+      "contributors_url": "https://api.github.com/repos/Thehe01/experiment4/contributors",
+      "subscribers_url": "https://api.github.com/repos/Thehe01/experiment4/subscribers",
+      "subscription_url": "https://api.github.com/repos/Thehe01/experiment4/subscription",
+      "commits_url": "https://api.github.com/repos/Thehe01/experiment4/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/Thehe01/experiment4/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/Thehe01/experiment4/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/Thehe01/experiment4/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/Thehe01/experiment4/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/Thehe01/experiment4/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/Thehe01/experiment4/merges",
+      "archive_url": "https://api.github.com/repos/Thehe01/experiment4/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/Thehe01/experiment4/downloads",
+      "issues_url": "https://api.github.com/repos/Thehe01/experiment4/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/Thehe01/experiment4/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/Thehe01/experiment4/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/Thehe01/experiment4/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/Thehe01/experiment4/labels{/name}",
+      "releases_url": "https://api.github.com/repos/Thehe01/experiment4/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/Thehe01/experiment4/deployments"
+    },
+    "head_repository": {
+      "id": 1376964435,
+      "node_id": "R_kgDOUhLPUw",
+      "name": "experiment4",
+      "full_name": "Thehe01/experiment4",
+      "private": true,
+      "owner": {
+        "login": "Thehe01",
+        "id": 99018878,
+        "node_id": "U_kgDOBebofg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/99018878?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Thehe01",
+        "html_url": "https://github.com/Thehe01",
+        "followers_url": "https://api.github.com/users/Thehe01/followers",
+        "following_url": "https://api.github.com/users/Thehe01/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Thehe01/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Thehe01/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Thehe01/subscriptions",
+        "organizations_url": "https://api.github.com/users/Thehe01/orgs",
+        "repos_url": "https://api.github.com/users/Thehe01/repos",
+        "events_url": "https://api.github.com/users/Thehe01/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Thehe01/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/Thehe01/experiment4",
+      "description": null,
+      "fork": false,
+      "url": "https://api.github.com/repos/Thehe01/experiment4",
+      "forks_url": "https://api.github.com/repos/Thehe01/experiment4/forks",
+      "keys_url": "https://api.github.com/repos/Thehe01/experiment4/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/Thehe01/experiment4/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/Thehe01/experiment4/teams",
+      "hooks_url": "https://api.github.com/repos/Thehe01/experiment4/hooks",
+      "issue_events_url": "https://api.github.com/repos/Thehe01/experiment4/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/Thehe01/experiment4/events",
+      "assignees_url": "https://api.github.com/repos/Thehe01/experiment4/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/Thehe01/experiment4/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/Thehe01/experiment4/tags",
+      "blobs_url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/Thehe01/experiment4/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/Thehe01/experiment4/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/Thehe01/experiment4/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/Thehe01/experiment4/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/Thehe01/experiment4/languages",
+      "stargazers_url": "https://api.github.com/repos/Thehe01/experiment4/stargazers",
+      "contributors_url": "https://api.github.com/repos/Thehe01/experiment4/contributors",
+      "subscribers_url": "https://api.github.com/repos/Thehe01/experiment4/subscribers",
+      "subscription_url": "https://api.github.com/repos/Thehe01/experiment4/subscription",
+      "commits_url": "https://api.github.com/repos/Thehe01/experiment4/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/Thehe01/experiment4/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/Thehe01/experiment4/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/Thehe01/experiment4/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/Thehe01/experiment4/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/Thehe01/experiment4/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/Thehe01/experiment4/merges",
+      "archive_url": "https://api.github.com/repos/Thehe01/experiment4/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/Thehe01/experiment4/downloads",
+      "issues_url": "https://api.github.com/repos/Thehe01/experiment4/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/Thehe01/experiment4/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/Thehe01/experiment4/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/Thehe01/experiment4/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/Thehe01/experiment4/labels{/name}",
+      "releases_url": "https://api.github.com/repos/Thehe01/experiment4/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/Thehe01/experiment4/deployments"
+    }
+  },
+  "jobs": {
+    "jobs": [
+      {
+        "id": 114507769502,
+        "name": "verify",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 38152196348,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Install frozen CPU dependencies",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Offline tests and registration verification",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 11
+          }
+        ]
+      },
+      {
+        "id": 114507984468,
+        "name": "slot1",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 38152196348,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Install frozen CPU dependencies",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Durably reserve execution slot 1",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run registered development units",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Persist closed execution and full state",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Preserve execution evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "id": 114511400732,
+        "name": "slot2",
+        "status": "completed",
+        "conclusion": "skipped",
+        "run_id": 38152196348,
+        "logs_url": null,
+        "steps": null
+      },
+      {
+        "id": 114511401576,
+        "name": "slot3",
+        "status": "completed",
+        "conclusion": "skipped",
+        "run_id": 38152196348,
+        "logs_url": null,
+        "steps": null
+      }
+    ]
+  },
+  "activation_completed_head": "a247a950412c517d4c80ff5bab7e46fece8b929e"
+}

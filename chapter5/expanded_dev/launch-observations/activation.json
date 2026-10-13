@@ -1,0 +1,18 @@
+{
+  "protocol": "chapter5-expanded-dev-v1-20261011",
+  "source_commit": "317570ffc895ec16ae0e7572c34df6ebd23bec86",
+  "registration_sha256": "b8a13ca057048c1a5bd894422323276861565b4bdede433f4812a6b9ad9b8c6a",
+  "authorized_at": "2026-10-11T18:28:25+08:00",
+  "authorization": "正式接入并开启实验",
+  "registered_training_units": 36,
+  "execution_slots": 3,
+  "slot_seconds": 14400,
+  "model_api_calls_budget": 0,
+  "reserved_holdout_evaluation": false,
+  "confirmation_training_budget": 0,
+  "activation_commit": "f59a59e27640f23d81139c20bb93b7a799224ba4",
+  "activation_branch": "codex/chapter5-expanded-activation-20261011",
+  "run_id": 38134213784,
+  "run_url": "https://github.com/Thehe01/experiment4/actions/runs/38134213784",
+  "workflow_attempt": 1
+}

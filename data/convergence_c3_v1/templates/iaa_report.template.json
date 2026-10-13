@@ -1,0 +1,62 @@
+{
+  "template_schema_version": "convergence-c3-iaa-report-template-v1",
+  "preparation_status": "draft_unfilled",
+  "formal_eligible": false,
+  "test_gate_open": false,
+  "authorized_new_model_calls": 0,
+  "schema_version": "chapter3-no-capec-v1",
+  "annotation_protocol_version": "4.6-mcpu-mention-fact-dual-layer-v1",
+  "boundary_contract_version": "chapter3-boundary-sync-v2",
+  "computation_status": "not_computed_no_human_inputs",
+  "pre_adjudication": true,
+  "actual_annotator_ids": [],
+  "documents": [],
+  "input_annotation_A_sha256": {},
+  "input_annotation_B_sha256": {},
+  "entity_mention_agreement": {
+    "count_A": null,
+    "count_B": null,
+    "intersection": null,
+    "symmetric_f1": null,
+    "by_type": {}
+  },
+  "relation_mention_agreement": {
+    "count_A": null,
+    "count_B": null,
+    "intersection": null,
+    "symmetric_f1": null,
+    "by_type": {}
+  },
+  "normalized_relation_fact_agreement": {
+    "count_A": null,
+    "count_B": null,
+    "intersection": null,
+    "symmetric_f1": null,
+    "by_type": {}
+  },
+  "configuration_joint_span_cpe_agreement": {
+    "count_A": null,
+    "count_B": null,
+    "intersection": null,
+    "symmetric_f1": null
+  },
+  "configuration_normalization_on_shared_spans": {
+    "shared_span_type_count": null,
+    "normalized_id_agreement_count": null,
+    "agreement_rate": null
+  },
+  "evidence_span_agreement_on_shared_relations": {
+    "shared_relation_count": null,
+    "exact_evidence_span_agreement_count": null,
+    "agreement_rate": null
+  },
+  "undefined_or_zero_support_cases": [],
+  "disagreement_summary": {},
+  "limitations": [],
+  "notes": [
+    "All nulls mean unmeasured, not zero or perfect agreement.",
+    "Raw counts and per-type/document support must accompany any F1; report both mention and fact levels.",
+    "Keep every document scoped separately; compare span/type-based endpoints rather than annotator-local IDs.",
+    "Use frozen scorer canonical normalization for relation facts, not unregistered alias merging."
+  ]
+}

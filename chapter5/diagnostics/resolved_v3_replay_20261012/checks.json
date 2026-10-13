@@ -1,0 +1,25 @@
+{
+  "tests": "python3 -m unittest chapter5.diagnostics.resolved_v3_replay_20261012.test_helpers -q",
+  "red": {
+    "exit_code": 1,
+    "tests": 5,
+    "reason": "NotImplementedError from five behavior stubs, not an import/setup failure"
+  },
+  "green": {
+    "exit_code": 0,
+    "tests": 5
+  },
+  "offline_registration": {
+    "command": "python3 -m chapter5.diagnostics.resolved_v3_replay_20261012.runner validate --repo recovery/source",
+    "exit_code": 0,
+    "new_forward": 0,
+    "actions": 144
+  },
+  "scope": {
+    "new_training": 0,
+    "planned_additional_forward_max": 144,
+    "historical_forward_consumed": 144,
+    "reserved_scoring": false
+  },
+  "note": "Remote no-model CI and frozen runtime gates must pass before the first forward."
+}

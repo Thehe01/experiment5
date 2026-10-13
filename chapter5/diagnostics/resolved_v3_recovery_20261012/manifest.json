@@ -1,0 +1,70 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 531,
+      "sha256": "bcf36c435d963a749e4368f101af495ea90e8f0aa94d8e2f8b7b5d6be56e4c33"
+    },
+    "archive-verification.json": {
+      "bytes": 432,
+      "sha256": "720f43d8e824d1c1ff4af3d5343b9f0075c2200efd7a979df41477eab92789b7"
+    },
+    "checks.json": {
+      "bytes": 1330,
+      "sha256": "6df06aba8bc506727b16f5e709e415d77a386c087d5d5e0a9a640c476fceea98"
+    },
+    "negative-gates.json": {
+      "bytes": 286,
+      "sha256": "9d2cbb547828e9c2239b9dfa2481d96171ca717d5efdb4870fcc02be93bb63c7"
+    },
+    "neighbor-source-rows.json": {
+      "bytes": 595807,
+      "sha256": "3fcfe2945cec3b55ed3876f9ff6a3f81e19f39231c383e17bb66895f7d1bfd9c"
+    },
+    "neighbor-source-summary.json": {
+      "bytes": 979,
+      "sha256": "88d265c5ebc9e384fc3335f50b8e562f59b60280e2818e5aa9654f4989ea1937"
+    },
+    "original-artifact-inventory.json": {
+      "bytes": 55902,
+      "sha256": "d72e0249f0c21539287063de56b1365bfe7ffdf7bbfaed2fb2ba3540c1c74bd4"
+    },
+    "persistence-observations.json": {
+      "bytes": 1908,
+      "sha256": "6353bc56c1d07bbd4e02b7d20b567fd9fcb632758af5f69598c977f5ff1396d9"
+    },
+    "proposed-replay-donors.json": {
+      "bytes": 18601,
+      "sha256": "e718fe59ca35c346e693d130d19d864be6784b08d5c6e7bc1d1cd9e1a27f812b"
+    },
+    "recover_without_forward.py": {
+      "bytes": 19350,
+      "sha256": "69d90107814a91082385f73d9acfe8364c9bc60e6b657ab60a7e832590398e31"
+    },
+    "recovery-registration.json": {
+      "bytes": 4608,
+      "sha256": "c38a4081722e29cd4c0d8a8a128ae277da4633b586dea4382662d69339ebf4fe"
+    },
+    "report.md": {
+      "bytes": 9400,
+      "sha256": "935c87cf1b1d5f1f45f6d9e9cb5822bc23536dc425e3921189a36b21aa0d8cd0"
+    },
+    "source-distribution.json": {
+      "bytes": 9531,
+      "sha256": "55146b5d9fefd566592a8248517e3d1b3730bdcdc67109ceb3dde7aa290e80d9"
+    },
+    "source-handoff.md": {
+      "bytes": 17775,
+      "sha256": "460f4368c2cfed05489eb3fd382818f5b5f595fbf57a0a325470743521ef9029"
+    },
+    "usage-state.json": {
+      "bytes": 756,
+      "sha256": "57ce0ac9f06b0626774cb5f5ad8bf4d653268080e15372e0d44d544dae66fd73"
+    },
+    "verification.json": {
+      "bytes": 6218,
+      "sha256": "0406b0f30ccc66db7a2ab175f416c8d18045024bfd412b0fbc9dc6721cfdee54"
+    }
+  },
+  "historical_diagnostic_package_reconstructed": false,
+  "schema": "new-no-model-recovery-evidence-v1"
+}

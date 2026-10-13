@@ -1,0 +1,62 @@
+{
+  "schema_version": "convergence-c4-destination-authorization-v1",
+  "recorded_at_utc": "2026-10-07T15:34:21.388250+00:00",
+  "user_instruction": "允许",
+  "approval_question": "允许将C4的Train/Dev文本、提示词及含标注的优化错误样例发送至 https://opencode.ai/zen/go/v1 吗？",
+  "authorized_destination": "https://opencode.ai/zen/go/v1",
+  "authorized_data_scope": [
+    "C4 Train/Dev texts",
+    "task and optimizer prompts",
+    "annotated optimizer error examples"
+  ],
+  "financial_waiver_remains": "data/convergence_c4_direct_start_authorization_v1.json",
+  "physical_caps": {
+    "task": 18000,
+    "optimizer": 600
+  },
+  "wall_hours": 24,
+  "expires_at_utc": "2026-10-08T15:04:14+00:00",
+  "formal_eligible": false,
+  "test_gate_open": false,
+  "credential_included": false,
+  "recovery_review": {
+    "decision": "manually_reviewed_restart_with_counted_replacements",
+    "reason": "Old session is absent; all eight stateless model generations have no saved response or checkpoint. Keep UNKNOWN and count every old reservation. Rebuild fixed seed42 search; a repeated old payload is explicitly linked to its old sequence and reserved once anew. No refund, reset, result fabrication, or automatic exemption for future UNKNOWN.",
+    "process_check": "No run_convergence_c4 or launch_c4_direct process found before continuation.",
+    "old_registration_path": "data/convergence_c4_execution_v3.json",
+    "old_registration_file_sha256": "2c4f9ebfe08e8e5425dd542f20b0f7010106f3f92d51f541080b8c2bd52554b8",
+    "old_registration_sha256": "2a9f9ba8378d35af4ddc887582263d95b154ee00795549dee2e2063782789285",
+    "old_ledger_path": "results/convergence_c4_v1/development_run_v3/campaign/request_ledger.jsonl",
+    "old_ledger_sha256": "1ed97839a28457f2915183b0d00f6453c748b7d7589ef1f2591fffa478ee906f",
+    "old_ledger_bytes": 5976,
+    "old_ledger_rows": 16,
+    "old_rows_canonical_sha256": "672e67ed91df44a18ccca60bef7ac5f15eee64347e9bfef2019cef77747f7c9e",
+    "unknown_sequences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "physical_requests": {
+      "task": 8,
+      "optimizer": 0
+    },
+    "first_reserved_at_utc": "2026-10-07T15:14:00.179678+00:00",
+    "max_counted_replacements_per_old_request": 1,
+    "interface_check": {
+      "default_python_user_agent": {
+        "status": 403,
+        "body": "error code: 1010"
+      },
+      "explicit_experiment_user_agent": {
+        "status": 200,
+        "model_calls": 0,
+        "experiment_payload_sent": false
+      }
+    }
+  }
+}

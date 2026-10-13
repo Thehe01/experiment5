@@ -1,0 +1,170 @@
+{
+  "observed_at": "2026-10-11T11:07:33Z",
+  "phase": "registered_campaign_in_progress",
+  "run_id": 38134213784,
+  "run_url": "https://github.com/Thehe01/experiment4/actions/runs/38134213784",
+  "run_status": "in_progress",
+  "run_conclusion": null,
+  "run_attempt": 1,
+  "created_at": "2026-10-11T11:04:08Z",
+  "run_started_at": "2026-10-11T11:04:08Z",
+  "source_commit": "317570ffc895ec16ae0e7572c34df6ebd23bec86",
+  "activation_commit": "f59a59e27640f23d81139c20bb93b7a799224ba4",
+  "activation_head_at_observation": "eac9f7b36784f3d9df8244a7c02e70a71e3fd3a3",
+  "activation_branch": "codex/chapter5-expanded-activation-20261011",
+  "registration_sha256": "b8a13ca057048c1a5bd894422323276861565b4bdede433f4812a6b9ad9b8c6a",
+  "registered_training_units": 36,
+  "known_completed_training_units": null,
+  "actual_numerical_epoch_log_observed": false,
+  "live_job_logs_available": false,
+  "live_logs_note": "GitHub job-log endpoint returned BlobNotFound while slot1 is in progress; completed-unit/epoch counts are not inferred.",
+  "verify_evidence": [
+    "2026-10-11T11:05:03.8684533Z Ran 29 tests in 5.123s",
+    "2026-10-11T11:05:03.8685389Z OK",
+    "2026-10-11T11:05:06.5163116Z {\"candidate_parent_techniques\": 31, \"external_train_cves\": 858, \"model_api_calls\": 0, \"model_training_runs\": 0, \"original_dev_per_fold\": 155, \"package_sha256\": \"224edc37ab105644bec932ab54dc1071783c35fd124728d5a2645c1f00274d10\", \"phase\": \"offline_registration_verified\", \"registered_training_units\": 36, \"registration_sha256\": \"b8a13ca057048c1a5bd894422323276861565b4bdede433f4812a6b9ad9b8c6a\", \"reserved_cves\": 155, \"reserved_holdout_evaluated\": false, \"reserved_nodes_in_run_graph\": 0, \"scored_dev_per_fold\": 150, \"supervised_train_per_fold\": {\"augmented\": 1558, \"base\": 700}}"
+  ],
+  "durable_session": {
+    "attempt": "1",
+    "phase": "reserved",
+    "protocol": "chapter5-expanded-dev-v1-20261011",
+    "registration_sha256": "b8a13ca057048c1a5bd894422323276861565b4bdede433f4812a6b9ad9b8c6a",
+    "run_id": "38134213784",
+    "slot": 1,
+    "source_commit": "317570ffc895ec16ae0e7572c34df6ebd23bec86",
+    "status": "active"
+  },
+  "jobs": [
+    {
+      "id": 114454645587,
+      "name": "verify",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 38134213784,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install frozen CPU dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Offline tests and registration verification",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        }
+      ]
+    },
+    {
+      "id": 114454824716,
+      "name": "slot1",
+      "status": "in_progress",
+      "conclusion": null,
+      "run_id": 38134213784,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install frozen CPU dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Durably reserve execution slot 1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Run registered development units",
+          "status": "in_progress",
+          "conclusion": null,
+          "number": 6
+        },
+        {
+          "name": "Persist closed execution and full state",
+          "status": "pending",
+          "conclusion": null,
+          "number": 7
+        },
+        {
+          "name": "Preserve execution evidence",
+          "status": "pending",
+          "conclusion": null,
+          "number": 8
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "pending",
+          "conclusion": null,
+          "number": 15
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "pending",
+          "conclusion": null,
+          "number": 16
+        }
+      ]
+    }
+  ],
+  "model_api_call_budget": 0,
+  "reserved_holdout_evaluation": false,
+  "confirmation_training_budget": 0,
+  "development_results_complete": false
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "convergence-c4-v11-snapshot-evidence-v1",
+  "workflow_run_id": 37722384728,
+  "source_commit": "da832b338cc058bda0accd3f5b57136e7aefcfd9",
+  "parent_registration": "data/convergence_c4_execution_v10.json",
+  "selected_slot": 8,
+  "main_chain": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "orphan_slot": 2,
+  "branch_selection_reason": "Retain the branch with completed six rounds and downstream progress; no model-score criterion.",
+  "expected_cumulative": {
+    "task": 7193,
+    "optimizer": 311
+  },
+  "expected_orphan": {
+    "task": 768,
+    "optimizer": 50
+  },
+  "archives": [
+    {
+      "slot": 1,
+      "artifact_id": 11527355811,
+      "name": "c4-state-1-1",
+      "sha256": "b6026c706513f25edc8faf3d0237039009747208da8e68d0bb0682b202dedd17",
+      "bytes": 2224593
+    },
+    {
+      "slot": 2,
+      "artifact_id": 11527284548,
+      "name": "c4-state-2-1",
+      "sha256": "84bcaa92c6442b23c18d81866927b939829ae3f69dafcd1aeac1f4c08e53997f",
+      "bytes": 7207471
+    },
+    {
+      "slot": 3,
+      "artifact_id": 11528372656,
+      "name": "c4-state-3-1",
+      "sha256": "c5d5f4dca242594df938d0b01874e01c40e15773fe6e9cf850c791293f44def3",
+      "bytes": 7183476
+    },
+    {
+      "slot": 4,
+      "artifact_id": 11528908070,
+      "name": "c4-state-4-1",
+      "sha256": "dc653d7e28eff9add22ea3a4273f7e9eaff92c3987825f361c12d371bbae8f03",
+      "bytes": 12515683
+    },
+    {
+      "slot": 5,
+      "artifact_id": 11530442233,
+      "name": "c4-state-5-1",
+      "sha256": "3b7e133cef6098d8bb03e6dc7bbae75d60b50f49578ceb08321f4c9b06c95509",
+      "bytes": 18268972
+    },
+    {
+      "slot": 6,
+      "artifact_id": 11531686304,
+      "name": "c4-state-6-1",
+      "sha256": "312c5d136d65d495884fd04a48ba3ae14d499668fcd21fbebbd9f6d09cf889cd",
+      "bytes": 24412208
+    },
+    {
+      "slot": 7,
+      "artifact_id": 11532681638,
+      "name": "c4-state-7-1",
+      "sha256": "70deb2a0d212395f7d66f163bb6a3d50c36b6d80d113ae3c07d3f5dd9044c8e4",
+      "bytes": 30584665
+    },
+    {
+      "slot": 8,
+      "artifact_id": 11532938211,
+      "name": "c4-state-8-1",
+      "sha256": "2eb40ca8675161b350b484e39096cafa295fdec4409ebabae1390590f417f397",
+      "bytes": 41314684
+    }
+  ]
+}

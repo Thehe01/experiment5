@@ -1,0 +1,145 @@
+name: Chapter 5 public potential development CPU
+on:
+  push:
+    branches: [codex/chapter5-public-dev-activation-20261011]
+    paths: [chapter5/public_dev/launch.json]
+permissions:
+  contents: write
+concurrency:
+  group: chapter5-public-dev-v1-cpu
+  cancel-in-progress: false
+env:
+  ATEN_CPU_CAPABILITY: avx2
+  PYTHONUNBUFFERED: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - name: Install frozen CPU dependencies
+        run: |
+          python -m pip install -r chapter5/requirements-cpu.txt
+          python -m pip install -r chapter5/public_data/requirements.txt
+      - name: Offline tests and registration verification
+        run: |
+          python -m unittest discover -s chapter5 -t . -q
+          python -m chapter5.public_dev.campaign verify --repo .
+  slot1:
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    outputs:
+      phase: ${{ steps.close.outputs.phase }}
+      closed: ${{ steps.close.outputs.closed }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          ref: codex/chapter5-public-dev-activation-20261011
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - name: Install frozen CPU dependencies
+        run: |
+          python -m pip install -r chapter5/requirements-cpu.txt
+          python -m pip install -r chapter5/public_data/requirements.txt
+      - name: Durably reserve execution slot 1
+        id: reserve
+        run: python -m chapter5.public_dev.archive reserve --repo . --state "$RUNNER_TEMP/chapter5-public-dev-state" --slot 1
+      - name: Run registered development units
+        id: campaign
+        timeout-minutes: 255
+        run: python -m chapter5.public_dev.campaign run --repo . --state "$RUNNER_TEMP/chapter5-public-dev-state" --seconds 14400
+      - name: Persist closed execution and full state
+        id: close
+        if: always() && steps.reserve.outcome == 'success'
+        run: python -m chapter5.public_dev.archive close --repo . --state "$RUNNER_TEMP/chapter5-public-dev-state" --slot 1 --successful "${{ steps.campaign.outcome == 'success' }}"
+      - name: Preserve execution evidence
+        if: always() && steps.reserve.outcome == 'success'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: chapter5-public-dev-slot-1-${{ github.run_id }}
+          path: ${{ runner.temp }}/chapter5-public-dev-state
+          retention-days: 90
+  slot2:
+    needs: slot1
+    if: needs.slot1.outputs.closed == 'true' && needs.slot1.outputs.phase == 'continuation_needed'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    outputs:
+      phase: ${{ steps.close.outputs.phase }}
+      closed: ${{ steps.close.outputs.closed }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          ref: codex/chapter5-public-dev-activation-20261011
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - name: Install frozen CPU dependencies
+        run: |
+          python -m pip install -r chapter5/requirements-cpu.txt
+          python -m pip install -r chapter5/public_data/requirements.txt
+      - name: Durably reserve execution slot 2
+        id: reserve
+        run: python -m chapter5.public_dev.archive reserve --repo . --state "$RUNNER_TEMP/chapter5-public-dev-state" --slot 2
+      - name: Run registered development units
+        id: campaign
+        timeout-minutes: 255
+        run: python -m chapter5.public_dev.campaign run --repo . --state "$RUNNER_TEMP/chapter5-public-dev-state" --seconds 14400
+      - name: Persist closed execution and full state
+        id: close
+        if: always() && steps.reserve.outcome == 'success'
+        run: python -m chapter5.public_dev.archive close --repo . --state "$RUNNER_TEMP/chapter5-public-dev-state" --slot 2 --successful "${{ steps.campaign.outcome == 'success' }}"
+      - name: Preserve execution evidence
+        if: always() && steps.reserve.outcome == 'success'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: chapter5-public-dev-slot-2-${{ github.run_id }}
+          path: ${{ runner.temp }}/chapter5-public-dev-state
+          retention-days: 90
+  slot3:
+    needs: slot2
+    if: needs.slot2.outputs.closed == 'true' && needs.slot2.outputs.phase == 'continuation_needed'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    outputs:
+      phase: ${{ steps.close.outputs.phase }}
+      closed: ${{ steps.close.outputs.closed }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          ref: codex/chapter5-public-dev-activation-20261011
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - name: Install frozen CPU dependencies
+        run: |
+          python -m pip install -r chapter5/requirements-cpu.txt
+          python -m pip install -r chapter5/public_data/requirements.txt
+      - name: Durably reserve execution slot 3
+        id: reserve
+        run: python -m chapter5.public_dev.archive reserve --repo . --state "$RUNNER_TEMP/chapter5-public-dev-state" --slot 3
+      - name: Run registered development units
+        id: campaign
+        timeout-minutes: 255
+        run: python -m chapter5.public_dev.campaign run --repo . --state "$RUNNER_TEMP/chapter5-public-dev-state" --seconds 14400
+      - name: Persist closed execution and full state
+        id: close
+        if: always() && steps.reserve.outcome == 'success'
+        run: python -m chapter5.public_dev.archive close --repo . --state "$RUNNER_TEMP/chapter5-public-dev-state" --slot 3 --successful "${{ steps.campaign.outcome == 'success' }}"
+      - name: Preserve execution evidence
+        if: always() && steps.reserve.outcome == 'success'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: chapter5-public-dev-slot-3-${{ github.run_id }}
+          path: ${{ runner.temp }}/chapter5-public-dev-state
+          retention-days: 90

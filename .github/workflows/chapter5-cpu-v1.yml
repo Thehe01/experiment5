@@ -1,0 +1,62 @@
+name: Chapter 5 CPU experiment v1
+
+on:
+  push:
+    branches: [codex/chapter5-v1-20261010]
+    paths:
+      - 'chapter5/**'
+      - '!chapter5/runs/**'
+      - '!chapter5/launch.json'
+      - '.github/workflows/chapter5-cpu-v1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: chapter5-v1-cpu
+  cancel-in-progress: false
+
+jobs:
+  experiment:
+    if: github.ref == 'refs/heads/codex/chapter5-v1-20261010'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 330
+    env:
+      PYTHONHASHSEED: '20261010'
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: '3.12.14'
+      - name: Install pinned CPU dependencies
+        run: python -m pip install -r chapter5/requirements-cpu.txt
+      - name: Verify meaningful tests and published inputs
+        run: |
+          python -m unittest discover -s chapter5 -t . -p 'test_*.py' -v
+          python -m chapter5.verify
+      - name: Restore state and durably reserve execution
+        id: reserve
+        run: python -m chapter5.archive reserve --state "$RUNNER_TEMP/chapter5-state"
+      - name: Collect, freeze, train and evaluate locked Test
+        timeout-minutes: 270
+        run: |
+          python -m pip freeze > "$RUNNER_TEMP/chapter5-state/dependencies.txt"
+          python -m chapter5.campaign --out "$RUNNER_TEMP/chapter5-state"
+      - name: Preserve all source ledgers and checkpoints
+        if: always() && steps.reserve.outcome == 'success'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: chapter5-v1-state-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/chapter5-state
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 6
+      - name: Archive checksummed state on the experiment branch
+        if: always() && steps.reserve.outcome == 'success'
+        run: python -m chapter5.archive close --state "$RUNNER_TEMP/chapter5-state"

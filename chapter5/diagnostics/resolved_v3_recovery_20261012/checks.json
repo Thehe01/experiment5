@@ -1,0 +1,31 @@
+{
+  "audited_at": "2026-10-12T12:06:41.605727+08:00",
+  "checkpoint_deserialization": false,
+  "commands": [
+    {
+      "actual_command": "python3 recovery/recover_without_forward.py --root /workspace/scratch/430585ecd063/recovery --destination /workspace/scratch/430585ecd063/recovery/results-v2",
+      "command": "python3 recover_without_forward.py --root RECOVERY_ROOT --destination FRESH_OUTPUT_DIR",
+      "exit_code": 0,
+      "result": "36 units, 11868 original rank rows, 36 independent baselines, 442 source rows, original ZIP+51 part SHA256 and Git SHA matched"
+    },
+    {
+      "command": "negative gates: existing output and changed frozen config",
+      "exit_code": 0,
+      "expected_rejection_exit_codes": [
+        1,
+        1
+      ],
+      "result": "both refused before any forward"
+    }
+  ],
+  "frozen_completion_verifier": {
+    "executed": false,
+    "reason": "Torch 2.9.1+cpu unavailable; did not bypass frozen gate. Independent stdlib recovery audit was run."
+  },
+  "initial_audit_harness_corrections": [
+    "compared raw result dev to registered fixed-major transformed dev, rather than raw dict equality",
+    "made observed-label compatibility denominator explicit as weighted source-label vote mass, matching the preexisting audit definition"
+  ],
+  "model_forward": 0,
+  "new_training": 0
+}

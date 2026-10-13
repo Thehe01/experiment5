@@ -1,0 +1,663 @@
+{
+  "original_tree_truncated": false,
+  "schema": "github_tree_projection",
+  "source_ref": "50905f65a09ec91f8ccedf099b71443e2d22c6f6",
+  "tree": [
+    {
+      "mode": "100644",
+      "path": ".github/workflows/chapter5-expanded-dev.yml",
+      "sha": "4207f852a053565ce203224d51b9bdcf24a6edbb",
+      "size": 6456,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/4207f852a053565ce203224d51b9bdcf24a6edbb"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/__init__.py",
+      "sha": "17fd15de0d6398a7874d1b408d22c4ed3d173740",
+      "size": 65,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/17fd15de0d6398a7874d1b408d22c4ed3d173740"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/archive.py",
+      "sha": "fa46a4273d87621b6366d51a373ba7cc207e9046",
+      "size": 9140,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/fa46a4273d87621b6366d51a373ba7cc207e9046"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/campaign.py",
+      "sha": "6ceef01bb7dde65a82c6f5299936b2e4e4210c4c",
+      "size": 12811,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/6ceef01bb7dde65a82c6f5299936b2e4e4210c4c"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/collect.py",
+      "sha": "dbb644924aa16455f18fb6529ba7f2c2f30f6084",
+      "size": 9575,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/dbb644924aa16455f18fb6529ba7f2c2f30f6084"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/core.py",
+      "sha": "9a0efbfb034b5d0b85bcbf974fcaf8bbd640dd85",
+      "size": 11559,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/9a0efbfb034b5d0b85bcbf974fcaf8bbd640dd85"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/README.md",
+      "sha": "433a336e38357ebaed616a7526044f33fafa7010",
+      "size": 2599,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/433a336e38357ebaed616a7526044f33fafa7010"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/__init__.py",
+      "sha": "6061d16665012ae6f277f81b809305c82be5ecfc",
+      "size": 63,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/6061d16665012ae6f277f81b809305c82be5ecfc"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/archive.py",
+      "sha": "4dc6d92ec4ad66d7287d4667fa3ae26745c78496",
+      "size": 5411,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/4dc6d92ec4ad66d7287d4667fa3ae26745c78496"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/campaign.py",
+      "sha": "26d917f954e87acdb8778373eb81f6f720e7e968",
+      "size": 13543,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/26d917f954e87acdb8778373eb81f6f720e7e968"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/config.json",
+      "sha": "0c57d02f3db08d1a7b46dcc65d22ae8b3fc27245",
+      "size": 1695,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/0c57d02f3db08d1a7b46dcc65d22ae8b3fc27245"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/data.py",
+      "sha": "38a80e648e5b8b3402c0f3f532979429bf88e5cf",
+      "size": 13131,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/38a80e648e5b8b3402c0f3f532979429bf88e5cf"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/data/paired-parent-v1.zip",
+      "sha": "0bcf816a4eaf91238fea742ce0d2159e53707639",
+      "size": 151825,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/0bcf816a4eaf91238fea742ce0d2159e53707639"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/plan.md",
+      "sha": "db8ced4d4b208c4e585ffac9e2f5f7e5a2fbb88d",
+      "size": 513,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/db8ced4d4b208c4e585ffac9e2f5f7e5a2fbb88d"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/registration.json",
+      "sha": "cad8b7270858a6d9382dc075b5972e3aa9712bf5",
+      "size": 25941,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/cad8b7270858a6d9382dc075b5972e3aa9712bf5"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/comparison.json",
+      "sha": "447bc69ac0a9caa2fbd670d0d393b64c420c0a1e",
+      "size": 3036375,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/447bc69ac0a9caa2fbd670d0d393b64c420c0a1e"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/manifest.json",
+      "sha": "fdea492bbbac36765f70f8a61f222c26990186e0",
+      "size": 7927,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/fdea492bbbac36765f70f8a61f222c26990186e0"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/report.md",
+      "sha": "210f9156d6b97fd6b13000c768685d09973f4cd6",
+      "size": 809,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/210f9156d6b97fd6b13000c768685d09973f4cd6"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/session.json",
+      "sha": "4161dc86c0c79ece81a8b4233ad3d0fc0c8ce0ec",
+      "size": 956,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/4161dc86c0c79ece81a8b4233ad3d0fc0c8ce0ec"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-000",
+      "sha": "0338f9ef316c8f6ed32171a50005c8043d9caf4f",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/0338f9ef316c8f6ed32171a50005c8043d9caf4f"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-001",
+      "sha": "81fa9c8f828143f932a278e0ef9a67dee62ac144",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/81fa9c8f828143f932a278e0ef9a67dee62ac144"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-002",
+      "sha": "6c84a28934668c9b73a0f26dea2b785db5b6927d",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/6c84a28934668c9b73a0f26dea2b785db5b6927d"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-003",
+      "sha": "8532e0d94278cd2a3bff3859974819b8c734e07d",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/8532e0d94278cd2a3bff3859974819b8c734e07d"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-004",
+      "sha": "0e610c088348a40c9f0c7b9b1ffa47676240e65c",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/0e610c088348a40c9f0c7b9b1ffa47676240e65c"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-005",
+      "sha": "368a6852cf0c8acd01704614c6b477c103e9f703",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/368a6852cf0c8acd01704614c6b477c103e9f703"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-006",
+      "sha": "e06fa9657195d8e2b28ce51ccb9b932f43248f76",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/e06fa9657195d8e2b28ce51ccb9b932f43248f76"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-007",
+      "sha": "cdd21a6fdfc07305fa71db8d8d0ea21814fa871d",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/cdd21a6fdfc07305fa71db8d8d0ea21814fa871d"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-008",
+      "sha": "79b9a5d6e4520d4d3370097253c03bf66030efe3",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/79b9a5d6e4520d4d3370097253c03bf66030efe3"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-009",
+      "sha": "02d3e6aa5111203cda8148f948ef0faa2bd3de29",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/02d3e6aa5111203cda8148f948ef0faa2bd3de29"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-010",
+      "sha": "578fed40da7ef2a30a199d942dd322d14c6f7202",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/578fed40da7ef2a30a199d942dd322d14c6f7202"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-011",
+      "sha": "d337f7f67f0dabc173a2ba335ef36e3ad78951e2",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/d337f7f67f0dabc173a2ba335ef36e3ad78951e2"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-012",
+      "sha": "db878d5bd14dce12d8dff1edfd5570f544d42982",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/db878d5bd14dce12d8dff1edfd5570f544d42982"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-013",
+      "sha": "174c99fe81478ee5ec969a95477975ec0a69c65a",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/174c99fe81478ee5ec969a95477975ec0a69c65a"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-014",
+      "sha": "ced8cc5a7a002608f0c2f249e39228d2999e76c8",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/ced8cc5a7a002608f0c2f249e39228d2999e76c8"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-015",
+      "sha": "c4ea613243bba062b9432339e9c7d70d5fd303e3",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/c4ea613243bba062b9432339e9c7d70d5fd303e3"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-016",
+      "sha": "d2e77d6b22ffebe18312ab784804f886b423b8a6",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/d2e77d6b22ffebe18312ab784804f886b423b8a6"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-017",
+      "sha": "cdf1a94e5bf1f7290bab77f1f235c626c6bcb136",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/cdf1a94e5bf1f7290bab77f1f235c626c6bcb136"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-018",
+      "sha": "dcf8c20ac637ef73f718be6ccd4af52105f6bbcc",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/dcf8c20ac637ef73f718be6ccd4af52105f6bbcc"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-019",
+      "sha": "6c519e737c5ccb5f9100c0554810219890194f3f",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/6c519e737c5ccb5f9100c0554810219890194f3f"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-020",
+      "sha": "10ea4d83499387d6a858f72f53d14c294575ffdc",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/10ea4d83499387d6a858f72f53d14c294575ffdc"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-021",
+      "sha": "8edadac3a9965c4db89e18ccce36ebeccbc742ec",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/8edadac3a9965c4db89e18ccce36ebeccbc742ec"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-022",
+      "sha": "308c6fdd0ffedf8917c5eac4d6eedcfee6746e34",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/308c6fdd0ffedf8917c5eac4d6eedcfee6746e34"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-023",
+      "sha": "462e69690e7269746c3a7e900cf859bf006193de",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/462e69690e7269746c3a7e900cf859bf006193de"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-024",
+      "sha": "042e90d380e66e9317ef80537697985f5731f811",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/042e90d380e66e9317ef80537697985f5731f811"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-025",
+      "sha": "db4582f3262d1df064b0ff07e5a222833fee227f",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/db4582f3262d1df064b0ff07e5a222833fee227f"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-026",
+      "sha": "29403bf95d7fd573da5267e30f440a8391aee0fc",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/29403bf95d7fd573da5267e30f440a8391aee0fc"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-027",
+      "sha": "79fc1c8608cae4f9d8aa5ece48e8c5ae701474d1",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/79fc1c8608cae4f9d8aa5ece48e8c5ae701474d1"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-028",
+      "sha": "ddec504178288f7d981d833b8f49e8d63b7b331a",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/ddec504178288f7d981d833b8f49e8d63b7b331a"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-029",
+      "sha": "4b7fc6f370a9967a16dec51bf5d5b9be70e65577",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/4b7fc6f370a9967a16dec51bf5d5b9be70e65577"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-030",
+      "sha": "355a8e367481c13c11b99caf72c21d17eedf785f",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/355a8e367481c13c11b99caf72c21d17eedf785f"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-031",
+      "sha": "51d0ae9664cb29cd8b2fdc99c283b670d875c561",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/51d0ae9664cb29cd8b2fdc99c283b670d875c561"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-032",
+      "sha": "6d32e295f1d333bb7cb3702a0dd4daa4a35ecd69",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/6d32e295f1d333bb7cb3702a0dd4daa4a35ecd69"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-033",
+      "sha": "94615ac935bfaae9e3b1da566df863daec83b0ea",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/94615ac935bfaae9e3b1da566df863daec83b0ea"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-034",
+      "sha": "e5c7131ece74285ab7beaf37f965e52afe5dda04",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/e5c7131ece74285ab7beaf37f965e52afe5dda04"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-035",
+      "sha": "19eff2c7b2788981b85ca31c99516a15bf2f66df",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/19eff2c7b2788981b85ca31c99516a15bf2f66df"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-036",
+      "sha": "b53a8ba2c7a6b54d20a5a91271c0d894da600835",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/b53a8ba2c7a6b54d20a5a91271c0d894da600835"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-037",
+      "sha": "f785a11bfbdd8cdacd3585ec940f34463d288fda",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/f785a11bfbdd8cdacd3585ec940f34463d288fda"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-038",
+      "sha": "d4b92592af40e3d322eb3f5f027beec2f575ac73",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/d4b92592af40e3d322eb3f5f027beec2f575ac73"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-039",
+      "sha": "a0581cf9ae8ee9cf7df6a466dca41dbafb88cae4",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/a0581cf9ae8ee9cf7df6a466dca41dbafb88cae4"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-040",
+      "sha": "2d99d69af86e8e791f72327b53c5efcef98efd81",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/2d99d69af86e8e791f72327b53c5efcef98efd81"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-041",
+      "sha": "44d30508c1fc9c8c09851f767627972ed1fdb217",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/44d30508c1fc9c8c09851f767627972ed1fdb217"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-042",
+      "sha": "894a2c7e2547c321fd333d6b6268f137135bd307",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/894a2c7e2547c321fd333d6b6268f137135bd307"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-043",
+      "sha": "eeea5150711899b2fcad8b68cfb63b7e9b150317",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/eeea5150711899b2fcad8b68cfb63b7e9b150317"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-044",
+      "sha": "b40ff34cd6e78fa21856448af7cb6d679871f699",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/b40ff34cd6e78fa21856448af7cb6d679871f699"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-045",
+      "sha": "1249f1f77d3a3ba1c3a99a1126ccd40389f2bb0e",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/1249f1f77d3a3ba1c3a99a1126ccd40389f2bb0e"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-046",
+      "sha": "19856fd76ddf7ca1a4f2ba3ed9516e125dcc4f43",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/19856fd76ddf7ca1a4f2ba3ed9516e125dcc4f43"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-047",
+      "sha": "b95658343760b3c8fa0929c06ca27bd2d76c4f1b",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/b95658343760b3c8fa0929c06ca27bd2d76c4f1b"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-048",
+      "sha": "a4db1f2f37fc9bedc6801d6f877983ccfb00e07b",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/a4db1f2f37fc9bedc6801d6f877983ccfb00e07b"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-049",
+      "sha": "7c29b88790b587138d5337910dd1c63bbb40619b",
+      "size": 4194304,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/7c29b88790b587138d5337910dd1c63bbb40619b"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/state.part-050",
+      "sha": "7a7a6e3ca0a9ad4ce2aeccdca77d97e15e74586b",
+      "size": 3068640,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/7a7a6e3ca0a9ad4ce2aeccdca77d97e15e74586b"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/runs/chapter5-expanded-dev-v1-20261011/status.json",
+      "sha": "ba8f287883ef83e5027ccc5f89c5539147d3c7dd",
+      "size": 582,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/ba8f287883ef83e5027ccc5f89c5539147d3c7dd"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/expanded_dev/spec.md",
+      "sha": "754abb47b9f6726200b902dc4dd0a645b6953c42",
+      "size": 4764,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/754abb47b9f6726200b902dc4dd0a645b6953c42"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/io.py",
+      "sha": "bf3b640069621e11aff1dfefe2bc33aa893a7348",
+      "size": 5162,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/bf3b640069621e11aff1dfefe2bc33aa893a7348"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/model.py",
+      "sha": "31e1346b5a0c7638cfd95bb74e8b27e49f8d551a",
+      "size": 13787,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/31e1346b5a0c7638cfd95bb74e8b27e49f8d551a"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/public_dev/__init__.py",
+      "sha": "ea99b84025bb03807382866e902af3dc5af8e3d4",
+      "size": 68,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/ea99b84025bb03807382866e902af3dc5af8e3d4"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/public_dev/archive.py",
+      "sha": "0dc97b832a3fae099f3f30ab595b1fef02b188b9",
+      "size": 5397,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/0dc97b832a3fae099f3f30ab595b1fef02b188b9"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/public_dev/campaign.py",
+      "sha": "e7f1ac9ea4f30ddab069cdba6bc55ce4d86a0e06",
+      "size": 13510,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/e7f1ac9ea4f30ddab069cdba6bc55ce4d86a0e06"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/public_dev/core.py",
+      "sha": "c5940413981723f984e55099d8225061c8463ffc",
+      "size": 7971,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/c5940413981723f984e55099d8225061c8463ffc"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/public_dev/model.py",
+      "sha": "8835dc2ba3a0e699e629ba1fdbc80ac200fc3c50",
+      "size": 12792,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/8835dc2ba3a0e699e629ba1fdbc80ac200fc3c50"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/requirements-cpu.txt",
+      "sha": "b3fff78f3f5d335c55abcfb2061dfa7ca9123198",
+      "size": 206,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/b3fff78f3f5d335c55abcfb2061dfa7ca9123198"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/supplement.py",
+      "sha": "036ee1aff076a66c72956a7d3322c95822284c25",
+      "size": 6199,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/036ee1aff076a66c72956a7d3322c95822284c25"
+    },
+    {
+      "mode": "100644",
+      "path": "chapter5/verify.py",
+      "sha": "c05619914ae90ed5dfc87e1229a1d17af26e7190",
+      "size": 1324,
+      "type": "blob",
+      "url": "https://api.github.com/repos/Thehe01/experiment4/git/blobs/c05619914ae90ed5dfc87e1229a1d17af26e7190"
+    }
+  ]
+}

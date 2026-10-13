@@ -1,0 +1,289 @@
+{
+  "config_sha256": "64230dda10895a7d76a3447dfe73bc7a6bf6b6fb966cf22e039ce8a24a15bfb3",
+  "confirmation_training_budget": 0,
+  "data_sha256": "c00660f6d37cfefa2af35513ed785ca0e77f880746f34220edb204c353bfadbf",
+  "folds_sha256": "5fda5590c0b25448718f99381f0e35b4eac6ecf1cf9abc956fe964d0561f8190",
+  "model_api_calls": 0,
+  "package_verification": {
+    "candidate_techniques": 697,
+    "curated_target_edges": 2332,
+    "eligible_cves": 1035,
+    "file_hashes_checked": 12,
+    "graph_edges": 11163,
+    "graph_nodes": 5759,
+    "groups": {
+      "dev": 155,
+      "reserved_holdout": 155,
+      "train": 725
+    },
+    "human_iaa": false,
+    "model_api_calls": 0,
+    "model_training_runs": 0,
+    "phase": "verified_data_preparation",
+    "relation_counts": {
+      "belongs_to_phase": 16,
+      "has_reported_cpe": 7252,
+      "has_reported_cwe": 691,
+      "implies": 872,
+      "potentially_associated_with": 2332
+    },
+    "reserved_holdout_evaluated": false,
+    "source_cves": 1207,
+    "supervised_techniques": 174,
+    "training_edges": 10327
+  },
+  "protocol": "chapter5-public-dev-v1-20261011",
+  "reserved_holdout_evaluation": false,
+  "source_files": {
+    ".github/workflows/chapter5-public-dev.yml": "01f40bdca0ff0fdf58f7fd65d7a883d09e0a2b5b5346027b05f974401892e873",
+    "chapter5/__init__.py": "9bcfaf2425bc13f6278ca3b6925cb2eb86f517eb87310dc7704590d8969476da",
+    "chapter5/archive.py": "12b89881f48f3efb9ee99d6f1eadf378d915aa082054c7dc91f165fc5cca761b",
+    "chapter5/campaign.py": "7cbe3f3170d443e28eb8893a4234521f48362d0c1cc601fc0a622a6ae73e0b0c",
+    "chapter5/collect.py": "2954621250bdca5e85af77373484b40cd57eb76d0b530ceb8180bdbb47da8452",
+    "chapter5/core.py": "8b2b9d91b6e2450f8d751800185ab3a4984124e76cb1298e6cc33a060e0c8026",
+    "chapter5/io.py": "a7a056549aaf54bb85f207bb820d52d9ad3d28c4d192b8cb870cc999934606a8",
+    "chapter5/model.py": "636888b6f43a129ea6a94ffb87ca5e7c5938364dee3bbc31ecd202a83c8288cf",
+    "chapter5/public_data/verify.py": "d0709fa84891bce884f8385bb0fc0d40ddb9630fa705466d885647389d7a17f3",
+    "chapter5/public_dev/README.md": "9ff2ed530d83d468024cd27642997f0f6a22df03463fa6c199b2f025fc406914",
+    "chapter5/public_dev/__init__.py": "eaf77115434a108a22ad8a8d1869c6046696f376ae9beacea24bc30449f24a29",
+    "chapter5/public_dev/archive.py": "9f3e7c323092ade04d254f959fc36cc2e24edb3167875464d9158fd883a468db",
+    "chapter5/public_dev/campaign.py": "debb1432037b603997f8c9495f0b49b48d88b55e0a6b32c1b4375a7e380e3af1",
+    "chapter5/public_dev/config.json": "64230dda10895a7d76a3447dfe73bc7a6bf6b6fb966cf22e039ce8a24a15bfb3",
+    "chapter5/public_dev/core.py": "9646ce18ed6ab7c1acc001069250836738e1bae7ef4abc6ca890a9702e7af486",
+    "chapter5/public_dev/model.py": "1e187a14976ab12446253d79f70b67a92733d605bd0605ac222ec234a5f78f37",
+    "chapter5/public_dev/plan.md": "92017585760c201a2245a7888fbf7ed77f2ccebdf0df8497d1f6c8161e3e2643",
+    "chapter5/public_dev/spec.md": "dd93de7b4e888152c7b6b8082d3b76ca3373abb4fea242f2454fb78f4b5b70c0",
+    "chapter5/public_dev/test_archive.py": "2ad86d25c7fffb1729b1b5b341672fdb6abea36f0d75ca2c0e1ef8e4e8bf283f",
+    "chapter5/public_dev/test_campaign.py": "6c3411723ef5813d797862a5b151e62281b1abcba624f35f6745815d9bb2d667",
+    "chapter5/public_dev/test_core.py": "8250990ed100796bd3376f723e918f0d30d4da3220f12a458feac71b138fc498",
+    "chapter5/public_dev/test_model.py": "e60816b298b9b5443f8d9d33ac82d3260ae6e2f7e60210a6803a0c7d044ee2ec",
+    "chapter5/public_dev/test_registration.py": "848675c5ac88bad2773a62e412c9217f17643e7b5677487aee5304fc1d92c52d",
+    "chapter5/requirements-cpu.txt": "59816196bd2ec73d45e5187f8bb78013b29cfd656352ece7d313f43658d3f49c",
+    "chapter5/supplement.py": "4e5993f90e57cf08234215447e03003daa5412dfa8da8d9b33cb7b7c1a567dbf",
+    "chapter5/test_archive.py": "cda41d38692e12cc6cd080a68e946784eba1a50eac55da8cb6e79c35e21af91c",
+    "chapter5/test_campaign.py": "94f938139dda9fe645510d243b35ab375fc11db273392c45df7db0631db16d0e",
+    "chapter5/test_core.py": "2020ca94523f9fab27ebbd3204df5c6672a894f88020a14b17ac211cbc400d19",
+    "chapter5/test_io.py": "32f9dfeef4ceb011ca42e97e89c4ad5e47ec986dbd22af20db1e8f44126464d0",
+    "chapter5/test_model.py": "ad7ac5c02fc91125fe8e5869cd6b71f65e37a0dac53fe372697a2dc7b7ef61a1",
+    "chapter5/test_supplement.py": "bc493aa9815d10cea828b6e7a194a35d1982eda0a6325ff96a49d853b8d05e84",
+    "chapter5/verify.py": "69711ec60c523e9ef5dfc7875e0225326b27b0b9b5852b4cbc30e2848e7d701b"
+  },
+  "units": [
+    {
+      "arm": "distmult_uniform",
+      "fold": 0,
+      "id": "f0-distmult_uniform-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "distmult_uniform",
+      "fold": 0,
+      "id": "f0-distmult_uniform-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "distmult_uniform",
+      "fold": 0,
+      "id": "f0-distmult_uniform-s20261023",
+      "seed": 20261023
+    },
+    {
+      "arm": "distmult_mixed",
+      "fold": 0,
+      "id": "f0-distmult_mixed-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "distmult_mixed",
+      "fold": 0,
+      "id": "f0-distmult_mixed-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "distmult_mixed",
+      "fold": 0,
+      "id": "f0-distmult_mixed-s20261023",
+      "seed": 20261023
+    },
+    {
+      "arm": "rgcn_uniform",
+      "fold": 0,
+      "id": "f0-rgcn_uniform-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "rgcn_uniform",
+      "fold": 0,
+      "id": "f0-rgcn_uniform-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "rgcn_uniform",
+      "fold": 0,
+      "id": "f0-rgcn_uniform-s20261023",
+      "seed": 20261023
+    },
+    {
+      "arm": "rgcn_mixed",
+      "fold": 0,
+      "id": "f0-rgcn_mixed-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "rgcn_mixed",
+      "fold": 0,
+      "id": "f0-rgcn_mixed-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "rgcn_mixed",
+      "fold": 0,
+      "id": "f0-rgcn_mixed-s20261023",
+      "seed": 20261023
+    },
+    {
+      "arm": "distmult_uniform",
+      "fold": 1,
+      "id": "f1-distmult_uniform-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "distmult_uniform",
+      "fold": 1,
+      "id": "f1-distmult_uniform-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "distmult_uniform",
+      "fold": 1,
+      "id": "f1-distmult_uniform-s20261023",
+      "seed": 20261023
+    },
+    {
+      "arm": "distmult_mixed",
+      "fold": 1,
+      "id": "f1-distmult_mixed-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "distmult_mixed",
+      "fold": 1,
+      "id": "f1-distmult_mixed-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "distmult_mixed",
+      "fold": 1,
+      "id": "f1-distmult_mixed-s20261023",
+      "seed": 20261023
+    },
+    {
+      "arm": "rgcn_uniform",
+      "fold": 1,
+      "id": "f1-rgcn_uniform-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "rgcn_uniform",
+      "fold": 1,
+      "id": "f1-rgcn_uniform-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "rgcn_uniform",
+      "fold": 1,
+      "id": "f1-rgcn_uniform-s20261023",
+      "seed": 20261023
+    },
+    {
+      "arm": "rgcn_mixed",
+      "fold": 1,
+      "id": "f1-rgcn_mixed-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "rgcn_mixed",
+      "fold": 1,
+      "id": "f1-rgcn_mixed-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "rgcn_mixed",
+      "fold": 1,
+      "id": "f1-rgcn_mixed-s20261023",
+      "seed": 20261023
+    },
+    {
+      "arm": "distmult_uniform",
+      "fold": 2,
+      "id": "f2-distmult_uniform-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "distmult_uniform",
+      "fold": 2,
+      "id": "f2-distmult_uniform-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "distmult_uniform",
+      "fold": 2,
+      "id": "f2-distmult_uniform-s20261023",
+      "seed": 20261023
+    },
+    {
+      "arm": "distmult_mixed",
+      "fold": 2,
+      "id": "f2-distmult_mixed-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "distmult_mixed",
+      "fold": 2,
+      "id": "f2-distmult_mixed-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "distmult_mixed",
+      "fold": 2,
+      "id": "f2-distmult_mixed-s20261023",
+      "seed": 20261023
+    },
+    {
+      "arm": "rgcn_uniform",
+      "fold": 2,
+      "id": "f2-rgcn_uniform-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "rgcn_uniform",
+      "fold": 2,
+      "id": "f2-rgcn_uniform-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "rgcn_uniform",
+      "fold": 2,
+      "id": "f2-rgcn_uniform-s20261023",
+      "seed": 20261023
+    },
+    {
+      "arm": "rgcn_mixed",
+      "fold": 2,
+      "id": "f2-rgcn_mixed-s20261021",
+      "seed": 20261021
+    },
+    {
+      "arm": "rgcn_mixed",
+      "fold": 2,
+      "id": "f2-rgcn_mixed-s20261022",
+      "seed": 20261022
+    },
+    {
+      "arm": "rgcn_mixed",
+      "fold": 2,
+      "id": "f2-rgcn_mixed-s20261023",
+      "seed": 20261023
+    }
+  ]
+}

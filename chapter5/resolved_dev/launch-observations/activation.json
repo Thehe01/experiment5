@@ -1,0 +1,22 @@
+{
+  "protocol": "chapter5-resolved-dev-v3-20261011",
+  "source_commit": "4f379b612b3d6cce5f8237b8103e866909ca7988",
+  "activation_commit": "244e217428e23c9bd019084171de40c49999c389",
+  "registration_sha256": "ac19948da5d31cfede901073af08dbbc49c2b99950ff48e3f96bea334e075e5e",
+  "source_tree": "40f63f0177b61d25e460ea1be524aabee04dd633",
+  "activation_tree": "4e169b7478713374ce237cd8baa2998e9c0fee93",
+  "source_publication_verification": {
+    "tree": "40f63f0177b61d25e460ea1be524aabee04dd633",
+    "changed_files": 28,
+    "all_blobs_match": true,
+    "protected_old_files_unchanged": true
+  },
+  "activation_diff": "only chapter5/resolved_dev/launch.json added to prepared source tree",
+  "run_id": 38152196348,
+  "run_url": "https://github.com/Thehe01/experiment4/actions/runs/38152196348",
+  "event": "push",
+  "activation_branch": "codex/chapter5-resolved-activation-20261011",
+  "main_unchanged": "c71cfbdfcdb41dcd0fb59820619c14d87dadd7d4",
+  "previous_expanded_activation_unchanged": "50905f65a09ec91f8ccedf099b71443e2d22c6f6",
+  "notes": "Ref update endpoint does not create missing refs (422); created branch at skip-ci source then advanced it once to activation. One observed push run; no training rerun or reset."
+}

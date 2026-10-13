@@ -1,0 +1,73 @@
+{
+  "schema": "chapter5-independent-diagnosis-recovery-completion-v1",
+  "run_id": 38205273398,
+  "launch_commit": "a7c32f331037a6d11ab76b47c9262272a95f5612",
+  "completed_evidence_commit": "8f5983fe5a5c3a992c41960f16e8b2ede3bbbc83",
+  "run_status": "completed",
+  "run_conclusion": "success",
+  "remote_no_model_ci": {
+    "job_id": 114667263369,
+    "result": "success",
+    "tests": 5,
+    "actual_registration_gate": "offline_registration_valid; actions144; historical144; additional_budget144; new_forward0"
+  },
+  "remote_replay_job": {
+    "job_id": 114667466744,
+    "result": "success",
+    "frozen_runtime_and_scientific_registration": "passed_before_forward",
+    "completed_forward_caches": 144
+  },
+  "root_cache_only_verification": {
+    "exit_code": 0,
+    "new_forward": 0,
+    "outputs_byte_identical_to_remote": true,
+    "all159_local_replay_files_match_permanent_git_blobs": true
+  },
+  "archive": {
+    "permanent_zip_sha256": "46f5fcf641509f4aa9300529c573640907e3043b06903ba60f2df8a2623c713b",
+    "bytes": 7562863,
+    "members": 157,
+    "all_member_sha256_verified": true,
+    "artifact_id": 11727043877,
+    "artifact_digest": "sha256:6acdd2c9d77dceffd507e04c9e6f8a75576d37f7dc4cc897221ff7272740154f",
+    "artifact_bytes": 15134733
+  },
+  "usage": {
+    "historical_forward_consumed": 144,
+    "additional_forward_consumed": 144,
+    "cumulative_forward_consumed": 288,
+    "unknown_actions": 0,
+    "additional_remaining": 0,
+    "new_training": 0,
+    "model_api": 0,
+    "reserved_scoring": false
+  },
+  "model_original_replay": {
+    "units": 36,
+    "rank_rows": 11868,
+    "original_metric_max_error": 0,
+    "cached_score_metric_max_error": 0
+  },
+  "preservation": {
+    "all_prior_scientific_and_no_model_recovery_blobs_unchanged": true,
+    "protected_refs_unchanged": true,
+    "main": "c71cfbdfcdb41dcd0fb59820619c14d87dadd7d4",
+    "resolved_activation": "a247a950412c517d4c80ff5bab7e46fece8b929e",
+    "expanded_activation": "50905f65a09ec91f8ccedf099b71443e2d22c6f6",
+    "protected_ids": 169,
+    "context_pool_candidate_training_started": false
+  },
+  "code_review": {
+    "method": "documented self-review; no reviewer agent",
+    "scope": "spec, budget and UNKNOWN gates, per-action durable reservation, cache identity, frozen numerical binding, output paths and statistical interpretation",
+    "findings": "no remaining blocker observed by these checks",
+    "verification": "five behavior tests RED->GREEN; remote no-model CI; frozen runtime guard; 144 cache-only re-evaluations; root repeat audit and permanent blob/hash comparison"
+  },
+  "limitations": [
+    "This is new independent recovery evidence. Original lost score ZIP and original per-action diagnosis ledger were not fabricated or byte-restored.",
+    "One fixed donor map per fold, overlapping Dev and transductive reverse/shared edges: descriptive sensitivity, not causal training contribution or independent Test.",
+    "Shared score energy is not accuracy/attention/causal percentage.",
+    "The delivered ZIP is the verified remote permanent object; root cache audit did not replace it with a local repack.",
+    "No9-unit candidate, new labels, metadata refresh, reserved scoring, human IAA, main merge or activation movement."
+  ]
+}

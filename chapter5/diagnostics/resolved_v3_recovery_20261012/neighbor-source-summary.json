@@ -1,0 +1,36 @@
+{
+  "compatibility_definition": "sum_x weight(x)*|labels(x) intersect observed_dev_labels| / sum_x weight(x)*|labels(x)|; partial-label overlap, not semantic accuracy",
+  "directions": {
+    "down": 215,
+    "same": 111,
+    "up": 116
+  },
+  "external_cwe_fraction_of_total_external_weight": 0.8721756797219296,
+  "groups": {
+    "both": {
+      "mean_delta_mrr": -0.03717026893724435,
+      "n": 330
+    },
+    "external_only": {
+      "mean_delta_mrr": -0.04028643355268741,
+      "n": 11
+    },
+    "neither": {
+      "mean_delta_mrr": -0.051211309060261674,
+      "n": 69
+    },
+    "old_only": {
+      "mean_delta_mrr": 0.0,
+      "n": 32
+    }
+  },
+  "max_vote_decomposition_error": 3.885780586188048e-16,
+  "mean_external_share_all_occurrences": 0.38570093012997386,
+  "occurrences": 442,
+  "paired_overlap_n": 330,
+  "paired_weighted_compatibility_with_observed_dev_labels": {
+    "external": 0.2275601414912719,
+    "old": 0.3485720173387618
+  },
+  "unique_cves": 233
+}

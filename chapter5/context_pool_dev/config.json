@@ -1,0 +1,41 @@
+{
+  "authorization": "开始; user authorizes the immediately proposed9-unit base context-pool candidate",
+  "authorized_at": "2026-10-12T15:09:11+08:00",
+  "auxiliary_weight": 1.0,
+  "bases": 4,
+  "candidate": "context_pool_mixed",
+  "checkpoint_interval_epochs": 25,
+  "checkpoint_verification_forward_budget": 9,
+  "conditions": [
+    "base"
+  ],
+  "confirmation_training_budget": 0,
+  "data_package": "chapter5/resolved_dev/data/paired-parent-v3.zip",
+  "data_sha256": "693deeb60537b51f9d9e6b7a1734a6d74482ad44c310e56092deb58c8f03a16b",
+  "gate": {
+    "major_macro_delta_min": -0.01,
+    "mean_delta_mrr": 0.02,
+    "wins_of_nine": 6
+  },
+  "layers": 2,
+  "major_technique_train_support": 10,
+  "max_epochs": 500,
+  "min_improvement": 1e-08,
+  "model_api_call_budget": 0,
+  "negatives_per_positive": 10,
+  "optimization_forward_budget": 4500,
+  "params": {
+    "dimension": 64,
+    "dropout": 0.3,
+    "learning_rate": 0.003
+  },
+  "patience": 30,
+  "prior_diagnostic_forwards": 288,
+  "protocol": "chapter5-context-pool-base-v1-20261012",
+  "reserved_holdout_evaluation": false,
+  "slot_seconds": 14400,
+  "threads": 2,
+  "training_dev_forward_budget": 4509,
+  "training_unit_budget": 9,
+  "weight_decay": 1e-05
+}

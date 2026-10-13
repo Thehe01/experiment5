@@ -1,0 +1,12 @@
+{
+  "workflow_run_id": 37796478333,
+  "job_id": 113377122582,
+  "artifact_id": 11559817897,
+  "artifact_name": "c4-v12-state-1-1",
+  "archive_name": "c4-v12-stopped-slot-1-1.zip",
+  "artifact_zip_sha256": "f02cb37cd67648fadac6df74621f7dd3218677ec7c3aacf9e25c060c19df35f9",
+  "ledger_sha256": "f414d8ae3392923c8ae2a88c47b41978e4cba16e44f1ab73a8d7cf4c4b02c41b",
+  "ledger_bytes": 7124317,
+  "audit_receipt_path": "results/convergence_c4_v1/v13_evidence/verification.json",
+  "audit_receipt_sha256": "10f8c399aab19aedabd565cc0806670c5f65a884d62b3d063e91f48e516eb188"
+}

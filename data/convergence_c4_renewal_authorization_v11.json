@@ -1,0 +1,15 @@
+{
+  "schema_version": "convergence-c4-renewal-authorization-v11",
+  "user_instruction": "帮我修复，权限续期一个月",
+  "received_at_utc": "2026-10-08T11:42:09Z",
+  "previous_expires_at_utc": "2026-10-08T15:04:14+00:00",
+  "expires_at_utc": "2026-11-08T15:04:14+00:00",
+  "calendar_months_added": 1,
+  "physical_caps": {"task": 18000, "optimizer": 600},
+  "wall_hours": 24,
+  "wall_clock_budget_renewed": false,
+  "scope": "Repair C4 and renew its existing inference authorization for one calendar month. Preserve destination, Train/Dev scope, physical budgets and formal/Test gates. Publication of the repair does not start inference.",
+  "destination": "https://opencode.ai/zen/go/v1",
+  "formal_eligible": false,
+  "test_gate_open": false
+}

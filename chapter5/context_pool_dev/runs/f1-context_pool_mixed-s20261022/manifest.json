@@ -1,0 +1,17 @@
+{
+  "parts": [
+    {
+      "bytes": 4194304,
+      "path": "state.part-000",
+      "sha256": "6c58585cb101f0253cf5522baf2bc3b3a3b0202622973c417278ef9d518579a3"
+    },
+    {
+      "bytes": 274526,
+      "path": "state.part-001",
+      "sha256": "b7fa3bb1672f4300c732b5c597b026979030667fe65ac90cc0f4bc31ccd68b19"
+    }
+  ],
+  "schema": "chapter5-state-parts-v1",
+  "source_bytes": 4468830,
+  "source_sha256": "74bdfd06d108866a68e0e37c11849d261ebfd80b8bd4caf717e83b4af54571eb"
+}

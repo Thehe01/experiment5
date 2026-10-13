@@ -1,0 +1,62 @@
+{
+  "command_exit_codes": {
+    "prepare": 0,
+    "repeat_prepare": 0,
+    "verify": 0
+  },
+  "complete_stix_redownload_performed": false,
+  "graph_context_enrichment_performed": false,
+  "green": {
+    "command": "python -m unittest discover -s chapter5/external_data/cve2attack_v1 -p test_prepare.py",
+    "exit_code": 0,
+    "passed": 19,
+    "tests": 19
+  },
+  "independent_verifier": {
+    "checks": "source_hashes_row_coordinates_partition_labels_parent_scope_description_collision_fold_protection_train_only_support",
+    "model_api_calls": 0,
+    "new_candidate_positive_links": 1552,
+    "new_graph_ready_cves": 0,
+    "new_text_candidates": 860,
+    "new_training_runs": 0,
+    "protected_candidate_overlap": 0,
+    "reserved_label_reviews": 0,
+    "reserved_scoring_runs": 0,
+    "source_hashes_unchanged": true,
+    "source_rows": 1665,
+    "status": "passed",
+    "unique_external_cves": 1661
+  },
+  "inputs_and_frozen_experiment_unchanged": true,
+  "negative_input_checks": [
+    {
+      "case": "source-file tampering",
+      "exit_code": 1,
+      "rejected_before_output_creation": true
+    },
+    {
+      "case": "folds tampering",
+      "exit_code": 1,
+      "rejected_before_output_creation": true
+    },
+    {
+      "case": "registry tampering",
+      "exit_code": 1,
+      "rejected_before_output_creation": true
+    },
+    {
+      "case": "existing output overwrite",
+      "exit_code": 1,
+      "rejected": true
+    }
+  ],
+  "phase": "preintegration_prepared_graph_context_pending",
+  "red": {
+    "exit_code": 1,
+    "expected_missing_behavior_errors": 19,
+    "tests": 19
+  },
+  "repeat_generation_identical": true,
+  "reserved_scored": false,
+  "training_started": false
+}

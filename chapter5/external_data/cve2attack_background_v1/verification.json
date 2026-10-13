@@ -1,0 +1,85 @@
+{
+  "background_edges": 3252,
+  "behavior_tests": {
+    "count": 19,
+    "exit_code": 0,
+    "red": {
+      "initial_missing_behavior_errors": 18,
+      "resume_byte_preservation_failed_before_fix": true
+    }
+  },
+  "candidate_sha256": "3d50c15b49ac811839c402a8bf519430e15b4c75cea7ab8667110cc0e0ee3281",
+  "candidates": 860,
+  "deterministic_output": {
+    "all_bytes_equal": true,
+    "file_count": 6
+  },
+  "folds_sha256": "5fda5590c0b25448718f99381f0e35b4eac6ecf1cf9abc956fe964d0561f8190",
+  "graph_ready": 858,
+  "model_api_calls": 0,
+  "negative_checks": [
+    {
+      "name": "tampered_candidate_sha",
+      "result": "rejected_as_expected"
+    },
+    {
+      "name": "tampered_response_sha",
+      "result": "rejected_as_expected"
+    },
+    {
+      "name": "incomplete_snapshot_partition",
+      "result": "rejected_as_expected"
+    },
+    {
+      "name": "nonempty_output_overwrite",
+      "result": "rejected_as_expected"
+    },
+    {
+      "name": "tampered_folds_sha",
+      "result": "rejected_as_expected"
+    },
+    {
+      "name": "completed_snapshot_resume",
+      "result": "no_new_network_and_manifest_byte_unchanged",
+      "summary": {
+        "attempts": 9,
+        "batches": 9,
+        "ok": 9
+      }
+    }
+  ],
+  "network": {
+    "attempts": 9,
+    "errors": 0,
+    "min_sent_interval_seconds": 6.1,
+    "official_batches": 9,
+    "total_bytes": 4261146
+  },
+  "original_adapter_family_parity": true,
+  "original_adapter_git_blob": "2f3d19c775331a634880a3451fa3511cefe40c5a",
+  "original_text_labels_and_role_preserved": true,
+  "preprocessing_regression": {
+    "count": 19,
+    "exit_code": 0
+  },
+  "public_source_overlap": 0,
+  "public_zip_sha256": "c00660f6d37cfefa2af35513ed785ca0e77f880746f34220edb204c353bfadbf",
+  "raw_records": 860,
+  "recorded_exposure_overlap": 0,
+  "reserved_ids": 155,
+  "reserved_overlap": 0,
+  "reserved_scoring": 0,
+  "result": "passed",
+  "review": {
+    "fixed_snapshot_and_generation_code_sha_bound": true,
+    "type": "self_review",
+    "unresolved_blocking_findings": 0
+  },
+  "source_evidence": "every_CWE_CPE_located_in_hashed_NVD_response",
+  "source_manifest_sha256": "e44ac6171c276513184ffab76d6a24be5887805b0e07753873498b47f705db09",
+  "status_counts": {
+    "background_ready": 858,
+    "rejected_source_record": 2
+  },
+  "training_units": 0
+}

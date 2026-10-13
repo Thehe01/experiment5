@@ -1,0 +1,40 @@
+2026-10-11T15:41:40.4515931Z {"phase": "durably_reserved", "slot": 1, "run_id": "38152196348", "restored": false, "model_api_calls": 0}
+2026-10-11T15:41:47.1912408Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261021-base", "unique_reserved_units": 1}
+2026-10-11T15:42:50.4546028Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261021-augmented", "unique_reserved_units": 2}
+2026-10-11T15:43:18.3564960Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261022-base", "unique_reserved_units": 3}
+2026-10-11T15:43:38.5074457Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261022-augmented", "unique_reserved_units": 4}
+2026-10-11T15:44:17.8830132Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261023-base", "unique_reserved_units": 5}
+2026-10-11T15:44:30.0805056Z {"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s20261023-augmented", "unique_reserved_units": 6}
+2026-10-11T15:44:55.2828260Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261021-base", "unique_reserved_units": 7}
+2026-10-11T15:45:08.4547545Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261021-augmented", "unique_reserved_units": 8}
+2026-10-11T15:45:35.6928531Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261022-base", "unique_reserved_units": 9}
+2026-10-11T15:46:09.2386881Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261022-augmented", "unique_reserved_units": 10}
+2026-10-11T15:46:44.3360588Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261023-base", "unique_reserved_units": 11}
+2026-10-11T15:47:04.4839070Z {"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s20261023-augmented", "unique_reserved_units": 12}
+2026-10-11T15:47:24.8592986Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261021-base", "unique_reserved_units": 13}
+2026-10-11T15:47:50.2585216Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261021-augmented", "unique_reserved_units": 14}
+2026-10-11T15:48:31.6704381Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261022-base", "unique_reserved_units": 15}
+2026-10-11T15:48:46.9661968Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261022-augmented", "unique_reserved_units": 16}
+2026-10-11T15:49:02.7856683Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261023-base", "unique_reserved_units": 17}
+2026-10-11T15:49:27.6645105Z {"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s20261023-augmented", "unique_reserved_units": 18}
+2026-10-11T15:49:50.2185027Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261021-base", "unique_reserved_units": 19}
+2026-10-11T15:50:16.3543414Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261021-augmented", "unique_reserved_units": 20}
+2026-10-11T15:50:28.1836054Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261022-base", "unique_reserved_units": 21}
+2026-10-11T15:50:52.1351682Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261022-augmented", "unique_reserved_units": 22}
+2026-10-11T15:51:23.8417975Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261023-base", "unique_reserved_units": 23}
+2026-10-11T15:51:41.5194320Z {"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s20261023-augmented", "unique_reserved_units": 24}
+2026-10-11T15:52:04.8419427Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261021-base", "unique_reserved_units": 25}
+2026-10-11T15:52:18.9331442Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261021-augmented", "unique_reserved_units": 26}
+2026-10-11T15:52:49.8584462Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261022-base", "unique_reserved_units": 27}
+2026-10-11T15:53:04.8478560Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261022-augmented", "unique_reserved_units": 28}
+2026-10-11T15:53:23.9103155Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261023-base", "unique_reserved_units": 29}
+2026-10-11T15:53:47.7105777Z {"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s20261023-augmented", "unique_reserved_units": 30}
+2026-10-11T15:54:12.1494270Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261021-base", "unique_reserved_units": 31}
+2026-10-11T15:54:19.1194280Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261021-augmented", "unique_reserved_units": 32}
+2026-10-11T15:54:48.5090803Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261022-base", "unique_reserved_units": 33}
+2026-10-11T15:55:23.7849007Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261022-augmented", "unique_reserved_units": 34}
+2026-10-11T15:55:35.3525130Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261023-base", "unique_reserved_units": 35}
+2026-10-11T15:56:00.9534268Z {"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s20261023-augmented", "unique_reserved_units": 36}
+2026-10-11T15:56:22.7253252Z {"phase": "development_complete", "registered_units": 36, "reserved_units": 36, "completed_units": 36, "model_api_calls": 0, "reserved_holdout_evaluated": false, "confirmation_training_started": false, "registration_sha256": "ac19948da5d31cfede901073af08dbbc49c2b99950ff48e3f96bea334e075e5e", "data_expansion_gate": {"passed": false, "meaning": "development_data_expansion_gate_only", "reserved_evaluation_started": false, "mean_delta_mrr": -0.03665765445729659, "wins_of_nine": 0, "fixed_major_macro_delta": -0.024932807344384814}}
+2026-10-11T15:56:22.7410787Z {"completed_units": 36, "confirmation_training_started": false, "data_expansion_gate": {"fixed_major_macro_delta": -0.024932807344384814, "mean_delta_mrr": -0.03665765445729659, "meaning": "development_data_expansion_gate_only", "passed": false, "reserved_evaluation_started": false, "wins_of_nine": 0}, "model_api_calls": 0, "phase": "development_complete", "registered_units": 36, "registration_sha256": "ac19948da5d31cfede901073af08dbbc49c2b99950ff48e3f96bea334e075e5e", "reserved_holdout_evaluated": false, "reserved_units": 36}
+2026-10-11T15:57:01.1953654Z {"phase": "durably_closed", "slot": 1, "campaign": {"completed_units": 36, "confirmation_training_started": false, "data_expansion_gate": {"fixed_major_macro_delta": -0.024932807344384814, "mean_delta_mrr": -0.03665765445729659, "meaning": "development_data_expansion_gate_only", "passed": false, "reserved_evaluation_started": false, "wins_of_nine": 0}, "model_api_calls": 0, "phase": "development_complete", "registered_units": 36, "registration_sha256": "ac19948da5d31cfede901073af08dbbc49c2b99950ff48e3f96bea334e075e5e", "reserved_holdout_evaluated": false, "reserved_units": 36}}

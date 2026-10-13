@@ -1,0 +1,64 @@
+{
+  "manifest_version": "protegi-configuration-pilot-v3",
+  "purpose": "development-only rare-target-stratified Configuration Stage 1 pilot A",
+  "parent_split_file": "train_dev_test_split_v7.json",
+  "parent_split_sha256": "6cbef622b5e9075e7173559c01d733336adb60195fbc9490ecdbe92c368f5da5",
+  "selection_policy": "Official Train/Dev development subsets only; no Test; full-run gate remains blocked unless this and a document-disjoint confirmation pilot both pass",
+  "window_policy": {
+    "version": "window-split-v3:dense25-1000-120-20-s100",
+    "max_chars": 3000,
+    "overlap": 400,
+    "dense_min_ids": 25,
+    "dense_min_span": 1000,
+    "dense_gap": 120,
+    "dense_max_ids": 20,
+    "dense_seam": 100
+  },
+  "document_context": {
+    "enabled": false,
+    "reason": "run11 observed a regression under global document abbreviation injection"
+  },
+  "train": [
+    "aa23-289a",
+    "aa23-339a-coldfusion-cve-26360",
+    "fortios-sslvpn-rapid7-fortinet-targeting",
+    "aa25-266a"
+  ],
+  "dev": [
+    "aa24-242a",
+    "proxylogon-microsoft-hafnium-exchange",
+    "aa22-257a"
+  ],
+  "test": [],
+  "reserved_confirmation_dev": [
+    "aa25-239a",
+    "aa23-213a",
+    "aa22-228a",
+    "aa24-326a"
+  ],
+  "audit_counts": {
+    "train": {
+      "documents": 4,
+      "runtime_windows": 25,
+      "configuration_positive_windows": 9,
+      "configuration_gold_support": 26
+    },
+    "dev": {
+      "documents": 3,
+      "runtime_windows": 34,
+      "configuration_positive_windows": 5,
+      "configuration_gold_support": 20
+    }
+  },
+  "budgets": {
+    "optimization_steps_max": 2,
+    "beam_width_max": 2,
+    "task_model_calls_max": 700,
+    "optimizer_model_calls_max": 40
+  },
+  "notes": [
+    "Pilot A is development evidence only and is never a promotable formal artifact.",
+    "The reserved confirmation documents must not enter prompt search or error feedback.",
+    "Failure stops the workflow; it must not trigger a replacement full run."
+  ]
+}

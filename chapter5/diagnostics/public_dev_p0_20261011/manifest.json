@@ -1,0 +1,42 @@
+{
+  "files": {
+    "diagnose.py": {
+      "bytes": 18455,
+      "sha256": "3bd604957f22e03c763247addc737717b318dddb83b076239cfbd6023a4d436c"
+    },
+    "execution.json": {
+      "bytes": 1707,
+      "sha256": "c9d8b6451ed3b2cfe5da7e8ea9bb53e9cc46004e1526a1e5cc2266bea6010ef0"
+    },
+    "protocol.json": {
+      "bytes": 2508,
+      "sha256": "74ac3e85f73bc85a8f311ed0f6f8ed935411b5f290ec8534f9fa8b2728f2cab0"
+    },
+    "report.md": {
+      "bytes": 10769,
+      "sha256": "4536b48c73f832e2c74b82fb066c923dd8b078f2ac274d27df4e3a5d3c140d79"
+    },
+    "results/analysis.json": {
+      "bytes": 106869,
+      "sha256": "f9723bb4d17474cafccccd4cc275ea045ac08ab26e196084d3cc490677f46a87"
+    },
+    "results/query_diagnostics.jsonl": {
+      "bytes": 2145035,
+      "sha256": "72da08d1b06917f8c9aeadec161a7ae1fe8b9d394d3b1936782c97cb069f7703"
+    },
+    "results/replay.json": {
+      "bytes": 15951,
+      "sha256": "cac978fd87f60ade6a7322574ac1b1a3550413aaf437481454ad0e08e154292e"
+    },
+    "results/summary.json": {
+      "bytes": 2151,
+      "sha256": "9eedbb3922cd8372ffe1a4255b3ec9245590a94e025ce99f1cf6447e3d2c4211"
+    },
+    "results/verification.json": {
+      "bytes": 1699,
+      "sha256": "050ae6791811795a884bbaf226b71099ec94e7d0148f81c3884e311434dffb57"
+    }
+  },
+  "schema": "chapter5-p0-diagnostic-evidence-v1",
+  "scope": "read-only original best checkpoint replay and Dev context diagnosis"
+}

@@ -1,0 +1,181 @@
+/workspace/scratch/740249c3d03b/chapter5_integrated/venv/lib/python3.12/site-packages/torch/_subclasses/functional_tensor.py:279: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+{"phase": "baselines_frozen", "alpha": 1, "best_by_condition": {"base": "cwe_frequency", "augmented": "cwe_frequency"}}
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s1-base", "unique_reserved_units": 1}
+f0-distmult_mixed-s1-base epoch=1 dev_mrr=0.633333 best=0.633333 patience=0
+{"phase": "continuation_needed", "registered_units": 36, "reserved_units": 1, "completed_units": 0, "model_api_calls": 0, "reserved_holdout_evaluated": false, "confirmation_training_started": false, "registration_sha256": "synthetic_test_only"}
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s1-base", "unique_reserved_units": 1}
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s1-augmented", "unique_reserved_units": 2}
+f0-distmult_mixed-s1-augmented epoch=1 dev_mrr=0.800000 best=0.800000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s2-base", "unique_reserved_units": 3}
+f0-distmult_mixed-s2-base epoch=1 dev_mrr=0.800000 best=0.800000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s2-augmented", "unique_reserved_units": 4}
+f0-distmult_mixed-s2-augmented epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s3-base", "unique_reserved_units": 5}
+f0-distmult_mixed-s3-base epoch=1 dev_mrr=0.900000 best=0.900000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s3-augmented", "unique_reserved_units": 6}
+f0-distmult_mixed-s3-augmented epoch=1 dev_mrr=0.766667 best=0.766667 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s1-base", "unique_reserved_units": 7}
+f0-rgcn_mixed-s1-base epoch=1 dev_mrr=0.600000 best=0.600000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s1-augmented", "unique_reserved_units": 8}
+f0-rgcn_mixed-s1-augmented epoch=1 dev_mrr=0.766667 best=0.766667 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s2-base", "unique_reserved_units": 9}
+f0-rgcn_mixed-s2-base epoch=1 dev_mrr=0.366667 best=0.366667 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s2-augmented", "unique_reserved_units": 10}
+f0-rgcn_mixed-s2-augmented epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s3-base", "unique_reserved_units": 11}
+f0-rgcn_mixed-s3-base epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s3-augmented", "unique_reserved_units": 12}
+f0-rgcn_mixed-s3-augmented epoch=1 dev_mrr=0.600000 best=0.600000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s1-base", "unique_reserved_units": 13}
+f1-distmult_mixed-s1-base epoch=1 dev_mrr=0.633333 best=0.633333 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s1-augmented", "unique_reserved_units": 14}
+f1-distmult_mixed-s1-augmented epoch=1 dev_mrr=0.800000 best=0.800000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s2-base", "unique_reserved_units": 15}
+f1-distmult_mixed-s2-base epoch=1 dev_mrr=0.800000 best=0.800000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s2-augmented", "unique_reserved_units": 16}
+f1-distmult_mixed-s2-augmented epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s3-base", "unique_reserved_units": 17}
+f1-distmult_mixed-s3-base epoch=1 dev_mrr=0.900000 best=0.900000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s3-augmented", "unique_reserved_units": 18}
+f1-distmult_mixed-s3-augmented epoch=1 dev_mrr=0.766667 best=0.766667 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s1-base", "unique_reserved_units": 19}
+f1-rgcn_mixed-s1-base epoch=1 dev_mrr=0.600000 best=0.600000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s1-augmented", "unique_reserved_units": 20}
+f1-rgcn_mixed-s1-augmented epoch=1 dev_mrr=0.766667 best=0.766667 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s2-base", "unique_reserved_units": 21}
+f1-rgcn_mixed-s2-base epoch=1 dev_mrr=0.366667 best=0.366667 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s2-augmented", "unique_reserved_units": 22}
+f1-rgcn_mixed-s2-augmented epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s3-base", "unique_reserved_units": 23}
+f1-rgcn_mixed-s3-base epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s3-augmented", "unique_reserved_units": 24}
+f1-rgcn_mixed-s3-augmented epoch=1 dev_mrr=0.600000 best=0.600000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s1-base", "unique_reserved_units": 25}
+f2-distmult_mixed-s1-base epoch=1 dev_mrr=0.633333 best=0.633333 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s1-augmented", "unique_reserved_units": 26}
+f2-distmult_mixed-s1-augmented epoch=1 dev_mrr=0.800000 best=0.800000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s2-base", "unique_reserved_units": 27}
+f2-distmult_mixed-s2-base epoch=1 dev_mrr=0.800000 best=0.800000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s2-augmented", "unique_reserved_units": 28}
+f2-distmult_mixed-s2-augmented epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s3-base", "unique_reserved_units": 29}
+f2-distmult_mixed-s3-base epoch=1 dev_mrr=0.900000 best=0.900000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s3-augmented", "unique_reserved_units": 30}
+f2-distmult_mixed-s3-augmented epoch=1 dev_mrr=0.766667 best=0.766667 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s1-base", "unique_reserved_units": 31}
+f2-rgcn_mixed-s1-base epoch=1 dev_mrr=0.600000 best=0.600000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s1-augmented", "unique_reserved_units": 32}
+f2-rgcn_mixed-s1-augmented epoch=1 dev_mrr=0.766667 best=0.766667 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s2-base", "unique_reserved_units": 33}
+f2-rgcn_mixed-s2-base epoch=1 dev_mrr=0.366667 best=0.366667 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s2-augmented", "unique_reserved_units": 34}
+f2-rgcn_mixed-s2-augmented epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s3-base", "unique_reserved_units": 35}
+f2-rgcn_mixed-s3-base epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s3-augmented", "unique_reserved_units": 36}
+f2-rgcn_mixed-s3-augmented epoch=1 dev_mrr=0.600000 best=0.600000 patience=0
+{"phase": "development_complete", "registered_units": 36, "reserved_units": 36, "completed_units": 36, "model_api_calls": 0, "reserved_holdout_evaluated": false, "confirmation_training_started": false, "registration_sha256": "synthetic_test_only", "data_expansion_gate": {"passed": true, "meaning": "development_data_expansion_gate_only", "reserved_evaluation_started": false, "mean_delta_mrr": 0.13333333333333336, "wins_of_nine": 6, "fixed_major_macro_delta": 0.14814814814814817}}
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s1-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s1-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s2-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s2-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s3-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f0-distmult_mixed-s3-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s1-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s1-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s2-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s2-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s3-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f0-rgcn_mixed-s3-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s1-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s1-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s2-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s2-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s3-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-distmult_mixed-s3-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s1-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s1-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s2-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s2-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s3-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f1-rgcn_mixed-s3-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s1-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s1-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s2-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s2-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s3-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-distmult_mixed-s3-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s1-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s1-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s2-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s2-augmented", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s3-base", "unique_reserved_units": 36}
+{"phase": "unit_started_or_resumed", "unit": "f2-rgcn_mixed-s3-augmented", "unique_reserved_units": 36}
+{"phase": "development_complete", "registered_units": 36, "reserved_units": 36, "completed_units": 36, "model_api_calls": 0, "reserved_holdout_evaluated": false, "confirmation_training_started": false, "registration_sha256": "synthetic_test_only", "data_expansion_gate": {"passed": true, "meaning": "development_data_expansion_gate_only", "reserved_evaluation_started": false, "mean_delta_mrr": 0.13333333333333336, "wins_of_nine": 6, "fixed_major_macro_delta": 0.14814814814814817}}
+[master (root-commit) ad57561] source
+ 1 file changed, 1 insertion(+)
+ create mode 100644 seed.txt
+Switched to a new branch 'codex/test-dev'
+[codex/test-dev 34cfae5] activate
+ 1 file changed, 4 insertions(+)
+ create mode 100644 chapter5/resolved_dev/launch.json
+To /tmp/tmpb6zyku64/origin
+ * [new branch]      codex/test-dev -> codex/test-dev
+From /tmp/tmpb6zyku64/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+[codex/test-dev 57f5691] Reserve source-resolved development CPU slot 1 run 1/1 [skip ci]
+ 1 file changed, 10 insertions(+)
+ create mode 100644 chapter5/resolved_dev/runs/test/session.json
+To /tmp/tmpb6zyku64/origin
+   34cfae5..57f5691  HEAD -> codex/test-dev
+{"phase": "durably_reserved", "slot": 1, "run_id": "1", "restored": false, "model_api_calls": 0}
+From /tmp/tmpb6zyku64/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+From /tmp/tmpb6zyku64/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+[codex/test-dev 1e25c09] Archive source-resolved development CPU slot 1 run 1/1 [skip ci]
+ 4 files changed, 20 insertions(+), 2 deletions(-)
+ create mode 100644 chapter5/resolved_dev/runs/test/manifest.json
+ create mode 100644 chapter5/resolved_dev/runs/test/state.part-000
+ create mode 100644 chapter5/resolved_dev/runs/test/status.json
+To /tmp/tmpb6zyku64/origin
+   57f5691..1e25c09  HEAD -> codex/test-dev
+{"phase": "durably_closed", "slot": 1, "campaign": {"phase": "continuation_needed"}}
+From /tmp/tmpb6zyku64/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+From /tmp/tmpb6zyku64/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+[codex/test-dev 97f3303] Reserve source-resolved development CPU slot 2 run 1/1 [skip ci]
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+To /tmp/tmpb6zyku64/origin
+   1e25c09..97f3303  HEAD -> codex/test-dev
+{"phase": "durably_reserved", "slot": 2, "run_id": "1", "restored": true, "model_api_calls": 0}
+From /tmp/tmpb6zyku64/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+[codex/test-dev 3ed4079] Archive source-resolved development CPU slot 2 run 1/1 [skip ci]
+ 4 files changed, 10 insertions(+), 7 deletions(-)
+To /tmp/tmpb6zyku64/origin
+   97f3303..3ed4079  HEAD -> codex/test-dev
+{"phase": "durably_closed", "slot": 2, "campaign": {"phase": "development_complete"}}
+From /tmp/tmpb6zyku64/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+tmp__xckddz epoch=1 dev_mrr=0.733333 best=0.733333 patience=0
+a epoch=1 dev_mrr=0.600000 best=0.600000 patience=0
+b epoch=1 dev_mrr=0.600000 best=0.600000 patience=0
+c epoch=1 dev_mrr=0.533333 best=0.533333 patience=0
+distmult_uniform epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+distmult_mixed epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+rgcn_uniform epoch=1 dev_mrr=0.400000 best=0.400000 patience=0
+rgcn_mixed epoch=1 dev_mrr=0.400000 best=0.400000 patience=0
+----------------------------------------------------------------------
+Ran 28 tests in 3.221s
+
+OK

@@ -1,0 +1,146 @@
+{
+  "deterministic_runtime_zip": {
+    "bytes": 151825,
+    "passed": true,
+    "sha256": "224edc37ab105644bec932ab54dc1071783c35fd124728d5a2645c1f00274d10"
+  },
+  "independent_source_comparison": {
+    "passed": true,
+    "receipt_sha256": "cfac716fe74bc8e3837f35259d299138c7381bd1068c101b946a2ed8d5d70924",
+    "script": "scripts/verify_chapter5_expanded_data_v1.py",
+    "script_sha256": "04129141fcbae2969e013f6a5a5c05dd52e9102702155304dae5265a6a957444"
+  },
+  "model_api_calls": 0,
+  "negative_checks": [
+    {
+      "check": "runtime_package_tamper",
+      "result": "rejected"
+    },
+    {
+      "check": "config_tamper",
+      "result": "rejected"
+    },
+    {
+      "check": "workflow_source_tamper",
+      "result": "rejected"
+    },
+    {
+      "check": "existing_data_package_overwrite",
+      "result": "rejected"
+    },
+    {
+      "check": "source_original_zip_tamper",
+      "result": "rejected"
+    }
+  ],
+  "phase": "offline_preparation_complete",
+  "real_dataset_training_runs": 0,
+  "real_graph_sampling": {
+    "graphs": [
+      {
+        "condition": "augmented",
+        "fold": 0,
+        "negative_count": 128020,
+        "sampling": {
+          "auxiliary_fallback": 0,
+          "target_full": 14145,
+          "target_seen": 14145,
+          "target_seen_fallback": 0
+        },
+        "target_negative_count": 28290
+      },
+      {
+        "condition": "augmented",
+        "fold": 1,
+        "negative_count": 128070,
+        "sampling": {
+          "auxiliary_fallback": 0,
+          "target_full": 14170,
+          "target_seen": 14170,
+          "target_seen_fallback": 0
+        },
+        "target_negative_count": 28340
+      },
+      {
+        "condition": "augmented",
+        "fold": 2,
+        "negative_count": 128070,
+        "sampling": {
+          "auxiliary_fallback": 0,
+          "target_full": 14170,
+          "target_seen": 14170,
+          "target_seen_fallback": 0
+        },
+        "target_negative_count": 28340
+      },
+      {
+        "condition": "base",
+        "fold": 0,
+        "negative_count": 80010,
+        "sampling": {
+          "auxiliary_fallback": 0,
+          "target_full": 6400,
+          "target_seen": 6400,
+          "target_seen_fallback": 0
+        },
+        "target_negative_count": 12800
+      },
+      {
+        "condition": "base",
+        "fold": 1,
+        "negative_count": 80060,
+        "sampling": {
+          "auxiliary_fallback": 0,
+          "target_full": 6425,
+          "target_seen": 6425,
+          "target_seen_fallback": 0
+        },
+        "target_negative_count": 12850
+      },
+      {
+        "condition": "base",
+        "fold": 2,
+        "negative_count": 80060,
+        "sampling": {
+          "auxiliary_fallback": 0,
+          "target_full": 6425,
+          "target_seen": 6425,
+          "target_seen_fallback": 0
+        },
+        "target_negative_count": 12850
+      }
+    ],
+    "real_graphs": 6,
+    "result": "passed",
+    "training_runs": 0
+  },
+  "registration": {
+    "candidate_parent_techniques": 31,
+    "external_train_cves": 858,
+    "model_api_calls": 0,
+    "model_training_runs": 0,
+    "original_dev_per_fold": 155,
+    "package_sha256": "224edc37ab105644bec932ab54dc1071783c35fd124728d5a2645c1f00274d10",
+    "phase": "offline_registration_verified",
+    "registered_training_units": 36,
+    "registration_sha256": "b8a13ca057048c1a5bd894422323276861565b4bdede433f4812a6b9ad9b8c6a",
+    "reserved_cves": 155,
+    "reserved_holdout_evaluated": false,
+    "reserved_nodes_in_run_graph": 0,
+    "scored_dev_per_fold": 150,
+    "supervised_train_per_fold": {
+      "augmented": 1558,
+      "base": 700
+    }
+  },
+  "reserved_evaluations": 0,
+  "review": "review.md",
+  "tests": {
+    "command": "python -m unittest chapter5.expanded_dev.test_data chapter5.expanded_dev.test_campaign chapter5.expanded_dev.test_archive chapter5.public_dev.test_core chapter5.public_dev.test_model -q",
+    "count": 29,
+    "exit_code": 0,
+    "log_sha256": "c2556ca2ba5f3ddac248ed27275d9f5beb6d8c3752f6a12afd6f522e8eeb4509",
+    "synthetic_full_campaign_units": 36,
+    "synthetic_training_is_science": false
+  }
+}

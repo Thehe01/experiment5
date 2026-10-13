@@ -1,0 +1,49 @@
+{
+  "domain_guard_red": {
+    "behavior_failures": 1,
+    "exit_code": 1,
+    "tests": 9
+  },
+  "expanded_data_regression": {
+    "command": "ATEN_CPU_CAPABILITY=avx2 PYTHONPATH=chapter5_integrated/source chapter5_integrated/venv/bin/python -m unittest chapter5.expanded_dev.test_data",
+    "exit_code": 0,
+    "tests": 10
+  },
+  "final_alignment_tests": {
+    "command": "PYTHONPATH=chapter5_integrated/source python -m unittest discover -s chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011 -p test_alignment.py",
+    "exit_code": 0,
+    "tests": 9
+  },
+  "final_suite_tests": 38,
+  "independent_verification": {
+    "exit_code": 0,
+    "negative_probes": 2,
+    "receipt": "verification.json",
+    "repeat_equal_files": 9
+  },
+  "model_api_calls": 0,
+  "model_inference_runs": 0,
+  "original_completion_verification": {
+    "exit_code": 0,
+    "frozen_source_blobs": 23,
+    "receipt": "original-completion-verification.json",
+    "unit_bindings": 36
+  },
+  "preprocessing_regression": {
+    "command": "PYTHONPATH=chapter5_integrated/source python -m unittest discover -s chapter5_preprocess/work -p test_prepare.py",
+    "exit_code": 0,
+    "tests": 19
+  },
+  "reserved_labels_compared_or_scored": 0,
+  "scientific_training_runs": 0,
+  "tdd_first_green": {
+    "exit_code": 0,
+    "tests": 8
+  },
+  "tdd_initial_red": {
+    "command": "python -m unittest discover -s chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011 -p test_alignment.py",
+    "exit_code": 1,
+    "tests": 8,
+    "unimplemented_errors": 8
+  }
+}

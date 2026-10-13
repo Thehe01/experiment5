@@ -1,0 +1,99 @@
+{
+  "manifest_version": "protegi-configuration-pilot-v2",
+  "purpose": "development-only constrained ProTeGi pilot targeted at Configuration strict F1 with a matched-P0 recall floor",
+  "parent_split_file": "train_dev_test_split_v7.json",
+  "parent_split_sha256": "6cbef622b5e9075e7173559c01d733336adb60195fbc9490ecdbe92c368f5da5",
+  "selection_policy": "Development-only Gold-label selection inside frozen official train/dev partitions; the Dev subset was observed by the full run10 Dev evaluation and is not an independent fresh validation set; no test documents are used",
+  "window_policy": {
+    "version": "window-split-v3:dense25-1000-120-20-s100",
+    "max_chars": 3000,
+    "overlap": 400,
+    "dense_min_ids": 25,
+    "dense_min_span": 1000,
+    "dense_gap": 120,
+    "dense_max_ids": 20,
+    "dense_seam": 100,
+    "counting": "actual build_text_windows output, not a length estimator"
+  },
+  "document_context": {
+    "enabled": true,
+    "version": "explicit-abbreviation-context-v1",
+    "scope": "explicit Long Form (SF) or SF (Long Form) definitions only",
+    "semantic_entity_decisions": false,
+    "automatic_entity_backfill": false
+  },
+  "train": [
+    "aa23-289a",
+    "aa23-339a-coldfusion-cve-26360",
+    "fortios-sslvpn-rapid7-fortinet-targeting",
+    "aa25-266a"
+  ],
+  "dev": [
+    "aa24-242a",
+    "proxylogon-microsoft-hafnium-exchange",
+    "aa22-257a"
+  ],
+  "test": [],
+  "observed_diagnostic_dev_excluded": [
+    "confluence-nvd-confluence-26084",
+    "aa23-213a",
+    "aa22-228a",
+    "aa22-074a"
+  ],
+  "audit_counts": {
+    "train": {
+      "documents": 4,
+      "source_characters": 58307,
+      "runtime_windows": 25,
+      "runtime_windows_by_document": {
+        "aa23-289a": 5,
+        "aa23-339a-coldfusion-cve-26360": 2,
+        "fortios-sslvpn-rapid7-fortinet-targeting": 3,
+        "aa25-266a": 15
+      },
+      "document_entities": {
+        "Vulnerability": 49,
+        "Configuration": 26,
+        "Weakness": 4,
+        "AttackTechnique": 67
+      },
+      "window_entities": {
+        "Vulnerability": 49,
+        "Configuration": 26,
+        "Weakness": 4,
+        "AttackTechnique": 67
+      },
+      "explicit_abbreviation_pairs": 46
+    },
+    "dev": {
+      "documents": 3,
+      "source_characters": 84388,
+      "runtime_windows": 34,
+      "runtime_windows_by_document": {
+        "aa24-242a": 15,
+        "proxylogon-microsoft-hafnium-exchange": 7,
+        "aa22-257a": 12
+      },
+      "document_entities": {
+        "Vulnerability": 79,
+        "Configuration": 20,
+        "Weakness": 7,
+        "AttackTechnique": 62
+      },
+      "window_entities": {
+        "Vulnerability": 79,
+        "Configuration": 20,
+        "Weakness": 7,
+        "AttackTechnique": 62
+      },
+      "explicit_abbreviation_pairs": 40
+    }
+  },
+  "notes": [
+    "The Train subset is reused because observing Train errors is part of ProTeGi optimization.",
+    "The Dev subset was observed in run10; this pilot is development-only and makes no fresh-Dev claim.",
+    "Strict Configuration F1 is primary; overlap F1 is diagnostic only.",
+    "Configuration strict recall must not fall below the matched P0 evaluated under the same abbreviation and WINDOW_SPLIT_V3 context.",
+    "The pilot is directional evidence only and cannot be promoted as a formal artifact."
+  ]
+}

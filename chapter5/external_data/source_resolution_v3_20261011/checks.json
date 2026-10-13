@@ -1,0 +1,52 @@
+{
+  "data_verification": {
+    "byte_identical_outputs": 10,
+    "command": "python chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/verify.py --v2 chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/source-aligned-candidates-v2.zip --enriched CVE2ATTCK_background_enriched_20261011.zip --sources chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/primary-evidence-v3.zip --opinions chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/review-opinions.json --protocol chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/protocol.json --output chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/outputs --receipt chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/verification.json",
+    "exit": 0,
+    "overwrite_rejection": true,
+    "receipt": "verification.json",
+    "tamper_rejection": true
+  },
+  "experimental_model_api_calls": 0,
+  "graph_regression": {
+    "command": "ATEN_CPU_CAPABILITY=avx2 PYTHONPATH=chapter5_integrated/source chapter5_integrated/venv/bin/python -m unittest chapter5.expanded_dev.test_data",
+    "exit": 0,
+    "log": "checks/graph-regression.log",
+    "passed": 10
+  },
+  "new_training_runs": 0,
+  "new_v3_tests": {
+    "GREEN_exit": 0,
+    "GREEN_tests_passed": 9,
+    "RED_behavior_assertion_failures": 8,
+    "RED_exit": 1,
+    "RED_tests": 9,
+    "command": "python -m unittest discover -s chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011 -p test_resolution.py",
+    "logs": [
+      "checks/tdd-red.log",
+      "checks/tdd-green.log"
+    ]
+  },
+  "original_bindings": {
+    "command": "ATEN_CPU_CAPABILITY=avx2 PYTHONPATH=chapter5_integrated/source chapter5_integrated/venv/bin/python chapter5_integrated/source/scripts/verify_chapter5_expansion_completion_v1.py --repo chapter5_integrated/source --inputs chapter5_integrated/completed --receipt chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/original-completion-verification.json",
+    "exit": 0,
+    "log": "checks/original-bindings.log",
+    "receipt": "original-completion-verification.json",
+    "scientific_source_files": 23,
+    "units": 36
+  },
+  "preprocess_regression": {
+    "command": "PYTHONPATH=chapter5_integrated/source python -m unittest discover -s chapter5_preprocess/work -p test_prepare.py",
+    "exit": 0,
+    "log": "checks/preprocess-regression.log",
+    "passed": 19
+  },
+  "reserved_scoring": 0,
+  "total_final_tests_passed": 47,
+  "v2_regression": {
+    "command": "PYTHONPATH=chapter5_integrated/source python -m unittest discover -s chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011 -p test_alignment.py",
+    "exit": 0,
+    "log": "checks/v2-regression.log",
+    "passed": 9
+  }
+}

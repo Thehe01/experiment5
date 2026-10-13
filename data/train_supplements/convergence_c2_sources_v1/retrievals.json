@@ -1,0 +1,56 @@
+[
+  {
+    "cve": "CVE-2016-0040",
+    "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2016-0040.json",
+    "sha256": "0e7cca580df64ae1ea83181fa4a8d7f404d51ee9ef4879af34c12fdc38e54431",
+    "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2016/0xxx/CVE-2016-0040.json",
+    "retrieved_at_local_date": "2026-10-06",
+    "extraction": "CVE id + newline + complete English CNA description + newline; pending/rejected records retain complete text",
+    "source_git_blob_sha": "8116b85b97f233906cb084c683dcd664010a5653"
+  },
+  {
+    "cve": "CVE-2016-0180",
+    "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2016-0180.json",
+    "sha256": "8ab8d1647b1ef1f7e7c7bc72e0ec36fabeb4840fa6fadd59e94feed8e6cd6253",
+    "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2016/0xxx/CVE-2016-0180.json",
+    "retrieved_at_local_date": "2026-10-06",
+    "extraction": "CVE id + newline + complete English CNA description + newline; pending/rejected records retain complete text",
+    "source_git_blob_sha": "25e26d8949af782a3c7dcda3bfcc688448f33b13"
+  },
+  {
+    "cve": "CVE-2016-3352",
+    "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2016-3352.json",
+    "sha256": "53112e60a896fcd94e02ec7ff09970ed224bcbe5ddd6c8797a0ef2ceb94b09c7",
+    "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2016/3xxx/CVE-2016-3352.json",
+    "retrieved_at_local_date": "2026-10-06",
+    "extraction": "CVE id + newline + complete English CNA description + newline; pending/rejected records retain complete text",
+    "source_git_blob_sha": "a045382a3a6773c58118a2d1f0078d6df5ffe296"
+  },
+  {
+    "cve": "CVE-2017-0146",
+    "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2017-0146.json",
+    "sha256": "26696015b865a412e79b9ea42af3b046ae68f20daa09e7341dfa99f7f2cef95e",
+    "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2017/0xxx/CVE-2017-0146.json",
+    "retrieved_at_local_date": "2026-10-06",
+    "extraction": "CVE id + newline + complete English CNA description + newline; pending/rejected records retain complete text",
+    "source_git_blob_sha": "e9d0d06cd60bbbe6f9bf0ade5076b6e849a490a9"
+  },
+  {
+    "cve": "CVE-2024-7123",
+    "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2024-7123.json",
+    "sha256": "b8a72b573f191f28ebbaa5c412124b6170ceb81f647a33a4a7b9c3a076be601b",
+    "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2024/7xxx/CVE-2024-7123.json",
+    "retrieved_at_local_date": "2026-10-06",
+    "extraction": "CVE id + newline + complete English CNA description + newline; pending/rejected records retain complete text",
+    "source_git_blob_sha": "1f478c9b7b2179e0b0f979ae17d5390231e54910"
+  },
+  {
+    "cve": "CVE-2019-5786",
+    "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2019-5786.json",
+    "sha256": "4e406521d359eae6025232121e4625bf1653592bc33f53c01bf16412f12f695b",
+    "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2019/5xxx/CVE-2019-5786.json",
+    "retrieved_at_local_date": "2026-10-06",
+    "extraction": "CVE id + newline + complete English CNA description + newline; pending/rejected records retain complete text",
+    "source_git_blob_sha": "583809ef959779a1d3c1408838a548cfe96be319"
+  }
+]

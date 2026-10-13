@@ -1,0 +1,112 @@
+{
+  "all_stopping_reasons": "patience",
+  "alpha": 10,
+  "archive_bytes": 212300186,
+  "archive_part_names_sizes_git_blobs_verified": true,
+  "archive_parts": 51,
+  "archive_zip_part_sha256_recomputed": false,
+  "augmented_vs_best_simple": {
+    "distmult_mixed": {
+      "mean_delta_mrr": -0.06672609965598635,
+      "unit_deltas": [
+        -0.04605221653186958,
+        -0.04165674518734924,
+        -0.048385785370610945,
+        -0.0773673130117149,
+        -0.07786305004680599,
+        -0.06402475909196126,
+        -0.07371246893471595,
+        -0.08588151889535312,
+        -0.08559103983349614
+      ],
+      "wins_of_nine": 0
+    },
+    "rgcn_mixed": {
+      "mean_delta_mrr": -0.0735296921912824,
+      "unit_deltas": [
+        -0.05979255391350968,
+        -0.02332496537277462,
+        -0.04622672849115811,
+        -0.09690712638657523,
+        -0.057931058923313905,
+        -0.09990189202460947,
+        -0.08731698151612649,
+        -0.10085939344640094,
+        -0.08950652964707317
+      ],
+      "wins_of_nine": 0
+    }
+  },
+  "baseline_means": {
+    "cwe_frequency": {
+      "augmented": 0.3737731251674751,
+      "base": 0.4015729219993806
+    },
+    "frequency": {
+      "augmented": 0.35172331588280087,
+      "base": 0.37020599691406286
+    },
+    "neighbor_vote": {
+      "augmented": 0.42860628842669285,
+      "base": 0.46533919504374655
+    },
+    "smoothed_cwe-10": {
+      "augmented": 0.41631579323423834,
+      "base": 0.45253820891227486
+    }
+  },
+  "best_baseline": {
+    "augmented": "neighbor_vote",
+    "base": "neighbor_vote"
+  },
+  "completed_units": 36,
+  "data_gate": {
+    "fixed_major_macro_delta": -0.024932807344384814,
+    "mean_delta_mrr": -0.03665765445729659,
+    "meaning": "development_data_expansion_gate_only",
+    "passed": false,
+    "reserved_evaluation_started": false,
+    "wins_of_nine": 0
+  },
+  "dev_queries": [
+    147,
+    147,
+    148
+  ],
+  "epoch_range": [
+    35,
+    343
+  ],
+  "evaluable_classes": 28,
+  "execution_log_unique_units": 36,
+  "fixed_major_classes": 23,
+  "fixed_major_macro_max_error": 0.0,
+  "frozen_source_git_blobs_verified": 28,
+  "group_reconstruction_mrr_max_error": 5.551115123125783e-17,
+  "new_model_api_calls": 0,
+  "new_training_runs": 0,
+  "paired_summary": {
+    "distmult_mixed": {
+      "mean_augmented_mrr": 0.36188018877070655,
+      "mean_base_mrr": 0.3816654267922884,
+      "mean_delta_major_macro": -0.01602176362134748,
+      "mean_delta_mrr": -0.01978523802158186,
+      "pair_count": 9,
+      "wins": 1
+    },
+    "rgcn_mixed": {
+      "mean_augmented_mrr": 0.3550765962354105,
+      "mean_base_mrr": 0.39173425069270706,
+      "mean_delta_major_macro": -0.024932807344384814,
+      "mean_delta_mrr": -0.03665765445729659,
+      "pair_count": 9,
+      "wins": 0
+    }
+  },
+  "raw_ranks_and_checkpoints_replayed": false,
+  "registration_sha256": "ac19948da5d31cfede901073af08dbbc49c2b99950ff48e3f96bea334e075e5e",
+  "reserved_holdout_evaluated": false,
+  "result": "passed",
+  "run_id": 38152196348,
+  "unit_numeric_bindings_verified": 36
+}

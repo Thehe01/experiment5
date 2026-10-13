@@ -1,0 +1,20 @@
+{
+  "archive_parts_downloaded_and_reassembled": false,
+  "command": "ATEN_CPU_CAPABILITY=avx2 PYTHONPATH=chapter5_integrated/source chapter5_integrated/venv/bin/python chapter5_integrated/source/chapter5/resolved_dev/completion-review/verify_completion.py --repo chapter5_integrated/source --inputs chapter5_integrated/resolved-completed --evidence chapter5_integrated/source/chapter5/resolved_dev/completion-review --receipt chapter5_integrated/source/chapter5/resolved_dev/completion-review/verification.json",
+  "exit_code": 0,
+  "input_sha256": {
+    "comparison.json": "afaf85ff6d974847c8f18d7dfe4e6fdd49e83055516d8e8b006cc0170f75fa59",
+    "execution-evidence.log": "236ae7f30be61f0d2d9b321e32803b2e8a1f78ad35e465884868712054add827",
+    "manifest.json": "95a7b343020f98de797f35ae92ea37dd074e0671f3dc585cae78f928d969c3e5",
+    "remote-tree.json": "afd0c56c3c2d3a4673028b3fa4e6be359a9ee5ebf70520de676970375ef9e3b7",
+    "run.json": "62b4b12be4081256b4121872f2b23fd679807b365785543a7430ad68b40d2dca",
+    "session.json": "8f9bb18d7e700dae19bfc40b9d54cf727035acab4a3a6277f4c8dc67ed184402",
+    "status.json": "469a9ec6d4aec3ee85a4b3d76a78d88b1756d2f3a4ef6906f1883260634b16e3"
+  },
+  "log": "checks.log",
+  "new_model_api_calls": 0,
+  "new_scientific_training_runs": 0,
+  "observed_at_utc": "2026-10-11T16:08:51.652756+00:00",
+  "raw_ranks_and_checkpoints_replayed": false,
+  "result": "passed"
+}

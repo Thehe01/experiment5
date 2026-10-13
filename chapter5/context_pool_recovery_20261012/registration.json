@@ -1,0 +1,28 @@
+{
+  "additional_budget_beyond_original_allocation": 0,
+  "already_executed_replays": 1,
+  "authorized_by": "existing9-unit candidate execution and archival scope; complete remaining original verification allocation",
+  "files_sha256": {
+    ".github/workflows/chapter5-context-pool-recovery.yml": "fb4446d8a2cb544212d3e9ca7edc9ac1f7db1fb9f568c3f04b2f83c8b4cbba6b",
+    "chapter5/context_pool_recovery_20261012/__init__.py": "b0bc1e2ae49f9e83edd2e0929c8ea229e8ac4d7c5e4af38e43380a54d52814e1",
+    "chapter5/context_pool_recovery_20261012/original-stopped-ledger.json": "13c47c7f449b7806a011484a845812277f5b45c815698211c7a4459ee3fdf49b",
+    "chapter5/context_pool_recovery_20261012/reconciled-first-receipt.json": "85ec38b544fa1a9a669e42bb04270313d0e1f4e7ad11b2e8c3e4dabadf8ed8f9",
+    "chapter5/context_pool_recovery_20261012/recovery.py": "a23c987072a65c0dc9d00ff081efead9d6e08ed01076ad00a9a7888a6c183ac9",
+    "chapter5/context_pool_recovery_20261012/state-inventory.json": "3b718ef4334c16ec999dc24241d1093dc58c5386567573cb084f52020d37b32d",
+    "chapter5/context_pool_recovery_20261012/test_recovery.py": "c748f8a768bb4d3856152f2a9b098cce6fa9572887f8b9536ded560dbd4f1fc3"
+  },
+  "new_ledger_is_independent_reconciliation": true,
+  "new_training_budget": 0,
+  "old_candidate_code_config_registration_and_unknown_ledger_unchanged": true,
+  "original_replay_budget": 9,
+  "original_unknown_snapshot_sha256": "13c47c7f449b7806a011484a845812277f5b45c815698211c7a4459ee3fdf49b",
+  "prior_diagnosis_forwards_unchanged": 288,
+  "publish_change": "git push --no-thin; non-fast-forward and uncertain forward still stop",
+  "reason": "checkpoint score replay passed before Git push failed (missing necessary objects); saved receipt is already permanent and matches checkpoint/scores",
+  "reconciled_receipt_sha256": "85ec38b544fa1a9a669e42bb04270313d0e1f4e7ad11b2e8c3e4dabadf8ed8f9",
+  "remaining_original_replay_budget": 8,
+  "schema": "candidate-checkpoint-recovery-registration-v1",
+  "scientific_registration_sha256": "29d8c3b89c653229b086a49d45122e05f28570663f858fa2270f83a2066ba713",
+  "source_run": 38219304888,
+  "source_stopped_commit": "f6d09c18d1034e413c458dfc0491ded42f860383"
+}

@@ -1,0 +1,319 @@
+{
+  "schema": "cve2attack-name-to-id-v1",
+  "source_repository": "readerbench/CVE2ATT-CK",
+  "source_commit": "417e4c6f7071bc8542d03e6bc0b1a6a71f10c42f",
+  "target_attack_version": "19.2",
+  "label_scope": "31_parent_techniques_only",
+  "mapping": [
+    {
+      "source_name": "Process Injection",
+      "technique_id": "T1055",
+      "current_official_name": "Process Injection",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1055/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Access Token Manipulation",
+      "technique_id": "T1134",
+      "current_official_name": "Access Token Manipulation",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1134/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Hijack Execution Flow",
+      "technique_id": "T1574",
+      "current_official_name": "Hijack Execution Flow",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1574/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Data from Local System",
+      "technique_id": "T1005",
+      "current_official_name": "Data from Local System",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1005/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "External Remote Services",
+      "technique_id": "T1133",
+      "current_official_name": "External Remote Services",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1133/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Data Manipulation",
+      "technique_id": "T1565",
+      "current_official_name": "Data Manipulation",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1565/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Network Sniffing",
+      "technique_id": "T1040",
+      "current_official_name": "Network Sniffing",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1040/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Exploitation for Privilege Escalation",
+      "technique_id": "T1068",
+      "current_official_name": "Exploitation for Privilege Escalation",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1068/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Command and Scripting Interpreter",
+      "technique_id": "T1059",
+      "current_official_name": "Command and Scripting Interpreter",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1059/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Phishing",
+      "technique_id": "T1566",
+      "current_official_name": "Phishing",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1566/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Server Software Component",
+      "technique_id": "T1505",
+      "current_official_name": "Server Software Component",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1505/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Archive Collected Data",
+      "technique_id": "T1560",
+      "current_official_name": "Archive Collected Data",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1560/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Data Destruction",
+      "technique_id": "T1485",
+      "current_official_name": "Data Destruction",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1485/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Browser Session Hijacking",
+      "technique_id": "T1185",
+      "current_official_name": "Browser Session Hijacking",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1185/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Exploitation for Credential Access",
+      "technique_id": "T1212",
+      "current_official_name": "Exploitation for Credential Access",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1212/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Abuse Elevation Control Mechanism",
+      "technique_id": "T1548",
+      "current_official_name": "Abuse Elevation Control Mechanism",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1548/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Adversary-in-the-Middle",
+      "technique_id": "T1557",
+      "current_official_name": "Adversary-in-the-Middle",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1557/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "User Execution",
+      "technique_id": "T1204",
+      "current_official_name": "User Execution",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1204/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Unsecured Credentials",
+      "technique_id": "T1552",
+      "current_official_name": "Unsecured Credentials",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1552/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Brute Force",
+      "technique_id": "T1110",
+      "current_official_name": "Brute Force",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1110/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "File and Directory Discovery",
+      "technique_id": "T1083",
+      "current_official_name": "File and Directory Discovery",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1083/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Valid Accounts",
+      "technique_id": "T1078",
+      "current_official_name": "Valid Accounts",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1078/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Exploitation for Defense Evasion",
+      "technique_id": "T1211",
+      "current_official_name": "Exploitation for Stealth",
+      "name_status": "renamed_same_id",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1211/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Create Account",
+      "technique_id": "T1136",
+      "current_official_name": "Create Account",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1136/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Endpoint Denial of Service",
+      "technique_id": "T1499",
+      "current_official_name": "Endpoint Denial of Service",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1499/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Drive-by Compromise",
+      "technique_id": "T1189",
+      "current_official_name": "Drive-by Compromise",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1189/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Exploitation for Client Execution",
+      "technique_id": "T1203",
+      "current_official_name": "Exploitation for Client Execution",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1203/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Exploitation of Remote Services",
+      "technique_id": "T1210",
+      "current_official_name": "Exploitation of Remote Services",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1210/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Stage Capabilities",
+      "technique_id": "T1608",
+      "current_official_name": "Stage Capabilities",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1608/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Exploit Public-Facing Application",
+      "technique_id": "T1190",
+      "current_official_name": "Exploit Public-Facing Application",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1190/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    },
+    {
+      "source_name": "Forge Web Credentials",
+      "technique_id": "T1606",
+      "current_official_name": "Forge Web Credentials",
+      "name_status": "same_name",
+      "granularity": "parent",
+      "official_url": "https://attack.mitre.org/techniques/T1606/",
+      "identity_checked_at": "2026-10-11",
+      "identity_evidence": "MITRE official technique page title; ID membership checked against frozen 19.2 candidate graph"
+    }
+  ]
+}

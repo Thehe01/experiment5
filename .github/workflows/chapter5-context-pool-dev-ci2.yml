@@ -1,0 +1,71 @@
+name: Chapter 5 context-pool candidate execution revision CI2
+on:
+  push:
+    branches: [codex/chapter5-public-dev-20261011]
+    paths: [chapter5/context_pool_dev/execution_revision_ci2.json]
+permissions:
+  contents: write
+concurrency:
+  group: chapter5-context-pool-candidate-v1
+  cancel-in-progress: false
+env:
+  ATEN_CPU_CAPABILITY: avx2
+  PYTHONUNBUFFERED: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - name: Pure no-model budget/data/gate tests and registration
+        run: |
+          python -m unittest chapter5.context_pool_dev.test_core -q
+          python -m chapter5.context_pool_dev.campaign verify --repo .
+          python -c 'import pathlib,json,hashlib; root=pathlib.Path("chapter5/context_pool_dev"); r=json.loads((root/"execution_revision_ci2.json").read_text()); assert hashlib.sha256((root/"registration.json").read_bytes()).hexdigest()==r["scientific_registration_sha256"]; assert hashlib.sha256(pathlib.Path(r["workflow_path"]).read_bytes()).hexdigest()==r["workflow_sha256"]; assert r["training_budget"]==9 and r["prior_started_training_units"]==0; print("execution revision binding verified")'
+      - name: Install frozen CPU dependencies
+        run: python -m pip install -r chapter5/requirements-cpu.txt
+      - name: Numerical RED reference and GREEN implementation (synthetic only)
+        run: |
+          set +e
+          CONTEXT_POOL_RED=1 python -m unittest chapter5.context_pool_dev.test_model -q > "$RUNNER_TEMP/context-pool-red.log" 2>&1
+          red_code=$?
+          set -e
+          test "$red_code" -ne 0
+          python -c 'import os,pathlib; body=(pathlib.Path(os.environ["RUNNER_TEMP"])/"context-pool-red.log").read_text(); assert "NotImplementedError" in body; print("synthetic RED reference confirmed")'
+          python -m unittest chapter5.context_pool_dev.test_model -q
+          python -m chapter5.resolved_dev.campaign verify --repo .
+  train:
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 285
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: codex/chapter5-public-dev-20261011
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - name: Frozen CPU runtime
+        run: |
+          python -m pip install -r chapter5/requirements-cpu.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Registered9 candidate units with durable unit/checkpoint ledger
+        run: python -m chapter5.context_pool_dev.campaign run --repo . --state "$RUNNER_TEMP/context-pool-state"
+      - name: Registered9 best-checkpoint score replays
+        run: python -m chapter5.context_pool_dev.verify_results replay --repo . --state "$RUNNER_TEMP/context-pool-state"
+      - name: Independent cache scoring, paired gate, full permanent archive
+        run: python -m chapter5.context_pool_dev.verify_results audit --repo . --state "$RUNNER_TEMP/context-pool-state" --persist
+      - name: Retain unit state and evidence on success or failure
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: chapter5-context-pool-${{ github.run_id }}
+          path: |
+            chapter5/context_pool_dev
+            ${{ runner.temp }}/context-pool-state
+          retention-days: 90

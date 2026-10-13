@@ -1,0 +1,13 @@
+{
+  "already_executed_replay_reconciled": 1,
+  "archive_sha256": "591a4ab92e911e63f452e23b7af34d16772e26f1340e990fd1fa7bf8daa2d69c",
+  "new_training": 0,
+  "original_replay_budget": 9,
+  "original_stopped_ledger_unchanged": true,
+  "recovery_ledger_sha256": "e8369d50e6e3ccda9d59b86b4e53aea77f4f2aa3d3a7af8568638efbc8e77763",
+  "remaining_replays_executed": 8,
+  "replay_total": 9,
+  "result": "passed",
+  "trained_units_reused": 9,
+  "verification_sha256": "d0ee389a1a65d4893e55ea3d6ccd1805eb4708e21096cc3cbf740ff762dd9e11"
+}

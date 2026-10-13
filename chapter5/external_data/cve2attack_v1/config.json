@@ -1,0 +1,52 @@
+{
+  "protocol": "chapter5-cve2attack-preintegration-v1-20261011",
+  "repository": "Thehe01/experiment4",
+  "base_commit": "c27fac5d0197d5dcb457960c374cbfff0beaba95",
+  "source_repository": "readerbench/CVE2ATT-CK",
+  "source_commit": "417e4c6f7071bc8542d03e6bc0b1a6a71f10c42f",
+  "source_files": [
+    {
+      "name": "X_test.csv",
+      "git_blob_sha": "9045bf70d5a5b98303f9cde53dd1077ee889a17e",
+      "bytes": 120385,
+      "url": "https://github.com/readerbench/CVE2ATT-CK/blob/417e4c6f7071bc8542d03e6bc0b1a6a71f10c42f/X_test.csv"
+    },
+    {
+      "name": "X_train.csv",
+      "git_blob_sha": "46bcd3dba1168bc47480894b85e16ad00fb6640a",
+      "bytes": 508611,
+      "url": "https://github.com/readerbench/CVE2ATT-CK/blob/417e4c6f7071bc8542d03e6bc0b1a6a71f10c42f/X_train.csv"
+    },
+    {
+      "name": "y_test.csv",
+      "git_blob_sha": "fcb05c195a1e417b916a1c4458752d20dcdc20d6",
+      "bytes": 20398,
+      "url": "https://github.com/readerbench/CVE2ATT-CK/blob/417e4c6f7071bc8542d03e6bc0b1a6a71f10c42f/y_test.csv"
+    },
+    {
+      "name": "y_train.csv",
+      "git_blob_sha": "9600fa8adb830028676af7760d7b38bb33b3040a",
+      "bytes": 84320,
+      "url": "https://github.com/readerbench/CVE2ATT-CK/blob/417e4c6f7071bc8542d03e6bc0b1a6a71f10c42f/y_train.csv"
+    }
+  ],
+  "public_package_sha256": "c00660f6d37cfefa2af35513ed785ca0e77f880746f34220edb204c353bfadbf",
+  "folds_git_blob_sha": "8a6755a7c49bcfbb5877adb85fd6aa83f8f2ca46",
+  "registry_sha256": "32970c9950b0752555b27bd7054b39678d474e9e4332e0b00822be833891f44f",
+  "expected_counts": [
+    1665,
+    1207,
+    1035,
+    697,
+    155
+  ],
+  "attack_version": "19.2",
+  "model_api_budget": 0,
+  "training_budget": 0,
+  "reserved_scoring_budget": 0,
+  "source_label_scope": "31_parent_techniques",
+  "source_split_policy": "provenance_only_not_project_roles",
+  "duplicate_resolution": "no_automatic_label_union",
+  "canonical_integration_status": "not_started",
+  "background_enrichment_status": "not_started"
+}

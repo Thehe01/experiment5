@@ -1,0 +1,68 @@
+{
+  "fresh-nvd-cve-2016-3270": {
+    "doc_id": "fresh-nvd-cve-2016-3270",
+    "role": "evaluation",
+    "language": "en",
+    "text": "CVE-2016-3270\nThe Graphics component in the kernel in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607 allows local users to gain privileges via a crafted application, aka \"Win32k Elevation of Privilege Vulnerability.\"\n",
+    "text_sha256": "d5181cfae5c9ebb9ff804155758f9b84b40de79aaba66ab18e02f470fbced93d",
+    "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2016-3270",
+    "source_snapshot": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2016-3270.json",
+    "extraction": "Literal CVE id field, newline, complete unedited English description, newline. No synthetic CVE inserted into prose.",
+    "known_exposure": "Products, Windows enumeration template and MS17-010 family known from development; new record/source contexts, not an unseen holdout"
+  },
+  "fresh-nvd-cve-2016-3237": {
+    "doc_id": "fresh-nvd-cve-2016-3237",
+    "role": "evaluation",
+    "language": "en",
+    "text": "CVE-2016-3237\nKerberos in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607 allows man-in-the-middle attackers to bypass authentication via vectors related to a fallback to NTLM authentication during a domain account password change, aka \"Kerberos Security Feature Bypass Vulnerability.\"\n",
+    "text_sha256": "825de5838fc5291fdffae015dd7e28c6f5193dcc2d7e4ffffddb69181e339ea3",
+    "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2016-3237",
+    "source_snapshot": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2016-3237.json",
+    "extraction": "Literal CVE id field, newline, complete unedited English description, newline. No synthetic CVE inserted into prose.",
+    "known_exposure": "Products, Windows enumeration template and MS17-010 family known from development; new record/source contexts, not an unseen holdout"
+  },
+  "fresh-nvd-cve-2017-0147": {
+    "doc_id": "fresh-nvd-cve-2017-0147",
+    "role": "template_challenge",
+    "language": "en",
+    "text": "CVE-2017-0147\nThe SMBv1 server in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607; and Windows Server 2016 allows remote attackers to obtain sensitive information from process memory via a crafted packets, aka \"Windows SMB Information Disclosure Vulnerability.\"\n",
+    "text_sha256": "74dd9176fb92a6dc37bda412172940a369818a66b237764e6df6fad4198fa111",
+    "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-0147",
+    "source_snapshot": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-0147.json",
+    "extraction": "Literal CVE id field, newline, complete unedited English description, newline. No synthetic CVE inserted into prose.",
+    "known_exposure": "Products, Windows enumeration template and MS17-010 family known from development; new record/source contexts, not an unseen holdout"
+  },
+  "fresh-nvd-cve-2017-0148": {
+    "doc_id": "fresh-nvd-cve-2017-0148",
+    "role": "template_challenge",
+    "language": "en",
+    "text": "CVE-2017-0148\nThe SMBv1 server in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607; and Windows Server 2016 allows remote attackers to execute arbitrary code via crafted packets, aka \"Windows SMB Remote Code Execution Vulnerability.\" This vulnerability is different from those described in CVE-2017-0143, CVE-2017-0144, CVE-2017-0145, and CVE-2017-0146.\n",
+    "text_sha256": "c975206f3b10a66f8c291be8b071512a93b0146711c3b3da009f82874d7cbf01",
+    "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-0148",
+    "source_snapshot": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-0148.json",
+    "extraction": "Literal CVE id field, newline, complete unedited English description, newline. No synthetic CVE inserted into prose.",
+    "known_exposure": "Products, Windows enumeration template and MS17-010 family known from development; new record/source contexts, not an unseen holdout"
+  },
+  "fresh-nvd-cve-2017-11783": {
+    "doc_id": "fresh-nvd-cve-2017-11783",
+    "role": "release_control",
+    "language": "en",
+    "text": "CVE-2017-11783\nMicrosoft Windows 8.1, Windows Server 2012 R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allows an elevation of privilege vulnerability in the way it handles calls to Advanced Local Procedure Call (ALPC), aka \"Windows Elevation of Privilege Vulnerability\".\n",
+    "text_sha256": "96ed7684b0fb6309fb722e70e8ca65a61af18d002e3e44dcd40054adafc72602",
+    "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-11783",
+    "source_snapshot": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-11783.json",
+    "extraction": "Literal CVE id field, newline, complete unedited English description, newline. No synthetic CVE inserted into prose.",
+    "known_exposure": "Products, Windows enumeration template and MS17-010 family known from development; new record/source contexts, not an unseen holdout"
+  },
+  "fresh-nvd-cve-2017-5102": {
+    "doc_id": "fresh-nvd-cve-2017-5102",
+    "role": "background_scope_control",
+    "language": "en",
+    "text": "CVE-2017-5102\nUse of an uninitialized value in Skia in Google Chrome prior to 60.0.3112.78 for Mac, Windows, Linux, and Android allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page.\n",
+    "text_sha256": "3552b322c43caf1fc5a5753b837a7b0c5c873c09b87cf5cf30fddb73f1ab7631",
+    "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-5102",
+    "source_snapshot": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-5102.json",
+    "extraction": "Literal CVE id field, newline, complete unedited English description, newline. No synthetic CVE inserted into prose.",
+    "known_exposure": "Products, Windows enumeration template and MS17-010 family known from development; new record/source contexts, not an unseen holdout"
+  }
+}

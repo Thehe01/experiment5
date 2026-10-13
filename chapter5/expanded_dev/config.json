@@ -1,0 +1,67 @@
+{
+  "activation_branch": "codex/chapter5-expanded-activation-20261011",
+  "arms": [
+    "distmult_mixed",
+    "rgcn_mixed"
+  ],
+  "augmented_training_cves_per_fold": 1558,
+  "authorization": "user explicitly requested formally integrating enriched samples and starting this experiment",
+  "authorized_at": "2026-10-11T18:28:25+08:00",
+  "auxiliary_weight": 1.0,
+  "base_training_cves_per_fold": 700,
+  "bases": 4,
+  "candidate_parent_techniques": 31,
+  "conditions": [
+    "base",
+    "augmented"
+  ],
+  "confirmation_training_budget": 0,
+  "data_download_budget": 0,
+  "data_package": "chapter5/expanded_dev/data/paired-parent-v1.zip",
+  "data_sha256": "224edc37ab105644bec932ab54dc1071783c35fd124728d5a2645c1f00274d10",
+  "development_cves": 850,
+  "development_seeds": [
+    20261021,
+    20261022,
+    20261023
+  ],
+  "external_training_cves": 858,
+  "fold_seeds": [
+    20261011,
+    20261012,
+    20261013
+  ],
+  "gate": {
+    "major_macro_delta_min": -0.01,
+    "mean_delta_mrr": 0.02,
+    "wins_of_nine": 6
+  },
+  "layers": 2,
+  "major_technique_train_support": 10,
+  "max_epochs": 500,
+  "max_execution_slots": 3,
+  "min_improvement": 1e-08,
+  "model_api_call_budget": 0,
+  "negatives_per_positive": 10,
+  "original_development_cves": 880,
+  "original_validation_cves_per_fold": 155,
+  "params": {
+    "dimension": 64,
+    "dropout": 0.3,
+    "learning_rate": 0.003
+  },
+  "patience": 30,
+  "protocol": "chapter5-expanded-dev-v1-20261011",
+  "reserved_cves": 155,
+  "reserved_holdout_evaluation": false,
+  "slot_seconds": 14400,
+  "smoothing_alphas": [
+    1,
+    5,
+    10
+  ],
+  "threads": 2,
+  "training_unit_budget": 36,
+  "validation_cves_per_fold": 150,
+  "weight_decay": 1e-05
+}

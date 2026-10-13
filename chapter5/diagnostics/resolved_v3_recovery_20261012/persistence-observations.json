@@ -1,0 +1,56 @@
+{
+  "development_head": "68e4d2fd09ece4a70c70b0c550e8ff144c03d29d",
+  "checked_protected_refs": {
+    "main": "c71cfbdfcdb41dcd0fb59820619c14d87dadd7d4",
+    "resolved_activation": "a247a950412c517d4c80ff5bab7e46fece8b929e",
+    "expanded_activation": "50905f65a09ec91f8ccedf099b71443e2d22c6f6"
+  },
+  "diagnostic_blob_check": {
+    "sha": "6fb79ea10485503395d7976bc271cd28a1984b00",
+    "http_status": 404,
+    "error": "NOT_FOUND"
+  },
+  "development_tree": {
+    "recursive": true,
+    "truncated": false,
+    "entries": 2604,
+    "original_diagnostic_path_entries": 0
+  },
+  "library_search": {
+    "exact_titles": [
+      "diagnostic-evidence.zip",
+      "resolved_v3_20261012"
+    ],
+    "matched": 0,
+    "alternate_query": "第五章 诊断 20261012",
+    "matching_current_diagnosis_package_found": false,
+    "matched_documents": [
+      "source handoff",
+      "older snapshots",
+      "research report"
+    ],
+    "limit": "Search absence is not proof of global nonexistence; none of the checked persistent sources yielded original score caches."
+  },
+  "historical_scratch_check": {
+    "path": "/workspace/scratch/740249c3d03b/chapter5_integrated",
+    "exists": false
+  },
+  "artifact": {
+    "id": 11707257200,
+    "name": "chapter5-resolved-dev-slot-1-38152196348",
+    "size_in_bytes": 212090493,
+    "url": "https://api.github.com/repos/Thehe01/experiment4/actions/artifacts/11707257200",
+    "expired": false,
+    "created_at": "2026-10-11T15:57:10Z",
+    "expires_at": "2027-01-09T15:39:34Z",
+    "updated_at": "2026-10-11T15:57:10Z",
+    "digest": "sha256:15f7f7705188877b68edb2cdd754a92f0e1619427dd827df78701bfc7b6bb6b4",
+    "workflow_run": {
+      "id": 38152196348,
+      "repository_id": 1376964435,
+      "head_repository_id": 1376964435,
+      "head_branch": "codex/chapter5-resolved-activation-20261011",
+      "head_sha": "244e217428e23c9bd019084171de40c49999c389"
+    }
+  }
+}

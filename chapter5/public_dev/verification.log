@@ -1,0 +1,104 @@
+[master (root-commit) a7e801b] source
+ 1 file changed, 1 insertion(+)
+ create mode 100644 seed.txt
+Switched to a new branch 'codex/test-dev'
+[codex/test-dev 2273553] activate
+ 1 file changed, 4 insertions(+)
+ create mode 100644 chapter5/public_dev/launch.json
+To /tmp/tmpkmy21egf/origin
+ * [new branch]      codex/test-dev -> codex/test-dev
+From /tmp/tmpkmy21egf/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+[codex/test-dev 218cc8e] Reserve public development CPU slot 1 run 1/1 [skip ci]
+ 1 file changed, 10 insertions(+)
+ create mode 100644 chapter5/public_dev/runs/test/session.json
+To /tmp/tmpkmy21egf/origin
+   2273553..218cc8e  HEAD -> codex/test-dev
+{"phase": "durably_reserved", "slot": 1, "run_id": "1", "restored": false, "model_api_calls": 0}
+From /tmp/tmpkmy21egf/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+From /tmp/tmpkmy21egf/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+[codex/test-dev 66be165] Archive public development CPU slot 1 run 1/1 [skip ci]
+ 4 files changed, 20 insertions(+), 2 deletions(-)
+ create mode 100644 chapter5/public_dev/runs/test/manifest.json
+ create mode 100644 chapter5/public_dev/runs/test/state.part-000
+ create mode 100644 chapter5/public_dev/runs/test/status.json
+To /tmp/tmpkmy21egf/origin
+   218cc8e..66be165  HEAD -> codex/test-dev
+{"phase": "durably_closed", "slot": 1, "campaign": {"phase": "continuation_needed"}}
+From /tmp/tmpkmy21egf/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+[codex/test-dev 4142ec4] Reserve public development CPU slot 2 run 1/1 [skip ci]
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+To /tmp/tmpkmy21egf/origin
+   66be165..4142ec4  HEAD -> codex/test-dev
+{"phase": "durably_reserved", "slot": 2, "run_id": "1", "restored": true, "model_api_calls": 0}
+From /tmp/tmpkmy21egf/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+[codex/test-dev 430a909] Archive public development CPU slot 2 run 1/1 [skip ci]
+ 4 files changed, 10 insertions(+), 7 deletions(-)
+To /tmp/tmpkmy21egf/origin
+   4142ec4..430a909  HEAD -> codex/test-dev
+{"phase": "durably_closed", "slot": 2, "campaign": {"phase": "development_complete"}}
+From /tmp/tmpkmy21egf/origin
+ * branch            codex/test-dev -> FETCH_HEAD
+Already up to date.
+tmpe5w20twf epoch=1 dev_mrr=0.733333 best=0.733333 patience=0
+a epoch=1 dev_mrr=0.600000 best=0.600000 patience=0
+b epoch=1 dev_mrr=0.600000 best=0.600000 patience=0
+c epoch=1 dev_mrr=0.533333 best=0.533333 patience=0
+distmult_uniform epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+distmult_mixed epoch=1 dev_mrr=0.700000 best=0.700000 patience=0
+rgcn_uniform epoch=1 dev_mrr=0.400000 best=0.400000 patience=0
+rgcn_mixed epoch=1 dev_mrr=0.400000 best=0.400000 patience=0
+From /tmp/tmpg48xagrj/remote
+ * branch            experiment -> FETCH_HEAD
+Already up to date.
+[experiment 5eb10fc] Reserve Chapter 5 CPU execution 1/1 [skip ci]
+ 1 file changed, 9 insertions(+)
+ create mode 100644 chapter5/runs/fixture/session.json
+To /tmp/tmpg48xagrj/remote.git
+   376b947..5eb10fc  HEAD -> experiment
+{"phase": "reserved", "run_id": "1", "attempt": "1", "restored": false, "model_api_calls": 0}
+From /tmp/tmpg48xagrj/remote
+ * branch            experiment -> FETCH_HEAD
+Already up to date.
+[experiment d53d006] Archive Chapter 5 state 1/1 [skip ci]
+ 4 files changed, 19 insertions(+), 1 deletion(-)
+ create mode 100644 chapter5/runs/fixture/manifest.json
+ create mode 100644 chapter5/runs/fixture/state.part-000
+ create mode 100644 chapter5/runs/fixture/status.json
+To /tmp/tmpg48xagrj/remote.git
+   5eb10fc..d53d006  HEAD -> experiment
+{"phase": "state_archived", "source_sha256": "a38be3e8ecfa88877ad0f79d4cd5495eb34e36c1f433f2920ed64e4734fe3629", "parts": 1, "experiment_phase": "failed", "model_api_calls": 0}
+From /tmp/tmpg48xagrj/remote
+ * branch            experiment -> FETCH_HEAD
+Already up to date.
+[experiment e846ea2] Reserve Chapter 5 CPU execution 1/2 [skip ci]
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+To /tmp/tmpg48xagrj/remote.git
+   d53d006..e846ea2  HEAD -> experiment
+{"phase": "reserved", "run_id": "1", "attempt": "2", "restored": true, "model_api_calls": 0}
+{"phase": "tuning", "arm": "distmult", "config_index": 0, "budget": 1}
+{"phase": "tuning", "arm": "rgcn", "config_index": 0, "budget": 1}
+{"phase": "training", "layer": "main", "arm": "distmult", "seed": 43}
+{"phase": "training", "layer": "main", "arm": "distmult", "seed": 44}
+{"phase": "training", "layer": "main", "arm": "rgcn", "seed": 43}
+{"phase": "training", "layer": "main", "arm": "rgcn", "seed": 44}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_product", "seed": 43}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_product", "seed": 44}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_cwe", "seed": 43}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_cwe", "seed": 44}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_tactic_phase", "seed": 43}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_tactic_phase", "seed": 44}
+{"phase": "evaluation_complete", "binding": "d015799721a58a108b13f514ae42a1e9b4f887b0cf478e42b7d314919a050df7", "model_api_calls": 0}
+----------------------------------------------------------------------
+Ran 67 tests in 4.383s
+
+OK

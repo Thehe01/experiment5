@@ -1,0 +1,2312 @@
+{
+  "schema_version": "configuration-fp62-v11-exclusions",
+  "formal_gold_objects_added": 0,
+  "human_review_manifest": "config/configuration_fp62_human_review_v1.json",
+  "items": [
+    {
+      "review_id": "FP62-001",
+      "doc_id": "aa20-259a-iran-citrix-vpn-cve-19781",
+      "original_span": {
+        "start": 1422,
+        "end": 1434,
+        "text": "Pulse Secure"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "Pulse Secure 在此是厂商品牌加通用 VPN 类别，未给具体产品；且概述句没有明确 CVE 端点。不能据后文 CVE 枚举补出 Connect Secure 等产品。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.2",
+        "3.affects",
+        "4.1",
+        "4.7"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 1295,
+          "end": 1507,
+          "text": "This threat actor has been observed exploiting several publicly known Common Vulnerabilities and Exposures (CVEs) dealing with Pulse Secure virtual private network (VPN), Citrix NetScaler, and F5 vulnerabilities.",
+          "scope_basis": "Summary 中一个泛述句；未给出具体 CVE 编号。Technical Details 后面的联合枚举属于新小节，不能反向分配到此三个名称。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "37a360c434db87d5ce70d8e6f8d559b3da3d350170dd01011c113c1aa180e4eb",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-002",
+      "doc_id": "aa20-259a-iran-citrix-vpn-cve-19781",
+      "original_span": {
+        "start": 1466,
+        "end": 1482,
+        "text": "Citrix NetScaler"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Citrix NetScaler 是产品名，但这处 Summary 只泛称公开 CVEs，没有具体编号与该产品配对。Technical Details 的四项联合枚举不使此处成为自足关系提及。",
+      "protocol_clauses": [
+        "1.2",
+        "1.3",
+        "2.1.7",
+        "4.1",
+        "4.7"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 1295,
+          "end": 1507,
+          "text": "This threat actor has been observed exploiting several publicly known Common Vulnerabilities and Exposures (CVEs) dealing with Pulse Secure virtual private network (VPN), Citrix NetScaler, and F5 vulnerabilities.",
+          "scope_basis": "Summary 中一个泛述句；未给出具体 CVE 编号。Technical Details 后面的联合枚举属于新小节，不能反向分配到此三个名称。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "37a360c434db87d5ce70d8e6f8d559b3da3d350170dd01011c113c1aa180e4eb",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-003",
+      "doc_id": "aa20-259a-iran-citrix-vpn-cve-19781",
+      "original_span": {
+        "start": 1488,
+        "end": 1490,
+        "text": "F5"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "F5 仅是厂商品牌，不是具体产品、组件或设备型号；源文此处也没有具体 CVE 配对。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.1",
+        "3.affects"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 1295,
+          "end": 1507,
+          "text": "This threat actor has been observed exploiting several publicly known Common Vulnerabilities and Exposures (CVEs) dealing with Pulse Secure virtual private network (VPN), Citrix NetScaler, and F5 vulnerabilities.",
+          "scope_basis": "Summary 中一个泛述句；未给出具体 CVE 编号。Technical Details 后面的联合枚举属于新小节，不能反向分配到此三个名称。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "37a360c434db87d5ce70d8e6f8d559b3da3d350170dd01011c113c1aa180e4eb",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-004",
+      "doc_id": "aa22-265a",
+      "original_span": {
+        "start": 8239,
+        "end": 8254,
+        "text": "Triconex Tricon"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Triconex Tricon 被写成 TRITON 攻击目标；这段没有具体 CVE。恶意软件攻击产品不能替代 CVE-affects。",
+      "protocol_clauses": [
+        "2.1.1",
+        "3.affects",
+        "4.1"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 8068,
+          "end": 8691,
+          "text": "Actors may also develop custom ICS-focused malware based on their knowledge of the control systems. For example, TRITON malware was designed to target certain versions of Triconex Tricon programmable logic controllers (PLCs) by modifying in-memory firmware to add additional programming. The extra functionality allows an actor to read/modify memory contents and execute custom code, disabling the safety system. [13] APT actors have also developed tools to scan for, compromise, and control certain Schneider Electric PLCs, OMRON Sysmac NEX PLCs, and Open Platform Communications Unified Architecture (OPC UA) servers. [9]",
+          "scope_basis": "Develop techniques and tools 小节的完整例证段；TRITON 与 APT 工具目标不是明示 CVE-affects。全文显式 CVE 检索为 0。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "3767546a08f8f81b3867e5fc83377d8c956d2051725a3df500c6610c2577072b",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-005",
+      "doc_id": "aa22-265a",
+      "original_span": {
+        "start": 8568,
+        "end": 8591,
+        "text": "Schneider Electric PLCs"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "Schneider Electric PLCs 只有厂商加设备类别，未指定 PLC 产品族/型号；APT 工具可控制的目标并非具体 CVE 的受影响配置。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.1",
+        "2.1.2"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 8068,
+          "end": 8691,
+          "text": "Actors may also develop custom ICS-focused malware based on their knowledge of the control systems. For example, TRITON malware was designed to target certain versions of Triconex Tricon programmable logic controllers (PLCs) by modifying in-memory firmware to add additional programming. The extra functionality allows an actor to read/modify memory contents and execute custom code, disabling the safety system. [13] APT actors have also developed tools to scan for, compromise, and control certain Schneider Electric PLCs, OMRON Sysmac NEX PLCs, and Open Platform Communications Unified Architecture (OPC UA) servers. [9]",
+          "scope_basis": "Develop techniques and tools 小节的完整例证段；TRITON 与 APT 工具目标不是明示 CVE-affects。全文显式 CVE 检索为 0。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "3767546a08f8f81b3867e5fc83377d8c956d2051725a3df500c6610c2577072b",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-006",
+      "doc_id": "aa22-265a",
+      "original_span": {
+        "start": 8593,
+        "end": 8614,
+        "text": "OMRON Sysmac NEX PLCs"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "OMRON Sysmac NEX PLCs 是源文工具目标名称，本段没有明示 CVE。即使产品身份可核验，也不能创造 CVE-affects。",
+      "protocol_clauses": [
+        "1.2",
+        "1.3",
+        "2.1.1",
+        "3.affects"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 8068,
+          "end": 8691,
+          "text": "Actors may also develop custom ICS-focused malware based on their knowledge of the control systems. For example, TRITON malware was designed to target certain versions of Triconex Tricon programmable logic controllers (PLCs) by modifying in-memory firmware to add additional programming. The extra functionality allows an actor to read/modify memory contents and execute custom code, disabling the safety system. [13] APT actors have also developed tools to scan for, compromise, and control certain Schneider Electric PLCs, OMRON Sysmac NEX PLCs, and Open Platform Communications Unified Architecture (OPC UA) servers. [9]",
+          "scope_basis": "Develop techniques and tools 小节的完整例证段；TRITON 与 APT 工具目标不是明示 CVE-affects。全文显式 CVE 检索为 0。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "3767546a08f8f81b3867e5fc83377d8c956d2051725a3df500c6610c2577072b",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-007",
+      "doc_id": "aa22-265a",
+      "original_span": {
+        "start": 8671,
+        "end": 8677,
+        "text": "OPC UA"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "OPC UA 在展开式中是通信架构/协议标识；此处只有实现该架构的泛称 servers，没有具体产品实现或 CVE。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.1",
+        "3.affects"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 8068,
+          "end": 8691,
+          "text": "Actors may also develop custom ICS-focused malware based on their knowledge of the control systems. For example, TRITON malware was designed to target certain versions of Triconex Tricon programmable logic controllers (PLCs) by modifying in-memory firmware to add additional programming. The extra functionality allows an actor to read/modify memory contents and execute custom code, disabling the safety system. [13] APT actors have also developed tools to scan for, compromise, and control certain Schneider Electric PLCs, OMRON Sysmac NEX PLCs, and Open Platform Communications Unified Architecture (OPC UA) servers. [9]",
+          "scope_basis": "Develop techniques and tools 小节的完整例证段；TRITON 与 APT 工具目标不是明示 CVE-affects。全文显式 CVE 检索为 0。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "3767546a08f8f81b3867e5fc83377d8c956d2051725a3df500c6610c2577072b",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-008",
+      "doc_id": "aa23-187a",
+      "original_span": {
+        "start": 26573,
+        "end": 26580,
+        "text": "Netwrix"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "此表行只写 Netwrix 厂商，未写具体产品名；不能从文档其他位置借入 Auditor 来扩展不连续跨度。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.2",
+        "3.affects",
+        "4.3"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 26498,
+          "end": 26707,
+          "text": "Exploit Public-Facing Application T1190 Cyber threat actors are exploiting Netwrix vulnerability CVE-2022-31199 for initial access with follow-on capabilities of lateral movement through remote code execution.",
+          "scope_basis": "Table 6 Initial Access 单行；CVE 修饰 Netwrix vulnerability，但 Netwrix 本身是厂商，不从其他位置补入 Auditor。"
+        }
+      ],
+      "explicit_cve_mentions": [
+        {
+          "start": 26595,
+          "end": 26609,
+          "text": "CVE-2022-31199",
+          "cve_id": "CVE-2022-31199"
+        }
+      ],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "19f18014427dd66e95ea520b5c2e0076f8715571054cbd2be5779c0bc4f2ee3a",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-009",
+      "doc_id": "aa23-187a",
+      "original_span": {
+        "start": 36195,
+        "end": 36210,
+        "text": "Netwrix Auditor"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Netwrix Auditor 位于更新建议的独立 bullet，具体 CVE 在前一个 bullet。不能因紧邻或外部 CVE 映射建立这处 affects。",
+      "protocol_clauses": [
+        "2.1.1",
+        "4.2",
+        "4.7"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 36152,
+          "end": 36226,
+          "text": "• Apply patches to CVE-2022-31199 • Update Netwrix Auditor to version 10.5",
+          "scope_basis": "两个独立 bullet：第一项只给 CVE，第二项只命令更新产品。没有引导句明示第二项的产品受第一项 CVE 影响；4.2 禁止跨 bullet 拼配。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "19f18014427dd66e95ea520b5c2e0076f8715571054cbd2be5779c0bc4f2ee3a",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-010",
+      "doc_id": "aa24-249a",
+      "original_span": {
+        "start": 9634,
+        "end": 9688,
+        "text": "Privilege Escalation via Command Line Argument Parsing"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "Privilege Escalation via Command Line Argument Parsing 是漏洞/缺陷标题。Red Hat 是厂商字段；该标题没有独立产品身份。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.3",
+        "2.2",
+        "4.2"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 9608,
+          "end": 9689,
+          "text": " CVE-2021-3156 (Red Hat: Privilege Escalation via Command Line Argument Parsing)",
+          "scope_basis": "获取但未利用 CVE 的单个 bullet；括号内容是漏洞标题，不是产品名。"
+        }
+      ],
+      "explicit_cve_mentions": [
+        {
+          "start": 9610,
+          "end": 9623,
+          "text": "CVE-2021-3156",
+          "cve_id": "CVE-2021-3156"
+        }
+      ],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "56bfc83366c4d17c594f1bd5beed6da13e4b7a54741bd25a3044adda6d07463c",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-011",
+      "doc_id": "aa24-249a",
+      "original_span": {
+        "start": 9772,
+        "end": 9797,
+        "text": "Heap Buffer Overflow Flaw"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "Heap Buffer Overflow Flaw 描述缺陷而不是产品。不能用相关 CVE 的外部产品信息把它改造成 Configuration。",
+      "protocol_clauses": [
+        "1.3",
+        "2.Configuration",
+        "2.1.3",
+        "4.2"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 9745,
+          "end": 9798,
+          "text": " CVE-2022-27666 (Red Hat: Heap Buffer Overflow Flaw)",
+          "scope_basis": "获取但未利用 CVE 的单个 bullet；标题描述缺陷，不指定产品。"
+        }
+      ],
+      "explicit_cve_mentions": [
+        {
+          "start": 9747,
+          "end": 9761,
+          "text": "CVE-2022-27666",
+          "cve_id": "CVE-2022-27666"
+        }
+      ],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "56bfc83366c4d17c594f1bd5beed6da13e4b7a54741bd25a3044adda6d07463c",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-012",
+      "doc_id": "aa24-249a",
+      "original_span": {
+        "start": 11337,
+        "end": 11353,
+        "text": "Dahua IP cameras"
+      },
+      "decision": "ISOLATE_IDENTITY",
+      "reason": "源文直接把两个 CVE 绑定到 Dahua IP cameras，但该名称未选定摄像头型号族。官方记录列至少 IPC-HX3XXX、IPC-HX5XXX、IPC-HUM7XXX；不能任选设备固件 CPE。",
+      "protocol_clauses": [
+        "1.6",
+        "2.1.9",
+        "2.1.10",
+        "3.affects",
+        "4.7"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 11248,
+          "end": 11388,
+          "text": "In one instance, Unit 29155 cyber actors exploited CVE-2021-33044 and CVE-2021- 33045 on Dahua IP cameras to bypass identity authentication.",
+          "scope_basis": "单句谓词 exploited 同时支配两个明确 CVE，介词 on 明确把两者绑定到 Dahua IP cameras；不是跨列表或笛卡尔积。"
+        }
+      ],
+      "explicit_cve_mentions": [
+        {
+          "start": 11299,
+          "end": 11313,
+          "text": "CVE-2021-33044",
+          "cve_id": "CVE-2021-33044"
+        },
+        {
+          "start": 11318,
+          "end": 11333,
+          "text": "CVE-2021- 33045",
+          "cve_id": "CVE-2021-33045"
+        }
+      ],
+      "proposed_span": {
+        "start": 11337,
+        "end": 11353,
+        "text": "Dahua IP cameras"
+      },
+      "normalization": {
+        "status": "unresolved",
+        "normalized_id": null,
+        "reason": "直接语义成立；摄像头型号/可唯一 CPE 族未确定。",
+        "source_urls": [
+          "https://nvd.nist.gov/vuln/detail/cve-2021-33044",
+          "https://nvd.nist.gov/vuln/detail/cve-2021-33045"
+        ],
+        "official_source_ids": [
+          "NVD-DAHUA-33044",
+          "NVD-DAHUA-33045"
+        ],
+        "verified_at_utc_date": "2026-10-03"
+      },
+      "recommended_gold_action": "建议保留身份隔离候选；不得作为正式 Gold-ready，待人工核验身份/CPE；未应用。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "accepted_direct_affects",
+      "boundary_assessment": "identity_unspecified_model",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "56bfc83366c4d17c594f1bd5beed6da13e4b7a54741bd25a3044adda6d07463c",
+      "human_review_outcome": "ISOLATE"
+    },
+    {
+      "review_id": "FP62-013",
+      "doc_id": "aa24-249a",
+      "original_span": {
+        "start": 24822,
+        "end": 24839,
+        "text": "Confluence server"
+      },
+      "decision": "ISOLATE_IDENTITY",
+      "reason": "本表格句直接把 CVE-2022-26134 exploit 绑定到 Confluence，但 a victim’s internet-facing Confluence server 中 server 是主机/部署类名词，未唯一指 Server SKU。全篇同一事件正文仍说 Server or Data Center。官方有两独立族，旧 generic confluence 已弃用且映射到 Server；尚无唯一共同父族证据，不任选。",
+      "protocol_clauses": [
+        "1.6",
+        "2.1.3",
+        "2.1.4",
+        "2.1.9",
+        "2.1.10",
+        "4.3",
+        "4.8"
+      ],
+      "confidence": "medium",
+      "source_evidence": [
+        {
+          "start": 24701,
+          "end": 24840,
+          "text": "The proof of concept exploit for CVE-2022-26134, Through the Wire, has also been used against a victim’s internet-facing Confluence server.",
+          "scope_basis": "Table 5 的第二句自足：明确 CVE-2022-26134 的 exploit 被用于该 Confluence server。前句其余 CVE 不支配本句产品。超过 200 字符按此单一谓词绑定。"
+        },
+        {
+          "start": 15842,
+          "end": 16280,
+          "text": " Cyber actors used Through the Wire against a victim’s internet-facing Confluence server. Through the Wire is a proof of concept[14] exploit for CVE-2022-26134, an OGNL injection vulnerability allowing an unauthenticated user to execute arbitrary code on a Confluence Server or Data Center instance. All versions of Confluence Server and Data Center prior to the fixed versions listed by Atlassian are affected by this vulnerability.[15]",
+          "scope_basis": "同一事件的完整正文 bullet：先用小写 Confluence server 描述受害主机，再说明漏洞影响 Server or Data Center 两形态；未指定受害主机的许可/SKU。该辅助证据只解释身份歧义，不从另处新增当前表格提及的关系。"
+        }
+      ],
+      "explicit_cve_mentions": [
+        {
+          "start": 24734,
+          "end": 24748,
+          "text": "CVE-2022-26134",
+          "cve_id": "CVE-2022-26134"
+        }
+      ],
+      "proposed_span": {
+        "start": 24822,
+        "end": 24832,
+        "text": "Confluence"
+      },
+      "normalization": {
+        "status": "unresolved",
+        "normalized_id": null,
+        "reason": "直接语义及裁去泛 server 的 MCPU 成立；Server/Data Center 两族未由源文消歧，历史 generic 名称的存在不能证明唯一共同父族。",
+        "source_urls": [
+          "https://nvd.nist.gov/vuln/detail/cve-2022-26134",
+          "https://nvd.nist.gov/products/cpe/search/results?keyword=cpe%3A2.3%3Aa%3Aatlassian%3Aconfluence%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A&namingFormat=2.3&orderBy=CPEURI&status=FINAL%2CDEPRECATED",
+          "https://nvd.nist.gov/products/cpe/detail/e74b458e-762a-4cc3-bff9-c6b9a4134341"
+        ],
+        "official_source_ids": [
+          "NVD-CONFLUENCE-26134",
+          "NVD-CONFLUENCE-LEGACY-DICT",
+          "NVD-CONFLUENCE-LEGACY-MAPPING"
+        ],
+        "verified_at_utc_date": "2026-10-03"
+      },
+      "recommended_gold_action": "建议保留身份隔离候选；不得作为正式 Gold-ready，待人工核验身份/CPE；未应用。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "accepted_direct_affects",
+      "boundary_assessment": "boundary_fix_proposed_identity_unresolved",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "56bfc83366c4d17c594f1bd5beed6da13e4b7a54741bd25a3044adda6d07463c",
+      "human_review_outcome": "ISOLATE"
+    },
+    {
+      "review_id": "FP62-014",
+      "doc_id": "aa24-249a",
+      "original_span": {
+        "start": 25719,
+        "end": 25732,
+        "text": "Microsoft OWA"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Microsoft OWA 是密码喷洒的目标基础设施，这个表行没有 CVE。其他漏洞利用行不支配本行。",
+      "protocol_clauses": [
+        "2.1.1",
+        "3.affects",
+        "4.3"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 25636,
+          "end": 25811,
+          "text": "Brute Force: Password Spraying T1110.003 Unit 29155 cyber actors targeted victims’ Microsoft OWA infrastructure with password spraying to obtain valid usernames and passwords.",
+          "scope_basis": "Table 8 Credential Access 的单行；语义为密码喷洒，不是具体 CVE 利用。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "56bfc83366c4d17c594f1bd5beed6da13e4b7a54741bd25a3044adda6d07463c",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-015",
+      "doc_id": "aa25-022a",
+      "original_span": {
+        "start": 11726,
+        "end": 11740,
+        "text": "Jenkins server"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Jenkins server 被描述为横向移动中的易受攻击旧版本，没有明示对应 CVE。前一链的 Ivanti CVE 不能传递到 Jenkins。",
+      "protocol_clauses": [
+        "1.2",
+        "1.3",
+        "2.1.1",
+        "4.1",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 11504,
+          "end": 12160,
+          "text": "Lateral Movement In one case, there was evidence of lateral movement after the threat actors gained access and established a foothold through this exploit chain. It is suspected that the threat actors gained access into a Jenkins server running a vulnerable, outdated version [T1068]. Logs on the Jenkins machine showed that a command in the bash history contained credentials to the postgres server. The threat actors then attempted to log into the Virtual Private Network (VPN) server but were unsuccessful. Prior to moving laterally, the actors likely performed discovery on the CSA device using Obelisk and GoGo to scan for vulnerabilities [T1595.002].",
+          "scope_basis": "完整 Lateral Movement 小节；前后 Exploit Chain 标题分隔独立语义单元。Jenkins 仅说 outdated/vulnerable，CSA 的活动是发现扫描；未给具体 CVE。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "304a17f47ed04690406ac22c163819adba6fcf5571c4d0c21a539a059a1677ff",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-016",
+      "doc_id": "aa25-022a",
+      "original_span": {
+        "start": 12086,
+        "end": 12096,
+        "text": "CSA device"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "CSA device 是发现扫描的回指目标；此处没有具体 CVE 的 affects 谓词。其前后漏洞链标题不能使该发现句成为独立的关系提及。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.7",
+        "4.1",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 11504,
+          "end": 12160,
+          "text": "Lateral Movement In one case, there was evidence of lateral movement after the threat actors gained access and established a foothold through this exploit chain. It is suspected that the threat actors gained access into a Jenkins server running a vulnerable, outdated version [T1068]. Logs on the Jenkins machine showed that a command in the bash history contained credentials to the postgres server. The threat actors then attempted to log into the Virtual Private Network (VPN) server but were unsuccessful. Prior to moving laterally, the actors likely performed discovery on the CSA device using Obelisk and GoGo to scan for vulnerabilities [T1595.002].",
+          "scope_basis": "完整 Lateral Movement 小节；前后 Exploit Chain 标题分隔独立语义单元。Jenkins 仅说 outdated/vulnerable，CSA 的活动是发现扫描；未给具体 CVE。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "304a17f47ed04690406ac22c163819adba6fcf5571c4d0c21a539a059a1677ff",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-017",
+      "doc_id": "aa25-022a",
+      "original_span": {
+        "start": 25378,
+        "end": 25392,
+        "text": "Ivanti CSA 4.6"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Ivanti CSA 4.6 这处只陈述 EOL 和支持/升级要求，没有具体 CVE 关系。版本边界可裁去 4.6，但裁边界不能补足直接语义。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.7",
+        "2.1.11",
+        "4.1",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 25267,
+          "end": 25539,
+          "text": " Upgrade to the latest supported version of Ivanti CSA immediately for continued support.[3] Please note that Ivanti CSA 4.6 is EOL and no longer receives patches or third-party libraries. Customers must upgrade to the latest version of the product for continued support.",
+          "scope_basis": "Mitigations 单个 bullet：支持周期/EOL 和升级要求，未点名 CVE。Summary 的具体 CVE 关系是另一处自足事实块，不跨小节复用。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "304a17f47ed04690406ac22c163819adba6fcf5571c4d0c21a539a059a1677ff",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-018",
+      "doc_id": "aa25-239a",
+      "original_span": {
+        "start": 20184,
+        "end": 20197,
+        "text": "Cisco devices"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "Cisco devices 是厂商加泛化设备类别，未给具体产品/型号；同一 bullet 的下一句才明确给 Cisco IOS XE。不能把泛化候选改成不在其位置的产品。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.1",
+        "2.1.2",
+        "4.7"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 20151,
+          "end": 20354,
+          "text": " Enabling HTTP/HTTPS servers on Cisco devices affected by CVE- 2023-20198. If the web UI feature is enabled on Cisco IOS XE Software, this vulnerability provides an entry opportunity for the APT actors.",
+          "scope_basis": "嵌套 bullet 内两句：第一句只有一个明确 CVE；第二句 this vulnerability 唯一回指 CVE-2023-20198，web UI 条件限定 Cisco IOS XE，而非下一主 bullet。"
+        }
+      ],
+      "explicit_cve_mentions": [
+        {
+          "start": 20210,
+          "end": 20225,
+          "text": "CVE- 2023-20198",
+          "cve_id": "CVE-2023-20198"
+        }
+      ],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "672fd9a6ca077990d3563f12a68569d6ac43dd18b34ca547addaa19fb5f38302",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-020",
+      "doc_id": "aa25-239a",
+      "original_span": {
+        "start": 31409,
+        "end": 31432,
+        "text": "Cisco IOS XE-based host"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Cisco IOS XE-based host 只说明 PCAP 导出命令的宿主和窃取场景。前面其他小节的 CVE 不支配本案例事实块。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.7",
+        "4.1",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 31359,
+          "end": 31458,
+          "text": "The commands listed in Table 1 were observed on a Cisco IOS XE-based host to aid PCAP exfiltration.",
+          "scope_basis": "Case study / Collecting native PCAP 小节完整引表句；用途是 PCAP 窃取，不含 CVE。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "672fd9a6ca077990d3563f12a68569d6ac43dd18b34ca547addaa19fb5f38302",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-021",
+      "doc_id": "aa25-239a",
+      "original_span": {
+        "start": 32668,
+        "end": 32680,
+        "text": "Cisco IOS XR"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Cisco IOS XR 位于 SSH/底层 Linux 的系统背景介绍，无具体 CVE。不能把别处 IOS XE 的 CVE 跨小节绑定 IOS XR。",
+      "protocol_clauses": [
+        "1.2",
+        "2.1.1",
+        "4.1",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 32609,
+          "end": 32878,
+          "text": "Enabling SSH access to the underlying Linux host on IOS XR Cisco IOS XR (64-bit) is a Linux-based network operating system built on a Yocto- based Wind River Linux distribution. IOS XR is typically administered via the IOS XR CLI over SSH on port TCP/22 or via console.",
+          "scope_basis": "新的 IOS XR 小节前两句：说明系统基础和正常管理方式，没有 CVE。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "672fd9a6ca077990d3563f12a68569d6ac43dd18b34ca547addaa19fb5f38302",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-022",
+      "doc_id": "aa25-239a",
+      "original_span": {
+        "start": 78214,
+        "end": 78227,
+        "text": "Ivanti Policy"
+      },
+      "decision": "ISOLATE_IDENTITY",
+      "reason": "Table 21 的 Vendor/Product 行直接绑定 CVE-2024-21887，但 Ivanti Policy 是截短名称，完整源文未在此定义该简称。官方有 Policy Secure 候选，不能静默把缺失 Secure 填成原文或当作确定身份。",
+      "protocol_clauses": [
+        "1.6",
+        "2.1.2",
+        "2.1.9",
+        "2.1.10",
+        "4.3",
+        "4.7"
+      ],
+      "confidence": "medium",
+      "source_evidence": [
+        {
+          "start": 78173,
+          "end": 78322,
+          "text": "CVE-2024-21887 Ivanti Connect Secure and Ivanti Policy Command injection vulnerability, commonly chained after CVE-2023-46805 (authentication bypass)",
+          "scope_basis": "Table 21 的单行；Vendor/Product 单元格的 and 明确列两个尾端，当前行主 CVE 为 21887。Details 中 46805 是链前项，对当前不完整 Policy 名称的 affects 不从链关系推导。"
+        }
+      ],
+      "explicit_cve_mentions": [
+        {
+          "start": 78173,
+          "end": 78187,
+          "text": "CVE-2024-21887",
+          "cve_id": "CVE-2024-21887"
+        }
+      ],
+      "proposed_span": {
+        "start": 78214,
+        "end": 78227,
+        "text": "Ivanti Policy"
+      },
+      "normalization": {
+        "status": "unresolved",
+        "normalized_id": null,
+        "reason": "官方 Policy Secure 族可查，但原文截短 Policy 未独立消歧；未选择候选 ID。",
+        "source_urls": [
+          "https://nvd.nist.gov/vuln/detail/cve-2024-21887",
+          "https://nvd.nist.gov/products/cpe/detail/292075da-142b-4097-b817-6bda7f1a5a3f?keyword=cpe%3A2.3%3Aa%3Aivanti&namingFormat=2.2&orderBy=CPEURI&status=FINAL%2CDEPRECATED"
+        ],
+        "official_source_ids": [
+          "NVD-POLICY-21887",
+          "NVD-POLICY-DICT"
+        ],
+        "verified_at_utc_date": "2026-10-03",
+        "candidate_family_not_selected": "cpe:2.3:a:ivanti:policy_secure:*:*:*:*:*:*:*:*"
+      },
+      "recommended_gold_action": "建议保留身份隔离候选；不得作为正式 Gold-ready，待人工核验身份/CPE；未应用。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "accepted_direct_affects",
+      "boundary_assessment": "source_name_truncated",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "672fd9a6ca077990d3563f12a68569d6ac43dd18b34ca547addaa19fb5f38302",
+      "human_review_outcome": "ISOLATE"
+    },
+    {
+      "review_id": "FP62-023",
+      "doc_id": "aa26-097a",
+      "original_span": {
+        "start": 2674,
+        "end": 2725,
+        "text": "Rockwell Automation/Allen-Bradley manufactured PLCs"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "这项是制造商加 PLC 泛类别，未给具体产品族/型号；Affected Products 标题描述本次攻击目标，未明确支配具体 CVE。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.1",
+        "2.1.2",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 2654,
+          "end": 2758,
+          "text": "Affected Products  Rockwell Automation/Allen-Bradley manufactured PLCs  Potentially other branded PLCs",
+          "scope_basis": "Advisory at a Glance 的产品类别列表；没有指定一个 CVE 的 Affected configurations 标题。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "a23e447f298319a61b215157942ee5239e1a3fa2d8f30b33799d22aa0d555283",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-024",
+      "doc_id": "aa26-097a",
+      "original_span": {
+        "start": 3121,
+        "end": 3148,
+        "text": "Rockwell Automation devices"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "Rockwell Automation devices 是厂商加泛设备类别，且该 bullet 是模式开关缓解措施，没有具体 CVE 端点。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.1",
+        "4.2"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 3115,
+          "end": 3217,
+          "text": " For Rockwell Automation devices, place the physical mode switch on the controller into run position.",
+          "scope_basis": "Key Actions 的独立物理模式开关缓解 bullet；厂商加泛设备类别。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "a23e447f298319a61b215157942ee5239e1a3fa2d8f30b33799d22aa0d555283",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-025",
+      "doc_id": "aa26-097a",
+      "original_span": {
+        "start": 7598,
+        "end": 7682,
+        "text": "Rockwell Automation/Allen-Bradley-manufactured programmable logic controllers (PLCs)"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "该跨度是制造商加制造修饰语及通用 PLC 类别，没有具体产品身份；本介绍句仅说攻击活动，无具体 CVE。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.1",
+        "2.1.2",
+        "3.affects"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 7138,
+          "end": 7737,
+          "text": "The Federal Bureau of Investigation (FBI), Cybersecurity and Infrastructure Security Agency (CISA), National Security Agency (NSA), Environmental Protection Agency (EPA), Department of Energy (DOE), and United States Cyber Command – Cyber National Mission Force (CNMF), hereafter referred to as the “authoring agencies,” are urgently warning U.S. organizations of ongoing cyber exploitation of internet-connected operational technology (OT) devices, including Rockwell Automation/Allen-Bradley-manufactured programmable logic controllers (PLCs), across multiple U.S. critical infrastructure sectors.",
+          "scope_basis": "Introduction 开首完整句，描述攻击活动和制造商 PLC 范围；没有 CVE。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "a23e447f298319a61b215157942ee5239e1a3fa2d8f30b33799d22aa0d555283",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-026",
+      "doc_id": "aa26-097a",
+      "original_span": {
+        "start": 9772,
+        "end": 9824,
+        "text": "Rockwell Automation/Allen-Bradley- manufactured PLCs"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "Rockwell Automation/Allen-Bradley-manufactured PLCs 仍是制造商加泛 PLC 类别。随后推荐的两个指南不把参考标题中的 CVE 外推到制造商全部设备。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.1",
+        "2.1.7",
+        "4.7",
+        "4.8"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 9703,
+          "end": 10232,
+          "text": "In addition to contacting the authoring agencies, organizations with Rockwell Automation/Allen-Bradley- manufactured PLCs should review the manufacturer’s previously issued guidance to strengthen the security of their operational technology deployments: PN1550 | CVE-2021-22681: Authentication Bypass Vulnerability Found in Logix Controllers, published in 2021, and SD1771 | Rockwell Automation Reiterates Customer Guidance to Disconnect Devices from the Internet and Harden PLCs to Protect from Cyber Threats, published in 2026.",
+          "scope_basis": "Introduction 完整 guidance 推荐句；PN1550 与 SD1771 是被引用资料标题，CVE 只出现在 PN1550 标题，不支配制造商所有 PLC。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "a23e447f298319a61b215157942ee5239e1a3fa2d8f30b33799d22aa0d555283",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-027",
+      "doc_id": "aa26-097a",
+      "original_span": {
+        "start": 10027,
+        "end": 10044,
+        "text": "Logix Controllers"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Logix Controllers 位于 PN1550 外部指南的引用标题，正文在推荐查阅指南。协议排除参考资料/非自足提及；不把引用标题升为新的正文 Configuration-affects 提及。",
+      "protocol_clauses": [
+        "2.1.7",
+        "4.1",
+        "5.1"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 9703,
+          "end": 10232,
+          "text": "In addition to contacting the authoring agencies, organizations with Rockwell Automation/Allen-Bradley- manufactured PLCs should review the manufacturer’s previously issued guidance to strengthen the security of their operational technology deployments: PN1550 | CVE-2021-22681: Authentication Bypass Vulnerability Found in Logix Controllers, published in 2021, and SD1771 | Rockwell Automation Reiterates Customer Guidance to Disconnect Devices from the Internet and Harden PLCs to Protect from Cyber Threats, published in 2026.",
+          "scope_basis": "Introduction 完整 guidance 推荐句；PN1550 与 SD1771 是被引用资料标题，CVE 只出现在 PN1550 标题，不支配制造商所有 PLC。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "a23e447f298319a61b215157942ee5239e1a3fa2d8f30b33799d22aa0d555283",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-028",
+      "doc_id": "aa26-097a",
+      "original_span": {
+        "start": 13055,
+        "end": 13106,
+        "text": "Rockwell Automation/Allen-Bradley-manufactured PLCs"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "这个制造商 PLC 泛类别没有独立产品身份；Initial Access 段无具体 CVE。不能从参考指南标题的 CVE-2021-22681 扩展到全部本次目标。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.1",
+        "2.1.7",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 12925,
+          "end": 13387,
+          "text": "The authoring agencies observed Iranian-affiliated APT actors using several overseas-based IP addresses to access internet-facing Rockwell Automation/Allen-Bradley-manufactured PLCs [T0883]. The actors used leased, third-party hosted infrastructure with configuration software, such as Rockwell Automation’s Studio 5000 Logix Designer software, to create an accepted connection to the victim’s PLC. Targeted devices include CompactLogix and Micro850 PLC devices.",
+          "scope_basis": "Technical Details / Initial Access 的完整段；产品是本次远程连接目标，未在段内点名 CVE。前面的参考指南不跨 Background/Technical Details 标题支配本段。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "a23e447f298319a61b215157942ee5239e1a3fa2d8f30b33799d22aa0d555283",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-029",
+      "doc_id": "aa26-097a",
+      "original_span": {
+        "start": 13349,
+        "end": 13361,
+        "text": "CompactLogix"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "CompactLogix 是具体产品族，但这里仅作为本次攻击目标之一；没有具体 CVE 的直接源文绑定。",
+      "protocol_clauses": [
+        "2.1.1",
+        "3.affects",
+        "4.1",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 12925,
+          "end": 13387,
+          "text": "The authoring agencies observed Iranian-affiliated APT actors using several overseas-based IP addresses to access internet-facing Rockwell Automation/Allen-Bradley-manufactured PLCs [T0883]. The actors used leased, third-party hosted infrastructure with configuration software, such as Rockwell Automation’s Studio 5000 Logix Designer software, to create an accepted connection to the victim’s PLC. Targeted devices include CompactLogix and Micro850 PLC devices.",
+          "scope_basis": "Technical Details / Initial Access 的完整段；产品是本次远程连接目标，未在段内点名 CVE。前面的参考指南不跨 Background/Technical Details 标题支配本段。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "a23e447f298319a61b215157942ee5239e1a3fa2d8f30b33799d22aa0d555283",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-030",
+      "doc_id": "aa26-097a",
+      "original_span": {
+        "start": 13366,
+        "end": 13378,
+        "text": "Micro850 PLC"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Micro850 PLC 是具体设备型号，但同一 Initial Access 段仅陈述目标设备及连接行为，没有 CVE。裁去泛后缀 PLC 不能补出关系。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.3",
+        "3.affects",
+        "4.1"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 12925,
+          "end": 13387,
+          "text": "The authoring agencies observed Iranian-affiliated APT actors using several overseas-based IP addresses to access internet-facing Rockwell Automation/Allen-Bradley-manufactured PLCs [T0883]. The actors used leased, third-party hosted infrastructure with configuration software, such as Rockwell Automation’s Studio 5000 Logix Designer software, to create an accepted connection to the victim’s PLC. Targeted devices include CompactLogix and Micro850 PLC devices.",
+          "scope_basis": "Technical Details / Initial Access 的完整段；产品是本次远程连接目标，未在段内点名 CVE。前面的参考指南不跨 Background/Technical Details 标题支配本段。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "a23e447f298319a61b215157942ee5239e1a3fa2d8f30b33799d22aa0d555283",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-031",
+      "doc_id": "aa26-097a",
+      "original_span": {
+        "start": 13824,
+        "end": 13838,
+        "text": "Siemens S7 PLC"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Siemens S7 PLC 是基于端口推测的潜在攻击目标。该句无具体 CVE，不能将其他厂商参考指南中的漏洞转移到 Siemens。",
+      "protocol_clauses": [
+        "1.2",
+        "2.1.1",
+        "3.affects",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 13518,
+          "end": 13839,
+          "text": "The targeting of ports [T0885] associated with other OT vendors’ protocols suggests these actors may also be targeting devices manufactured by companies other than Rockwell Automation/Allen-Bradley, TLP:CLEAR FBI | CISA | NSA | EPA | DOE | CNMF Page 6 of 12 | Product ID: AA26-097A TLP:CLEAR including the Siemens S7 PLC.",
+          "scope_basis": "Command and Control 的完整跨页句（页眉为排版插入），推测额外目标；没有 CVE。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "a23e447f298319a61b215157942ee5239e1a3fa2d8f30b33799d22aa0d555283",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-032",
+      "doc_id": "aa26-097a",
+      "original_span": {
+        "start": 19198,
+        "end": 19243,
+        "text": "S7 Totally Integrated Automation [TIA] Portal"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "TIA Portal 在此是缓解操作所用的配置软件，不是被明确 CVE 影响的产品。Siemens 指南也是参考资料，无法支持该 Configuration 提及。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.7",
+        "4.2"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 19084,
+          "end": 19385,
+          "text": " For devices that allow for software key switching, enable programming protection in PLC configuration software (S7 Totally Integrated Automation [TIA] Portal) to limit who can modify PLCs remotely. (See Siemens’ Cybersecurity for Industry Operational Guidelines for the manufacturer’s instructions.)",
+          "scope_basis": "Mitigations 的独立 bullet；TIA Portal 是用于启用 PLC 编程保护的工具。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "a23e447f298319a61b215157942ee5239e1a3fa2d8f30b33799d22aa0d555283",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-033",
+      "doc_id": "proxylogon-microsoft-hafnium-exchange",
+      "original_span": {
+        "start": 1738,
+        "end": 1787,
+        "text": "on-premises versions of Microsoft Exchange Server"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "这处完整产品名只与未编号 0-day exploits 绑定；明确四个 CVE 的下一段是另一事实块。按自足提及规则，不把下一段的编号反向回填本概述产品跨度。",
+      "protocol_clauses": [
+        "1.2",
+        "2.1.7",
+        "4.1"
+      ],
+      "confidence": "medium",
+      "source_evidence": [
+        {
+          "start": 1670,
+          "end": 1820,
+          "text": "Microsoft has detected multiple 0-day exploits being used to attack on-premises versions of Microsoft Exchange Server in limited and targeted attacks.",
+          "scope_basis": "文章开首第一句仅说未编号 0-day exploits；具体编号在下一段的新陈述中。不从后续段落反向给此句的产品 mention 补端点。"
+        },
+        {
+          "start": 1670,
+          "end": 2802,
+          "text": "Microsoft has detected multiple 0-day exploits being used to attack on-premises versions of Microsoft Exchange Server in limited and targeted attacks. In the attacks observed, the threat actor used these vulnerabilities to access on-premises Exchange servers which enabled access to email accounts, and allowed installation of additional malware to facilitate long-term access to victim environments. Microsoft Threat Intelligence Center (MSTIC) attributes this campaign with high confidence to HAFNIUM , a group assessed to be state-sponsored and operating out of China, based on observed victimology, tactics and procedures.\nThe vulnerabilities recently being exploited were CVE-2021-26855, CVE-2021-26857, CVE-2021-26858, and CVE-2021-27065, all of which were addressed in today’s Microsoft Security Response Center (MSRC) release – Multiple Security Updates Released for Exchange Server . We strongly urge customers to update on-premises systems immediately. Exchange Online is not affected. We have established a resource center that is constantly updated as more information becomes available at https://aka.ms/ExchangeVulns .",
+          "scope_basis": "上下文复核证据，包含两个原段落：产品概述段经 HAFNIUM 归因句结束；下一段列明四 CVE。严格 mention-level 以自足句/紧邻从句为事实块；本证据用来展示跨段回填的依赖，不授权当前概述跨度建立四个关系。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "ec0f9038a56c96e5ed3e2f032235e31cd6ab6be7eb7b90950195ae33a4977f77",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-034",
+      "doc_id": "proxylogon-microsoft-hafnium-exchange",
+      "original_span": {
+        "start": 1900,
+        "end": 1928,
+        "text": "on-premises Exchange servers"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "on-premises Exchange servers 是开首未编号概述的回指产品提及，当前句只有 these vulnerabilities；需借后段编号才能建立端点，不能独立构成 mention-level affects。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.7",
+        "4.1"
+      ],
+      "confidence": "medium",
+      "source_evidence": [
+        {
+          "start": 1821,
+          "end": 2070,
+          "text": "In the attacks observed, the threat actor used these vulnerabilities to access on-premises Exchange servers which enabled access to email accounts, and allowed installation of additional malware to facilitate long-term access to victim environments.",
+          "scope_basis": "开首第二句 these vulnerabilities 回指未编号概述；缺少在本事实块内可唯一定位的明示 CVE 端点。"
+        },
+        {
+          "start": 1670,
+          "end": 2802,
+          "text": "Microsoft has detected multiple 0-day exploits being used to attack on-premises versions of Microsoft Exchange Server in limited and targeted attacks. In the attacks observed, the threat actor used these vulnerabilities to access on-premises Exchange servers which enabled access to email accounts, and allowed installation of additional malware to facilitate long-term access to victim environments. Microsoft Threat Intelligence Center (MSTIC) attributes this campaign with high confidence to HAFNIUM , a group assessed to be state-sponsored and operating out of China, based on observed victimology, tactics and procedures.\nThe vulnerabilities recently being exploited were CVE-2021-26855, CVE-2021-26857, CVE-2021-26858, and CVE-2021-27065, all of which were addressed in today’s Microsoft Security Response Center (MSRC) release – Multiple Security Updates Released for Exchange Server . We strongly urge customers to update on-premises systems immediately. Exchange Online is not affected. We have established a resource center that is constantly updated as more information becomes available at https://aka.ms/ExchangeVulns .",
+          "scope_basis": "上下文复核证据，包含两个原段落：产品概述段经 HAFNIUM 归因句结束；下一段列明四 CVE。严格 mention-level 以自足句/紧邻从句为事实块；本证据用来展示跨段回填的依赖，不授权当前概述跨度建立四个关系。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "ec0f9038a56c96e5ed3e2f032235e31cd6ab6be7eb7b90950195ae33a4977f77",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-035",
+      "doc_id": "proxylogon-microsoft-hafnium-exchange",
+      "original_span": {
+        "start": 12304,
+        "end": 12329,
+        "text": "Microsoft Exchange Server"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "该 Microsoft Exchange Server 提及位于 Host IOCs 的安装路径说明，不是自足漏洞事实块。路径里的环境名与文章 CVE 共现不构成这处 affects。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.7",
+        "4.1",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 12169,
+          "end": 12472,
+          "text": "Paths\nWe observed web shells in the following paths:\nC:\\inetpub\\wwwroot\\aspnet_client\\\nC:\\inetpub\\wwwroot\\aspnet_client\\system_web\\\nIn Microsoft Exchange Server installation paths such as: %PROGRAMFILES%\\Microsoft\\Exchange Server\\V15\\FrontEnd\\HttpProxy\\owa\\auth\\ C:\\Exchange\\FrontEnd\\HttpProxy\\owa\\auth\\",
+          "scope_basis": "Host IOCs / Paths 小节是 web shell 文件位置列表；产品名是安装路径环境。没有当前 CVE 作用域，也不从检测脚本/正文漏洞小节回填。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "ec0f9038a56c96e5ed3e2f032235e31cd6ab6be7eb7b90950195ae33a4977f77",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-043",
+      "doc_id": "accellion-fta-google-accellion-data-theft-extortion",
+      "original_span": {
+        "start": 275,
+        "end": 317,
+        "text": "Accellion’s legacy File Transfer Appliance"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "此处只表达未编号 zero-day vulnerabilities，具体 CVE 列表在若干段后另有明确引导句。不能反向把列表编号补入这个非自足概述提及。",
+      "protocol_clauses": [
+        "1.2",
+        "2.1.7",
+        "4.1",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 148,
+          "end": 378,
+          "text": "Starting in mid-December 2020, malicious actors that Mandiant tracks as UNC2546 exploited multiple zero-day vulnerabilities in Accellion’s legacy File Transfer Appliance (FTA) to install a newly discovered web shell named DEWMODE.",
+          "scope_basis": "开首第一句是未编号零日概述；明确 CVE 的列表前引导句位于后面新的段落，支配其四个列表项，不能逆向支配本概述。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "d4adf5d17320ffe39ff972738995fa796c37893525c3ea3ed8a12357ab742d68",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-044",
+      "doc_id": "accellion-fta-google-accellion-data-theft-extortion",
+      "original_span": {
+        "start": 1455,
+        "end": 1473,
+        "text": "legacy FTA product"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "legacy FTA product 只出现在活动跟踪归因句，未给具体 CVE 端点；FTA 回指产品并不能把后文列表关系复制成新的自足 mention。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.7",
+        "4.1"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 1324,
+          "end": 1535,
+          "text": "We are currently tracking the exploitation of the zero-day Accellion FTA vulnerabilities and data theft from companies running the legacy FTA product as UNC2546, and the subsequent extortion activity as UNC2582.",
+          "scope_basis": "独立跟踪归因句：泛称零日与运行产品，未列具体 CVE；后续列表另有引导句。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "d4adf5d17320ffe39ff972738995fa796c37893525c3ea3ed8a12357ab742d68",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-045",
+      "doc_id": "accellion-fta-google-accellion-data-theft-extortion",
+      "original_span": {
+        "start": 2518,
+        "end": 2536,
+        "text": "FTA legacy product"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "FTA legacy product 位于受攻击客户背景句，不含 CVE。攻击目标、已打补丁的一般叙述和后续枚举不能拼成此处的直接 affects。",
+      "protocol_clauses": [
+        "1.2",
+        "2.1.1",
+        "2.1.7",
+        "4.1"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 2488,
+          "end": 2568,
+          "text": "Accellion customers using the FTA legacy product were the targets of the attack.",
+          "scope_basis": "本句说客户是攻击目标，而非具体 CVE 影响产品；前段代码审计和后段列表是不同语义单元。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "d4adf5d17320ffe39ff972738995fa796c37893525c3ea3ed8a12357ab742d68",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-046",
+      "doc_id": "accellion-fta-google-accellion-data-theft-extortion",
+      "original_span": {
+        "start": 4062,
+        "end": 4076,
+        "text": "Accellion FTAs"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Accellion FTAs 是日志重建和攻击流程的概述对象，本事实块没有具体 CVE；不能把另处 SQL injection 描述用外部 CVE 映射编号。",
+      "protocol_clauses": [
+        "1.2",
+        "1.3",
+        "2.1.1",
+        "2.1.7",
+        "4.1"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 3997,
+          "end": 4244,
+          "text": "Mandiant has been able reconstruct many of the details about how Accellion FTAs have been compromised through examination of Apache and system logs from impacted devices—from initial compromise, to deployment of DEWMODE, and follow-on interaction.",
+          "scope_basis": "日志重建概述句；后续另有未编号 SQL injection 活动，但本句无具体 CVE。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "d4adf5d17320ffe39ff972738995fa796c37893525c3ea3ed8a12357ab742d68",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-047",
+      "doc_id": "accellion-fta-google-accellion-data-theft-extortion",
+      "original_span": {
+        "start": 10563,
+        "end": 10583,
+        "text": "Accellion FTA device"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Accellion FTA device 处于勒索网站被害者背景，只有 recently targeted，没有具体 CVE-affects。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.7",
+        "3.affects",
+        "4.1"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 10289,
+          "end": 10611,
+          "text": "Monitoring of the CL0P^_- LEAKS shaming website has demonstrated that UNC2582 has followed through on threats to publish stolen data as several new victims have appeared on the site in recent weeks, including at least one organization that has publicly confirmed that their Accellion FTA device had been recently targeted.",
+          "scope_basis": "UNC2582 Extortion 活动的完整观察句；设备只是被害组织的目标设备，未提 CVE。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "d4adf5d17320ffe39ff972738995fa796c37893525c3ea3ed8a12357ab742d68",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-049",
+      "doc_id": "aa23-213a",
+      "original_span": {
+        "start": 7620,
+        "end": 7633,
+        "text": "Ivanti Sentry"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Ivanti Sentry 是隧道经过的网关支持产品，该段没有 CVE。前句针对 EPMM 的 CVE-2023-35081 不能跨新的谓词把 Sentry 当受影响产品。",
+      "protocol_clauses": [
+        "1.2",
+        "2.1.1",
+        "3.affects",
+        "4.1",
+        "4.7"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 7554,
+          "end": 7815,
+          "text": "The APT actors tunneled traffic [T1572] from the internet through Ivanti Sentry, an application gateway appliance that supports EPMM, to at least one Exchange server that was not accessible from the internet [T1090.001]. It is unknown how they tunneled traffic.",
+          "scope_basis": "APT Actor Activity 中完整隧道段；Sentry 是传递到 Exchange 的网关，不是前一句 35081 上传 EPMM webshell 的产品。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "00bba1017c3523bbcb09665ca8e47b58d608bd6697884af356a4c67db55738d0",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-052",
+      "doc_id": "aa23-213a",
+      "original_span": {
+        "start": 17838,
+        "end": 17849,
+        "text": "Ivanti EPMM"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Ivanti EPMM 是 RESOURCES 的外部参考标题提及，且该标题没有显式 CVE。不能按文档主题自动映射 35081。",
+      "protocol_clauses": [
+        "2.1.7",
+        "4.2",
+        "5.1"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 17678,
+          "end": 17849,
+          "text": "RESOURCES • Mnemonic: Ivanti Endpoint Manager Mobile (EPMM) Authentication Bypass Vulnerability • Mnemonic: Threat Advisory: Remote File Write Vulnerability in Ivanti EPMM",
+          "scope_basis": "RESOURCES 两个外部参考标题；目标在第二 bullet，未出现显式 CVE。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "00bba1017c3523bbcb09665ca8e47b58d608bd6697884af356a4c67db55738d0",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-053",
+      "doc_id": "aa23-213a",
+      "original_span": {
+        "start": 18449,
+        "end": 18464,
+        "text": "MobileIron Core"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "MobileIron Core 位于 JA3 IOC 列表引导句，缺少具体 CVE 关系。正文已存在其他合法 EPMM/Core 事实不使每个 IOC 产品提及都成为 Configuration。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.7",
+        "4.1",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 18394,
+          "end": 18498,
+          "text": "NCSC-NO observed the following JA3 hashes used against MobileIron Core: 2d5bd942ebf308df61e1572861d146f6",
+          "scope_basis": "APPENDIX IOC 的 JA3 列表引导句，仅说明流量对象；其后是 hash，不是漏洞事实。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "00bba1017c3523bbcb09665ca8e47b58d608bd6697884af356a4c67db55738d0",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-054",
+      "doc_id": "aa23-213a",
+      "original_span": {
+        "start": 18945,
+        "end": 18956,
+        "text": "EPMM Sentry"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "EPMM Sentry 是隧道路径的 IOC 描述，不是受影响产品的 CVE 事实块；不能从正文 EPMM 漏洞推到 Sentry。",
+      "protocol_clauses": [
+        "1.2",
+        "2.1.1",
+        "2.1.7",
+        "4.1"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 18862,
+          "end": 18990,
+          "text": "NCSC-NO observed the following JA3 hashes used against Exchange when tunneling via EPMM Sentry: 0092ce298a1d451fbe93dc4237053a96",
+          "scope_basis": "APPENDIX IOC 的另一 JA3 列表；Sentry 是隧道路径，未列 CVE。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "00bba1017c3523bbcb09665ca8e47b58d608bd6697884af356a4c67db55738d0",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-055",
+      "doc_id": "aa22-257a",
+      "original_span": {
+        "start": 4760,
+        "end": 4776,
+        "text": "Fortinet FortiOS"
+      },
+      "decision": "UNRESOLVED_SCOPE",
+      "reason": "源文直接说联合 FortiOS/Exchange 漏洞并列四个 CVE，但没有唯一分配每个 CVE 到每个产品。不能凭外部 CVE 产品映射或词序拆成已知三对一，也不能展开两产品×四 CVE。",
+      "protocol_clauses": [
+        "1.6",
+        "1.8",
+        "4.1",
+        "4.7",
+        "4.8"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 4460,
+          "end": 5005,
+          "text": "As reported in joint CSA \nIranian Government-Sponsored APT Cyber Actors Exploiting Microsoft Exchange and Fortinet Vulnerabilities in Furtherance of Malicious Activities\n, the authoring agencies have observed Iranian government-sponsored APT actors scanning for and/or exploiting the following known Fortinet FortiOS and Microsoft Exchange server vulnerabilities since early 2021 to gain initial access to a broad range of targeted entities: \nCVE-2018-13379\n, \nCVE-2020-12812\n, \nCVE-2019-5591\n, and \nCVE-2021-34473\n (a ProxyShell vulnerability).",
+          "scope_basis": "Threat Actor Activity 第一完整句：following 的确支配四个 CVE，但 FortiOS 与 Exchange 是联合产品主语；原文没有分组、each/respectively 或行绑定指定逐产品子集。句末 ProxyShell 只标最后 CVE 的漏洞昵称，未在此句给产品配对。后句新述 Exchange/ProxyShell 事实不反向修复本组。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": {
+        "start": 4760,
+        "end": 4776,
+        "text": "Fortinet FortiOS"
+      },
+      "normalization": {
+        "status": "unresolved",
+        "normalized_id": null,
+        "reason": "先未通过逐端点源文作用域门槛；未检索 CPE，以免外部映射代替源文。",
+        "source_urls": [],
+        "official_source_ids": [],
+        "verified_at_utc_date": null
+      },
+      "recommended_gold_action": "建议保留作用域复核候选；不得建立端点笛卡尔积或晋级正式 Gold；未应用。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "unresolved_endpoint_scope",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "e20226c109da7ffe57dd2bad38eb1f0cd22842f110bd1d22a70488b7b3ef593c",
+      "human_review_outcome": "ISOLATE"
+    },
+    {
+      "review_id": "FP62-056",
+      "doc_id": "aa22-257a",
+      "original_span": {
+        "start": 4781,
+        "end": 4806,
+        "text": "Microsoft Exchange server"
+      },
+      "decision": "UNRESOLVED_SCOPE",
+      "reason": "源文直接说联合 FortiOS/Exchange 漏洞并列四个 CVE，但没有唯一分配每个 CVE 到每个产品。不能凭外部 CVE 产品映射或词序拆成已知三对一，也不能展开两产品×四 CVE。",
+      "protocol_clauses": [
+        "1.6",
+        "1.8",
+        "4.1",
+        "4.7",
+        "4.8"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 4460,
+          "end": 5005,
+          "text": "As reported in joint CSA \nIranian Government-Sponsored APT Cyber Actors Exploiting Microsoft Exchange and Fortinet Vulnerabilities in Furtherance of Malicious Activities\n, the authoring agencies have observed Iranian government-sponsored APT actors scanning for and/or exploiting the following known Fortinet FortiOS and Microsoft Exchange server vulnerabilities since early 2021 to gain initial access to a broad range of targeted entities: \nCVE-2018-13379\n, \nCVE-2020-12812\n, \nCVE-2019-5591\n, and \nCVE-2021-34473\n (a ProxyShell vulnerability).",
+          "scope_basis": "Threat Actor Activity 第一完整句：following 的确支配四个 CVE，但 FortiOS 与 Exchange 是联合产品主语；原文没有分组、each/respectively 或行绑定指定逐产品子集。句末 ProxyShell 只标最后 CVE 的漏洞昵称，未在此句给产品配对。后句新述 Exchange/ProxyShell 事实不反向修复本组。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": {
+        "start": 4781,
+        "end": 4806,
+        "text": "Microsoft Exchange server"
+      },
+      "normalization": {
+        "status": "unresolved",
+        "normalized_id": null,
+        "reason": "先未通过逐端点源文作用域门槛；未检索 CPE，以免外部映射代替源文。",
+        "source_urls": [],
+        "official_source_ids": [],
+        "verified_at_utc_date": null
+      },
+      "recommended_gold_action": "建议保留作用域复核候选；不得建立端点笛卡尔积或晋级正式 Gold；未应用。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "unresolved_endpoint_scope",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "e20226c109da7ffe57dd2bad38eb1f0cd22842f110bd1d22a70488b7b3ef593c",
+      "human_review_outcome": "ISOLATE"
+    },
+    {
+      "review_id": "FP62-057",
+      "doc_id": "aa22-257a",
+      "original_span": {
+        "start": 13109,
+        "end": 13125,
+        "text": "Fortinet devices"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "Fortinet devices 是厂商加泛化设备类别，检测建议句也没有具体 CVE。不能从后续分项或正文借 FortiOS 名称。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.1",
+        "2.1.2",
+        "4.1",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 13023,
+          "end": 13222,
+          "text": "The authoring agencies recommend that organizations using Microsoft Exchange servers, Fortinet devices, and/or VMware Horizon applications investigate potential suspicious activity in their networks.",
+          "scope_basis": "DETECTION 第一独立建议句；下一行 Search for IOCs 和后续 Review Log4j/Exchange 项分别是新指令，不共同支配本句各产品。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "e20226c109da7ffe57dd2bad38eb1f0cd22842f110bd1d22a70488b7b3ef593c",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-058",
+      "doc_id": "aa22-257a",
+      "original_span": {
+        "start": 13134,
+        "end": 13161,
+        "text": "VMware Horizon applications"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "VMware Horizon applications 只位于调查可疑活动的建议句，无具体 CVE。后面的 Review Log4j 项是独立指令，不明示其支配当前产品。",
+      "protocol_clauses": [
+        "2.1.1",
+        "2.1.7",
+        "4.1",
+        "4.6"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 13023,
+          "end": 13222,
+          "text": "The authoring agencies recommend that organizations using Microsoft Exchange servers, Fortinet devices, and/or VMware Horizon applications investigate potential suspicious activity in their networks.",
+          "scope_basis": "DETECTION 第一独立建议句；下一行 Search for IOCs 和后续 Review Log4j/Exchange 项分别是新指令，不共同支配本句各产品。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "e20226c109da7ffe57dd2bad38eb1f0cd22842f110bd1d22a70488b7b3ef593c",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-059",
+      "doc_id": "aa24-207a",
+      "original_span": {
+        "start": 13270,
+        "end": 13285,
+        "text": "Zyxell firmware"
+      },
+      "decision": "ISOLATE_IDENTITY",
+      "reason": "同一 bullet 直接把两个 CVE 对应 Zyxell firmware（保持原拼写），但只给厂商固件泛族，未给系列/型号。厂商列多个系列，NVD 至少 ATP100/ATP200 两个不同 firmware 产品字段，无法唯一选择。",
+      "protocol_clauses": [
+        "1.6",
+        "2.1.9",
+        "2.1.10",
+        "3.affects",
+        "4.2",
+        "4.7"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 13232,
+          "end": 13285,
+          "text": " CVE-2023-28771 and CVE-2023-33010 – Zyxell firmware",
+          "scope_basis": "CVEs researched 的一个 bullet；同一 dash 结构将两个明确 CVE 对应此 firmware 名称。研究而未利用不否定 affects 归属；其余 bullet 不支配此行。"
+        }
+      ],
+      "explicit_cve_mentions": [
+        {
+          "start": 13234,
+          "end": 13248,
+          "text": "CVE-2023-28771",
+          "cve_id": "CVE-2023-28771"
+        },
+        {
+          "start": 13253,
+          "end": 13267,
+          "text": "CVE-2023-33010",
+          "cve_id": "CVE-2023-33010"
+        }
+      ],
+      "proposed_span": {
+        "start": 13270,
+        "end": 13285,
+        "text": "Zyxell firmware"
+      },
+      "normalization": {
+        "status": "unresolved",
+        "normalized_id": null,
+        "reason": "直接表列归属成立；源文未指定多系列/型号中的哪个 firmware 产品族，未核验唯一通用族。",
+        "source_urls": [
+          "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-remote-command-injection-vulnerability-of-firewalls",
+          "https://nvd.nist.gov/nvd.cfm?cvename=CVE-2023-33010"
+        ],
+        "official_source_ids": [
+          "ZYXEL-28771",
+          "NVD-ZYXEL-33010"
+        ],
+        "verified_at_utc_date": "2026-10-03"
+      },
+      "recommended_gold_action": "建议保留身份隔离候选；不得作为正式 Gold-ready，待人工核验身份/CPE；未应用。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "accepted_direct_affects",
+      "boundary_assessment": "identity_unspecified_firmware_family",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "178a78165d0d046e26c634bf02a43ec8ee28187fd09eab53c84411afa21d509c",
+      "human_review_outcome": "ISOLATE"
+    },
+    {
+      "review_id": "FP62-060",
+      "doc_id": "aa24-207a",
+      "original_span": {
+        "start": 13905,
+        "end": 13917,
+        "text": "Spring4Shell"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "Spring4Shell 是该漏洞的昵称而非产品、组件或设备。即使表格列在 CVE 后，也不能用外部映射把漏洞昵称改造成 Configuration。",
+      "protocol_clauses": [
+        "1.3",
+        "2.Configuration",
+        "2.1.1",
+        "4.2"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 13886,
+          "end": 13917,
+          "text": " CVE-2022-22965 – Spring4Shell",
+          "scope_basis": "CVEs researched 一个 bullet；dash 后是漏洞昵称，不能凭 CVE 外部映射把昵称替换为 Spring Framework 产品。"
+        }
+      ],
+      "explicit_cve_mentions": [
+        {
+          "start": 13888,
+          "end": 13902,
+          "text": "CVE-2022-22965",
+          "cve_id": "CVE-2022-22965"
+        }
+      ],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "178a78165d0d046e26c634bf02a43ec8ee28187fd09eab53c84411afa21d509c",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-061",
+      "doc_id": "aa24-109a",
+      "original_span": {
+        "start": 4036,
+        "end": 4045,
+        "text": "SonicWall"
+      },
+      "decision": "REJECT_NOT_PRODUCT",
+      "reason": "SonicWall 只是厂商名。句子说 a SonicWall vulnerability 而未给具体产品身份；不能从外部 CVE 配置补入 SonicOS/设备型号。",
+      "protocol_clauses": [
+        "2.Configuration",
+        "2.1.1",
+        "2.1.2",
+        "3.affects"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 3876,
+          "end": 4080,
+          "text": "Akira threat actors likely abused Common Vulnerabilities and Exposures \n(CVE)-2024-40766\n (Common Weakness Enumeration \n[CWE]-284: Improper Access Control\n), a SonicWall vulnerability, for initial access.",
+          "scope_basis": "更新 Summary 的完整句：源文以 (CVE)-2024-40766 格式明示编号，SonicWall 是厂商而非具体产品；不把后续 VPN 泛称或官方产品名补入当前跨度。"
+        }
+      ],
+      "explicit_cve_mentions": [
+        {
+          "start": 3948,
+          "end": 3964,
+          "text": "(CVE)-2024-40766",
+          "cve_id": "CVE-2024-40766"
+        }
+      ],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "b17388454bf661f6e93dda2eb0b589de5c336346cb0e146d50e93cf023340219",
+      "human_review_outcome": "REJECT"
+    },
+    {
+      "review_id": "FP62-062",
+      "doc_id": "aa24-109a",
+      "original_span": {
+        "start": 7459,
+        "end": 7487,
+        "text": "Nutanix Acropolis Hypervisor"
+      },
+      "decision": "REJECT_NO_DIRECT_AFFECTS",
+      "reason": "Nutanix Acropolis Hypervisor 是 payload/VM 加密的目标，当前句没有具体 CVE。不能把邻近 VPN 或 Veeam 的漏洞绑定到 AHV。",
+      "protocol_clauses": [
+        "1.2",
+        "2.1.1",
+        "2.1.7",
+        "4.1",
+        "4.7"
+      ],
+      "confidence": "high",
+      "source_evidence": [
+        {
+          "start": 7408,
+          "end": 7724,
+          "text": "Akira threat actors also deploy payloads to target Nutanix Acropolis Hypervisor (AHV) systems; this is the first observed instance in which Akira threat actors encrypted Nutanix AHV virtual machine (VM) disk files, indicating that they targeted hypervisors beyond the historical targeting of VMware ESXi and Hyper-V.",
+          "scope_basis": "Initial Access 更新段的完整 payload 目标句；上段 VPN CVE 是不同产品与不同谓词，本句无 CVE，说明加密 hypervisor VM disk。"
+        }
+      ],
+      "explicit_cve_mentions": [],
+      "proposed_span": null,
+      "normalization": {
+        "status": "not_applicable",
+        "normalized_id": null,
+        "reason": "此提及未通过 Configuration 语义/事实块门槛，不检索或推荐 CPE。",
+        "source_urls": [],
+        "official_source_ids": []
+      },
+      "recommended_gold_action": "建议排除此候选 Configuration 提及；未修改 Gold。",
+      "human_adjudication_status": "pending",
+      "semantic_assessment": "rejected",
+      "boundary_assessment": "not_promoted",
+      "gold_ready_recommendation": false,
+      "source_text_sha256": "b17388454bf661f6e93dda2eb0b589de5c336346cb0e146d50e93cf023340219",
+      "human_review_outcome": "REJECT"
+    }
+  ]
+}

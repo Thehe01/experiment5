@@ -1,10 +1,10 @@
 experiment:
   name: experiment5
   status: migration_complete
-  current_phase: chapter5_imported
+  current_phase: chapter5_latest_imported
 
 checkpoint:
-  commit: 54e9d7ab12e71511ebcb54a5e5e03d352935f6a3
+  commit: f30dc71bb0ca0980546b875a108f5725b4ca39db
   last_update: 2026-10-13
 
 completed:
@@ -12,48 +12,62 @@ completed:
     status: verified
     evidence:
       repository: Thehe01/experiment5
-  - task: migrate_chapter5_assets
+  - task: migrate_latest_chapter5_assets
     status: verified
     evidence:
       source_repository: Thehe01/experiment4
-      source_branch: codex/chapter5-public-data-20261011
-      source_commit: 54e9d7ab12e71511ebcb54a5e5e03d352935f6a3
+      source_commit: f30dc71bb0ca0980546b875a108f5725b4ca39db
+      files_changed_from_previous_migration: 479
       imported_path: chapter5
+      imported_files: 571
       imported_at: 2026-10-13
-  - task: normalize_chapter5_assets
+  - task: migrate_chapter5_workflows
     status: verified
     evidence:
-      source_commit: 54e9d7ab12e71511ebcb54a5e5e03d352935f6a3
-      data_paths:
-        - data/raw/chapter5/public_data
+      source_commit: f30dc71bb0ca0980546b875a108f5725b4ca39db
+      workflow_count: 8
+      path: .github/workflows
+  - task: migrate_chapter5_bound_support_inputs
+    status: verified
+    evidence:
+      source_commit: f30dc71bb0ca0980546b875a108f5725b4ca39db
+      root_data_files: 332
+      root_result_manifests: 1
+      registration_files: 28
+      registration_hash_mismatches: 0
+      path_policy: inherited Chapter4 data explicitly bound by Chapter5 registration and preflight
+  - task: remove_duplicate_normalized_copies
+    status: verified
+    evidence:
+      canonical_path: chapter5
+      removed_paths:
+        - configs/chapter5
+        - data/raw/chapter5
         - data/processed/chapter5-v1-20261010
-      script_path: scripts/chapter5
-      config_path: configs/chapter5
-      result_path: results/chapter5-v1-20261010
-      report_path: reports/chapter5
+        - scripts/chapter5
+        - reports/chapter5
+        - results/chapter5-v1-20261010
 
-pending:
-  - priority: P1
-    task: commit_and_publish_normalized_assets
-    status: pending
-    next_action: review normalized Chapter5 assets, then commit and push to experiment5
+pending: []
 
 migration:
   source:
     repository: Thehe01/experiment4
-    branch: codex/chapter5-public-data-20261011
-    commit: 54e9d7ab12e71511ebcb54a5e5e03d352935f6a3
+    commit: f30dc71bb0ca0980546b875a108f5725b4ca39db
   policy:
     include:
-      - data
-      - scripts
-      - configs
-      - results
-      - reports
+      - chapter5
+      - .github/workflows/chapter5-*.yml
+      - EXPERIMENT_PLAN.md
+      - registered Chapter5 support inputs under data/
+      - registered Chapter5 support manifest under results/
     exclude:
       - .git
       - experiment4_state
       - unrelated_experiments
+  layout:
+    canonical_path: chapter5
+    compatibility_copy: false
 
 constraints:
   - do_not_modify_experiment4

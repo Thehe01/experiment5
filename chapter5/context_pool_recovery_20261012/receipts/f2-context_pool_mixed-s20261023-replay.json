@@ -1,0 +1,9 @@
+{
+  "abstained": [],
+  "binding": "47e0fe356c9c396c734f60744a79555350bbdf1ef6b85a783c717e6f8a0ef1b0",
+  "checkpoint_sha256": "7bb9246c0cecb5b60c2bfb904ae1ebde946bcc99f9b552918ade5106fa813d56",
+  "max_score_error": 0.0,
+  "score_sha256": "87108466a32a26b2e190d60056219ed2160aefd3fffe2f8e13aa2d51c5eb3a52",
+  "unit": "f2-context_pool_mixed-s20261023",
+  "verification_forward": 1
+}

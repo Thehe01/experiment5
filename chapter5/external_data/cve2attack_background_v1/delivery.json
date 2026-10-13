@@ -1,0 +1,13 @@
+{
+  "bytes": 2099870,
+  "crc_check": "passed",
+  "file": "CVE2ATTCK_background_enriched_20261011.zip",
+  "graph_ready": 858,
+  "member_digest_check": "passed",
+  "members": 24,
+  "original_snapshot_candidates": 860,
+  "repeat_zip_byte_identical": true,
+  "reserved_scoring": 0,
+  "sha256": "0a8dadff1e03dbe55520a77783523016dcb2d97d8f716f3253255f1b33748e6b",
+  "training_units": 0
+}

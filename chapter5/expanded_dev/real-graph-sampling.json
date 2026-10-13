@@ -1,0 +1,79 @@
+{
+  "graphs": [
+    {
+      "condition": "augmented",
+      "fold": 0,
+      "negative_count": 128020,
+      "sampling": {
+        "auxiliary_fallback": 0,
+        "target_full": 14145,
+        "target_seen": 14145,
+        "target_seen_fallback": 0
+      },
+      "target_negative_count": 28290
+    },
+    {
+      "condition": "augmented",
+      "fold": 1,
+      "negative_count": 128070,
+      "sampling": {
+        "auxiliary_fallback": 0,
+        "target_full": 14170,
+        "target_seen": 14170,
+        "target_seen_fallback": 0
+      },
+      "target_negative_count": 28340
+    },
+    {
+      "condition": "augmented",
+      "fold": 2,
+      "negative_count": 128070,
+      "sampling": {
+        "auxiliary_fallback": 0,
+        "target_full": 14170,
+        "target_seen": 14170,
+        "target_seen_fallback": 0
+      },
+      "target_negative_count": 28340
+    },
+    {
+      "condition": "base",
+      "fold": 0,
+      "negative_count": 80010,
+      "sampling": {
+        "auxiliary_fallback": 0,
+        "target_full": 6400,
+        "target_seen": 6400,
+        "target_seen_fallback": 0
+      },
+      "target_negative_count": 12800
+    },
+    {
+      "condition": "base",
+      "fold": 1,
+      "negative_count": 80060,
+      "sampling": {
+        "auxiliary_fallback": 0,
+        "target_full": 6425,
+        "target_seen": 6425,
+        "target_seen_fallback": 0
+      },
+      "target_negative_count": 12850
+    },
+    {
+      "condition": "base",
+      "fold": 2,
+      "negative_count": 80060,
+      "sampling": {
+        "auxiliary_fallback": 0,
+        "target_full": 6425,
+        "target_seen": 6425,
+        "target_seen_fallback": 0
+      },
+      "target_negative_count": 12850
+    }
+  ],
+  "real_graphs": 6,
+  "result": "passed",
+  "training_runs": 0
+}

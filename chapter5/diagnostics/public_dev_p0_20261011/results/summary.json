@@ -1,0 +1,64 @@
+{
+  "arm_mrr": {
+    "distmult_mixed": 0.31090224333000877,
+    "distmult_uniform": 0.3094693423952777,
+    "rgcn_mixed": 0.319399701757764,
+    "rgcn_uniform": 0.3150832627790701
+  },
+  "baseline_fold_outputs": 18,
+  "baseline_rank_rows": 6978,
+  "controls": {
+    "distmult_mixed/joint": {
+      "changed_mrr": 0.31090224333000877,
+      "delta_mrr": 0.0,
+      "mean_query_score_spearman": 0.9999999999999999,
+      "observations": 9,
+      "relative_score_l2_change": 0.0,
+      "top3_set_changed_fraction": 0
+    },
+    "neighbor_vote/joint": {
+      "changed_mrr": 0.1939658825847844,
+      "delta_mrr": -0.18283109433877492,
+      "mean_query_score_spearman": 0.33841855670773235,
+      "observations": 9,
+      "relative_score_l2_change": 1.1644943794485727,
+      "top3_set_changed_fraction": 0.9498207885304659
+    },
+    "rgcn_mixed/cpe": {
+      "changed_mrr": 0.31718434688540365,
+      "delta_mrr": -0.0022153548723603533,
+      "mean_query_score_spearman": 0.9989494022132418,
+      "observations": 9,
+      "relative_score_l2_change": 0.2026225361284415,
+      "top3_set_changed_fraction": 0.04014336917562724
+    },
+    "rgcn_mixed/cwe": {
+      "changed_mrr": 0.3053693860338857,
+      "delta_mrr": -0.014030315723878342,
+      "mean_query_score_spearman": 0.9924331794364157,
+      "observations": 9,
+      "relative_score_l2_change": 0.23782505721538116,
+      "top3_set_changed_fraction": 0.09247311827956989
+    },
+    "rgcn_mixed/joint": {
+      "changed_mrr": 0.3010433841304871,
+      "delta_mrr": -0.01835631762727692,
+      "mean_query_score_spearman": 0.9921640386355544,
+      "observations": 27,
+      "relative_score_l2_change": 0.3481648905416254,
+      "top3_set_changed_fraction": 0.10728793309438471
+    },
+    "rgcn_mixed/remove": {
+      "changed_mrr": 0.30279589469109763,
+      "delta_mrr": -0.016603807066666365,
+      "mean_query_score_spearman": 0.9908279632616527,
+      "observations": 9,
+      "relative_score_l2_change": 0.2973427621812905,
+      "top3_set_changed_fraction": 0.2028673835125448
+    }
+  },
+  "metric_max_error": 0,
+  "model_rank_rows": 13956,
+  "model_units": 36,
+  "rank_mismatches": 0
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "configuration-v14-windows-component-authority-v1",
+  "source_kind": "independent vendor documentation, not evaluation labels",
+  "source_url": "https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/windows-authentication-overview",
+  "source_title": "Windows authentication overview",
+  "source_last_updated": "2025-07-29",
+  "retrieved_date_utc": "2026-10-05",
+  "source_section": "Feature description and Practical applications",
+  "paraphrased_basis": "Microsoft describes Kerberos and NTLM among the authentication protocols implemented by Windows. The Kerberos client is a Windows security support provider. This supplies component provenance only; a separate literal CVE assertion must establish vulnerability and affected product scope.",
+  "registered_bare_components": ["Kerberos", "NTLM"],
+  "not_claimed": ["a vulnerability in every use of these protocols affects Windows", "a universal component taxonomy", "new human annotation or independent IAA"],
+  "new_model_calls": 0
+}

@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "case": "config",
+      "reason": "frozen registration/config/source mismatch",
+      "rejected": true
+    },
+    {
+      "case": "source",
+      "reason": "frozen registration/config/source mismatch",
+      "rejected": true
+    },
+    {
+      "case": "units",
+      "reason": "frozen registration/config/source mismatch",
+      "rejected": true
+    },
+    {
+      "case": "runtime_zip",
+      "reason": "runtime package SHA mismatch",
+      "rejected": true
+    }
+  ],
+  "model_api_calls": 0,
+  "scientific_training_runs": 0
+}

@@ -1,0 +1,96 @@
+{
+  "models": {
+    "f0-distmult_mixed-s20261021-base": {
+      "binding": "76ffdcf6f20df984e42b7592119664fb44f2a1028589274d203b9bd651707f51",
+      "fold": 0,
+      "major_macro_mrr": 0.28482325018267823,
+      "mrr": 0.4243614023067521,
+      "queries": 147,
+      "seed": 20261021
+    },
+    "f0-distmult_mixed-s20261022-base": {
+      "binding": "830a1903004d29041283976f006e92428ec51e8124a4af30ee68fc7cbb6a7042",
+      "fold": 0,
+      "major_macro_mrr": 0.1923609603673374,
+      "mrr": 0.37558581718647066,
+      "queries": 147,
+      "seed": 20261022
+    },
+    "f0-distmult_mixed-s20261023-base": {
+      "binding": "5699c927d1218626ba01f7f01ad9951f864939d7c769081a447bb80fd81e2137",
+      "fold": 0,
+      "major_macro_mrr": 0.19196347989111057,
+      "mrr": 0.3648544277442877,
+      "queries": 147,
+      "seed": 20261023
+    },
+    "f1-distmult_mixed-s20261021-base": {
+      "binding": "936fe48634d5665a867e67e8835588be6d11c160b07024327e8ea1c2bc470f6c",
+      "fold": 1,
+      "major_macro_mrr": 0.20579765044217752,
+      "mrr": 0.4029834906794827,
+      "queries": 147,
+      "seed": 20261021
+    },
+    "f1-distmult_mixed-s20261022-base": {
+      "binding": "65029923806632ee570ce3d2b59c72213ae81675ecd83b849585770d2c7f2da8",
+      "fold": 1,
+      "major_macro_mrr": 0.1902373523259471,
+      "mrr": 0.3708859605500308,
+      "queries": 147,
+      "seed": 20261022
+    },
+    "f1-distmult_mixed-s20261023-base": {
+      "binding": "54f5f677dd53d6dc3e7cc1c5820516c8d29513431342aa319b1beffca1c1bbbb",
+      "fold": 1,
+      "major_macro_mrr": 0.19270795455677092,
+      "mrr": 0.36915488355227294,
+      "queries": 147,
+      "seed": 20261023
+    },
+    "f2-distmult_mixed-s20261021-base": {
+      "binding": "68f1e19d48c6de043ee193ce14238d35e2e148c25e797b4c1a31e5588d4f6bc8",
+      "fold": 2,
+      "major_macro_mrr": 0.19237664639863947,
+      "mrr": 0.3720503742160183,
+      "queries": 148,
+      "seed": 20261021
+    },
+    "f2-distmult_mixed-s20261022-base": {
+      "binding": "42b283881c0eb37dd9b3997abca61ebd7826fb464cc7c752c1e64a0a86fd203b",
+      "fold": 2,
+      "major_macro_mrr": 0.19266446325340603,
+      "mrr": 0.3800581212581245,
+      "queries": 148,
+      "seed": 20261022
+    },
+    "f2-distmult_mixed-s20261023-base": {
+      "binding": "82aa06de1eb2a2345992672e1e51bc7e151381bf432cfa6e195194abf8adb599",
+      "fold": 2,
+      "major_macro_mrr": 0.19490113095122188,
+      "mrr": 0.3750543636371557,
+      "queries": 148,
+      "seed": 20261023
+    }
+  },
+  "neighbor": {
+    "0": {
+      "major_macro_mrr": 0.31199649824589043,
+      "mrr": 0.4408507669335913,
+      "queries": 147
+    },
+    "1": {
+      "major_macro_mrr": 0.3231203329979621,
+      "mrr": 0.4681192730945056,
+      "queries": 147
+    },
+    "2": {
+      "major_macro_mrr": 0.3507467451174587,
+      "mrr": 0.4870475451031428,
+      "queries": 148
+    }
+  },
+  "source_commit": "a247a950412c517d4c80ff5bab7e46fece8b929e",
+  "source_comparison_git_blob": "ab39bcb6f32e00102bd9ef08a8d4187bc12c9ac2",
+  "source_data_sha256": "693deeb60537b51f9d9e6b7a1734a6d74482ad44c310e56092deb58c8f03a16b"
+}

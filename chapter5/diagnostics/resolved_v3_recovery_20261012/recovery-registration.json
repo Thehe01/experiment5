@@ -1,0 +1,83 @@
+{
+  "authority": "current user authorizes diagnosis recovery and archival; no additional inference or training allocation",
+  "completed_scientific_commit": "a247a950412c517d4c80ff5bab7e46fece8b929e",
+  "confirmation_training": false,
+  "executed_in_this_recovery": {
+    "metadata_refresh": 0,
+    "new_forward": 0,
+    "new_model_api": 0,
+    "new_training": 0,
+    "protected_label_scoring": 0
+  },
+  "fresh_outputs": {
+    "archive-verification.json": "720f43d8e824d1c1ff4af3d5343b9f0075c2200efd7a979df41477eab92789b7",
+    "negative-gates.json": "9d2cbb547828e9c2239b9dfa2481d96171ca717d5efdb4870fcc02be93bb63c7",
+    "neighbor-source-rows.json": "3fcfe2945cec3b55ed3876f9ff6a3f81e19f39231c383e17bb66895f7d1bfd9c",
+    "neighbor-source-summary.json": "88d265c5ebc9e384fc3335f50b8e562f59b60280e2818e5aa9654f4989ea1937",
+    "persistence-observations.json": "6353bc56c1d07bbd4e02b7d20b567fd9fcb632758af5f69598c977f5ff1396d9",
+    "proposed-replay-donors.json": "e718fe59ca35c346e693d130d19d864be6784b08d5c6e7bc1d1cd9e1a27f812b",
+    "recover_without_forward.py": "69d90107814a91082385f73d9acfe8364c9bc60e6b657ab60a7e832590398e31",
+    "source-distribution.json": "55146b5d9fefd566592a8248517e3d1b3730bdcdc67109ceb3dde7aa290e80d9",
+    "source-handoff.md": "460f4368c2cfed05489eb3fd382818f5b5f595fbf57a0a325470743521ef9029",
+    "verification.json": "0406b0f30ccc66db7a2ab175f416c8d18045024bfd412b0fbc9dc6721cfdee54"
+  },
+  "future_inference_extension": {
+    "additional_authorized_forward_budget": 0,
+    "before_activation": [
+      "separate explicit allocation of additional forward budget",
+      "bind new implementation and runtime hashes, checkpoint inventory, graph hashes, scoring and donor maps",
+      "freeze every unique inference action and output target",
+      "persist each reservation before forward; count failed, retried, and UNKNOWN forwards",
+      "fail closed on UNKNOWN; no automatic replay",
+      "persist result and checksum after every action; finish with durable Git commit and readback before scratch cleanup"
+    ],
+    "cache_persistence": "unique action_id, durable reservation/receipt/cache SHA256; preserve all prior entries; save new scores outside original lost diagnosis path",
+    "donors_identity": "new deterministic mapping; the original lost mapping is unknown, so regenerated permutation results would be new retrospective evidence, not byte restoration",
+    "donors_sha256": "e718fe59ca35c346e693d130d19d864be6784b08d5c6e7bc1d1cd9e1a27f812b",
+    "inventory": "36 original checkpoint evaluations + 36 CWE-only + 36 CPE-only + 36 joint background permutations",
+    "maximum_cumulative_forward_if_full_proposal_allocated_and_used": 288,
+    "not_authorized": [
+      "9-unit context-pool candidate",
+      "new hyperparameter search",
+      "new data or labels",
+      "reserved155 scoring",
+      "main merge",
+      "activation branch movement"
+    ],
+    "proposed_upper_bound_if_separately_allocated": 144,
+    "runtime": "Python 3.12.14, Torch 2.9.1+cpu, frozen requirements-cpu.txt, AVX2, 2 threads",
+    "status": "proposal_only_not_activated",
+    "stopping": [
+      "budget exhausted or allocation absent",
+      "protected ID or frozen binding mismatch",
+      "uncertain action state without reconciliation",
+      "output hash or existing-cache mismatch"
+    ]
+  },
+  "historical_usage": {
+    "diagnostic_protocol": "chapter5-resolved-v3-diagnosis-20261012",
+    "original_per_forward_ledger_reconstructed": false,
+    "reported_breakdown": {
+      "cpe_permutation": 36,
+      "cwe_permutation": 36,
+      "joint_permutation": 36,
+      "original": 36
+    },
+    "reported_forward_consumed": 144,
+    "source": "attached handoff historical execution record; original per-forward ledger and score cache are unavailable",
+    "source_handoff_sha256": "460f4368c2cfed05489eb3fd382818f5b5f595fbf57a0a325470743521ef9029",
+    "unknown_original_usage_must_not_be_automatically_replayed": true,
+    "usage_reset_allowed": false
+  },
+  "new_forward_authorized_budget": 0,
+  "new_model_api_budget": 0,
+  "new_training_unit_budget": 0,
+  "protected_ids": 169,
+  "protocol": "chapter5-resolved-v3-no-model-recovery-20261012",
+  "registered_at": "2026-10-12T12:06:41.605727+08:00",
+  "reserved_scoring": false,
+  "schema": "chapter5-diagnosis-recovery-registration-v1",
+  "scientific_source_commit": "4f379b612b3d6cce5f8237b8103e866909ca7988",
+  "scope": "recover original state, original ranks, baseline formulas, distribution, neighbor sources, archive integrity without a model runtime",
+  "source_commit": "68e4d2fd09ece4a70c70b0c550e8ff144c03d29d"
+}

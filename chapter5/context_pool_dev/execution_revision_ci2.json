@@ -1,0 +1,21 @@
+{
+  "schema": "context-pool-execution-revision-v1",
+  "revision": "ci2",
+  "prior_execution_run": 38218792808,
+  "prior_job": 114709749958,
+  "prior_train_job": 114710035168,
+  "prior_run_conclusion": "failure",
+  "prior_train_job_conclusion": "skipped",
+  "prior_started_training_units": 0,
+  "reason": "GitHub runner does not install rg; RED log assertion failed with127 before GREEN tests or training",
+  "correction": "Python stdlib asserts NotImplementedError from the synthetic-only RED reference; identical GREEN tests and all original guards stay enabled",
+  "scientific_registration_sha256": "29d8c3b89c653229b086a49d45122e05f28570663f858fa2270f83a2066ba713",
+  "scientific_launch_sha256": "fc109eaaed777372439cdda9a6ddef8a10af71fea2de94f47e7c58a97b0c67e3",
+  "workflow_path": ".github/workflows/chapter5-context-pool-dev-ci2.yml",
+  "workflow_sha256": "46c3271dc878ea01410467e5dbca93fc2663ed06b56064939c195868097fa494",
+  "training_budget": 9,
+  "budget_is_original_allocation_not_additional": true,
+  "training_allocation_key": "context-pool-base-20261012-original9",
+  "prior_diagnostic_forwards_unchanged": 288,
+  "scientific_code_config_registration_unchanged": true
+}

@@ -1,0 +1,25 @@
+{
+  "workflow_run_id": 37806261348,
+  "job_id": 113411220955,
+  "artifact_id": 11565812669,
+  "artifact_name": "c4-v13-state-1-1",
+  "archive_name": "c4-v13-phase-stop-slot-1-1.zip",
+  "artifact_zip_sha256": "a4140d744d570a844cab89a0817bc845b098da73aae807c398556289a7b0e429",
+  "ledger_sha256": "d07467cd1355038993ce02625fa56b99a77aefa50f8761f9623b1feabd3333db",
+  "ledger_bytes": 7779820,
+  "source_main_sequences": 7458,
+  "cumulative_counts": {
+    "task": 7965,
+    "optimizer": 311
+  },
+  "completed_phases": [
+    "entity_search",
+    "entity_cache"
+  ],
+  "cache_counts": {
+    "train": 831,
+    "dev": 321
+  },
+  "audit_receipt_path": "results/convergence_c4_v1/v14_evidence/verification.json",
+  "audit_receipt_sha256": "351f1e85cb8858b4796cf88b1a98cdeac5f81a96db6e8165994f81ef38d0f63d"
+}

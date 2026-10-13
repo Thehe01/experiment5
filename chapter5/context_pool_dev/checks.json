@@ -1,0 +1,42 @@
+{
+  "spec_audit": {
+    "requirements": 10,
+    "acceptance_cases": 6,
+    "uncovered": 0,
+    "blocking_findings": 0,
+    "source": "visible user scope and current saved candidate design"
+  },
+  "pure_core_red": {
+    "exit": 1,
+    "tests": 4,
+    "reason": "NotImplementedError from missing behavior"
+  },
+  "pure_core_green": {
+    "exit": 0,
+    "tests": 4
+  },
+  "offline_real_data": {
+    "exit": 0,
+    "units": 9,
+    "graphs": 3,
+    "protected_ids": 169,
+    "coverage": 1,
+    "new_training": 0
+  },
+  "numerical_tests": {
+    "local_status": "not_run_no_torch",
+    "remote_gate": "same four synthetic tests must fail on unimplemented reference and pass on production pool; never scientific CVEs"
+  },
+  "source_review": {
+    "method": "self-review against spec; no separate reviewer agent",
+    "reviewed": "target/CVE-ID separation, auxiliary loss reuse, query kernel, checkpoint model/optimizer/RNG coherence, permanent reservation and UNKNOWN stop, exact unit/forward budgets, paired acceptance denominator",
+    "fixed_before_registration": "clone last model state before best-weight restoration so the checkpoint remains coherent with final optimizer/RNG"
+  },
+  "scope": {
+    "prior_diagnostic_forward_unchanged": 288,
+    "new_training_units_max": 9,
+    "new_checkpoint_replay_forwards_max": 9,
+    "model_api": 0,
+    "reserved_scoring": false
+  }
+}

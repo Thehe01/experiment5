@@ -1,0 +1,15 @@
+{
+  "additional_authorized_forward_budget": 0,
+  "cumulative_reported_forward_consumed": 144,
+  "evidence_class": "aggregate historical execution record, not an original action ledger",
+  "historical_action_ledger_available": false,
+  "historical_forward_consumed": 144,
+  "new_forward_consumed": 0,
+  "new_training_units": 0,
+  "original_diagnostic_cache_count_recovered": 0,
+  "original_training_units_completed": 36,
+  "recovery_status": "no_model_recovery_complete_full_diagnostic_score_cache_unrecovered",
+  "registration_sha256": "c38a4081722e29cd4c0d8a8a128ae277da4633b586dea4382662d69339ebf4fe",
+  "schema": "chapter5-diagnosis-usage-preservation-v1",
+  "source_handoff_sha256": "460f4368c2cfed05489eb3fd382818f5b5f595fbf57a0a325470743521ef9029"
+}

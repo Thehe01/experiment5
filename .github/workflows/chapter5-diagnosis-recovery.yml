@@ -1,0 +1,61 @@
+name: Chapter 5 v3 independent diagnosis recovery
+on:
+  push:
+    branches: [codex/chapter5-public-dev-20261011]
+    paths: [chapter5/diagnostics/resolved_v3_replay_20261012/launch.json]
+permissions:
+  contents: write
+concurrency:
+  group: chapter5-v3-independent-diagnosis-recovery
+  cancel-in-progress: false
+env:
+  ATEN_CPU_CAPABILITY: avx2
+  PYTHONUNBUFFERED: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - name: No-model behavior and registration gates
+        run: |
+          python -m unittest chapter5.diagnostics.resolved_v3_replay_20261012.test_helpers -q
+          python -m chapter5.diagnostics.resolved_v3_replay_20261012.runner validate --repo .
+  replay:
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: codex/chapter5-public-dev-20261011
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - name: Frozen CPU runtime and original registration guards
+        run: |
+          python -m pip install -r chapter5/requirements-cpu.txt
+          python -m chapter5.resolved_dev.campaign verify --repo .
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Restore original permanent completed state without training
+        run: |
+          git fetch --no-tags --depth=1 origin a247a950412c517d4c80ff5bab7e46fece8b929e
+          mkdir -p "$RUNNER_TEMP/original-completed"
+          git archive a247a950412c517d4c80ff5bab7e46fece8b929e chapter5/resolved_dev/runs/chapter5-resolved-dev-v3-20261011 | tar -x -C "$RUNNER_TEMP/original-completed"
+          python -c 'from pathlib import Path; import os; from chapter5.archive import restore_state; root=Path(os.environ["RUNNER_TEMP"]); restore_state(root/"original-completed/chapter5/resolved_dev/runs/chapter5-resolved-dev-v3-20261011",root/"completed-state")'
+      - name: Execute registered144 new forwards with durable per-action records
+        run: python -m chapter5.diagnostics.resolved_v3_replay_20261012.runner run --repo . --state "$RUNNER_TEMP/completed-state"
+      - name: Independent cache-only verification and complete permanent archive
+        run: python -m chapter5.diagnostics.resolved_v3_replay_20261012.verify --repo . --state "$RUNNER_TEMP/completed-state" --persist
+      - name: Retain diagnosis evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: chapter5-v3-diagnosis-recovery-${{ github.run_id }}
+          path: chapter5/diagnostics/resolved_v3_replay_20261012
+          retention-days: 90

@@ -1,0 +1,33 @@
+{
+  "protocol": "chapter5-expanded-source-audit-v1-20261011",
+  "authorization": "user explicitly requested 开始审计 after completed data expansion experiment",
+  "authorized_at": "2026-10-11T20:55:32+08:00",
+  "baseline_source_commit": "0e908a1950378eb87eaa599baf6b7880bab33347",
+  "source_package_sha256": "c00660f6d37cfefa2af35513ed785ca0e77f880746f34220edb204c353bfadbf",
+  "enriched_package_sha256": "0a8dadff1e03dbe55520a77783523016dcb2d97d8f716f3253255f1b33748e6b",
+  "runtime_package_sha256": "224edc37ab105644bec932ab54dc1071783c35fd124728d5a2645c1f00274d10",
+  "comparison_git_blob": "447bc69ac0a9caa2fbd670d0d393b64c420c0a1e",
+  "training_budget": 0,
+  "model_inference_budget": 0,
+  "model_api_budget": 0,
+  "source_metadata_refresh_budget": 0,
+  "reserved_label_comparison_budget": 0,
+  "reserved_scoring_budget": 0,
+  "allowed_roles": "original development pool and registered external Train only",
+  "analysis": [
+    "source semantics from frozen records and primary documentation",
+    "same-CVE parent-label set differences within 31 domain, excluding reserved",
+    "cohort label prevalence, cardinality, cooccurrence, CVE-ID year and background coverage",
+    "conditional label distributions on common CWEs with at least 10 CVEs per cohort",
+    "exact replay of six registered baseline configurations on six registered fold/data inputs",
+    "algebraic decomposition of registered neighbor-vote scores into original and external Train votes",
+    "existing model per-technique metrics and Top3 concentration without inference"
+  ],
+  "common_cwe_minimum_cohort_support": 10,
+  "deterministic_baseline_configurations": ["frequency", "cwe_frequency", "smoothed_cwe-1", "smoothed_cwe-5", "smoothed_cwe-10", "neighbor_vote"],
+  "baseline_replay_count": 36,
+  "no_new_alpha_weight_threshold_search": true,
+  "year_semantics": "CVE-ID year is a cohort descriptor, not publication date or verified annotation-origin identifier",
+  "label_disagreement_semantics": "unadjudicated set differences; missing labels are unobserved, not confirmed negatives",
+  "decision": "retain original outputs and failed gate; no automatic new training, relabeling or source weighting"
+}

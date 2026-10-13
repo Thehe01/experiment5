@@ -1,0 +1,10 @@
+{
+  "archive": "diagnosis-evidence-20261011.zip",
+  "bytes": 131852,
+  "contains_query_diagnostics_jsonl": true,
+  "manifest_sha256": "242045d273d3e588a595cdc02d7164d4408de9b5197efe92e17f9fabeafa0042",
+  "member_hash_verification_exit_code": 0,
+  "members": 10,
+  "sha256": "b11ed006aa53e257df30a1a8da1e320143aae9b792995f4b4a0a394dabf57f48",
+  "zip_test_exit_code": 0
+}

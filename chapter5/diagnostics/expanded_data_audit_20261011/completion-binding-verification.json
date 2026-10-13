@@ -1,0 +1,108 @@
+{
+  "all_stopping_reasons": "patience",
+  "alpha": 10,
+  "archive_bytes": 212783840,
+  "archive_part_names_sizes_git_blobs_verified": true,
+  "archive_parts": 51,
+  "archive_zip_part_sha256_recomputed": false,
+  "augmented_vs_best_simple": {
+    "distmult_mixed": {
+      "mean_delta_mrr": -0.06803636642177822,
+      "unit_deltas": [
+        -0.04345558460496873,
+        -0.04346624265974641,
+        -0.06696743085067064,
+        -0.07626712929925478,
+        -0.05619258663150373,
+        -0.07853562953620158,
+        -0.09273419645336034,
+        -0.06167247826626243,
+        -0.09303601949403534
+      ],
+      "wins_of_nine": 0
+    },
+    "rgcn_mixed": {
+      "mean_delta_mrr": -0.06711194328866338,
+      "unit_deltas": [
+        -0.04418808163183319,
+        -0.05278151884259352,
+        -0.042731898201410434,
+        -0.0604350174903015,
+        -0.08613012832949157,
+        -0.07891630111604686,
+        -0.065508239917695,
+        -0.09218528000335441,
+        -0.08113102406524386
+      ],
+      "wins_of_nine": 0
+    }
+  },
+  "baseline_means": {
+    "cwe_frequency": {
+      "augmented": 0.37758104126221786,
+      "base": 0.38801139959474273
+    },
+    "frequency": {
+      "augmented": 0.35912627662395236,
+      "base": 0.364109721505795
+    },
+    "neighbor_vote": {
+      "augmented": 0.43337096424918903,
+      "base": 0.46008382361802086
+    },
+    "smoothed_cwe-10": {
+      "augmented": 0.4170190961379584,
+      "base": 0.43258151295848596
+    }
+  },
+  "best_baseline": {
+    "augmented": "neighbor_vote",
+    "base": "neighbor_vote"
+  },
+  "completed_units": 36,
+  "data_gate": {
+    "fixed_major_macro_delta": -0.007676912941000458,
+    "mean_delta_mrr": -0.017738798696333737,
+    "meaning": "development_data_expansion_gate_only",
+    "passed": false,
+    "reserved_evaluation_started": false,
+    "wins_of_nine": 2
+  },
+  "dev_queries": 150,
+  "epoch_range": [
+    37,
+    152
+  ],
+  "evaluable_classes": 28,
+  "execution_log_unique_units": 36,
+  "fixed_major_classes": 23,
+  "fixed_major_macro_max_error": 0.0,
+  "frozen_source_git_blobs_verified": 23,
+  "group_reconstruction_mrr_max_error": 5.551115123125783e-17,
+  "new_model_api_calls": 0,
+  "new_training_runs": 0,
+  "paired_summary": {
+    "distmult_mixed": {
+      "mean_augmented_mrr": 0.36533459782741085,
+      "mean_base_mrr": 0.38041464637224925,
+      "mean_delta_major_macro": -0.0076781743134224185,
+      "mean_delta_mrr": -0.015080048544838421,
+      "pair_count": 9,
+      "wins": 0
+    },
+    "rgcn_mixed": {
+      "mean_augmented_mrr": 0.36625902096052565,
+      "mean_base_mrr": 0.3839978196568594,
+      "mean_delta_major_macro": -0.007676912941000458,
+      "mean_delta_mrr": -0.017738798696333737,
+      "pair_count": 9,
+      "wins": 2
+    }
+  },
+  "raw_ranks_and_checkpoints_replayed": false,
+  "registration_sha256": "b8a13ca057048c1a5bd894422323276861565b4bdede433f4812a6b9ad9b8c6a",
+  "reserved_holdout_evaluated": false,
+  "result": "passed",
+  "run_id": 38134213784,
+  "unit_numeric_bindings_verified": 36
+}

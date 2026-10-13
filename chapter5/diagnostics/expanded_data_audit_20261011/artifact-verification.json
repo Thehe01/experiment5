@@ -1,0 +1,32 @@
+{
+  "artifact_hashes_verified": true,
+  "frozen_input_bytes_unchanged": true,
+  "model_api_calls": 0,
+  "model_inference": 0,
+  "negative_probes": [
+    {
+      "action": "overwrite existing audit output",
+      "exit_code": 1,
+      "rejected": true
+    },
+    {
+      "action": "tampered comparison bytes",
+      "exit_code": 1,
+      "rejected": true
+    }
+  ],
+  "neighbor_occurrences": 450,
+  "neighbor_unique_cves": 237,
+  "passed": true,
+  "queue_protected_overlap": 0,
+  "reconstructed_neighbor_delta_mrr": -0.02671285936883176,
+  "repeat_bytes_equal": {
+    "analysis.json": true,
+    "neighbor-vote-decomposition.jsonl": true,
+    "overlap-label-review.jsonl": true,
+    "verification.json": true
+  },
+  "reserved_scoring": 0,
+  "training": 0,
+  "verification_script_sha256": "000ee85edffb93140ac44e99c7f768204895b636fbc939622f4085340d4defa1"
+}

@@ -1,0 +1,28 @@
+{
+  "AI_Gold_added": 0,
+  "CWE_disputes_verified": 92,
+  "CWE_edges_removed": 91,
+  "CWE_sets_changed": 89,
+  "all_labels_CPE_roles_preserved": true,
+  "deterministic_output_files": 10,
+  "fold_filter_and_support_checked": true,
+  "frozen_technique_files_checked": 15,
+  "full_records": 1736,
+  "input_tamper_rejected": true,
+  "inputs_sha256": {
+    "enriched": "0a8dadff1e03dbe55520a77783523016dcb2d97d8f716f3253255f1b33748e6b",
+    "opinions": "e8082a9f9deb411f1a108957410135bb946e018a904b5072e3b6867c14bc7cb4",
+    "sources": "a5b8dcc4893af75f0da376763fadfa8a6cf98967f02c30fa22c55a1b9e8a93ef",
+    "v2": "184c4f0d1ade87252b0203294c81ef2e892234f7591292a6537c3f01f9ce5f0d"
+  },
+  "known_unknown_pairs_in_usable": 0,
+  "original_880_CWE_preserved": true,
+  "overwrite_rejected": true,
+  "passed": true,
+  "primary_CVE_records_Git_and_SHA256_checked": 107,
+  "quarantine": 14,
+  "reserved_labels_read_or_scored": 0,
+  "training": 0,
+  "unknown_pairs_preserved": 20,
+  "usable_records": 1724
+}

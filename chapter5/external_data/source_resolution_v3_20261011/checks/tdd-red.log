@@ -1,0 +1,103 @@
+FFFF.FFFF
+======================================================================
+FAIL: test_adp_values_require_exact_official_record_agreement (test_resolution.ResolutionTests.test_adp_values_require_exact_official_record_agreement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/test_resolution.py", line 38, in test_adp_values_require_exact_official_record_agreement
+    self.assertEqual(good["policy"], "verified_adp_fallback")
+AssertionError: 'legacy_union' != 'verified_adp_fallback'
+- legacy_union
++ verified_adp_fallback
+
+
+======================================================================
+FAIL: test_ai_opinion_cannot_be_promoted_to_gold (test_resolution.ResolutionTests.test_ai_opinion_cannot_be_promoted_to_gold)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/test_resolution.py", line 60, in test_ai_opinion_cannot_be_promoted_to_gold
+    with self.assertRaisesRegex(ValueError, "Gold"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_assigning_source_preserves_specificity_without_union (test_resolution.ResolutionTests.test_assigning_source_preserves_specificity_without_union)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/test_resolution.py", line 16, in test_assigning_source_preserves_specificity_without_union
+    self.assertEqual(result["ids"], ["CWE-121"])
+AssertionError: Lists differ: ['CWE-121', 'CWE-787'] != ['CWE-121']
+
+First list contains 1 additional elements.
+First extra element 1:
+'CWE-787'
+
+- ['CWE-121', 'CWE-787']
++ ['CWE-121']
+
+======================================================================
+FAIL: test_duplicate_and_missing_review_pairs_are_rejected (test_resolution.ResolutionTests.test_duplicate_and_missing_review_pairs_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/test_resolution.py", line 53, in test_duplicate_and_missing_review_pairs_are_rejected
+    with self.assertRaisesRegex(ValueError, "pair"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_non_numeric_and_substring_values_are_not_nodes (test_resolution.ResolutionTests.test_non_numeric_and_substring_values_are_not_nodes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/test_resolution.py", line 30, in test_non_numeric_and_substring_values_are_not_nodes
+    self.assertEqual(result["ids"], ["CWE-79"])
+AssertionError: Lists differ: ['CWE-79', 'CWE-79 note', 'CWE-noinfo'] != ['CWE-79']
+
+First list contains 2 additional elements.
+First extra element 1:
+'CWE-79 note'
+
+- ['CWE-79', 'CWE-79 note', 'CWE-noinfo']
++ ['CWE-79']
+
+======================================================================
+FAIL: test_nvd_secondary_is_still_nvd_when_cna_missing (test_resolution.ResolutionTests.test_nvd_secondary_is_still_nvd_when_cna_missing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/test_resolution.py", line 22, in test_nvd_secondary_is_still_nvd_when_cna_missing
+    self.assertEqual(result["source"], "nvd@nist.gov")
+AssertionError: 'union' != 'nvd@nist.gov'
+- union
++ nvd@nist.gov
+
+
+======================================================================
+FAIL: test_unknown_third_provider_is_rejected (test_resolution.ResolutionTests.test_unknown_third_provider_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/test_resolution.py", line 33, in test_unknown_third_provider_is_rejected
+    with self.assertRaisesRegex(ValueError, "provider"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_whole_cve_is_quarantined_and_all_data_preserved (test_resolution.ResolutionTests.test_whole_cve_is_quarantined_and_all_data_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_resolution_v3_20261011/test_resolution.py", line 45, in test_whole_cve_is_quarantined_and_all_data_preserved
+    self.assertEqual([x["id"] for x in clean], ["b"])
+AssertionError: Lists differ: ['a', 'b'] != ['b']
+
+First differing element 0:
+'a'
+'b'
+
+First list contains 1 additional elements.
+First extra element 1:
+'b'
+
+- ['a', 'b']
++ ['b']
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+FAILED (failures=8)

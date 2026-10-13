@@ -1,0 +1,1838 @@
+{
+  "schema_version": "convergence-c3-known-exposure-metadata-v1",
+  "status": "partial_inventory_no_candidate_audit",
+  "repository_commit": "7c7aa3d3545c222976b07bfa1af05221f222cb55",
+  "generated_date": "2026-10-09",
+  "annotation_bytes_opened": 0,
+  "new_test_documents_selected": 0,
+  "new_model_calls": 0,
+  "historical_split": {
+    "train": 63,
+    "dev": 21,
+    "old_test": 21,
+    "all_105_excluded": true
+  },
+  "canonical_documents": [
+    {
+      "doc_id": "aa21-200a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "a4866cc347515617f848106927f5642fd35492511680b460485abf8f17eaa446",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-138b-vmware-cve-22954",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "47b4b774e3c320a0059cf76360a789a06a6c0682260b9a3d86daf814679ca399",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-174a-log4shell-vmware-cve-44228",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "a1fa2ba046d7e13df854ee7d8782880bbe21f9cd5b43f6f56bcd0fd369a0f1dc",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-187a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "190f0fa01e67c762c6f23f98d4ffe79f30e790a048a842e1b14bb260436a68f7",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-216a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "425c831c06030d2bc7221e9017a1f64c7c5bfbc01fcd2e7eec4d555cd419128f",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-223a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "16245f3682be7d6faeffe5cb37c13324a823033641624ac96b237d08051628c0",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-249a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "29b46eac11e739996ac26736cda7efebdc8ca29d94ceca9eb6f36afff663d99f",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-277a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "11bd7c356225a315a52b97b3d5ef018b0cbe04533f4793594ad81a0d50cab031",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-320a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "5eee853b95f886173461a6ad1a3be5db9fee8d3620cb33e24d612d53980b6268",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-321a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "7b15502ce74a9db204a73c16680bb5592023b2533e60701a0305179e28ce0116",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-321a-hive-exchange",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "76dfd17e6bd033e74c27b672ce95120abd9c5348ae2d293a642a0886f07ee38c",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-335a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "81ef7959e4ee030745ccf0ab1cd4a787206fef01f48a874a2db4836b4d5cd8bb",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-025a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "e5ba505536fa9adce213f32c744f8962f07ff2aa108386da33c358759c182637",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-039a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "9ab739dc519dd8b0f33ebf6c75021287641a05521d62611effab08bec3503527",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-040a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "d54e2ff044289e493884ed13403a7f358bbcee680ec0bd03e12dc101e531e9af",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-059a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "00e52b72131ba99bcab01620acc3981a44cd82a5441ee45637d9ca7af61dd66b",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-061a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "5b19881a1c0410421f8d1f4ba4456a0659bd1fcc933bf5b1b00de7aec99c61a5",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-074a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "905739913fc1475c25050f0a55353dfb8111cdc5d1222a6f72f1438b3be10c9c",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-074a-telerik-cve-18935",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "8008b9a029b6e89d6ac963d51bfb25fc080ee533d572e277d66fba1c4e4e9dde",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-108",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "5d41f5ec348d1fc6710debb47fe827000eb21a5d05bcb42118d5d81144c9e1c9",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-129a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "e9a9cefc8d12734518fdb89bf892a9392e827c9947e465aeeb16c295c1128280",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-136a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "7aa9c7eff08cf78564dae82aeb25d1c31690613db5422455c642bd75aa239f3f",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-158a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "e5ab067276906d958117e64f57d6489970a18a5900469eb36b59e55c198333ad",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-165a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "216817f92da7989cd85ac4738837a749a3100aeef720049eb172a4563b64615f",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-193a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "609bbe7f2bc8197beb34ebc13b8d370d438191d852f6f6e5c8a2460b4eee27e9",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-201a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "109586aab6778037cd73ec48630e780ac029483cc6da597c4b339020ee443eeb",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-208a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "2c650a2ec1688d6b4bc9b2b2a64f4b8f8c061e0bcbd9c133680b2935b1b6124c",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-215a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "af0970ac1a070f433e7cc28faaeefbc100d66aea2c34d1a68ffba11765055107",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-242a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "6436eda55ced93baa73434f52996d0b7cfae8aaab7720888bf74bf4ddbb83385",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-263a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "c1e6039b258fb9828d580364999039e51050274c4bc9d194b066a44edaaf212e",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-278a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "04ec23d4753d173d8a5998c43282dd4d1d6dd8d9eabac93f8428dec5f9db16db",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-284a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "5a091afd337e9ebc1f0b8b0dbebfb170a01eeb63e0549b03fa02a0f8fee65d31",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-289a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "ec767bcc6c1122cec2adb66d1e896d806a3fdcb46531900e7d2d488148e6109e",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-319a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "b464aa25397dcc700a8f16e00f7ab853e4d68e33543e550dd90b102f640aa59b",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-339a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "7ad11642a412de24a19ddb64a21e324549b03d63cb83bc92d55b3b62792f29aa",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-339a-coldfusion-cve-26360",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "4536c06515717d081601fd5a801adfbe4c1d74e851264335d4458180a2a6b20b",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-341a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "6f18fed53e3396c429816d20ce73bebb262396016c3dcea43bff4e554c1aa2a7",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-347a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "caaa546b202acd25903dfc852d0744373598dd0612f2dccba04671a2bb156868",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-347a-play-ransomware",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "0ac9c429f58c28873afaab97090528bc3d4371d664757d6714d64ecc95358949",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-349a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "479aa2e3cd5cfcf6d54d43de69829aca9373b23324d50d02ec0d39cc21cf7069",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-353a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "53b91c0bc1f7f587cff0d84cb21d06fb4be3e29cdf97c3497159bad17c22609c",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-038a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "1317c88f8b3c3db90b8f77142fe27a3a25f590cc2fa9e3b7514ce105fb0dc895",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-038a-volt-typhoon",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "bc1b99681ca480c77c765523d6aba2e40a1b43c22a26c4490dc76009b461fe0a",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-046a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "fb1268b57bce4771c3a268bd99944f34b74b6f5c6b30cf223eeac89a99b30742",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-057a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "402c2c99fc8b334b60e1f464fc8fea4a03cb25f71bb0f7daa05563bb4587c691",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-060a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "414b29bc13ecf346137be0a651b535e3480efb994c4c2bc85cb6b2ae61511f47",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-193a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "fc9fade22a03cb268672825f7de952245deef230f0f2ba0accef6821843604ec",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-241a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "4d51cca1acb24d62e6cd4e31e81f3f2683deaf4a7ebd99ecdabe1d414c3bdf21",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-290a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "b826fc7812d111d711f24edaedb5242c5816cfa1448b564e4ff5f4b54ad11cb8",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-317a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "853e49e51fc7c1343199109debc90338c1701ebd525331476a2a8e102df5207f",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa25-050a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "76a201914a15a2d11675904fa9682ea80a27a4010e2966a3c06c178ba89f4abd",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa25-071a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "0d6d693ff19cb08af6aee3410d7f234daa58765c1b9116cb8ffae16259448c82",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa25-163a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "8e00bb5ee11e347046f29ad71a268a86934c4030ca8eec5f626b1ca8e4d9cc22",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa25-203a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "9e6fa52fd0267a52c858f272446a7288f04a2e0a4f5fb448aa0c478dd54c6f7d",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa25-266a",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "8864246f6fa53dd52f3755957cfa044b900f6d2c371717eb6cd9db613c0ddb80",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "accellion-fta-nvd-accellion-27101",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "f4e8c0f62ff07c5ce6c0cdf543000237837148f84996569ad59654acc8668bfa",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "apache-httpd-41773-tenable-httpd-41773",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "037963110d1307a5eb7fb8646cfc1aae42f8fe74e3d09418994705577d3b3bcb",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "bluekeep-rapid7-bluekeep-metasploit",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "2cbe32c0cd0c73ed3cb85cbd40040d8cb9d546beb500a3a3a0603c3c4bdf81f7",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "citrix-adc-cisa-citrix-3519-webshells",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "cd75e47058e47100859d84be6e92b4ddefc494f25cba17a46bd42948dc0863e8",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "citrix-adc-tenable-citrix-19781-cve",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "f3f32346c7ac2790d65d4b13ddb9f6344713306ccf84d578cdea5f0a0ec02b1c",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "eternalblue-expressvpn-eternalblue",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "97b5c27c97f037cf917cae7984a9b4d564f6ae24267656b925ae6daf8902be5f",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "fortios-sslvpn-rapid7-fortinet-targeting",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "9067a59ffeecb77680fa7e2987e7b3be440c46d3258eca5d3112379d0668c765",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "goanywhere-nvd-goanywhere-0669",
+      "historical_partition": "train",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "d3d90e0e564b4df74d5205e1a12f3f758df4ed94e0b56be74e9884882fbb2a7a",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa20-259a-iran-citrix-vpn-cve-19781",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "b294fc01f60eddfb415a62ace9f6caffa867d179e9d553294c9f262e50a507ba",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa21-200b",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "05d3b05db6bad5ff4fca39bfd0cdf77c73c7ceabec8d6beb67bf3b8479703a0b",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-074a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "0b49664bdb2ed8ce2f5b5dde3c31013fd3736cd20bf4a9b94e2d8b3e77ab5e74",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-181a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "d5f1590ab8e4ecab557e1d779a5fd8aa46cf5b29fbb91ead2040a78ffb7dfcf2",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-265a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "f40a35028abf3307b866ba57cc84e4c33d9ac4d0e5409a6402a375a7bfec7e3d",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-187a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "bf87306cd27fa5866b97788417b4a2fa676e0143d77d64adf971eb30ebcb22bc",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-249a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "7ef584268dcd15d2543ea4798542aec75dc4fd6088099192eb96f9f3235c01de",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-326a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "b889746f9f77ef4e7a00f0cddde072d64316fb09f13f03c9c174f0f3009fe77d",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa25-022a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "439452d94969cb0d9dff85d8269a4d74b640867a34c3346bca0809e4e6e793ff",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa25-141b",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "ef17f1ce78c344b7d93aff871dc593327f2835cd00ed05ae1a2f6684d099ee96",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa25-239a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "8f5d8d7ed98dbaca29240ce58e6ab188be23d25ca41831a5033480b80ec80a61",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa26-097a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "c963b3c59330766c7e0cf4dd347b740f46907f75530339544fa5e073c9704fc0",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "confluence-nvd-confluence-26084",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "bf032986cf02c0a94089ecdf61bd4dfb199770f88d6c28f2f12899b4a566fffb",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "proxylogon-microsoft-hafnium-exchange",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "bfe4646c6e8dea95bac09983620bf2b646b5af7bc138932a0c4b615acc1ffd53",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-242a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "0ecb1d6ee0503e244ccea28086614b1a00c05fae34a8bdc61a8316ebc2dd89ad",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "accellion-fta-google-accellion-data-theft-extortion",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "8ef37c177776f9cde2ceb7874b9b2a1d6638c4e2fc67dfeb7cbb5be383e1a8e2",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-213a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "b7db2d4a4d583f90d2082c141c9d0bfeffac5d835b1427a708bfe3e41dadfac8",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-257a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "28658915245c452c339c873932ef9fa341a7bedcd1c2539d1faec1baf67f13e7",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-207a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "51143a2c0548527c789e41bc48604ce52705293ee5b71cf3df3831ab969c60d7",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-228a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "c68ee30e2664bc3abb724efc8a63e7edbceb6cd4cddded5656a4dbbfb3fe883b",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-109a",
+      "historical_partition": "dev",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "c71a41cec84d11d7be6b3c279678ae2ce05e8704bce7248d73f031d2fbc59e90",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-137a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "b2b9d181d52afc6ba2f4e7436fe2b20dc65f80b333c69d53db67fdb86d928c05",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-264a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "ab14c878bf1483e9999d29165c9e333f4246bd30cab88707229e731066c8a31e",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa22-294a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "42a5d75e5d153941f20a6bd11562698d49111466cbf4ca1f783010211f2443fa",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-075a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "226237556949775349e901b19d2438ba2a7251f395af36bff63a3f199ed8e40e",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-131a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "4f3835c78bce13f1957eeb5d4bf24f6a2030a8ba4e000e94201c0f9f8b43f1cc",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-250a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "f3f720378fdf36c384b6c25b2a9edb9f6c641102d128e5bf99b6b52b790d756b",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-250a-manageengine-cve-47966",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "178e68472ede81a3af0ff463ad3fa03e4d7cb5135a074f7c2a97d122b31f7851",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-320a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "73f1400ccb44a9ae04776442a8468fbeded348d3b9a748b358628c5469e68bab",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-325a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "dace6fc64c9c2afc39c73d289d286a1918f9f9a4ce5450df9d2fa8f1b0fcf989",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-325a-citrix-bleed-cve-4966",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "eef7fa9bbd92d2304f6dfa417551510fcc7197b0fc637638f80f3420c18ae562",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-335a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "ded3ad20c3b8a80140b3aa242e7aa5126ff2b203572d9e1825d7cd60ea36143e",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa23-352a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "787fce80536849134e6dc57db9e9b6e63de033523e210b3a68e1bb157ed09168",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-016a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "471945935950c07aa975957aede7c0c78fb0bc390b5cf951119b99fd8b58634a",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-016a-androxgh0st",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "ffac5cda5f997cc4b90de4657b324a65b467bc23e56ff587dccc7eac601a767f",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-060b",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "57b4516587be217ea322fa67864ed306085884c5a8902c45de87646280d79ff0",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-131a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "cf0940ae13e813faabfb6cfa1200082fbd799903444945126917c45607df408c",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa24-131a-black-basta-cve-1709",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "d72b02e875ac5f26442f14afa8042088e7bad878bb0e83dc79034dcb9a1e930c",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "aa25-343a",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "5779cbfc6cea87cf5daedf9995fd5bc96ffb1297cdb042b0808f1205e2a69a39",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "drupalgeddon-nvd-drupalgeddon-7600",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "5cd945b5e990086814173739f05b8f29074cfffa6d10ab38352f4342287f9384",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "follina-huntress-follina",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "3081f0586ef5e5c94b9895201c68089d99fae84e97dc1ddb335574582eb79d45",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    },
+    {
+      "doc_id": "ivanti-connect-secure-cisa-ivanti-multiple-vulnerabilities",
+      "historical_partition": "test",
+      "eligibility_for_new_final_test": "excluded_development_exposed",
+      "recorded_gold_sha256": "82744c13b491ea0c55e63dd4642ee5902411d2cb6cc8c8ad6b402cc3ab6e70a2",
+      "hash_origin": "inherited_metadata_not_annotation_bytes_read"
+    }
+  ],
+  "supplement_records": [
+    {
+      "history_manifest": "data/train_supplements/configuration_v13_fresh_sources_v1/retrievals.json",
+      "id": "CVE-2016-3270",
+      "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2016-3270",
+      "raw_path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2016-3270.json",
+      "recorded_source_sha256": "31adc7e15308c4a7b7acfce6fbac6aa37cc3176b9e2dfce8c3924db68b940683",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "e7ee8721364e867ef4ba6d510fa25aeb64a273d3",
+      "original_role": "evaluation",
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v13_fresh_sources_v1/retrievals.json",
+      "id": "CVE-2016-3237",
+      "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2016-3237",
+      "raw_path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2016-3237.json",
+      "recorded_source_sha256": "140dcaca0623f519511f3d153d9103907e97e24e9f0633cd76ed3ef81e5a7651",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "ecc0bffbc7bcdd9121533e168a7c49ef27279025",
+      "original_role": "evaluation",
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v13_fresh_sources_v1/retrievals.json",
+      "id": "CVE-2017-0147",
+      "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-0147",
+      "raw_path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-0147.json",
+      "recorded_source_sha256": "b70fdf5b40c0474e3a54fa24c78cc76af5701b2e1daace99c34bc9cc4f3d01a5",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "ae5fb43c7dc1f548b63f9a3d5abd1904878079cc",
+      "original_role": "template_challenge",
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v13_fresh_sources_v1/retrievals.json",
+      "id": "CVE-2017-0148",
+      "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-0148",
+      "raw_path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-0148.json",
+      "recorded_source_sha256": "03d58446849cc6f7861641fed3c7f1da187999e59dea6a3733cae6c30a1939db",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "a4a6731145ffd484061f0c36c05887a9acaaaddc",
+      "original_role": "template_challenge",
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v13_fresh_sources_v1/retrievals.json",
+      "id": "CVE-2017-11783",
+      "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-11783",
+      "raw_path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-11783.json",
+      "recorded_source_sha256": "74d222f784d747f787e63f1dd40c1ce08c177b55de1a9e07ff6ca684fe5a1cae",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "d253913fb8c333b6a52eae28fa2de23f68fa9c7e",
+      "original_role": "release_control",
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v13_fresh_sources_v1/retrievals.json",
+      "id": "CVE-2017-5102",
+      "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-5102",
+      "raw_path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-5102.json",
+      "recorded_source_sha256": "9f83827f91e73704cf7227f5c39d71a3a4686c7a6951455d2bbb58845e4df93f",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "da1db46dfc4f2fa29c1ce6e6b616f474c054121a",
+      "original_role": "background_scope_control",
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v9_real_sources_v1/retrievals.json",
+      "id": "windows_0145",
+      "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-0145",
+      "raw_path": "data/train_supplements/configuration_v9_real_sources_v1/raw/windows_0145.json.gz",
+      "recorded_source_sha256": "ee3fea16beea79ae64de70973cb2be08403a32c4507ffddb618c0ffc3a9afa52",
+      "recorded_snapshot_sha256": "502f1b7ef52a8e22c097a6f18c1586a1dd2a98d12bc9d78b00fd74bf1ec1185b",
+      "repository_blob_sha": "c6a0af99f20b7850eb1fce385a13b790ab0f7729",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v9_real_sources_v1/retrievals.json",
+      "id": "epmm_4427",
+      "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2025-4427",
+      "raw_path": "data/train_supplements/configuration_v9_real_sources_v1/raw/epmm_4427.json.gz",
+      "recorded_source_sha256": "5f5fef2796eda092ede184b127c313d57918885bc4cf858103e681b523e8e101",
+      "recorded_snapshot_sha256": "59e9b03a7221f12c5ca2bc7c56e531610618d1d99f80dafa626bae3438cfe3ae",
+      "repository_blob_sha": "5a0c72ed520060cecd3a4d68f9e0befa7c17a8e2",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v9_real_sources_v1/retrievals.json",
+      "id": "cert_2025_018",
+      "source_url": "https://cert.europa.eu/publications/security-advisories/2025-018/markdown",
+      "raw_path": "data/train_supplements/configuration_v9_real_sources_v1/raw/cert_2025_018.md.gz",
+      "recorded_source_sha256": "011571831e5f9c1b98aa8b14f7276ac9945b00c1c7759b80f4dc7a050cf4bea1",
+      "recorded_snapshot_sha256": "b49197d461a3598700a0ba561a39badebf246a5c4627313e55fbcbf356626581",
+      "repository_blob_sha": "ee1da9cd4935a65a206ae111cb1b115e4d88a4c4",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v9_real_sources_v1/retrievals.json",
+      "id": "prits_35081",
+      "source_url": "https://www.prits.pr.gov/avisos-de-ciberseguridad/a-vulnerability-in-ivanti-endpoint-manager-mobile-could-allow-for-arbitrary-code-execution",
+      "raw_path": "data/train_supplements/configuration_v9_real_sources_v1/raw/prits_35081.html.gz",
+      "recorded_source_sha256": "e16b81af00560c1923766d2d265488b147e9101a98dff606d8f60506a987fead",
+      "recorded_snapshot_sha256": "21448e8912f873062be39946cbad32f8c007ca25b18c6c48b22556b9b028065e",
+      "repository_blob_sha": "278b2441c2e73a9cb59f89ed261897098a48e7ad",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v9_real_sources_v1/retrievals.json",
+      "id": "nsm_35078",
+      "source_url": "https://nsm.no/aktuelt/nulldagssarbarhet-i-ivanti-endpoint-manager-mobileiron-core",
+      "raw_path": "data/train_supplements/configuration_v9_real_sources_v1/raw/nsm_35078.html.gz",
+      "recorded_source_sha256": "57bdef22cb9368388d99f3aad61699917e0da17ade394dd1a6ed957e240dcba1",
+      "recorded_snapshot_sha256": "b50f14ac9bc9b7013858a87ef6cab14d6ab761b42a6fc590e492de86a73e65cc",
+      "repository_blob_sha": "2a9b5d742844fb6258944f0d18ff7284bddeb3f6",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v9_real_sources_v1/retrievals.json",
+      "id": "epmm_35078",
+      "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2023-35078",
+      "raw_path": "data/train_supplements/configuration_v9_real_sources_v1/raw/epmm_35078.json.gz",
+      "recorded_source_sha256": "06ae5a1118821502b0a1cd3910f00f7e7f62cfc31e1e117bbeec0968b7ba5881",
+      "recorded_snapshot_sha256": "d7e67018a24dc362475d7b55662b76ca8be7c8724965d451f9dec0b03d9f5d90",
+      "repository_blob_sha": "440a67493813c6e9a28bc30375a0247961a48497",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v9_real_sources_v1/retrievals.json",
+      "id": "nhs_4362",
+      "source_url": "https://digital.nhs.uk/cyber-alerts/2023/cc-4362",
+      "raw_path": "data/train_supplements/configuration_v9_real_sources_v1/raw/nhs_4362.html.gz",
+      "recorded_source_sha256": "4489af1eb893db7d3b7d16a42df2a6eb1b2d65c33adc15a18fdedcebbd45a3c6",
+      "recorded_snapshot_sha256": "725c22177439f9fd40fec0319a0dc27b1ab957d6d0cb217f6accffc0386641f3",
+      "repository_blob_sha": "2f6b68b946c47b33c83efc1e433d23ee168430fc",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v9_real_sources_v1/retrievals.json",
+      "id": "windows10_dictionary",
+      "source_url": "https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe%3A2.3%3Ao%3Amicrosoft%3Awindows_10%3A-%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A&resultsPerPage=20",
+      "raw_path": "data/train_supplements/configuration_v9_real_sources_v1/raw/windows10_dictionary.json.gz",
+      "recorded_source_sha256": "57cea0be9fb3a283d5b9eda0b62cea190142b1f621598ee9a152c0f0200a7500",
+      "recorded_snapshot_sha256": "4fc5a9be6f2e432b4d6725bcd3d1b34229a892966116def41ceab50e4199dd6f",
+      "repository_blob_sha": "8fe45418064f72cf55b3630e3fc6d78834a610b6",
+      "original_role": null,
+      "source_scope": "reference_resource",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/configuration_v9_real_sources_v1/retrievals.json",
+      "id": "windows_0016",
+      "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-0016",
+      "raw_path": "data/train_supplements/configuration_v9_real_sources_v1/raw/windows_0016.json.gz",
+      "recorded_source_sha256": "da8e815ace1f3ca4d72800dfa770387753daabce637e475436324d2f172083fa",
+      "recorded_snapshot_sha256": "92e6f90df4daa793d6dd470e687f5eca04cadb33e4f639b859703c7798a03822",
+      "repository_blob_sha": "e93d3bfa9d375e828056a7717585b448601edfbc",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/convergence_c2_sources_v1/retrievals.json",
+      "id": "CVE-2016-0040",
+      "source_url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2016/0xxx/CVE-2016-0040.json",
+      "raw_path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2016-0040.json",
+      "recorded_source_sha256": "0e7cca580df64ae1ea83181fa4a8d7f404d51ee9ef4879af34c12fdc38e54431",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "8116b85b97f233906cb084c683dcd664010a5653",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/convergence_c2_sources_v1/retrievals.json",
+      "id": "CVE-2016-0180",
+      "source_url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2016/0xxx/CVE-2016-0180.json",
+      "raw_path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2016-0180.json",
+      "recorded_source_sha256": "8ab8d1647b1ef1f7e7c7bc72e0ec36fabeb4840fa6fadd59e94feed8e6cd6253",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "25e26d8949af782a3c7dcda3bfcc688448f33b13",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/convergence_c2_sources_v1/retrievals.json",
+      "id": "CVE-2016-3352",
+      "source_url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2016/3xxx/CVE-2016-3352.json",
+      "raw_path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2016-3352.json",
+      "recorded_source_sha256": "53112e60a896fcd94e02ec7ff09970ed224bcbe5ddd6c8797a0ef2ceb94b09c7",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "a045382a3a6773c58118a2d1f0078d6df5ffe296",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/convergence_c2_sources_v1/retrievals.json",
+      "id": "CVE-2017-0146",
+      "source_url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2017/0xxx/CVE-2017-0146.json",
+      "raw_path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2017-0146.json",
+      "recorded_source_sha256": "26696015b865a412e79b9ea42af3b046ae68f20daa09e7341dfa99f7f2cef95e",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "e9d0d06cd60bbbe6f9bf0ade5076b6e849a490a9",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/convergence_c2_sources_v1/retrievals.json",
+      "id": "CVE-2024-7123",
+      "source_url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2024/7xxx/CVE-2024-7123.json",
+      "raw_path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2024-7123.json",
+      "recorded_source_sha256": "b8a72b573f191f28ebbaa5c412124b6170ceb81f647a33a4a7b9c3a076be601b",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "1f478c9b7b2179e0b0f979ae17d5390231e54910",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    },
+    {
+      "history_manifest": "data/train_supplements/convergence_c2_sources_v1/retrievals.json",
+      "id": "CVE-2019-5786",
+      "source_url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2019/5xxx/CVE-2019-5786.json",
+      "raw_path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2019-5786.json",
+      "recorded_source_sha256": "4e406521d359eae6025232121e4625bf1653592bc33f53c01bf16412f12f695b",
+      "recorded_snapshot_sha256": null,
+      "repository_blob_sha": "583809ef959779a1d3c1408838a548cfe96be319",
+      "original_role": null,
+      "source_scope": "development_source",
+      "new_final_test_eligibility": "exclude_same_source_or_audit_family",
+      "verification": "metadata_only"
+    }
+  ],
+  "repository_source_inventory": [
+    {
+      "path": "data/sources/cisa/aa20-259a-iran-citrix-vpn-cve-19781.json",
+      "git_blob_sha": "310a95f7ce8ba5f504a4d800ff87662978ff9b35",
+      "bytes": 18101,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa21-200a.json",
+      "git_blob_sha": "dd7070012f965272acc297b701d0b0e3dded5b89",
+      "bytes": 31169,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa21-200b.json",
+      "git_blob_sha": "e19e68d63589999e38ad6c79b776864bfa4df868",
+      "bytes": 60034,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-074a.json",
+      "git_blob_sha": "95e9cadc8efcbb03ca11b9d58088fdc471b6c22b",
+      "bytes": 15124,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-137a.json",
+      "git_blob_sha": "dc932939c3f07175466cfae3200d5ec538cd468f",
+      "bytes": 16790,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-138b-vmware-cve-22954.json",
+      "git_blob_sha": "4a011d613782d7842789f196574807ad00c9cc95",
+      "bytes": 26971,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-174a-log4shell-vmware-cve-44228.json",
+      "git_blob_sha": "6bc397604c95d96dfaefd94a0a644c276e5334a3",
+      "bytes": 21572,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-181a.json",
+      "git_blob_sha": "ec45402d00d5c55ecd367535a4321f227d3bbfd1",
+      "bytes": 19021,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-187a.json",
+      "git_blob_sha": "2cedaf0507a7327b4b222ae71c8ab6191d21b1f7",
+      "bytes": 4308,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-216a.json",
+      "git_blob_sha": "1087c0e3fcdf4181e653088121bfa2a44ea4ddc7",
+      "bytes": 40899,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-223a.json",
+      "git_blob_sha": "e0240a003d0ed3c0ba5fe4d531be99e11526895c",
+      "bytes": 24990,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-228a.json",
+      "git_blob_sha": "eb402a1538f19674750b4e1d703cdb346dabb219",
+      "bytes": 13127,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-249a-0.json",
+      "git_blob_sha": "08a10360bf79c2388ab4bf4e18edea14dce29c81",
+      "bytes": 9522,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-249a.json",
+      "git_blob_sha": "5c714e183513d7fca0ccdb555812ea956dc3985f",
+      "bytes": 9520,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-257a.json",
+      "git_blob_sha": "6f8b17bf8050d3ac098d68e3300cc37fbb980f05",
+      "bytes": 30690,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-264a.json",
+      "git_blob_sha": "f62a7edcb02dd5e5f11ba21f2970f9a96b4f352c",
+      "bytes": 29516,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-265a.json",
+      "git_blob_sha": "3dfab3941c50dbf7ac01585067570cb9e2b252b4",
+      "bytes": 28797,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-277a.json",
+      "git_blob_sha": "e2a252ef506dd9c948d6456e5fc7d86de84b8c7a",
+      "bytes": 34528,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-294a.json",
+      "git_blob_sha": "8c0d39fd1e3b0a894b1ca5975f25d7d09cd21743",
+      "bytes": 19433,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-320a.json",
+      "git_blob_sha": "a794d24bfc6e83e8a15c62fffee35861fbf09ddd",
+      "bytes": 27264,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-321a-hive-exchange.json",
+      "git_blob_sha": "6216633def11edf2209598ba1eb3a00b573fbdd9",
+      "bytes": 23800,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-321a.json",
+      "git_blob_sha": "61ed39cd3b361d9f825b63aab11a3c7fa385ba50",
+      "bytes": 24125,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa22-335a.json",
+      "git_blob_sha": "75f29b3335690e5369c4b4f0aaf6723460a62507",
+      "bytes": 30861,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-025a.json",
+      "git_blob_sha": "277e7d0f951f6bb5c4feddfe22aaa325d4857e95",
+      "bytes": 14127,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-039a.json",
+      "git_blob_sha": "da21542506077ec13bc1abe16c521714b78fece3",
+      "bytes": 16306,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-040a.json",
+      "git_blob_sha": "bc3b35d25afbcb75e46e0ccb1b98442daffad27a",
+      "bytes": 67436,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-059a.json",
+      "git_blob_sha": "3a4c1cbfc758fa30815e299dce3d7c0cd16b4ef2",
+      "bytes": 59518,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-061a.json",
+      "git_blob_sha": "eaa1f325aeafccdf931f02c2909d7e19e24fd365",
+      "bytes": 61747,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-074a-telerik-cve-18935.json",
+      "git_blob_sha": "9daa79c20f4fb620600dafaff625c228d99b2cba",
+      "bytes": 43768,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-074a.json",
+      "git_blob_sha": "e4903e92d3fef88ace2c5d02b6744d3b09b31657",
+      "bytes": 44853,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-075a.json",
+      "git_blob_sha": "8af89268791c627ade1c1fbdff7bf74ace668f5e",
+      "bytes": 37338,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-108.json",
+      "git_blob_sha": "4f5e8116805f1da992b7401093311f720d39e5c7",
+      "bytes": 7914,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-122a.json",
+      "git_blob_sha": "8ab10f6abe408eb190a0f068af993c5149c9ff6f",
+      "bytes": 862,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-129a.json",
+      "git_blob_sha": "4263503c4b1fb49f99219517924bf27c12d21310",
+      "bytes": 106258,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-131a.json",
+      "git_blob_sha": "7c53b90dd0c190be53f582fb01e8ff3b15b724c2",
+      "bytes": 23758,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-136a.json",
+      "git_blob_sha": "ed9267e2e9c413138a685c7dccd241a08724a108",
+      "bytes": 51132,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-158a-moveit-clop-cve-34362.json",
+      "git_blob_sha": "f446fa17e231266079f2b75c5b668d369728796c",
+      "bytes": 40757,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-158a.json",
+      "git_blob_sha": "7584389b0932bbf2822b7719720815f4098e7ab1",
+      "bytes": 40735,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-165a.json",
+      "git_blob_sha": "0ddda251cfad14e0c061308ffde147c52b019a93",
+      "bytes": 57641,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-180a.json",
+      "git_blob_sha": "1464e24c092e65c2ff5e1cef9df91314f8414d95",
+      "bytes": 862,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-187a.json",
+      "git_blob_sha": "871ed9c9417dcb257324d111d1905d98cae2c6ed",
+      "bytes": 47587,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-193a.json",
+      "git_blob_sha": "10a4d61fd10db9abc0866c746775617a6f34712d",
+      "bytes": 9966,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-201a.json",
+      "git_blob_sha": "409582979f9d3ecb74e4c3081ac9fdd94897ca37",
+      "bytes": 31549,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-208a.json",
+      "git_blob_sha": "9b732e22802ee0aacd4dab4d9187f31303ef7846",
+      "bytes": 22421,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-213a.json",
+      "git_blob_sha": "3153113d68458ca18b25cc2060343a7ce16ff3f9",
+      "bytes": 30138,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-215a.json",
+      "git_blob_sha": "522e3e39a6037fc5035ff69150a5e3b24bb10572",
+      "bytes": 39153,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-242a.json",
+      "git_blob_sha": "0c3b8b83300ff17652e24a5baa9790308284b95e",
+      "bytes": 19668,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-244a.json",
+      "git_blob_sha": "d715a920d0e43251ac5ca154ff8ab94b0e25481c",
+      "bytes": 862,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-250a-manageengine-cve-47966.json",
+      "git_blob_sha": "8e7be95efdecd953d1f41ac00afff08e601d0afa",
+      "bytes": 49220,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-250a.json",
+      "git_blob_sha": "80f29da001d9de822f81589099d0c535b5d25cd1",
+      "bytes": 48928,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-263a.json",
+      "git_blob_sha": "df5742f12a1c8634918f41f52e133a786772e9b8",
+      "bytes": 31354,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-278a-avoslocker.json",
+      "git_blob_sha": "c9c61cd13828b36cb36b507c2675f9d435f9de13",
+      "bytes": 79883,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-278a.json",
+      "git_blob_sha": "a03d8d831ecdd7e7b607cc4ae42cbe5b4cb30495",
+      "bytes": 79872,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-284a.json",
+      "git_blob_sha": "5def44789562ace6bc160c7c97021d5c69dde999",
+      "bytes": 21799,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-289a.json",
+      "git_blob_sha": "25b05cc23f2efe894ffa67af2348fdf36419be45",
+      "bytes": 12981,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-319a.json",
+      "git_blob_sha": "289d7a11666ab362dd7c442019c83fe5db3ba61e",
+      "bytes": 41219,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-320a.json",
+      "git_blob_sha": "e8a76b49517f321078b55ea17c730d61cb9eb382",
+      "bytes": 29686,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-325a-citrix-bleed-cve-4966.json",
+      "git_blob_sha": "5e8d2be52bf1a91185294a19ac74619140ffb9ef",
+      "bytes": 38671,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-325a.json",
+      "git_blob_sha": "f7fce9ee72d4b8fb5e674bd99be70a1ff85fda26",
+      "bytes": 38310,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-335a.json",
+      "git_blob_sha": "4e1cc38f5dfaed92b78883c3412eae0400fcf9d0",
+      "bytes": 28722,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-339a-coldfusion.json",
+      "git_blob_sha": "0c1ce3a8c94f486cf21769ab11a1314fc30fee25",
+      "bytes": 4587,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-339a.json",
+      "git_blob_sha": "bb7b177e7b80bd5538594b0bcf0aea70b8673112",
+      "bytes": 25421,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-341a.json",
+      "git_blob_sha": "6e30b076129f078244be2ba80daf7242270b33a0",
+      "bytes": 11822,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-346a.json",
+      "git_blob_sha": "2affd2937faab6eea6d444e70da5304235e985ab",
+      "bytes": 862,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-347a-play-ransomware.json",
+      "git_blob_sha": "6ebe07223b5f0c1aaf7025147df07c6319c6dadc",
+      "bytes": 55279,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-347a.json",
+      "git_blob_sha": "e2c6b07482dde9a33da928a74d3719cdbf6aa101",
+      "bytes": 51496,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-349a.json",
+      "git_blob_sha": "d1c0df388b611ea0fdcca49be0bc6e1163af23fb",
+      "bytes": 55913,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-352a.json",
+      "git_blob_sha": "2336eec22e3fa1ecaaebeb8d8a960ee80a671f11",
+      "bytes": 36730,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa23-353a.json",
+      "git_blob_sha": "61ef0502e4b5e5e3632ae19aabcf335f742c2331",
+      "bytes": 19525,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-016a-androxgh0st.json",
+      "git_blob_sha": "147598be08b0ea6f1d4cd1f940bac99e55c755f4",
+      "bytes": 25022,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-016a.json",
+      "git_blob_sha": "4f47e0855cb6e20ea7abd7a3c09c741c1f64c0aa",
+      "bytes": 24899,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-024a.json",
+      "git_blob_sha": "8377d30789f1d6fdfd5813df73bde7673a6185e6",
+      "bytes": 862,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-038a-volt-typhoon.json",
+      "git_blob_sha": "c0e7a2fb9e3abb0f96c41b06e96c175664fd01ba",
+      "bytes": 95946,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-038a.json",
+      "git_blob_sha": "3ca93486c994583c9e8351dba9bef9e9b2711e74",
+      "bytes": 100936,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-046a.json",
+      "git_blob_sha": "6ae800170a9c16d0b513f76fc7f792125b27b1e6",
+      "bytes": 40375,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-057a.json",
+      "git_blob_sha": "852acbae7cab9dfd2e2c68e6d5b99a9239c9b27c",
+      "bytes": 11622,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-060a.json",
+      "git_blob_sha": "1be082c272e38146f936157f80f61ef87bd64ebc",
+      "bytes": 37078,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-060b.json",
+      "git_blob_sha": "6fb44e880916d750bf35fc92374a58d090ffc271",
+      "bytes": 40397,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-109a.json",
+      "git_blob_sha": "c7f09ec1d0ef6722d9dd3ba3d4138f61c0809396",
+      "bytes": 59383,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-131a-black-basta-cve-1709.json",
+      "git_blob_sha": "722b70a4b17c788b0b3c3ff81ca4007c31659d73",
+      "bytes": 29038,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-131a.json",
+      "git_blob_sha": "35e874a922aeeb76c8db336c4d32286be10b5bd0",
+      "bytes": 23861,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-164a.json",
+      "git_blob_sha": "04aa271d7289dd1401153ce784b1b7f9e66eaf4b",
+      "bytes": 862,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-193a.json",
+      "git_blob_sha": "909e03a1e6e0a23882ac6b860d6d8af2d314beed",
+      "bytes": 65391,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-207a-akira.json",
+      "git_blob_sha": "34f50e8e04541492b08fe49cbce5dae5a2e34767",
+      "bytes": 71971,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-207a.json",
+      "git_blob_sha": "cd8bbe51465bde318e8e4cba02011b49e8d3321b",
+      "bytes": 62006,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-241a.json",
+      "git_blob_sha": "854679de56cd58604397938c865726452d75bf10",
+      "bytes": 29770,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-242a.json",
+      "git_blob_sha": "7631b12c2d2d00addd4d08dbf116b752d5e67bd4",
+      "bytes": 39918,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-249a.json",
+      "git_blob_sha": "eea7197690d06a6fa3b41909be6a9b075febaafb",
+      "bytes": 65956,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-290a.json",
+      "git_blob_sha": "33aa94bec798dfab8f3f84f2fbc0853755e75e05",
+      "bytes": 26149,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-317a.json",
+      "git_blob_sha": "b8bde80db109d20aad8fa7865a35221097b4f07e",
+      "bytes": 40500,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa24-326a.json",
+      "git_blob_sha": "325dbbf64df17c3609736a22f731786fbb2c4b27",
+      "bytes": 70835,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa25-022a.json",
+      "git_blob_sha": "a1ac221fa6ac8a7d00185768b451ad3bd52e6242",
+      "bytes": 60321,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa25-050a.json",
+      "git_blob_sha": "25859ac31d8d54dbbd8ae474cb7c6a8247c01137",
+      "bytes": 27578,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa25-071a.json",
+      "git_blob_sha": "1db555f5f8620dd2c55e5de4cc32b86c543f07e5",
+      "bytes": 32234,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa25-141b.json",
+      "git_blob_sha": "7495c7cb1df9efa656d2e828ae57b3c61d1e7a01",
+      "bytes": 23156,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa25-163a.json",
+      "git_blob_sha": "994c519b3d9d4addf6810d24192f331e668b4ee2",
+      "bytes": 11655,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa25-203a.json",
+      "git_blob_sha": "8d1d669ca09865af241f88614b7e5f0c83645a37",
+      "bytes": 41261,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa25-239a.json",
+      "git_blob_sha": "0546209482e4fb84e871343fa35f12741bec14c0",
+      "bytes": 81666,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa25-266a.json",
+      "git_blob_sha": "6a378ee5cd3720260df70098436f8a3c00d1c04f",
+      "bytes": 34727,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa25-343a.json",
+      "git_blob_sha": "ef597df3a4516acb9205f1560957ae25b09f7dea",
+      "bytes": 43242,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa/aa26-097a.json",
+      "git_blob_sha": "592cf34556b995a8afa7bc6b0d0711f155917e39",
+      "bytes": 28457,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/sources/cisa_queue.json",
+      "git_blob_sha": "bfa16eb0e2c7cd512853c672fd9dc3739090708e",
+      "bytes": 2063,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v13_fresh_sources_v1/documents.json",
+      "git_blob_sha": "1870f70864fb1aeeba87ab2f0b9c17ba77f2a717",
+      "bytes": 6575,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2016-3237.json",
+      "git_blob_sha": "ecc0bffbc7bcdd9121533e168a7c49ef27279025",
+      "bytes": 5460,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2016-3270.json",
+      "git_blob_sha": "e7ee8721364e867ef4ba6d510fa25aeb64a273d3",
+      "bytes": 4638,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-0147.json",
+      "git_blob_sha": "ae5fb43c7dc1f548b63f9a3d5abd1904878079cc",
+      "bytes": 13583,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-0148.json",
+      "git_blob_sha": "a4a6731145ffd484061f0c36c05887a9acaaaddc",
+      "bytes": 13774,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-11783.json",
+      "git_blob_sha": "d253913fb8c333b6a52eae28fa2de23f68fa9c7e",
+      "bytes": 4512,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-5102.json",
+      "git_blob_sha": "da1db46dfc4f2fa29c1ce6e6b616f474c054121a",
+      "bytes": 5047,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v13_fresh_sources_v1/retrievals.json",
+      "git_blob_sha": "0f34acd3f03ff579a3ccf005093239b940a1161b",
+      "bytes": 3852,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v13_fresh_sources_v1/selection.json",
+      "git_blob_sha": "d0088a104046f88cc718a324a220c2190f312d58",
+      "bytes": 1180,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/documents.json",
+      "git_blob_sha": "1404b9357c5d6783d9819116bf476eb54870350d",
+      "bytes": 22358,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/raw/cert_2025_018.md.gz",
+      "git_blob_sha": "ee1da9cd4935a65a206ae111cb1b115e4d88a4c4",
+      "bytes": 1893,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/raw/epmm_35078.json.gz",
+      "git_blob_sha": "440a67493813c6e9a28bc30375a0247961a48497",
+      "bytes": 1801,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/raw/epmm_4427.json.gz",
+      "git_blob_sha": "5a0c72ed520060cecd3a4d68f9e0befa7c17a8e2",
+      "bytes": 1612,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/raw/nhs_4362.html.gz",
+      "git_blob_sha": "2f6b68b946c47b33c83efc1e433d23ee168430fc",
+      "bytes": 8602,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/raw/nsm_35078.html.gz",
+      "git_blob_sha": "2a9b5d742844fb6258944f0d18ff7284bddeb3f6",
+      "bytes": 14206,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/raw/prits_35081.html.gz",
+      "git_blob_sha": "278b2441c2e73a9cb59f89ed261897098a48e7ad",
+      "bytes": 9663,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/raw/windows10_dictionary.json.gz",
+      "git_blob_sha": "8fe45418064f72cf55b3630e3fc6d78834a610b6",
+      "bytes": 859,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/raw/windows_0016.json.gz",
+      "git_blob_sha": "e93d3bfa9d375e828056a7717585b448601edfbc",
+      "bytes": 1637,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/raw/windows_0145.json.gz",
+      "git_blob_sha": "c6a0af99f20b7850eb1fce385a13b790ab0f7729",
+      "bytes": 3271,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/retrievals.json",
+      "git_blob_sha": "5956085550f5e2aa322f273103e57a6fa2a7b68d",
+      "bytes": 6647,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/convergence_c2_sources_v1/documents.json",
+      "git_blob_sha": "6ea8544ea69b7acb9efb6788fbbb2ff28cd38c64",
+      "bytes": 4041,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2016-0040.json",
+      "git_blob_sha": "8116b85b97f233906cb084c683dcd664010a5653",
+      "bytes": 10817,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2016-0180.json",
+      "git_blob_sha": "25e26d8949af782a3c7dcda3bfcc688448f33b13",
+      "bytes": 7533,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2016-3352.json",
+      "git_blob_sha": "a045382a3a6773c58118a2d1f0078d6df5ffe296",
+      "bytes": 7451,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2017-0146.json",
+      "git_blob_sha": "e9d0d06cd60bbbe6f9bf0ade5076b6e849a490a9",
+      "bytes": 18642,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2019-5786.json",
+      "git_blob_sha": "583809ef959779a1d3c1408838a548cfe96be319",
+      "bytes": 9795,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/convergence_c2_sources_v1/raw/cve-2024-7123.json",
+      "git_blob_sha": "1f478c9b7b2179e0b0f979ae17d5390231e54910",
+      "bytes": 1021,
+      "content_read_in_this_preparation": false
+    },
+    {
+      "path": "data/train_supplements/convergence_c2_sources_v1/retrievals.json",
+      "git_blob_sha": "3ffd4fdb1d4fdaaa33d6bec82a3441f290f7994d",
+      "bytes": 3297,
+      "content_read_in_this_preparation": false
+    }
+  ],
+  "metadata_inputs": [
+    {
+      "path": "data/train_dev_test_split_v7.json",
+      "git_blob_sha": "9ea7a58248bfe52cab298e400f86b96998f79344"
+    },
+    {
+      "path": "data/dataset_freeze_manifest_v6.json",
+      "git_blob_sha": "2852db2d85262c0dc15e3605145e98325c9d9ee7"
+    },
+    {
+      "path": "data/train_supplements/configuration_v13_fresh_sources_v1/retrievals.json",
+      "git_blob_sha": "0f34acd3f03ff579a3ccf005093239b940a1161b"
+    },
+    {
+      "path": "data/train_supplements/configuration_v9_real_sources_v1/retrievals.json",
+      "git_blob_sha": "5956085550f5e2aa322f273103e57a6fa2a7b68d"
+    },
+    {
+      "path": "data/train_supplements/convergence_c2_sources_v1/retrievals.json",
+      "git_blob_sha": "3ffd4fdb1d4fdaaa33d6bec82a3441f290f7994d"
+    }
+  ],
+  "limitations": [
+    "Known repository metadata inventory only; no exhaustive historical prompt, external manual reading, or provider-training-exposure audit is claimed.",
+    "Gold hashes are inherited from frozen metadata; old Test annotation bytes were not opened or rehashed.",
+    "Source file inventory includes unregistered/error/duplicate snapshots and reference resources conservatively; presence is not proof that a source was used for inference.",
+    "No candidate sources were submitted, searched, accepted, or semantically compared; near-duplicate and family leakage audits remain pending.",
+    "A new date, URL, or document ID alone cannot establish independence; hashes, bulletin families, source mirrors, version revisions and text overlap must be assessed before freezing."
+  ]
+}

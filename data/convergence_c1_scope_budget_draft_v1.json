@@ -1,0 +1,449 @@
+{
+  "draft_version": "convergence-c1-scope-budget-v1",
+  "plan_id": "experiment4-convergence-20261005",
+  "prepared_at_local_date": "2026-10-05",
+  "timezone": "Asia/Ulaanbaatar",
+  "audit_commit": "6d0a1e1026f1bcbe0a9991d1aa9dd2d8e6d5bb79",
+  "status": "draft_not_executable",
+  "scientific_preregistration_complete": false,
+  "work_authorization": "C1 offline audit and draft only",
+  "inference_authorization": false,
+  "effective_authorized_calls": {
+    "task": 0,
+    "optimizer": 0
+  },
+  "formal_experiment_ready": false,
+  "controlled_test_rerun_ready": false,
+  "data": {
+    "dataset_version": "v6-v5-gold-v11-fp62-human-adjudicated-v1",
+    "gold_aggregate_sha256": "29e3d20a134029c0375d54a92914fccdd6cfaa8bea0698a4637ab83a5d55166c",
+    "split": "data/train_dev_test_split_v7.json",
+    "included_roles": [
+      "train",
+      "dev"
+    ],
+    "former_test_role": "development audit history only; not used in this draft runtime budget",
+    "final_test_dataset": null,
+    "final_test_calls": 0
+  },
+  "train_dev_inventory": {
+    "train": {
+      "documents": 63,
+      "windows": 831,
+      "owned_entities": 3444,
+      "owned_configuration_mentions": 381,
+      "ordered_window_inventory_sha256": "ab1b3a4b7ef20ba20c94b7b0a88a004f6d40c3c5ae7e62cdf5d3711b0b7631b6"
+    },
+    "dev": {
+      "documents": 21,
+      "windows": 321,
+      "owned_entities": 1332,
+      "owned_configuration_mentions": 112,
+      "ordered_window_inventory_sha256": "e58cad469778a70ec10d8e7d26ea290f5af21af8741b4df24bac05480d0dbb95"
+    }
+  },
+  "optimization_config": {
+    "prompt_scope": "constrained",
+    "experiment_pair_id": "protegi-prompt-scope-v1",
+    "optimization_steps": 6,
+    "beam_width": 4,
+    "minibatch_size": 64,
+    "errors_per_group": 4,
+    "gradients_per_error_group": 4,
+    "max_error_groups": 1,
+    "edits_per_gradient": 1,
+    "paraphrases_per_edit": 2,
+    "successors_per_parent": 4,
+    "total_pull_budget_per_round": 64,
+    "eval_batch_size": 8,
+    "min_pulls_per_candidate": 2,
+    "ucb_c": 2.0,
+    "seed": 42,
+    "task_model": "hy3",
+    "task_max_workers": 8,
+    "task_temperature": 0.0,
+    "task_thinking": "disabled",
+    "task_reasoning_effort": "none",
+    "task_top_p": 0.95,
+    "task_max_tokens": 4096,
+    "window_chars": 3000,
+    "window_overlap": 400,
+    "dense_run_split": true,
+    "dense_min_ids": 25,
+    "dense_min_span": 1000,
+    "dense_gap": 120,
+    "dense_max_ids": 20,
+    "dense_seam": 100,
+    "optimizer_model": "muse-spark-1.3-contributor",
+    "optimizer_temperature": 0.1,
+    "optimizer_thinking": "disabled",
+    "optimizer_reasoning_effort": "xhigh",
+    "optimizer_top_p": 1.0,
+    "optimizer_max_tokens": 16384
+  },
+  "optimization_design": {
+    "entity_searches": 1,
+    "relation_searches": 1,
+    "initial_prompt": "fresh ENTITY_PROMPT_P0 / RELATION_PROMPT_P0",
+    "run10_seed_used": false,
+    "prompt_scope": "constrained",
+    "search_selection_data": "Train only",
+    "dev_policy": "one final selection event per stage, final beam plus P0; no new seed or rounds after observing Dev",
+    "raw_search_configuration_filter": "none",
+    "raw_search_vulnerability_anchored_backfill": false,
+    "document_abbreviation_context": false,
+    "entity_subwindow_fallback_enabled": false,
+    "shared_prompts_for_protegi_and_protegi_full": true,
+    "same_initial_prompt_and_inference_path_for_p0_comparison": true,
+    "historical_multipass_primary_arm": false,
+    "extra_llm_semantic_repair_all_arms": false,
+    "task_transient_attempts_max": 8,
+    "task_budget_exhaustion_repeat_max": 1,
+    "optimizer_transient_attempts_max": 8
+  },
+  "method_matrix": [
+    {
+      "method": "Rule",
+      "definition": "scripts/rule_baseline.py:extract; no model requests"
+    },
+    {
+      "method": "P0",
+      "definition": "matched zero-optimization two-stage P0: ENTITY_PROMPT_P0 and RELATION_PROMPT_P0 through the same TaskEvaluator path as ProTeGi; not historical Multipass"
+    },
+    {
+      "method": "Full",
+      "definition": "reuse matched P0 raw entities; same admitted deterministic entity enhancement before relation prediction; RELATION_PROMPT_P0; common apply_postprocess"
+    },
+    {
+      "method": "ProTeGi",
+      "definition": "one fresh constrained entity/relationship search pair; raw predicted entity input; no enhancement"
+    },
+    {
+      "method": "ProTeGi_Full",
+      "definition": "reuse ProTeGi raw entities; same admitted deterministic entity enhancement before relation prediction; same P_R*; common apply_postprocess"
+    }
+  ],
+  "common_full_rules": {
+    "final_postprocess": "scripts/llm_methods.py:apply_postprocess",
+    "postprocess_version": "chapter3-no-capec-v1-mcpu-postprocess-v2",
+    "entity_enhancement_candidate": [
+      "vulnerability_anchored_backfill with a frozen Train-only catalog",
+      "configuration_candidate_filter_v14"
+    ],
+    "admission_dependency": "C2 complete plus C4 integration/lineage verification",
+    "default_before_admission": "disabled",
+    "on_admission_failure": "disable this candidate stack in both Full methods, retain the common final postprocess; do not borrow old v7 approval",
+    "evaluation_order": "raw entity prediction -> optional common entity enhancement -> relation prediction on those entities -> common final postprocess",
+    "relation_raw_reuse": "only if input entity payload and all prompt/runtime/lineage bindings are exactly unchanged",
+    "future_hashes": "C4 must preregister the executable shared adapter, catalog, prompt, scoring and runtime before any main inference"
+  },
+  "deferred_claims": [
+    "MC / greedy / uniform effectiveness",
+    "constrained vs unconstrained search-space effect",
+    "individual postprocess component contribution",
+    "independent mapping semantic accuracy",
+    "unseen final Test result"
+  ],
+  "skia_policy": {
+    "identity_review": "named graphics-library component; not automatically a false mention",
+    "canonical_cpe": "unresolved; no fabricated Skia CPE or automatic projection to Chrome",
+    "old_v13_score": "unchanged; original frozen label counts preserved",
+    "new_primary_evaluation": "exclude every source window with unresolved product/component identity, span or CPE adjudication before inference; keep in pending_label control stratum without primary TP/FP/FN",
+    "rule_specificity": "global unresolved-identity policy, never a Skia/doc-specific deletion rule",
+    "human_iaa": false,
+    "official_sources": [
+      {
+        "url": "https://skia.org/docs/",
+        "checked_local_date": "2026-10-05",
+        "supports": "Skia is a graphics library and Chrome graphics engine; no canonical CPE proof"
+      },
+      {
+        "url": "https://nvd.nist.gov/vuln/detail/cve-2017-5102",
+        "checked_local_date": "2026-10-05",
+        "supports": "the CVE description names Skia inside Google Chrome; does not resolve an independent component CPE"
+      }
+    ]
+  },
+  "r2_policy": "retain v14 mixed-generation isolation and the two known FNs as performance limitations; no new split rule",
+  "pilot_caps": {
+    "rounds": 2,
+    "windows_per_round": 8,
+    "task_requests_per_round": 12,
+    "task_requests_total": 24,
+    "optimizer": 0
+  },
+  "pilot_primary_minimum": {
+    "independent_sources": 3,
+    "configuration_positive_mentions": 12
+  },
+  "pilot_second_round_policy": "only one located protocol/scoring/raw-preservation correctness repair; another preregistered source set; low scores or coverage shortage do not permit another round",
+  "pilot_source_exclusion": {
+    "canonical_document_ids": [
+      "aa20-259a-iran-citrix-vpn-cve-19781",
+      "aa21-200a",
+      "aa21-200b",
+      "aa22-074a",
+      "aa22-137a",
+      "aa22-138b-vmware-cve-22954",
+      "aa22-174a-log4shell-vmware-cve-44228",
+      "aa22-181a",
+      "aa22-187a",
+      "aa22-216a",
+      "aa22-223a",
+      "aa22-228a",
+      "aa22-249a",
+      "aa22-257a",
+      "aa22-264a",
+      "aa22-265a",
+      "aa22-277a",
+      "aa22-294a",
+      "aa22-320a",
+      "aa22-321a",
+      "aa22-321a-hive-exchange",
+      "aa22-335a",
+      "aa23-025a",
+      "aa23-039a",
+      "aa23-040a",
+      "aa23-059a",
+      "aa23-061a",
+      "aa23-074a",
+      "aa23-074a-telerik-cve-18935",
+      "aa23-075a",
+      "aa23-108",
+      "aa23-129a",
+      "aa23-131a",
+      "aa23-136a",
+      "aa23-158a",
+      "aa23-165a",
+      "aa23-187a",
+      "aa23-193a",
+      "aa23-201a",
+      "aa23-208a",
+      "aa23-213a",
+      "aa23-215a",
+      "aa23-242a",
+      "aa23-250a",
+      "aa23-250a-manageengine-cve-47966",
+      "aa23-263a",
+      "aa23-278a",
+      "aa23-284a",
+      "aa23-289a",
+      "aa23-319a",
+      "aa23-320a",
+      "aa23-325a",
+      "aa23-325a-citrix-bleed-cve-4966",
+      "aa23-335a",
+      "aa23-339a",
+      "aa23-339a-coldfusion-cve-26360",
+      "aa23-341a",
+      "aa23-347a",
+      "aa23-347a-play-ransomware",
+      "aa23-349a",
+      "aa23-352a",
+      "aa23-353a",
+      "aa24-016a",
+      "aa24-016a-androxgh0st",
+      "aa24-038a",
+      "aa24-038a-volt-typhoon",
+      "aa24-046a",
+      "aa24-057a",
+      "aa24-060a",
+      "aa24-060b",
+      "aa24-109a",
+      "aa24-131a",
+      "aa24-131a-black-basta-cve-1709",
+      "aa24-193a",
+      "aa24-207a",
+      "aa24-241a",
+      "aa24-242a",
+      "aa24-249a",
+      "aa24-290a",
+      "aa24-317a",
+      "aa24-326a",
+      "aa25-022a",
+      "aa25-050a",
+      "aa25-071a",
+      "aa25-141b",
+      "aa25-163a",
+      "aa25-203a",
+      "aa25-239a",
+      "aa25-266a",
+      "aa25-343a",
+      "aa26-097a",
+      "accellion-fta-google-accellion-data-theft-extortion",
+      "accellion-fta-nvd-accellion-27101",
+      "apache-httpd-41773-tenable-httpd-41773",
+      "bluekeep-rapid7-bluekeep-metasploit",
+      "citrix-adc-cisa-citrix-3519-webshells",
+      "citrix-adc-tenable-citrix-19781-cve",
+      "confluence-nvd-confluence-26084",
+      "drupalgeddon-nvd-drupalgeddon-7600",
+      "eternalblue-expressvpn-eternalblue",
+      "follina-huntress-follina",
+      "fortios-sslvpn-rapid7-fortinet-targeting",
+      "goanywhere-nvd-goanywhere-0669",
+      "ivanti-connect-secure-cisa-ivanti-multiple-vulnerabilities",
+      "proxylogon-microsoft-hafnium-exchange"
+    ],
+    "known_supplement_documents": {
+      "supp-nvd-cve-2017-0145": {
+        "doc_id": "supp-nvd-cve-2017-0145",
+        "role": "splitter_challenge",
+        "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-0145"
+      },
+      "supp-nvd-cve-2017-0016": {
+        "doc_id": "supp-nvd-cve-2017-0016",
+        "role": "evaluation",
+        "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-0016"
+      },
+      "supp-nhs-cc-4362": {
+        "doc_id": "supp-nhs-cc-4362",
+        "role": "evaluation",
+        "source_url": "https://digital.nhs.uk/cyber-alerts/2023/cc-4362"
+      },
+      "supp-nsm-2023-35078": {
+        "doc_id": "supp-nsm-2023-35078",
+        "role": "multilingual_challenge",
+        "source_url": "https://nsm.no/aktuelt/nulldagssarbarhet-i-ivanti-endpoint-manager-mobileiron-core"
+      },
+      "supp-prits-2023-35081": {
+        "doc_id": "supp-prits-2023-35081",
+        "role": "scope_control",
+        "source_url": "https://www.prits.pr.gov/avisos-de-ciberseguridad/a-vulnerability-in-ivanti-endpoint-manager-mobile-could-allow-for-arbitrary-code-execution"
+      },
+      "supp-cert-eu-2025-018": {
+        "doc_id": "supp-cert-eu-2025-018",
+        "role": "reference",
+        "source_url": "https://cert.europa.eu/publications/security-advisories/2025-018/markdown"
+      },
+      "fresh-nvd-cve-2016-3270": {
+        "doc_id": "fresh-nvd-cve-2016-3270",
+        "role": "evaluation",
+        "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2016-3270"
+      },
+      "fresh-nvd-cve-2016-3237": {
+        "doc_id": "fresh-nvd-cve-2016-3237",
+        "role": "evaluation",
+        "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2016-3237"
+      },
+      "fresh-nvd-cve-2017-0147": {
+        "doc_id": "fresh-nvd-cve-2017-0147",
+        "role": "template_challenge",
+        "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-0147"
+      },
+      "fresh-nvd-cve-2017-0148": {
+        "doc_id": "fresh-nvd-cve-2017-0148",
+        "role": "template_challenge",
+        "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-0148"
+      },
+      "fresh-nvd-cve-2017-11783": {
+        "doc_id": "fresh-nvd-cve-2017-11783",
+        "role": "release_control",
+        "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-11783"
+      },
+      "fresh-nvd-cve-2017-5102": {
+        "doc_id": "fresh-nvd-cve-2017-5102",
+        "role": "background_scope_control",
+        "source_url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-5102"
+      }
+    },
+    "also_exclude": "all other previously exposed pilot/source records, exact text duplicates and known-template challenges from primary; source catalog and near-duplicate audit must be completed in C2",
+    "candidate_documents_selected": false,
+    "pilot_gold_frozen": false
+  },
+  "calculated_budget": {
+    "upper_bound_assumptions": "all six rounds; maximal beam; no cache reuse discount; all windows retained; matched P0 and optimized inference paths; no extra LLM semantic repair",
+    "parent_expansions_per_stage": 21,
+    "per_stage_task": {
+      "initial": 8,
+      "error_minibatches": 1344,
+      "selection": 3072,
+      "final_dev": 1605,
+      "total": 6029
+    },
+    "per_stage_optimizer_logical_upper": 273,
+    "task_logical_components": {
+      "stage1_search": 6029,
+      "stage2_search": 6029,
+      "stage2_entity_cache_train_dev": 1152,
+      "matched_p0_dev_entity_and_relation": 642,
+      "full_dev_relation_after_entity_enhancement": 321,
+      "protegi_dev_entity_and_relation": 642,
+      "protegi_full_dev_relation_after_entity_enhancement": 321,
+      "rule_and_deterministic_postprocessing": 0,
+      "final_test": 0
+    },
+    "task_logical_upper": 15136,
+    "optimizer_logical_upper": 546,
+    "shared_evaluator_retry_theoretical_physical_upper": {
+      "task": 242176,
+      "optimizer": 4368,
+      "warning": "not an approved budget; C4 must recompute if it changes retries or call paths"
+    }
+  },
+  "proposed_development_physical_caps": {
+    "task": 18000,
+    "optimizer": 600,
+    "wall_hours": 24,
+    "enforced": false,
+    "includes": "failed sends, retries and UNKNOWN; resume never resets counters",
+    "stop": "stop before cap, save blocked/negative result; no automatic extra budget or changed seed",
+    "pricing_status": "requires current account-specific task/optimizer unit prices or billing evidence before currency cost/expense approval; no paid requests in C1"
+  },
+  "runtime_registration_blockers": [
+    "C2 independent source/Gold/runtime registration and ledger preflight",
+    "C4 shared enhancement adapter and ProTeGi_Full development execution path",
+    "C4 shared TaskEvaluator inference path for matched P0 and optimized arms; no extra LLM semantic repair; unchanged retry settings and pre-send ledger enforcement",
+    "C4 authoritative physical request ledger with pre-send cap enforcement",
+    "C4 full execution hashes and registered monetary limit/user inference authorization",
+    "C3 new final Test and real human IAA for formal evaluation only"
+  ],
+  "source_sha256_raw_bytes": {
+    "scripts/audit_convergence_c1_budget_v1.py": "7070cf1683357cfbb851fee874e2c27026b98e70fa4cd04281c0ba30bf3dca6b",
+    "data/dataset_freeze_manifest_v6.json": "7701c625742177fb37c09138b0d0ff642423bc73be12bd25b317be35f809848c",
+    "data/train_dev_test_split_v7.json": "edc8320f7e4b0110765d6b96680ae108198526aed34caee22b9807ef82ad4514",
+    "protegi/configs/protegi_formal_constrained_muse.yaml": "b16073f2db3b892651b01c8a004f65ded957b481756d9ec67c8e1cd7d6fba2f1",
+    "protegi/PROMPT_SCOPE_EXPERIMENT.md": "24875530b869171d9b5457eddc271381b4faf62e93b7a9a03eb3a3559e4a5c8c",
+    "CHAPTER3_EXPERIMENT_ALIGNMENT.md": "970b5b1ba3a8c13394d772ceaa165aa0637064d1e72dd3b36568af5a326e40d2",
+    "protegi/optimizer.py": "a1d88bb3d2482a1950c61f7d52023b4d7d1d484f1892cef95daf05109197971a",
+    "protegi/evaluator.py": "8f0eb2275f2a43f8fa9281652f80de0fe8fc441d256cb2a57d0f1793b50f4112",
+    "protegi/models.py": "ae9179f54b2ccfe2ba329cc73b0976e030cf2ed6ef06b7d14ea25fbc85da2b9e",
+    "protegi/mutators.py": "9aec28db8b5db0fd15995603773e762e05ab455b145ef4f37a05654b3724df23",
+    "protegi/selectors.py": "12e43ddd72b751f31fde5f32a7346c8c877bbba859ee9add08c3e0e574bafb82",
+    "protegi/retry_utils.py": "4daa8659857c80f629f81d4ca13ef134aaa063c0ac10ee9012b2ec9175afafe8",
+    "protegi/search_stability.py": "a2b227c6f8fbb6f817c41e4e54bd49c8936ea8342b1db308a74d101267914c18",
+    "protegi/entity_cache.py": "7304b5f75ab655ba9b821ac615df233e42bcc05f1f0b40c68f3cc12d3a9edd20",
+    "protegi/runtime_contract.py": "0e2ec18b4cdcfdf0a1a6bca3b3fdd74e18c14cbf6f5ba023093459d43f72df04",
+    "protegi/gold_integrity.py": "a86a4bb111da423a4968c5e943a7a0689ca92d1ea9fc1165982d62e6b6416bc9",
+    "scripts/run_protegi.py": "8da3ac5201c404b614beeeb557734dd50118d058c0339c1971c670ec1959a7ae",
+    "scripts/run_v6_experiment.py": "c9918b01ffa6f28b7fdd9346d119744e9e023a0d9bc9cf8c49e4c2463e150391",
+    "scripts/llm_methods.py": "e1dbe0e511efbd93e139fe8e22cacfcab66e74497b6e1b181825de866810d258",
+    "scripts/llm_extractor.py": "6aa3a93be25a375b7281cd14963e712a7dd1e75b87d444fd73136c3313d5b19c",
+    "scripts/rule_baseline.py": "378f7d3d832e7e2a56d9ff44475b29fdfcd7569ae8dd875e94cef3bed5e77c5b",
+    "scripts/eval_metrics.py": "94c2328bd2c2fa34a1a308dfaf2f18c793618d9807f6e30c4c163ab853941ca3",
+    "protegi/configuration_filter_runtime.py": "b8b84e6eda878d2a04345621825d116151f800053429819dc713a7330476c827",
+    "protegi/entity_backfill.py": "6f40e88609a6f12ad3b373eb58ccc0bd39a4adfaac36d0d7511a9a37db0754ab",
+    "protegi/configuration_candidate_filter_v14.py": "4fa969286fd7b6b2ba22fe99726e251e9d2681d60ca54e7865aecee2c055b75c",
+    "protegi/configuration_train_catalog.py": "5c42913e27724d12e848b6be4c3f77e231a583ae23d9bb9fc1b46d8bf5ca29b5",
+    "config/runtime_profile.json": "804196ebe52f3e1a23f215d83a9e0d234dcc2802129f1e410707f21bfe625a54",
+    "config/boundary_contract_v2.json": "fc765dd3903f4eb85ff6fdd0ce2bfa2538e60f6c043a4d36263470f788909a73",
+    "config/configuration_boundary_mcpu_v2.json": "195c5176dbea9bf8512e51d167a1ef8cc1b8aa418cfd3a29ba5da407e56b1dc5",
+    "data/baseline_methods_freeze_manifest_v1.json": "430e2dd6aca937ab0ea01e7793f32e6813df8bf8a584a59a95199e78fe979e49",
+    "data/configuration_v14_offline_fix_v1.json": "9cc5468c5c88aee1d9de58253079c53c4cd300541c4ab76cf4a0270d6e994f2e",
+    "CONFIGURATION_V14_OFFLINE_FIX_V1_REPORT.md": "40b2fd8dfe3ab6ccab221be51c833fcf417c8294be45772ec6513de234f8ac4e",
+    "protegi/seeds/entity_run10_winner.json": "8c9eeb2da2a404011165112dcab6137f14c2851f39a0e441cc28dc5940823fb2",
+    "protegi/seeds/entity_run10_winner.txt": "b922d3ca170fe69538d279adf04b43e69c9ba8aa1a9f70ed14278402828607c5",
+    "results/protegi_optimization/entity_protegi_constrained_mcpu_v2_run10/summary.json": "e7d4d675e0616fc29deb0a60b1158f59966cc7edebb04385453b1cf404723e07",
+    "results/protegi_optimization/entity_protegi_constrained_mcpu_v2_run10/final_entity_prompt.txt": "1ced6523d67b4605402c628d74dbcc56cef34f76d9ad8c930c93cb09c74d5e32",
+    "results/protegi_optimization/entity_cache_dryrun/entity_cache_train_manifest.json": "5caf0f32bfbbc0e8cd6c6b83e567bf5db22b5cf5dd486cf96c7205f26539a0e6",
+    "results/protegi_optimization/entity_cache_dryrun/entity_cache_dev_manifest.json": "182ba4a3e55468ebaf2fdb091c7c5d89bee75a0dd77dd7ed467e15ac456d5d69",
+    "data/train_supplements/configuration_v13_fresh_sources_v1/annotations.json": "eb88410e18a4b9c4932389b8115762bb9a9ee0da27e2bac21c6a4a78051be46e",
+    "data/train_supplements/configuration_v13_fresh_sources_v1/raw/cve-2017-5102.json": "9f83827f91e73704cf7227f5c39d71a3a4686c7a6951455d2bbb58845e4df93f",
+    "data/train_supplements/configuration_v9_real_sources_v1/documents.json": "59d8bfe90bbec4d51b0cfbe0173eef41e42443f52828da7291b93d7cdbc85111",
+    "data/train_supplements/configuration_v13_fresh_sources_v1/documents.json": "26ae15a49fec8340cc742a68c0b776707e826a3c3bb1421d870ec7f6e5adca2f",
+    "results/protegi_optimization/configuration_v13_fresh_train_pilot_v1/preregistration/source_review.json": "72b0c4b3c3b7a0caf69b54f38b1bf1491e941bcfaeb1bd95c41546b41cc134d6",
+    "protegi/prompts_p0.py": "3379193761d24b47e0c36c3cbf14277b5cb60017ed5696800e2ad323f55f846c",
+    "scripts/prompts/multipass_prompts.py": "07195f0ac28c2eb0196275eeb8a80c56c5566fce3a1408b1a5fe8b711922d381"
+  },
+  "receipt_path": "results/convergence_c1_v1/verification.json"
+}

@@ -1,0 +1,11 @@
+# v3实验启动观察
+
+运行：[38152196348](https://github.com/Thehe01/experiment4/actions/runs/38152196348)，push触发，attempt1。
+
+已观察verify completed/success，28项离线测试和登记校验通过；slot1依赖准备及durable reserve成功，登记campaign步骤in_progress。activation.json记录科学提交和独立launch差异，started.json保存作业步骤及Git中的active session，verify-evidence.log保存实际校验摘要。
+
+科学源4f379b612b3d6cce5f8237b8103e866909ca7988，activation244e217428e23c9bd019084171de40c49999c389，登记SHA256 ac19948da5d31cfede901073af08dbbc49c2b99950ff48e3f96bea334e075e5e。source发布28项blob大小/Git SHA与本地一致，activation只增launch；原科学文件、main及旧activation不变。
+
+固定36单位：两模型×两数据条件×三折×三种子。新配对Dev147/147/148；base Train691/691/690、augmented1547/1547/1546。最多3×240分钟CPU槽，后槽只在前槽closed+continuation_needed时继续。12个UNKNOWN所属CVE仍隔离，旧2跨域隔离不恢复，155保留组未评分。
+
+启动不等于完成。当前科学单位数/epoch没有公开日志，记为未知；verify里synthetic_test_only的toy数值结果不作为科学结果。不能预报改善；需36单位闭合后核对成绩和归档。这次管理观察不会改变已启动运行的科学源码或扩大预算。

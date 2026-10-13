@@ -1,0 +1,42 @@
+{
+  "protocol": "chapter5-source-alignment-v2-20261011",
+  "authorization": "先消除差异",
+  "authorized_at": "2026-10-11T21:48:43+08:00",
+  "baseline_commit": "aa8a7c299ed29d39345dea1c4633bee8e1699e95",
+  "source_package_sha256": "554ae91f7d9e7b6fd810aabe801bb637664566711a1a38f974529e0e7e4c2c75",
+  "old_package_sha256": "c00660f6d37cfefa2af35513ed785ca0e77f880746f34220edb204c353bfadbf",
+  "enriched_package_sha256": "0a8dadff1e03dbe55520a77783523016dcb2d97d8f716f3253255f1b33748e6b",
+  "runtime_package_sha256": "224edc37ab105644bec932ab54dc1071783c35fd124728d5a2645c1f00274d10",
+  "comparison_git_blob": "447bc69ac0a9caa2fbd670d0d393b64c420c0a1e",
+  "normalized_author_sha256": "7aa1e193182fb09a6fb41ec1c7d9d9c099b1b00405baa9d59009de9fd29ccc9a",
+  "overlap_review_sha256": "b9cd9620f2bb482dd1966d13d4db3ec8e6cdf4be8e2aa42d249753197b9cdfbb",
+  "label_policy": "Existing original canonical labels must reproduce pinned CTID mappings exactly; overlap author observations get CTID canonical view; uncorroborated author-only labels remain UNKNOWN without automatic Gold admission or negative interpretation.",
+  "new_only_policy": "Keep the registered author labels unless a pinned CTID record exists exclusively outside the fixed Enterprise domain, in which case quarantine the record; new annotations and cross-domain substitutions forbidden.",
+  "role_policy": "Original development-only roles retained; external candidates Train-only; reserved IDs excluded before any label comparison.",
+  "metadata_policy": "Keep frozen CWE/CPE unchanged;92CWE source disagreements remain unadjudicated; no distribution equalization.",
+  "candidate_granularity": "31 existing Enterprise parent IDs, frozen ATT&CK19.2",
+  "budgets": {
+    "training": 0,
+    "model_inference": 0,
+    "model_api": 0,
+    "reserved_label_comparison": 0,
+    "reserved_scoring": 0
+  },
+  "changes_to_original_gold_or_results": 0,
+  "training_registration_status": "not_started",
+  "human_semantic_adjudication": "not_performed; source reconstruction is not independent semantic accuracy/IAA",
+  "frozen_sources": [
+    {
+      "repository": "center-for-threat-informed-defense/attack_to_cve",
+      "commit": "191e87005a51be1e28983b0fa64adcb367e9aa30",
+      "blob": "034d24701302250b75ac7aaaa3e143f7a572cc85"
+    },
+    {
+      "repository": "center-for-threat-informed-defense/mappings-explorer",
+      "commit": "a85e55af3c9fa55359a98621745b9b039a088bec",
+      "blob": "5f9aae9cb28972e2af8236457c9287fcab6f3032",
+      "release": "KEV07.28.2025, ATT&CK16.1"
+    }
+  ]
+}
+

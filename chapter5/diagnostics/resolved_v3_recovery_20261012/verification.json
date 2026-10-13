@@ -1,0 +1,191 @@
+{
+  "baseline_independent_formula_cases": 36,
+  "baseline_metrics_max_error": 0.0,
+  "baseline_ranks_exact_match": true,
+  "checkpoint_deserialization": false,
+  "completed_units": 36,
+  "diagnostic_score_caches_recovered": 0,
+  "frozen_completion_verifier_executed": false,
+  "frozen_source_git_sha_and_sha256_verified": 28,
+  "graphs_rebuilt_and_bound": 6,
+  "historical_diagnostic_forward_consumed": 144,
+  "historical_per_forward_ledger_available": false,
+  "model_metrics_from_original_ranks_max_error": 0.0,
+  "model_rank_rows_recovered": 11868,
+  "new_forward": 0,
+  "new_model_api_calls": 0,
+  "new_training": 0,
+  "numeric_runtime_binding_recomputed": false,
+  "paired_summary": {
+    "distmult_mixed": {
+      "mean_augmented_mrr": 0.36188018877070655,
+      "mean_base_mrr": 0.3816654267922884,
+      "mean_delta_major_macro": -0.01602176362134748,
+      "mean_delta_mrr": -0.01978523802158186,
+      "pair_count": 9,
+      "pairs": [
+        {
+          "augmented_mrr": 0.35950536491149254,
+          "base_mrr": 0.4243614023067521,
+          "delta_major_macro": -0.09947502561386229,
+          "delta_mrr": -0.06485603739525958,
+          "fold": 0,
+          "seed": 20261021
+        },
+        {
+          "augmented_mrr": 0.3639008362560129,
+          "base_mrr": 0.37558581718647066,
+          "delta_major_macro": 0.003573348053187292,
+          "delta_mrr": -0.011684980930457778,
+          "fold": 0,
+          "seed": 20261022
+        },
+        {
+          "augmented_mrr": 0.3571717960727512,
+          "base_mrr": 0.3648544277442877,
+          "delta_major_macro": -0.007456792920175481,
+          "delta_mrr": -0.007682631671536544,
+          "fold": 0,
+          "seed": 20261023
+        },
+        {
+          "augmented_mrr": 0.35955445112941664,
+          "base_mrr": 0.4029834906794827,
+          "delta_major_macro": -0.012704891697079501,
+          "delta_mrr": -0.04342903955006605,
+          "fold": 1,
+          "seed": 20261021
+        },
+        {
+          "augmented_mrr": 0.35905871409432555,
+          "base_mrr": 0.3708859605500308,
+          "delta_major_macro": -0.002389451153125721,
+          "delta_mrr": -0.011827246455705265,
+          "fold": 1,
+          "seed": 20261022
+        },
+        {
+          "augmented_mrr": 0.3728970050491703,
+          "base_mrr": 0.36915488355227294,
+          "delta_major_macro": -0.005681516961747096,
+          "delta_mrr": 0.0037421214968973437,
+          "fold": 1,
+          "seed": 20261023
+        },
+        {
+          "augmented_mrr": 0.369627050760869,
+          "base_mrr": 0.3720503742160183,
+          "delta_major_macro": -0.004901610980990956,
+          "delta_mrr": -0.0024233234551492844,
+          "fold": 2,
+          "seed": 20261021
+        },
+        {
+          "augmented_mrr": 0.3574580008002318,
+          "base_mrr": 0.3800581212581245,
+          "delta_major_macro": -0.005889940374680269,
+          "delta_mrr": -0.02260012045789267,
+          "fold": 2,
+          "seed": 20261022
+        },
+        {
+          "augmented_mrr": 0.3577484798620888,
+          "base_mrr": 0.3750543636371557,
+          "delta_major_macro": -0.009269990943653272,
+          "delta_mrr": -0.01730588377506692,
+          "fold": 2,
+          "seed": 20261023
+        }
+      ],
+      "wins": 1
+    },
+    "rgcn_mixed": {
+      "mean_augmented_mrr": 0.3550765962354105,
+      "mean_base_mrr": 0.39173425069270706,
+      "mean_delta_major_macro": -0.024932807344384814,
+      "mean_delta_mrr": -0.03665765445729659,
+      "pair_count": 9,
+      "pairs": [
+        {
+          "augmented_mrr": 0.34576502752985244,
+          "base_mrr": 0.37815089895289045,
+          "delta_major_macro": -0.012796276440048937,
+          "delta_mrr": -0.032385871423038004,
+          "fold": 0,
+          "seed": 20261021
+        },
+        {
+          "augmented_mrr": 0.3822326160705875,
+          "base_mrr": 0.4021950034381486,
+          "delta_major_macro": -0.03771937162713515,
+          "delta_mrr": -0.01996238736756112,
+          "fold": 0,
+          "seed": 20261022
+        },
+        {
+          "augmented_mrr": 0.359330852952204,
+          "base_mrr": 0.39862516581161417,
+          "delta_major_macro": -0.016909861335378223,
+          "delta_mrr": -0.03929431285941015,
+          "fold": 0,
+          "seed": 20261023
+        },
+        {
+          "augmented_mrr": 0.3400146377545563,
+          "base_mrr": 0.38965659151682003,
+          "delta_major_macro": -0.028283819329012333,
+          "delta_mrr": -0.04964195376226371,
+          "fold": 1,
+          "seed": 20261021
+        },
+        {
+          "augmented_mrr": 0.37899070521781764,
+          "base_mrr": 0.3992426511731993,
+          "delta_major_macro": -0.0256250347900423,
+          "delta_mrr": -0.020251945955381656,
+          "fold": 1,
+          "seed": 20261022
+        },
+        {
+          "augmented_mrr": 0.33701987211652207,
+          "base_mrr": 0.3898165042793947,
+          "delta_major_macro": -0.022205569962745253,
+          "delta_mrr": -0.052796632162872614,
+          "fold": 1,
+          "seed": 20261023
+        },
+        {
+          "augmented_mrr": 0.35602253817945845,
+          "base_mrr": 0.3659857123240424,
+          "delta_major_macro": 0.0005141187520052437,
+          "delta_mrr": -0.009963174144583975,
+          "fold": 2,
+          "seed": 20261021
+        },
+        {
+          "augmented_mrr": 0.342480126249184,
+          "base_mrr": 0.4080579332004925,
+          "delta_major_macro": -0.05189410992030308,
+          "delta_mrr": -0.06557780695130849,
+          "fold": 2,
+          "seed": 20261022
+        },
+        {
+          "augmented_mrr": 0.35383299004851176,
+          "base_mrr": 0.3938777955377613,
+          "delta_major_macro": -0.029475341446803277,
+          "delta_mrr": -0.040044805489249546,
+          "fold": 2,
+          "seed": 20261023
+        }
+      ],
+      "wins": 0
+    }
+  },
+  "protected_ids": 169,
+  "python": "3.12.14",
+  "raw_model_scores_replayed": false,
+  "reason_frozen_completion_verifier_not_run": "Torch 2.9.1+cpu is absent; independent stdlib audit was used, without weakening its frozen runtime gate",
+  "reserved_evaluation": false,
+  "result": "passed_no_model_recovery"
+}

@@ -1,0 +1,32 @@
+{
+  "AI_Gold_added": 0,
+  "CWE_edges_removed": 91,
+  "CWE_sets_changed": 89,
+  "CWE_source_disputes_resolved_by_policy": 92,
+  "candidate_zip": {
+    "bytes": 307588,
+    "git_blob_sha": "4b6f9224cae05876a823bdf12c6dca0506a2fbcc",
+    "members": 19,
+    "path": "source-resolved-candidates-v3.zip",
+    "sha256": "eb7f7434b61d2abeb5741b27758ac17f1e5f145ca62057e9ded364dc44bb56ac"
+  },
+  "classes": 31,
+  "full_CVEs_preserved": 1736,
+  "label_edges": 3144,
+  "new_training_runs": 0,
+  "old_Dev150_comparison_applicable": false,
+  "positive_CVEs": 1694,
+  "primary_evidence_zip": {
+    "bytes": 254005,
+    "git_blob_sha": "6ad8902405f1536159cc4f2346513be0f7614dba",
+    "members": 125,
+    "path": "primary-evidence-v3.zip",
+    "sha256": "a5b8dcc4893af75f0da376763fadfa8a6cf98967f02c30fa22c55a1b9e8a93ef"
+  },
+  "protocol": "chapter5-source-resolution-v3-20261011",
+  "quarantine_CVEs": 14,
+  "reserved_scoring": 0,
+  "semantic_disputes_human_resolved": false,
+  "tests_passed": 47,
+  "usable_CVEs": 1724
+}

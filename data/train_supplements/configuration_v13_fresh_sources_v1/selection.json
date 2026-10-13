@@ -1,0 +1,46 @@
+{
+  "selected_at_utc": "2026-10-05T07:46:27.911283+00:00",
+  "selection_basis": "Source-only targeted selection before any new model output; no response/score-based replacement",
+  "candidates": [
+    {
+      "cve": "CVE-2016-3270",
+      "role": "evaluation"
+    },
+    {
+      "cve": "CVE-2016-3237",
+      "role": "evaluation"
+    },
+    {
+      "cve": "CVE-2017-0147",
+      "role": "template_challenge"
+    },
+    {
+      "cve": "CVE-2017-0148",
+      "role": "template_challenge"
+    },
+    {
+      "cve": "CVE-2017-11783",
+      "role": "release_control"
+    },
+    {
+      "cve": "CVE-2017-5102",
+      "role": "background_scope_control"
+    }
+  ],
+  "known_exposure": "Products, Windows enumeration template and MS17-010 family known from development; new record/source contexts, not an unseen holdout",
+  "exploratory_public_frames": [
+    {
+      "query": "2016-01-01..2016-04-29 Microsoft Windows Vista",
+      "records": 33
+    },
+    {
+      "query": "2016-08-01..2016-11-28 Microsoft Windows Vista",
+      "records": 56
+    },
+    {
+      "query": "2017-01-01..2017-04-29 Microsoft Windows",
+      "records": 102
+    }
+  ],
+  "model_requests_before_selection": 0
+}

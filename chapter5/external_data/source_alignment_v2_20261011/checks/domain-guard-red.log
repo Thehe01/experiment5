@@ -1,0 +1,14 @@
+..F......
+======================================================================
+FAIL: test_enterprise_out_of_scope_is_not_misclassified_as_mobile (test_alignment.AlignmentTests.test_enterprise_out_of_scope_is_not_misclassified_as_mobile)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/740249c3d03b/chapter5_integrated/source/chapter5/external_data/source_alignment_v2_20261011/test_alignment.py", line 63, in test_enterprise_out_of_scope_is_not_misclassified_as_mobile
+    with self.assertRaisesRegex(ValueError,"out.of.scope"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.056s
+
+FAILED (failures=1)

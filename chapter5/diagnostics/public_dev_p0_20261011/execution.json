@@ -1,0 +1,38 @@
+{
+  "actual_replay_command": "ATEN_CPU_CAPABILITY=avx2 PYTHONPATH=/workspace/scratch/740249c3d03b/pydeps python -m chapter5.diagnostics.public_dev_p0_20261011.diagnose --repo /workspace/scratch/740249c3d03b/project --state /workspace/scratch/740249c3d03b/c5_diag_work/actions-slot1 --output /workspace/scratch/740249c3d03b/project/chapter5/diagnostics/public_dev_p0_20261011/results",
+  "archive_repack": {
+    "all_part_hashes_equal": true,
+    "command": "chapter5.archive.pack_state(actions-slot1, c5_diag_work/repacked); assert reconstructed manifest equals original permanent manifest",
+    "exit_code": 0,
+    "parts_verified": 50,
+    "source_bytes": 209393445,
+    "source_sha256": "40cb271ff363b5cd1fe5f72ea78900aa5b632122306436dc5f70a7a4b6dbaf08"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 1,
+      "frozen_source_modified": false,
+      "reason": "diagnostic script incorrectly assumed state config retains source whitespace; frozen runner canonicalizes config JSON",
+      "remedy": "logical config equality plus frozen source registration; byte equality retained for folds and registration",
+      "stage": "before scoring and output creation"
+    },
+    {
+      "attempt": 2,
+      "elapsed_seconds": 136.6059808731079,
+      "exit_code": 0,
+      "full_original_metric_max_error": 0,
+      "rank_mismatches": 0
+    }
+  ],
+  "completed_utc": "2026-10-11T04:20:18.207545+00:00",
+  "external_model_api_calls": 0,
+  "final_integrity": {
+    "exit_code": 0,
+    "frozen_registration_verified_after_diagnosis": true,
+    "output_hashes_verified": true,
+    "script_and_protocol_hashes_verified": true
+  },
+  "new_scientific_training_units": 0,
+  "reserved_heads_scored": 0
+}

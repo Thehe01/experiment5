@@ -1,0 +1,14 @@
+[
+  {
+    "gate": "output overwrite refused",
+    "exit_code": 1,
+    "failure": "refuse output overwrite",
+    "new_forward": 0
+  },
+  {
+    "gate": "frozen config byte tamper refused",
+    "exit_code": 1,
+    "failure": "registered config SHA256 mismatch",
+    "new_forward": 0
+  }
+]

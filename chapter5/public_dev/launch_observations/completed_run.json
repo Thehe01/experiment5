@@ -1,0 +1,539 @@
+{
+  "phase": "development_complete",
+  "checked_at": "2026-10-11T09:44:56+08:00",
+  "run_id": 38101314699,
+  "run_url": "https://github.com/Thehe01/experiment4/actions/runs/38101314699",
+  "run_conclusion": "success",
+  "workflow_completed_at": "2026-10-11T01:40:26Z",
+  "archive_commit": "c9362392cc309635ab355c0ddf330736783f3501",
+  "session": {
+    "attempt": "1",
+    "campaign": {
+      "completed_units": 36,
+      "confirmation_training_started": false,
+      "model_api_calls": 0,
+      "phase": "development_complete",
+      "promotion_gate": {
+        "confirmation_training_started": false,
+        "major_macro_delta": -0.1450000588421143,
+        "mean_delta_mrr": -0.05739727516579532,
+        "meaning": "development promotion only",
+        "passed": false,
+        "reserved_holdout_evaluated": false,
+        "unit_deltas": [
+          -0.052881897944358325,
+          -0.03108009738173151,
+          -0.030250155628868458,
+          -0.05561797931735868,
+          -0.05727765358011033,
+          -0.07018745916716668,
+          -0.07736679337882418,
+          -0.07079129763875674,
+          -0.07112214245498294
+        ],
+        "wins_of_nine": 0
+      },
+      "registered_units": 36,
+      "registration_sha256": "375b8ee819b2d531679c7e8f35fe89d96db6b4c7d40a9cc3ecc61f28a0aa96e5",
+      "reserved_holdout_evaluated": false,
+      "reserved_units": 36
+    },
+    "phase": "development_complete",
+    "protocol": "chapter5-public-dev-v1-20261011",
+    "registration_sha256": "375b8ee819b2d531679c7e8f35fe89d96db6b4c7d40a9cc3ecc61f28a0aa96e5",
+    "run_id": "38101314699",
+    "slot": 1,
+    "source_commit": "183a1110672a392461af4adadb56d30230a087f1",
+    "status": "closed"
+  },
+  "status": {
+    "completed_units": 36,
+    "confirmation_training_started": false,
+    "model_api_calls": 0,
+    "phase": "development_complete",
+    "promotion_gate": {
+      "confirmation_training_started": false,
+      "major_macro_delta": -0.1450000588421143,
+      "mean_delta_mrr": -0.05739727516579532,
+      "meaning": "development promotion only",
+      "passed": false,
+      "reserved_holdout_evaluated": false,
+      "unit_deltas": [
+        -0.052881897944358325,
+        -0.03108009738173151,
+        -0.030250155628868458,
+        -0.05561797931735868,
+        -0.05727765358011033,
+        -0.07018745916716668,
+        -0.07736679337882418,
+        -0.07079129763875674,
+        -0.07112214245498294
+      ],
+      "wins_of_nine": 0
+    },
+    "registered_units": 36,
+    "registration_sha256": "375b8ee819b2d531679c7e8f35fe89d96db6b4c7d40a9cc3ecc61f28a0aa96e5",
+    "reserved_holdout_evaluated": false,
+    "reserved_units": 36
+  },
+  "jobs": [
+    {
+      "id": 114357641463,
+      "name": "verify",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 38101314699,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install frozen CPU dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Offline tests and registration verification",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        }
+      ]
+    },
+    {
+      "id": 114357794156,
+      "name": "slot1",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 38101314699,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install frozen CPU dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Durably reserve execution slot 1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Run registered development units",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Persist closed execution and full state",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Preserve execution evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17
+        }
+      ]
+    },
+    {
+      "id": 114361497835,
+      "name": "slot2",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38101314699,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114361497894,
+      "name": "slot3",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38101314699,
+      "logs_url": null,
+      "steps": null
+    }
+  ],
+  "log_unique_unit_count": 36,
+  "log_unit_ids": [
+    "f0-distmult_uniform-s20261021",
+    "f0-distmult_uniform-s20261022",
+    "f0-distmult_uniform-s20261023",
+    "f0-distmult_mixed-s20261021",
+    "f0-distmult_mixed-s20261022",
+    "f0-distmult_mixed-s20261023",
+    "f0-rgcn_uniform-s20261021",
+    "f0-rgcn_uniform-s20261022",
+    "f0-rgcn_uniform-s20261023",
+    "f0-rgcn_mixed-s20261021",
+    "f0-rgcn_mixed-s20261022",
+    "f0-rgcn_mixed-s20261023",
+    "f1-distmult_uniform-s20261021",
+    "f1-distmult_uniform-s20261022",
+    "f1-distmult_uniform-s20261023",
+    "f1-distmult_mixed-s20261021",
+    "f1-distmult_mixed-s20261022",
+    "f1-distmult_mixed-s20261023",
+    "f1-rgcn_uniform-s20261021",
+    "f1-rgcn_uniform-s20261022",
+    "f1-rgcn_uniform-s20261023",
+    "f1-rgcn_mixed-s20261021",
+    "f1-rgcn_mixed-s20261022",
+    "f1-rgcn_mixed-s20261023",
+    "f2-distmult_uniform-s20261021",
+    "f2-distmult_uniform-s20261022",
+    "f2-distmult_uniform-s20261023",
+    "f2-distmult_mixed-s20261021",
+    "f2-distmult_mixed-s20261022",
+    "f2-distmult_mixed-s20261023",
+    "f2-rgcn_uniform-s20261021",
+    "f2-rgcn_uniform-s20261022",
+    "f2-rgcn_uniform-s20261023",
+    "f2-rgcn_mixed-s20261021",
+    "f2-rgcn_mixed-s20261022",
+    "f2-rgcn_mixed-s20261023"
+  ],
+  "archive_manifest": {
+    "parts": [
+      {
+        "bytes": 4194304,
+        "path": "state.part-000",
+        "sha256": "56fd13fbda83b082ecaf06bc7c3bce594fd4e7ff04b2063b0a50a271349bf150"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-001",
+        "sha256": "87fae3117b6492551af1d0472724c1c0ac96292caa8d144e654843393b459b03"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-002",
+        "sha256": "ff7eb6e0cb7cdaa60a4a7095481bbe85bc23b461217f7d5c7ba2ae702329fb70"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-003",
+        "sha256": "79420bc12c3d836e3977313b2d941a30af1a11a7060086ea452a9bcd36b25556"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-004",
+        "sha256": "a418bb9a14c0277db251169e1a90523974525503cd55b2ccc2a9fdf3ec77eec8"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-005",
+        "sha256": "b97969f99f37dc1e46097cc45ebada5601ea91d8aa027729bbf1bc8ff4d61b09"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-006",
+        "sha256": "94537fead68791523669669533313f503e01b4a97fbb05418a653e55b591d11e"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-007",
+        "sha256": "ee113051cc5d8bbe41ba02930258feb4d4f632f4d9aae2a1f4e1e94e4c57c8b9"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-008",
+        "sha256": "d66472f0badf08e8093a6602d6b05e0419f28350c3f58270a8cfee58f2bb42c0"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-009",
+        "sha256": "395d302ae0e72b5503ea6df133e4cba42a024e1281792218cf56e69a793b7696"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-010",
+        "sha256": "f7dfd355425b7dd62309781e63606f7de0e67f15afecb22cc8ed3dc0b9c061e6"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-011",
+        "sha256": "74ea934e94cfdedf7a5a7b7947662f9ce728572271c76d030e55d61bf9b61945"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-012",
+        "sha256": "0b1daf150b85989dd1bd5ee569cdca12517f1ee5102f8f8ba4ef850028a9110d"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-013",
+        "sha256": "f61eaf0ab661a6d25fde1d2f2ef3c0e8bd4f866f2a860ee8788ee13964fdbe43"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-014",
+        "sha256": "8a166fbb5b3ac5c15c523402d601ffecf4d98dfe87cc1ca174da261b87081e2b"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-015",
+        "sha256": "f0ed6e05041ced2cbbdcfb6de26e0d3b5ddc385ddda037ffd0cd009e16102b95"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-016",
+        "sha256": "54b1d44e3cf8a4a676b2dee732ae37fb95ed07c39eceda45473932682484067e"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-017",
+        "sha256": "b821d4aa502adf2a99036d1f4e9547346c2df5fcc5db632c802834bb0476495d"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-018",
+        "sha256": "e17c87130ff8fd89b0c9ce20f4d74657444478f083238e9f32068d7df44f05e5"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-019",
+        "sha256": "e96b7a67c907d3974ae494f5a4007bde31a923cb9ab28f94d634d1f6b070ead0"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-020",
+        "sha256": "57dcf0cf17d54c4c86aef5c582e982f5e5878b4d9994692ad108dd45e594a884"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-021",
+        "sha256": "667d63ce8d5926e24797feb83f375b79b7acfe2bcab77c55fea8b7836d25480f"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-022",
+        "sha256": "e2adce42e58bebb77be2f278a2b4604b0844d96e883a3d115416f657a22050e1"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-023",
+        "sha256": "ba16585bd2b95680d0c8dc5af9bf0b8e633a73740b6c86ab5d4e7e1b2c96ca64"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-024",
+        "sha256": "e4bcc0a4ebcf19c71cb0ceb6ee4f2857fd5fb5ad8b65b2f2d2b6e284a4fbbaaa"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-025",
+        "sha256": "e6703e55dfeee1cf78f17cd6ac50f1ac0d848f0a26fb4c72b4024f06a254cd5b"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-026",
+        "sha256": "e2215230d12f8b43a2d8b790010b46189f2cda8245bfe712242ff6fac7287814"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-027",
+        "sha256": "8540048200c75ddc2e3c102e1564eb81e8b999953a61dc31c823b44fb2239d23"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-028",
+        "sha256": "236030a40949ac36c926478798a4d00e0ad7a314a1c022d7321b65a3b4b4d5a3"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-029",
+        "sha256": "6ce141822d6c5c5c02a8c6717dbbf6d2b378f932c63aa05689e03a2fcd2a8293"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-030",
+        "sha256": "e41886b6a6f0e9f4e86f38defd33922187891a11c6317c1e49ea70e070696eb8"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-031",
+        "sha256": "72b9e5a57e79f0f8fde4e0fd11ca80cf4a387b2c077acc8093e16768e7083d37"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-032",
+        "sha256": "db2f0b038bbf3a86fa3ccd6a5c6d46ea5d14f4866153e8cbf119533776e8f03d"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-033",
+        "sha256": "1c3a12f38a5b6c4d429fb0e28e5c0b43a54e1c7b47b50974d9bc5c0cfccd342e"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-034",
+        "sha256": "5a6bdecf0d779b1ddbd0c12f344cd3361dfb9698fda990be0b8d01ed22f65fe9"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-035",
+        "sha256": "c456a616123d870d6294ebe79032629c4ce5a4f6ec7a36feb9aa71272d96440a"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-036",
+        "sha256": "da1176b156c4d77453220bd9901bdd513e02e5df67e96401b20473f90d552683"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-037",
+        "sha256": "26c148695b6329d1ad0a766f9a0fb667cbe67c026c6aae8bd74687af0b3f66d2"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-038",
+        "sha256": "2b5c12e25281211bd84d3a35933995f4db6aa58c9f225ffffe2281f0b92c049d"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-039",
+        "sha256": "8a5c9f820d159a29c3cb8773f4b98bc2f7664edc33d52e8390682071bf7d4dfc"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-040",
+        "sha256": "93ba12c3a0aa31da1e972d584413abbaf6c0509d7fe6a3d558012491e850ed32"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-041",
+        "sha256": "ed01607d971689d130698467fd0c8d99dafe28886d3d7f8fc88f9a182ddda2d8"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-042",
+        "sha256": "e8841cc8997739bd39ea1ab51c15d0d457c02aed505ff46f95b94a4452090c3b"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-043",
+        "sha256": "ca358dbb796eba7355904f224867c475c2c15f1cfdb4abd462d6efb9b2b7fc0d"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-044",
+        "sha256": "f2a6894847e0d00b304f5caf796be1a0aab5b706b57ce9490d98ff5afbb67758"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-045",
+        "sha256": "496fc98fda3bbe8cbb8b88b637ca7ef3f30940b4c7d99a4cd6d4afa024656071"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-046",
+        "sha256": "1735bd4227a61350122d360271745276c73eec39287f9b517bd23e892115b32e"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-047",
+        "sha256": "06141a13a9d6fd178f2b8a1f2915427e324addf7221055a9e7ee039edf47cfef"
+      },
+      {
+        "bytes": 4194304,
+        "path": "state.part-048",
+        "sha256": "15f993f183470a783fa1f3331b27f69f17f6bc8b2702ef973b8be4b6c4d38796"
+      },
+      {
+        "bytes": 3872549,
+        "path": "state.part-049",
+        "sha256": "0974a11eb7d4aa60256880e678aeffedd4d2b7fb7a2d2cb11ebed4eef022ee40"
+      }
+    ],
+    "schema": "chapter5-state-parts-v1",
+    "source_bytes": 209393445,
+    "source_sha256": "40cb271ff363b5cd1fe5f72ea78900aa5b632122306436dc5f70a7a4b6dbaf08"
+  },
+  "checks": {
+    "run_and_jobs": "verify/slot1 success; slot2/slot3 skipped",
+    "unit_execution_count": "36 unique logged IDs and completed_units=36 agree",
+    "close": "closed and development_complete agree",
+    "archive": "manifest and successful persistence step observed",
+    "checkpoint_rank_byte_replay": "not run for this status explanation",
+    "new_training_or_reserved_evaluation": "none"
+  },
+  "reason_for_skipping_slots": "All 36 registered development units finished in slot1; continuation_needed predicate was false.",
+  "result_report": "https://github.com/Thehe01/experiment4/blob/c9362392cc309635ab355c0ddf330736783f3501/chapter5/public_dev/runs/chapter5-public-dev-v1-20261011/report.md"
+}

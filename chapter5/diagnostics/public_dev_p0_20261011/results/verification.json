@@ -1,0 +1,31 @@
+{
+  "artifact_sha256": "8fe6ef6518b266ab3789802ce9588754b0d006f241903dcc363eb01ad12a226b",
+  "command": "ATEN_CPU_CAPABILITY=avx2 PYTHONPATH=<matching dependencies> python -m chapter5.diagnostics.public_dev_p0_20261011.diagnose --repo /workspace/scratch/740249c3d03b/project --state /workspace/scratch/740249c3d03b/c5_diag_work/actions-slot1 --output /workspace/scratch/740249c3d03b/project/chapter5/diagnostics/public_dev_p0_20261011/results",
+  "config_materialization": {
+    "artifact_sha256": "0e53ca6ab6d57cfc468929d5ded404cd81c97ca57dfb9a07170dcbbf3e13aa0e",
+    "logical_contents_equal": true,
+    "runner_reformats_config": true,
+    "source_sha256": "64230dda10895a7d76a3447dfe73bc7a6bf6b6fb966cf22e039ce8a24a15bfb3"
+  },
+  "elapsed_seconds": 136.6059808731079,
+  "external_model_api_calls": 0,
+  "files": {
+    "analysis.json": "f9723bb4d17474cafccccd4cc275ea045ac08ab26e196084d3cc490677f46a87",
+    "query_diagnostics.jsonl": "72da08d1b06917f8c9aeadec161a7ae1fe8b9d394d3b1936782c97cb069f7703",
+    "replay.json": "cac978fd87f60ade6a7322574ac1b1a3550413aaf437481454ad0e08e154292e",
+    "summary.json": "9eedbb3922cd8372ffe1a4255b3ec9245590a94e025ce99f1cf6447e3d2c4211"
+  },
+  "new_training_units": 0,
+  "protocol_sha256": "74ac3e85f73bc85a8f311ed0f6f8ed935411b5f290ec8534f9fa8b2728f2cab0",
+  "registration_sha256": "375b8ee819b2d531679c7e8f35fe89d96db6b4c7d40a9cc3ecc61f28a0aa96e5",
+  "reserved_heads_scored": 0,
+  "reserved_holdout_evaluated": false,
+  "runtime": {
+    "cpu_capability": "AVX2",
+    "python": "3.12.14",
+    "threads": 2,
+    "torch": "2.9.1+cpu"
+  },
+  "script_sha256": "3bd604957f22e03c763247addc737717b318dddb83b076239cfbd6023a4d436c",
+  "self_checks_passed": true
+}
