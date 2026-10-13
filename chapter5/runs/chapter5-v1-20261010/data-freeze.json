@@ -1,0 +1,46 @@
+{
+  "code": {
+    "__init__.py": "9bcfaf2425bc13f6278ca3b6925cb2eb86f517eb87310dc7704590d8969476da",
+    "archive.py": "12b89881f48f3efb9ee99d6f1eadf378d915aa082054c7dc91f165fc5cca761b",
+    "campaign.py": "7cbe3f3170d443e28eb8893a4234521f48362d0c1cc601fc0a622a6ae73e0b0c",
+    "collect.py": "2954621250bdca5e85af77373484b40cd57eb76d0b530ceb8180bdbb47da8452",
+    "core.py": "8b2b9d91b6e2450f8d751800185ab3a4984124e76cb1298e6cc33a060e0c8026",
+    "io.py": "a7a056549aaf54bb85f207bb820d52d9ad3d28c4d192b8cb870cc999934606a8",
+    "model.py": "636888b6f43a129ea6a94ffb87ca5e7c5938364dee3bbc31ecd202a83c8288cf",
+    "supplement.py": "4e5993f90e57cf08234215447e03003daa5412dfa8da8d9b33cb7b7c1a567dbf",
+    "verify.py": "69711ec60c523e9ef5dfc7875e0225326b27b0b9b5852b4cbc30e2848e7d701b"
+  },
+  "config_sha256": "a3b5a9329a9a9336c343defa4864533570bebeb5b51e294b731185f0cf5578ab",
+  "counts": {
+    "dev": {
+      "cves": 24,
+      "edges": 26
+    },
+    "test": {
+      "cves": 24,
+      "edges": 29
+    },
+    "train": {
+      "cves": 110,
+      "edges": 110
+    }
+  },
+  "graph_sha256": "a99566eb19d526ffab608ce9d68b6eb55d080b8c83a0c5213f73c4046cd44fd2",
+  "human_iaa": false,
+  "isolated_cves_excluded": 0,
+  "leakage_check": "passed",
+  "node_count": 1732,
+  "note": "Independent Chapter5 relation-recovery holdout; does not reopen Chapter4 formal/Test gates.",
+  "phase": "data_frozen",
+  "protocol": "chapter5-v1-20261010",
+  "split_sha256": "2a11b09b1f5873ab5b69064bb9947683656185ab854202c13ae38e5724033aad",
+  "target_count": 165,
+  "technique_labels": {
+    "T1068": 39,
+    "T1190": 64,
+    "T1203": 57,
+    "T1210": 2,
+    "T1211": 2,
+    "T1212": 1
+  }
+}

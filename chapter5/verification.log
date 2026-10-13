@@ -1,0 +1,50 @@
+test_active_previous_run_does_not_silently_reset_budget (chapter5.test_archive.ArchiveTests.test_active_previous_run_does_not_silently_reset_budget) ... ok
+test_git_reservation_and_failure_archive_resume_preserve_budget (chapter5.test_archive.ArchiveTests.test_git_reservation_and_failure_archive_resume_preserve_budget) ... {"phase": "reserved", "run_id": "1", "attempt": "1", "restored": false, "model_api_calls": 0}
+{"phase": "state_archived", "source_sha256": "a38be3e8ecfa88877ad0f79d4cd5495eb34e36c1f433f2920ed64e4734fe3629", "parts": 1, "experiment_phase": "failed", "model_api_calls": 0}
+{"phase": "reserved", "run_id": "1", "attempt": "2", "restored": true, "model_api_calls": 0}
+ok
+test_roundtrip_keeps_checkpoints_and_request_budgets_and_rejects_corruption (chapter5.test_archive.ArchiveTests.test_roundtrip_keeps_checkpoints_and_request_budgets_and_rejects_corruption) ... ok
+test_unsafe_zip_member_is_rejected (chapter5.test_archive.ArchiveTests.test_unsafe_zip_member_is_rejected) ... ok
+test_frequency_counts_only_train_targets_and_cwe_uses_context (chapter5.test_campaign.CampaignTests.test_frequency_counts_only_train_targets_and_cwe_uses_context) ... ok
+test_selection_is_frozen_before_test_and_completed_campaign_is_reused (chapter5.test_campaign.CampaignTests.test_selection_is_frozen_before_test_and_completed_campaign_is_reused) ... {"phase": "tuning", "arm": "distmult", "config_index": 0, "budget": 1}
+{"phase": "tuning", "arm": "rgcn", "config_index": 0, "budget": 1}
+{"phase": "training", "layer": "main", "arm": "distmult", "seed": 43}
+{"phase": "training", "layer": "main", "arm": "distmult", "seed": 44}
+{"phase": "training", "layer": "main", "arm": "rgcn", "seed": 43}
+{"phase": "training", "layer": "main", "arm": "rgcn", "seed": 44}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_product", "seed": 43}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_product", "seed": 44}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_cwe", "seed": 43}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_cwe", "seed": 44}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_tactic_phase", "seed": 43}
+{"phase": "training", "layer": "main", "arm": "rgcn_without_tactic_phase", "seed": 44}
+{"phase": "evaluation_complete", "binding": "d015799721a58a108b13f514ae42a1e9b4f887b0cf478e42b7d314919a050df7", "model_api_calls": 0}
+ok
+test_ablations_remove_context_from_training (chapter5.test_core.DataTests.test_ablations_remove_context_from_training) ... ok
+test_admission_requires_direct_semantics (chapter5.test_core.DataTests.test_admission_requires_direct_semantics) ... ok
+test_held_edges_and_inverse_are_removed_everywhere (chapter5.test_core.DataTests.test_held_edges_and_inverse_are_removed_everywhere) ... ok
+test_mapping_does_not_depend_on_cve_labels (chapter5.test_core.DataTests.test_mapping_does_not_depend_on_cve_labels) ... ok
+test_mixed_clause_and_citation_only_cves_are_not_promoted (chapter5.test_core.DataTests.test_mixed_clause_and_citation_only_cves_are_not_promoted) ... ok
+test_no_silent_reuse_when_no_new_test_candidates (chapter5.test_core.DataTests.test_no_silent_reuse_when_no_new_test_candidates) ... ok
+test_nvd_preserves_vulnerable_and_environment_distinction (chapter5.test_core.DataTests.test_nvd_preserves_vulnerable_and_environment_distinction) ... ok
+test_repeated_deduplication_preserves_flat_provenance (chapter5.test_core.DataTests.test_repeated_deduplication_preserves_flat_provenance) ... ok
+test_split_is_grouped_and_exposure_safe (chapter5.test_core.DataTests.test_split_is_grouped_and_exposure_safe) ... ok
+test_target_derived_context_is_rejected (chapter5.test_core.DataTests.test_target_derived_context_is_rejected) ... ok
+test_filtering_truth_and_average_ties (chapter5.test_core.MetricTests.test_filtering_truth_and_average_ties) ... ok
+test_invalid_scores_fail_closed (chapter5.test_core.MetricTests.test_invalid_scores_fail_closed) ... ok
+test_macro_cve_mrr_not_edge_weighted (chapter5.test_core.MetricTests.test_macro_cve_mrr_not_edge_weighted) ... ok
+test_failed_attempts_do_not_reset_on_resume (chapter5.test_io.DownloadTests.test_failed_attempts_do_not_reset_on_resume) ... ok
+test_receipted_temporary_bytes_are_recovered_without_new_request (chapter5.test_io.DownloadTests.test_receipted_temporary_bytes_are_recovered_without_new_request) ... ok
+test_changed_inputs_and_corrupt_checkpoint_are_rejected (chapter5.test_model.ModelTests.test_changed_inputs_and_corrupt_checkpoint_are_rejected) ... ok
+test_every_learning_arm_trains_and_produces_finite_dev_metrics (chapter5.test_model.ModelTests.test_every_learning_arm_trains_and_produces_finite_dev_metrics) ... ok
+test_incoming_relation_mean_and_gradient (chapter5.test_model.ModelTests.test_incoming_relation_mean_and_gradient) ... ok
+test_inverse_messages_cannot_recover_held_labels (chapter5.test_model.ModelTests.test_inverse_messages_cannot_recover_held_labels) ... ok
+test_negative_types_truth_and_held_head_boundary (chapter5.test_model.ModelTests.test_negative_types_truth_and_held_head_boundary) ... ok
+test_resume_is_identical_to_uninterrupted_training (chapter5.test_model.ModelTests.test_resume_is_identical_to_uninterrupted_training) ... ok
+test_unassigned_prediction_cve_cannot_expand_target_training (chapter5.test_model.ModelTests.test_unassigned_prediction_cve_cannot_expand_target_training) ... ok
+test_real_prediction_layer_is_separate_and_held_prediction_is_removed (chapter5.test_supplement.SupplementTests.test_real_prediction_layer_is_separate_and_held_prediction_is_removed) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 2.257s
+
+OK

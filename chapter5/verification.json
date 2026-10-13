@@ -1,0 +1,38 @@
+{
+  "actual_inherited_source_bindings_verified": 214,
+  "c4_prediction_archive": {
+    "bytes": 42827903,
+    "parts_verified": 11,
+    "prediction_documents": 21,
+    "sha256": "4e5eb2f25f93f5451846844f45fc34dfbfc69f8155d9ca3d11ee4de98dd94ab9",
+    "unusable_prediction_mentions": 1,
+    "usable_prediction_edges": 135
+  },
+  "checkpoint_resume": "resumed and uninterrupted current weights identical",
+  "errors": 0,
+  "exit_code": 0,
+  "failures": 0,
+  "model_api_calls": 0,
+  "old_test_gold_documents_opened": 0,
+  "python_syntax_files": 15,
+  "red_evidence": {
+    "archive_missing_behaviors": 3,
+    "campaign_missing_behaviors": 2,
+    "core_missing_behaviors": 11,
+    "download_temp_recovery": 1,
+    "flat_provenance": 1,
+    "mixed_clause_and_citation_admission": 1,
+    "model_missing_behaviors": 5,
+    "unassigned_prediction_target_boundary": 1
+  },
+  "review": "implementer self-review; no independent reviewer claimed",
+  "runtime": {
+    "device": "cpu",
+    "python": "3.12.14",
+    "torch": "2.9.1+cpu"
+  },
+  "scope": "local engineering verification; not production dataset/training completion",
+  "tests": "unittest discovery: chapter5/test_*.py",
+  "unittest_count": 29,
+  "workflow_yaml": "parsed; branch/CPU/env/8 steps checked"
+}

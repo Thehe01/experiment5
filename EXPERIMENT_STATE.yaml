@@ -1,10 +1,10 @@
 experiment:
   name: experiment5
-  status: migration_in_progress
-  current_phase: chapter5_migration
+  status: migration_complete
+  current_phase: chapter5_imported
 
 checkpoint:
-  commit: null
+  commit: 54e9d7ab12e71511ebcb54a5e5e03d352935f6a3
   last_update: 2026-10-13
 
 completed:
@@ -12,12 +12,20 @@ completed:
     status: verified
     evidence:
       repository: Thehe01/experiment5
+  - task: migrate_chapter5_assets
+    status: verified
+    evidence:
+      source_repository: Thehe01/experiment4
+      source_branch: codex/chapter5-public-data-20261011
+      source_commit: 54e9d7ab12e71511ebcb54a5e5e03d352935f6a3
+      imported_path: chapter5
+      imported_at: 2026-10-13
 
 pending:
-  - priority: P0
-    task: migrate_chapter5_assets
-    status: in_progress
-    next_action: copy chapter5 data scripts configs results and reports
+  - priority: P1
+    task: commit_and_publish_migration
+    status: pending
+    next_action: review imported Chapter5 assets, then commit and push to experiment5
 
 migration:
   source:
