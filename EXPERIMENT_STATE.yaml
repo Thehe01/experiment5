@@ -1,11 +1,11 @@
 experiment:
   name: experiment5
-  status: initializing
-  current_phase: setup
+  status: migration_in_progress
+  current_phase: chapter5_migration
 
 checkpoint:
   commit: null
-  last_update: null
+  last_update: 2026-10-13
 
 completed:
   - task: repository_created
@@ -15,12 +15,29 @@ completed:
 
 pending:
   - priority: P0
-    task: define_experiment_hypothesis
-    status: pending
-    next_action: write hypothesis and evaluation criteria
+    task: migrate_chapter5_assets
+    status: in_progress
+    next_action: copy chapter5 data scripts configs results and reports
+
+migration:
+  source:
+    repository: Thehe01/experiment4
+    branch: codex/chapter5-public-data-20261011
+    commit: 54e9d7ab12e71511ebcb54a5e5e03d352935f6a3
+  policy:
+    include:
+      - data
+      - scripts
+      - configs
+      - results
+      - reports
+    exclude:
+      - .git
+      - experiment4_state
+      - unrelated_experiments
 
 constraints:
   - do_not_modify_experiment4
   - do_not_mix_experiment4_results
-  - freeze_previous_experiment_results
+  - preserve_migration_provenance
   - every_stage_must_update_state
