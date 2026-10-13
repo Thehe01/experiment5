@@ -20,12 +20,23 @@ completed:
       source_commit: 54e9d7ab12e71511ebcb54a5e5e03d352935f6a3
       imported_path: chapter5
       imported_at: 2026-10-13
+  - task: normalize_chapter5_assets
+    status: verified
+    evidence:
+      source_commit: 54e9d7ab12e71511ebcb54a5e5e03d352935f6a3
+      data_paths:
+        - data/raw/chapter5/public_data
+        - data/processed/chapter5-v1-20261010
+      script_path: scripts/chapter5
+      config_path: configs/chapter5
+      result_path: results/chapter5-v1-20261010
+      report_path: reports/chapter5
 
 pending:
   - priority: P1
-    task: commit_and_publish_migration
+    task: commit_and_publish_normalized_assets
     status: pending
-    next_action: review imported Chapter5 assets, then commit and push to experiment5
+    next_action: review normalized Chapter5 assets, then commit and push to experiment5
 
 migration:
   source:

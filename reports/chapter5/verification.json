@@ -1,0 +1,103 @@
+{
+  "scope": "public-data-preparation; no production training or reserved-holdout scoring",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "reader": "pyarrow==23.0.1",
+    "test_torch": "2.9.1+cpu",
+    "test_cpu_capability": "avx2"
+  },
+  "checks": [
+    {
+      "command": "python -m unittest discover -s chapter5 -p test_*.py",
+      "exit_code": 0,
+      "stderr_tail": "ETCH_HEAD\nTo /tmp/tmpecrft0d0/remote.git\n   07a6120..816d4df  HEAD -> experiment\nFrom /tmp/tmpecrft0d0/remote\n * branch            experiment -> FETCH_HEAD\nTo /tmp/tmpecrft0d0/remote.git\n   816d4df..a814d86  HEAD -> experiment\nFrom /tmp/tmpecrft0d0/remote\n * branch            experiment -> FETCH_HEAD\nTo /tmp/tmpecrft0d0/remote.git\n   a814d86..f3a7157  HEAD -> experiment\n............................\n----------------------------------------------------------------------\nRan 49 tests in 2.948s\n\nOK\n"
+    },
+    {
+      "command": "python -m chapter5.public_data.build --source-dir /workspace/scratch/740249c3d03b/c5_public_dataset_probe --v1-graph /workspace/scratch/740249c3d03b/c5_analysis/state/data/graph.json --attack /workspace/scratch/740249c3d03b/c5_analysis/state/data/sources/attack.json --out /workspace/scratch/740249c3d03b/project/chapter5/public_data/data/public-potential-v1",
+      "PYTHONHASHSEED": "0",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m chapter5.public_data.build --source-dir /workspace/scratch/740249c3d03b/c5_public_dataset_probe --v1-graph /workspace/scratch/740249c3d03b/c5_analysis/state/data/graph.json --attack /workspace/scratch/740249c3d03b/c5_analysis/state/data/sources/attack.json --out /workspace/scratch/740249c3d03b/c5_public_dataset_probe/final_rebuild/public-potential-v1",
+      "PYTHONHASHSEED": "987",
+      "exit_code": 0
+    },
+    {
+      "check": "independent full reconstruction and ZIP byte equality",
+      "passed": true
+    }
+  ],
+  "package": {
+    "archive_bytes": 774218,
+    "archive_sha256": "c00660f6d37cfefa2af35513ed785ca0e77f880746f34220edb204c353bfadbf",
+    "candidate_techniques": 697,
+    "curated_target_edges": 2332,
+    "eligible_cves": 1035,
+    "file_hashes_checked": 12,
+    "graph_edges": 11163,
+    "graph_nodes": 5759,
+    "groups": {
+      "dev": 155,
+      "reserved_holdout": 155,
+      "train": 725
+    },
+    "human_iaa": false,
+    "model_api_calls": 0,
+    "model_training_runs": 0,
+    "phase": "verified_data_preparation",
+    "relation_counts": {
+      "belongs_to_phase": 16,
+      "has_reported_cpe": 7252,
+      "has_reported_cwe": 691,
+      "implies": 872,
+      "potentially_associated_with": 2332
+    },
+    "reserved_holdout_evaluated": false,
+    "source_cves": 1207,
+    "supervised_techniques": 174,
+    "training_edges": 10327
+  },
+  "red": {
+    "adapter_behavior_cases": 11,
+    "exit_code": 1,
+    "cause": "NotImplementedError, not import/setup"
+  },
+  "green": {
+    "public_data_tests": 20,
+    "all_chapter5_tests": 49,
+    "exit_code": 0
+  },
+  "new_benchmark_training_runs": 0,
+  "model_api_calls": 0,
+  "reserved_holdout_evaluated": false,
+  "source_bindings": {
+    "dataset": "CIRCL/vulnerability-attack-techniques",
+    "dataset_revision": "319c3e324e7561592cf7e51ec003deb5dd90e61b",
+    "dataset_url": "https://huggingface.co/datasets/CIRCL/vulnerability-attack-techniques",
+    "expected_source_rows": 1207,
+    "source_attack_version": "19.1",
+    "target_attack_version": "19.2",
+    "split_seed": 20261011,
+    "parquet": {
+      "train": {
+        "filename": "train-00000-of-00001.parquet",
+        "rows": 1086,
+        "sha256": "77aff5f2264a8f5373711a59ab73f0cee75b1d1b913c5f0314c7b745421b959e",
+        "url": "https://huggingface.co/datasets/CIRCL/vulnerability-attack-techniques/resolve/319c3e324e7561592cf7e51ec003deb5dd90e61b/data/train-00000-of-00001.parquet"
+      },
+      "test": {
+        "filename": "test-00000-of-00001.parquet",
+        "rows": 121,
+        "sha256": "31555f3f9a87619933e30caa797f4a787cf0b4192a652303699e22684b73735e",
+        "url": "https://huggingface.co/datasets/CIRCL/vulnerability-attack-techniques/resolve/319c3e324e7561592cf7e51ec003deb5dd90e61b/data/test-00000-of-00001.parquet"
+      }
+    },
+    "v1_graph_sha256": "a99566eb19d526ffab608ce9d68b6eb55d080b8c83a0c5213f73c4046cd44fd2",
+    "attack_sha256": "dc1639caa5501d720e280cf1cbd8fbe009884a0c9b3e6e9ed9d0c25166c3d8f4",
+    "v1_archive_commit": "d168b5b67506fee2976ba8eebf432ad42005057b",
+    "model_training_budget": 0,
+    "model_api_budget": 0
+  },
+  "task_date": "2026-10-11",
+  "verified_at_utc": "2026-10-10T16:38:13.512885+00:00"
+}
