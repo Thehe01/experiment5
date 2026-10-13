@@ -1,0 +1,50 @@
+name: Verify Chapter5 migration
+
+on:
+  push:
+    branches: [main, codex/chapter5-migration-20261013]
+    paths:
+      - chapter5/**
+      - data/**
+      - docs/chapter5/**
+      - scripts/verify_chapter5_*.py
+      - .github/workflows/chapter5-*.yml
+      - EXPERIMENT_STATE.yaml
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      ATEN_CPU_CAPABILITY: avx2
+      PYTHONDONTWRITEBYTECODE: '1'
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - name: Verify imported bytes and completed evidence
+        run: python scripts/verify_chapter5_migration.py
+      - name: Install pinned CPU and public-data dependencies
+        run: |
+          python -m pip install -r chapter5/requirements-cpu.txt
+          python -m pip install -r chapter5/public_data/requirements.txt
+      - name: Verify preflight and behavior tests
+        run: |
+          python -m chapter5.verify
+          python -m unittest discover -s chapter5 -t . -p 'test_*.py'
+          python -m chapter5.context_pool_dev.campaign verify --repo .
+          python -m chapter5.context_pool_recovery_20261012.recovery verify --repo .
+          python -m chapter5.diagnostics.resolved_v3_replay_20261012.runner validate --repo .
+      - name: Rebuild and verify the resolved data package
+        run: python -m chapter5.resolved_dev.verify --repo . --receipt "$RUNNER_TEMP/chapter5-resolved-verification.json"
+      - name: Recheck frozen evidence after validation
+        run: python scripts/verify_chapter5_migration.py

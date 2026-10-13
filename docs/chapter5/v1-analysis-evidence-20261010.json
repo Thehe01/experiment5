@@ -1,0 +1,1301 @@
+{
+  "scope": "Post-hoc read-only analysis; no training, source relabeling or Test-based selection.",
+  "source_commit": "d168b5b67506fee2976ba8eebf432ad42005057b",
+  "archive_sha256": "f2435e60a9456c63ee7857ffcd6e19eb91b97db9785eb16c0774e6152e1c78da",
+  "counts": {
+    "nodes": {
+      "KillChainPhase": 7,
+      "Vulnerability": 264,
+      "Weakness": 62,
+      "AttackTechnique": 697,
+      "AttackTactic": 15,
+      "Configuration": 687
+    },
+    "relations": {
+      "affects": 1236,
+      "exploited_by": 165,
+      "instantiates": 220,
+      "implies": 872,
+      "belongs_to_phase": 16
+    },
+    "candidate_techniques": 697,
+    "targets_by_split": {
+      "train": {
+        "T1068": 26,
+        "T1203": 38,
+        "T1190": 43,
+        "T1211": 1,
+        "T1210": 1,
+        "T1212": 1
+      },
+      "dev": {
+        "T1203": 9,
+        "T1068": 6,
+        "T1190": 10,
+        "T1210": 1
+      },
+      "test": {
+        "T1068": 7,
+        "T1203": 10,
+        "T1190": 11,
+        "T1211": 1
+      }
+    }
+  },
+  "dev_baselines": {
+    "frequency": {
+      "queries": 24,
+      "edges": 26,
+      "mrr": 0.6649305555555556,
+      "hits@1": 0.4166666666666667,
+      "hits@3": 0.9791666666666666,
+      "hits@10": 1.0,
+      "by_technique": {
+        "T1068": {
+          "queries": 6,
+          "edges": 6,
+          "mrr": 0.3333333333333333,
+          "hits@1": 0.0,
+          "hits@3": 1.0,
+          "hits@10": 1.0
+        },
+        "T1190": {
+          "queries": 10,
+          "edges": 10,
+          "mrr": 1.0,
+          "hits@1": 1.0,
+          "hits@3": 1.0,
+          "hits@10": 1.0
+        },
+        "T1203": {
+          "queries": 9,
+          "edges": 9,
+          "mrr": 0.5555555555555556,
+          "hits@1": 0.1111111111111111,
+          "hits@3": 1.0,
+          "hits@10": 1.0
+        },
+        "T1210": {
+          "queries": 1,
+          "edges": 1,
+          "mrr": 0.25,
+          "hits@1": 0.0,
+          "hits@3": 0.0,
+          "hits@10": 1.0
+        }
+      }
+    },
+    "cwe_frequency": {
+      "queries": 24,
+      "edges": 26,
+      "mrr": 0.6236212020573608,
+      "hits@1": 0.3958333333333333,
+      "hits@3": 0.8541666666666666,
+      "hits@10": 0.875,
+      "by_technique": {
+        "T1068": {
+          "queries": 6,
+          "edges": 6,
+          "mrr": 0.36206349206349203,
+          "hits@1": 0.16666666666666666,
+          "hits@3": 0.6666666666666666,
+          "hits@10": 0.6666666666666666
+        },
+        "T1190": {
+          "queries": 10,
+          "edges": 10,
+          "mrr": 0.95,
+          "hits@1": 0.9,
+          "hits@3": 1.0,
+          "hits@10": 1.0
+        },
+        "T1203": {
+          "queries": 9,
+          "edges": 9,
+          "mrr": 0.4632808774439676,
+          "hits@1": 0.0,
+          "hits@3": 0.8888888888888888,
+          "hits@10": 0.8888888888888888
+        },
+        "T1210": {
+          "queries": 1,
+          "edges": 1,
+          "mrr": 0.25,
+          "hits@1": 0.0,
+          "hits@3": 0.0,
+          "hits@10": 1.0
+        }
+      }
+    }
+  },
+  "posthoc_intervals": {
+    "cwe_frequency_minus_frequency": {
+      "delta_mrr": -0.10495963474890636,
+      "percentile95": [
+        -0.25031558249455615,
+        0.03525887395329395
+      ],
+      "draws": 5000,
+      "seed": 20261010,
+      "unit": "CVE; average across fixed training seeds first",
+      "limitation": "Conditional descriptive interval on one frozen small holdout; not independent dataset replication."
+    },
+    "distmult_minus_frequency": {
+      "delta_mrr": -0.037222222222222226,
+      "percentile95": [
+        -0.16361111111111112,
+        0.08652777777777777
+      ],
+      "draws": 5000,
+      "seed": 20261010,
+      "unit": "CVE; average across fixed training seeds first",
+      "limitation": "Conditional descriptive interval on one frozen small holdout; not independent dataset replication."
+    },
+    "rgcn_minus_frequency": {
+      "delta_mrr": 0.008472222222222225,
+      "percentile95": [
+        -0.011111111111111108,
+        0.029166666666666667
+      ],
+      "draws": 5000,
+      "seed": 20261010,
+      "unit": "CVE; average across fixed training seeds first",
+      "limitation": "Conditional descriptive interval on one frozen small holdout; not independent dataset replication."
+    },
+    "rgcn_without_cwe_minus_frequency": {
+      "delta_mrr": 0.004305555555555555,
+      "percentile95": [
+        0.0,
+        0.012777777777777775
+      ],
+      "draws": 5000,
+      "seed": 20261010,
+      "unit": "CVE; average across fixed training seeds first",
+      "limitation": "Conditional descriptive interval on one frozen small holdout; not independent dataset replication."
+    },
+    "rgcn_without_product_minus_frequency": {
+      "delta_mrr": 0.0012500000000000011,
+      "percentile95": [
+        -0.011666666666666667,
+        0.013750000000000004
+      ],
+      "draws": 5000,
+      "seed": 20261010,
+      "unit": "CVE; average across fixed training seeds first",
+      "limitation": "Conditional descriptive interval on one frozen small holdout; not independent dataset replication."
+    },
+    "rgcn_without_tactic_phase_minus_frequency": {
+      "delta_mrr": -0.0012499999999999976,
+      "percentile95": [
+        -0.016666666666666663,
+        0.013333333333333334
+      ],
+      "draws": 5000,
+      "seed": 20261010,
+      "unit": "CVE; average across fixed training seeds first",
+      "limitation": "Conditional descriptive interval on one frozen small holdout; not independent dataset replication."
+    },
+    "full_rgcn_minus_rgcn_without_product": {
+      "delta_mrr": 0.007222222222222224,
+      "percentile95": [
+        -0.01222222222222222,
+        0.027777777777777776
+      ],
+      "draws": 5000,
+      "seed": 20261010,
+      "unit": "CVE; average across fixed training seeds first",
+      "limitation": "Conditional descriptive interval on one frozen small holdout; not independent dataset replication."
+    },
+    "full_rgcn_minus_rgcn_without_cwe": {
+      "delta_mrr": 0.00416666666666667,
+      "percentile95": [
+        -0.019444444444444438,
+        0.027083333333333338
+      ],
+      "draws": 5000,
+      "seed": 20261010,
+      "unit": "CVE; average across fixed training seeds first",
+      "limitation": "Conditional descriptive interval on one frozen small holdout; not independent dataset replication."
+    },
+    "full_rgcn_minus_rgcn_without_tactic_phase": {
+      "delta_mrr": 0.009722222222222222,
+      "percentile95": [
+        -0.0013888888888888885,
+        0.023611111111111114
+      ],
+      "draws": 5000,
+      "seed": 20261010,
+      "unit": "CVE; average across fixed training seeds first",
+      "limitation": "Conditional descriptive interval on one frozen small holdout; not independent dataset replication."
+    }
+  },
+  "contexts": {
+    "affects": {
+      "train": {
+        "cves": 110,
+        "with_context": 110,
+        "shared_with_train": 110,
+        "only_unseen_context": 0,
+        "context_count_mean": 6.209090909090909
+      },
+      "dev": {
+        "cves": 24,
+        "with_context": 24,
+        "shared_with_train": 17,
+        "only_unseen_context": 7,
+        "context_count_mean": 11.833333333333334
+      },
+      "test": {
+        "cves": 24,
+        "with_context": 24,
+        "shared_with_train": 16,
+        "only_unseen_context": 8,
+        "context_count_mean": 6.041666666666667
+      }
+    },
+    "instantiates": {
+      "train": {
+        "cves": 110,
+        "with_context": 90,
+        "shared_with_train": 90,
+        "only_unseen_context": 0,
+        "context_count_mean": 0.9545454545454546
+      },
+      "dev": {
+        "cves": 24,
+        "with_context": 22,
+        "shared_with_train": 17,
+        "only_unseen_context": 5,
+        "context_count_mean": 1.0833333333333333
+      },
+      "test": {
+        "cves": 24,
+        "with_context": 20,
+        "shared_with_train": 17,
+        "only_unseen_context": 3,
+        "context_count_mean": 0.9166666666666666
+      }
+    }
+  },
+  "source_admission": {
+    "independent_human_iaa": false,
+    "inherited_target_statements": 37,
+    "official_statements": 226,
+    "official_unique_edges": 146,
+    "pending": 68
+  },
+  "reference_checks": {
+    "retrieved": 146,
+    "binary_saved_not_semantically_checked": 21,
+    "unavailable": 20
+  },
+  "supplementary_delta": {
+    "removed": {
+      "affects": 127,
+      "instantiates": 59,
+      "exploited_by": 14
+    },
+    "added": {
+      "affects": 60,
+      "exploited_by": 8,
+      "instantiates": 1
+    },
+    "source": {
+      "accepted_mentions": 160,
+      "covered_target_cves": {
+        "dev": 7,
+        "test": 0,
+        "train": 18
+      },
+      "graph_sha256": "cba8e011863096b60f87b2e41e871cdb277c93cffd220f1dc8a1c20a5a246b90",
+      "limitation": "Coverage-limited graph-noise sensitivity analysis, not a complete end-to-end predicted graph or independent C4 Test evaluation.",
+      "prediction_documents": 21,
+      "prediction_targets_not_used_for_training": 8,
+      "rejected": [
+        {
+          "document": "aa24-207a",
+          "head": "CVE-2021-3018",
+          "reason": "unusable_normalized_id",
+          "tail": null
+        }
+      ],
+      "scope": "21 legacy Dev predictions replace C4 Gold edges; official ATT&CK/NVD expansion shared. Main verified holdout labels remain evaluation-only.",
+      "source_archive_sha256": "4e5eb2f25f93f5451846844f45fc34dfbfc69f8155d9ca3d11ee4de98dd94ab9",
+      "status": "available",
+      "unique_prediction_edges": 135
+    }
+  },
+  "verification": {
+    "rank_runs_recomputed": 39,
+    "training_runs": 51,
+    "graph_sha256": "a99566eb19d526ffab608ce9d68b6eb55d080b8c83a0c5213f73c4046cd44fd2"
+  },
+  "rgcn_against_frequency": {
+    "runs": [
+      {
+        "seed": 20261011,
+        "mrr": 0.6819444444444445,
+        "same_target_ranks": 29,
+        "different_target_ranks": 0,
+        "improved_cves": 0,
+        "worsened_cves": 0,
+        "same_cves": 24,
+        "changes": []
+      },
+      {
+        "seed": 20261012,
+        "mrr": 0.6819444444444445,
+        "same_target_ranks": 29,
+        "different_target_ranks": 0,
+        "improved_cves": 0,
+        "worsened_cves": 0,
+        "same_cves": 24,
+        "changes": []
+      },
+      {
+        "seed": 20261013,
+        "mrr": 0.6805555555555555,
+        "same_target_ranks": 28,
+        "different_target_ranks": 1,
+        "improved_cves": 0,
+        "worsened_cves": 1,
+        "same_cves": 23,
+        "changes": [
+          {
+            "head": "CVE-2024-20399",
+            "rank": 6.0,
+            "tail": "T1211",
+            "baseline_rank": 5.0
+          }
+        ]
+      },
+      {
+        "seed": 20261014,
+        "mrr": 0.7270833333333333,
+        "same_target_ranks": 19,
+        "different_target_ranks": 10,
+        "improved_cves": 6,
+        "worsened_cves": 3,
+        "same_cves": 15,
+        "changes": [
+          {
+            "head": "CVE-2010-2743",
+            "rank": 1.0,
+            "tail": "T1068",
+            "baseline_rank": 3.0
+          },
+          {
+            "head": "CVE-2011-0609",
+            "rank": 1.0,
+            "tail": "T1203",
+            "baseline_rank": 2.0
+          },
+          {
+            "head": "CVE-2013-3163",
+            "rank": 2.0,
+            "tail": "T1190",
+            "baseline_rank": 1.0
+          },
+          {
+            "head": "CVE-2016-4117",
+            "rank": 1.0,
+            "tail": "T1068",
+            "baseline_rank": 2.0
+          },
+          {
+            "head": "CVE-2016-4117",
+            "rank": 1.0,
+            "tail": "T1203",
+            "baseline_rank": 2.0
+          },
+          {
+            "head": "CVE-2016-7255",
+            "rank": 2.0,
+            "tail": "T1068",
+            "baseline_rank": 3.0
+          },
+          {
+            "head": "CVE-2017-8759",
+            "rank": 3.0,
+            "tail": "T1203",
+            "baseline_rank": 2.0
+          },
+          {
+            "head": "CVE-2019-16098",
+            "rank": 2.0,
+            "tail": "T1068",
+            "baseline_rank": 3.0
+          },
+          {
+            "head": "CVE-2021-44832",
+            "rank": 2.0,
+            "tail": "T1190",
+            "baseline_rank": 1.0
+          },
+          {
+            "head": "CVE-2024-30088",
+            "rank": 1.0,
+            "tail": "T1203",
+            "baseline_rank": 2.0
+          }
+        ]
+      },
+      {
+        "seed": 20261015,
+        "mrr": 0.6805555555555555,
+        "same_target_ranks": 28,
+        "different_target_ranks": 1,
+        "improved_cves": 0,
+        "worsened_cves": 1,
+        "same_cves": 23,
+        "changes": [
+          {
+            "head": "CVE-2024-20399",
+            "rank": 6.0,
+            "tail": "T1211",
+            "baseline_rank": 5.0
+          }
+        ]
+      }
+    ],
+    "technique_macro_mrr_posthoc": 0.5672402597402597,
+    "three_major_technique_macro_mrr_posthoc": 0.6940981240981241
+  },
+  "posthoc_technique_macro_mrr": {
+    "cwe_frequency": {
+      "technique_macro_mrr_posthoc": 0.42774377558375637,
+      "three_major_technique_macro_mrr_posthoc": 0.5693726531592942
+    },
+    "distmult": {
+      "technique_macro_mrr_posthoc": 0.5689285714285715,
+      "three_major_technique_macro_mrr_posthoc": 0.6841269841269841
+    },
+    "frequency": {
+      "technique_macro_mrr_posthoc": 0.5577380952380953,
+      "three_major_technique_macro_mrr_posthoc": 0.676984126984127
+    },
+    "rgcn": {
+      "technique_macro_mrr_posthoc": 0.5672402597402597,
+      "three_major_technique_macro_mrr_posthoc": 0.6940981240981241
+    },
+    "rgcn_without_cwe": {
+      "technique_macro_mrr_posthoc": 0.5610714285714286,
+      "three_major_technique_macro_mrr_posthoc": 0.6803174603174603
+    },
+    "rgcn_without_product": {
+      "technique_macro_mrr_posthoc": 0.5554653679653679,
+      "three_major_technique_macro_mrr_posthoc": 0.6806204906204907
+    },
+    "rgcn_without_tactic_phase": {
+      "technique_macro_mrr_posthoc": 0.5631926406926407,
+      "three_major_technique_macro_mrr_posthoc": 0.6775901875901876
+    }
+  },
+  "training": [
+    {
+      "group": "tuning",
+      "arm": "distmult",
+      "seed": 20261010,
+      "best_epoch": 38,
+      "epochs": 68,
+      "dev_mrr": 0.6180555555555556,
+      "stop": "patience",
+      "last_dev_mrr": 0.6180555555555556
+    },
+    {
+      "group": "tuning",
+      "arm": "distmult",
+      "seed": 20261010,
+      "best_epoch": 15,
+      "epochs": 45,
+      "dev_mrr": 0.6180555555555556,
+      "stop": "patience",
+      "last_dev_mrr": 0.6145833333333334
+    },
+    {
+      "group": "tuning",
+      "arm": "distmult",
+      "seed": 20261010,
+      "best_epoch": 88,
+      "epochs": 118,
+      "dev_mrr": 0.623263888888889,
+      "stop": "patience",
+      "last_dev_mrr": 0.6024305555555556
+    },
+    {
+      "group": "tuning",
+      "arm": "distmult",
+      "seed": 20261010,
+      "best_epoch": 127,
+      "epochs": 157,
+      "dev_mrr": 0.7402777777777777,
+      "stop": "patience",
+      "last_dev_mrr": 0.7274305555555555
+    },
+    {
+      "group": "tuning",
+      "arm": "distmult",
+      "seed": 20261010,
+      "best_epoch": 45,
+      "epochs": 75,
+      "dev_mrr": 0.6649305555555556,
+      "stop": "patience",
+      "last_dev_mrr": 0.6440972222222222
+    },
+    {
+      "group": "tuning",
+      "arm": "distmult",
+      "seed": 20261010,
+      "best_epoch": 72,
+      "epochs": 102,
+      "dev_mrr": 0.7378472222222222,
+      "stop": "patience",
+      "last_dev_mrr": 0.6493055555555556
+    },
+    {
+      "group": "tuning",
+      "arm": "distmult",
+      "seed": 20261010,
+      "best_epoch": 65,
+      "epochs": 95,
+      "dev_mrr": 0.6857638888888888,
+      "stop": "patience",
+      "last_dev_mrr": 0.6649305555555556
+    },
+    {
+      "group": "tuning",
+      "arm": "distmult",
+      "seed": 20261010,
+      "best_epoch": 30,
+      "epochs": 60,
+      "dev_mrr": 0.7083333333333334,
+      "stop": "patience",
+      "last_dev_mrr": 0.7083333333333334
+    },
+    {
+      "group": "tuning",
+      "arm": "rgcn",
+      "seed": 20261010,
+      "best_epoch": 48,
+      "epochs": 78,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6649305555555556
+    },
+    {
+      "group": "tuning",
+      "arm": "rgcn",
+      "seed": 20261010,
+      "best_epoch": 49,
+      "epochs": 79,
+      "dev_mrr": 0.7065972222222222,
+      "stop": "patience",
+      "last_dev_mrr": 0.6440972222222222
+    },
+    {
+      "group": "tuning",
+      "arm": "rgcn",
+      "seed": 20261010,
+      "best_epoch": 44,
+      "epochs": 74,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6666666666666666
+    },
+    {
+      "group": "tuning",
+      "arm": "rgcn",
+      "seed": 20261010,
+      "best_epoch": 113,
+      "epochs": 143,
+      "dev_mrr": 0.7083333333333334,
+      "stop": "patience",
+      "last_dev_mrr": 0.6440972222222222
+    },
+    {
+      "group": "tuning",
+      "arm": "rgcn",
+      "seed": 20261010,
+      "best_epoch": 27,
+      "epochs": 57,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6649305555555556
+    },
+    {
+      "group": "tuning",
+      "arm": "rgcn",
+      "seed": 20261010,
+      "best_epoch": 13,
+      "epochs": 43,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6666666666666666
+    },
+    {
+      "group": "tuning",
+      "arm": "rgcn",
+      "seed": 20261010,
+      "best_epoch": 19,
+      "epochs": 49,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.5538194444444444
+    },
+    {
+      "group": "tuning",
+      "arm": "rgcn",
+      "seed": 20261010,
+      "best_epoch": 13,
+      "epochs": 43,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6666666666666666
+    },
+    {
+      "group": "final",
+      "arm": "distmult",
+      "seed": 20261011,
+      "best_epoch": 25,
+      "epochs": 55,
+      "dev_mrr": 0.7055555555555556,
+      "stop": "patience",
+      "last_dev_mrr": 0.5736111111111111
+    },
+    {
+      "group": "final",
+      "arm": "distmult",
+      "seed": 20261012,
+      "best_epoch": 42,
+      "epochs": 72,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6458333333333334
+    },
+    {
+      "group": "final",
+      "arm": "distmult",
+      "seed": 20261013,
+      "best_epoch": 38,
+      "epochs": 68,
+      "dev_mrr": 0.7472222222222222,
+      "stop": "patience",
+      "last_dev_mrr": 0.7472222222222222
+    },
+    {
+      "group": "final",
+      "arm": "distmult",
+      "seed": 20261014,
+      "best_epoch": 27,
+      "epochs": 57,
+      "dev_mrr": 0.7291666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.7083333333333334
+    },
+    {
+      "group": "final",
+      "arm": "distmult",
+      "seed": 20261015,
+      "best_epoch": 7,
+      "epochs": 37,
+      "dev_mrr": 0.546875,
+      "stop": "patience",
+      "last_dev_mrr": 0.5458333333333333
+    },
+    {
+      "group": "final",
+      "arm": "rgcn",
+      "seed": 20261011,
+      "best_epoch": 22,
+      "epochs": 52,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6649305555555556
+    },
+    {
+      "group": "final",
+      "arm": "rgcn",
+      "seed": 20261012,
+      "best_epoch": 13,
+      "epochs": 43,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6361111111111111
+    },
+    {
+      "group": "final",
+      "arm": "rgcn",
+      "seed": 20261013,
+      "best_epoch": 16,
+      "epochs": 46,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6649305555555556
+    },
+    {
+      "group": "final",
+      "arm": "rgcn",
+      "seed": 20261014,
+      "best_epoch": 5,
+      "epochs": 35,
+      "dev_mrr": 0.7361111111111112,
+      "stop": "patience",
+      "last_dev_mrr": 0.609375
+    },
+    {
+      "group": "final",
+      "arm": "rgcn",
+      "seed": 20261015,
+      "best_epoch": 20,
+      "epochs": 50,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6458333333333334
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_cwe",
+      "seed": 20261011,
+      "best_epoch": 16,
+      "epochs": 46,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6638888888888889
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_cwe",
+      "seed": 20261012,
+      "best_epoch": 22,
+      "epochs": 52,
+      "dev_mrr": 0.6649305555555556,
+      "stop": "patience",
+      "last_dev_mrr": 0.6371527777777778
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_cwe",
+      "seed": 20261013,
+      "best_epoch": 13,
+      "epochs": 43,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6666666666666666
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_cwe",
+      "seed": 20261014,
+      "best_epoch": 13,
+      "epochs": 43,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6666666666666666
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_cwe",
+      "seed": 20261015,
+      "best_epoch": 17,
+      "epochs": 47,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6649305555555556
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_product",
+      "seed": 20261011,
+      "best_epoch": 22,
+      "epochs": 52,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6649305555555556
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_product",
+      "seed": 20261012,
+      "best_epoch": 25,
+      "epochs": 55,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6666666666666666
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_product",
+      "seed": 20261013,
+      "best_epoch": 53,
+      "epochs": 83,
+      "dev_mrr": 0.6875,
+      "stop": "patience",
+      "last_dev_mrr": 0.6666666666666666
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_product",
+      "seed": 20261014,
+      "best_epoch": 7,
+      "epochs": 37,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.5458333333333333
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_product",
+      "seed": 20261015,
+      "best_epoch": 9,
+      "epochs": 39,
+      "dev_mrr": 0.6649305555555556,
+      "stop": "patience",
+      "last_dev_mrr": 0.6649305555555556
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_tactic_phase",
+      "seed": 20261011,
+      "best_epoch": 31,
+      "epochs": 61,
+      "dev_mrr": 0.7482638888888888,
+      "stop": "patience",
+      "last_dev_mrr": 0.6666666666666666
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_tactic_phase",
+      "seed": 20261012,
+      "best_epoch": 29,
+      "epochs": 59,
+      "dev_mrr": 0.6649305555555556,
+      "stop": "patience",
+      "last_dev_mrr": 0.6371527777777778
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_tactic_phase",
+      "seed": 20261013,
+      "best_epoch": 16,
+      "epochs": 46,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6666666666666666
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_tactic_phase",
+      "seed": 20261014,
+      "best_epoch": 34,
+      "epochs": 64,
+      "dev_mrr": 0.6875,
+      "stop": "patience",
+      "last_dev_mrr": 0.6440972222222222
+    },
+    {
+      "group": "final",
+      "arm": "rgcn_without_tactic_phase",
+      "seed": 20261015,
+      "best_epoch": 27,
+      "epochs": 57,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.638888888888889
+    },
+    {
+      "group": "supplementary",
+      "arm": "distmult",
+      "seed": 20261011,
+      "best_epoch": 12,
+      "epochs": 42,
+      "dev_mrr": 0.65625,
+      "stop": "patience",
+      "last_dev_mrr": 0.6458333333333334
+    },
+    {
+      "group": "supplementary",
+      "arm": "distmult",
+      "seed": 20261012,
+      "best_epoch": 12,
+      "epochs": 42,
+      "dev_mrr": 0.607638888888889,
+      "stop": "patience",
+      "last_dev_mrr": 0.5659722222222222
+    },
+    {
+      "group": "supplementary",
+      "arm": "distmult",
+      "seed": 20261013,
+      "best_epoch": 7,
+      "epochs": 37,
+      "dev_mrr": 0.642361111111111,
+      "stop": "patience",
+      "last_dev_mrr": 0.6371527777777778
+    },
+    {
+      "group": "supplementary",
+      "arm": "distmult",
+      "seed": 20261014,
+      "best_epoch": 6,
+      "epochs": 36,
+      "dev_mrr": 0.6708333333333334,
+      "stop": "patience",
+      "last_dev_mrr": 0.6152777777777777
+    },
+    {
+      "group": "supplementary",
+      "arm": "distmult",
+      "seed": 20261015,
+      "best_epoch": 28,
+      "epochs": 58,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6666666666666666
+    },
+    {
+      "group": "supplementary",
+      "arm": "rgcn",
+      "seed": 20261011,
+      "best_epoch": 15,
+      "epochs": 45,
+      "dev_mrr": 0.6631944444444444,
+      "stop": "patience",
+      "last_dev_mrr": 0.6440972222222222
+    },
+    {
+      "group": "supplementary",
+      "arm": "rgcn",
+      "seed": 20261012,
+      "best_epoch": 36,
+      "epochs": 66,
+      "dev_mrr": 0.6840277777777778,
+      "stop": "patience",
+      "last_dev_mrr": 0.6631944444444444
+    },
+    {
+      "group": "supplementary",
+      "arm": "rgcn",
+      "seed": 20261013,
+      "best_epoch": 50,
+      "epochs": 80,
+      "dev_mrr": 0.6666666666666666,
+      "stop": "patience",
+      "last_dev_mrr": 0.6666666666666666
+    },
+    {
+      "group": "supplementary",
+      "arm": "rgcn",
+      "seed": 20261014,
+      "best_epoch": 14,
+      "epochs": 44,
+      "dev_mrr": 0.6631944444444444,
+      "stop": "patience",
+      "last_dev_mrr": 0.642361111111111
+    },
+    {
+      "group": "supplementary",
+      "arm": "rgcn",
+      "seed": 20261015,
+      "best_epoch": 32,
+      "epochs": 62,
+      "dev_mrr": 0.7048611111111112,
+      "stop": "patience",
+      "last_dev_mrr": 0.642361111111111
+    }
+  ],
+  "existing_checkpoint_scores": {
+    "scope": "Post-hoc scoring of existing best checkpoints only; no retraining or selection.",
+    "runs": [
+      {
+        "arm": "distmult",
+        "seed": 20261011,
+        "archived_target_ranks_reproduced": true,
+        "test_top1_counts": {
+          "T1203": 14,
+          "T1068": 10
+        },
+        "test_top3_patterns": [
+          {
+            "techniques": [
+              "T1203",
+              "T1068",
+              "T1190"
+            ],
+            "cves": 14
+          },
+          {
+            "techniques": [
+              "T1068",
+              "T1203",
+              "T1190"
+            ],
+            "cves": 10
+          }
+        ],
+        "top1_diversity": 2
+      },
+      {
+        "arm": "distmult",
+        "seed": 20261012,
+        "archived_target_ranks_reproduced": true,
+        "test_top1_counts": {
+          "T1203": 23,
+          "T1190": 1
+        },
+        "test_top3_patterns": [
+          {
+            "techniques": [
+              "T1203",
+              "T1190",
+              "T1068"
+            ],
+            "cves": 23
+          },
+          {
+            "techniques": [
+              "T1190",
+              "T1203",
+              "T1068"
+            ],
+            "cves": 1
+          }
+        ],
+        "top1_diversity": 2
+      },
+      {
+        "arm": "distmult",
+        "seed": 20261013,
+        "archived_target_ranks_reproduced": true,
+        "test_top1_counts": {
+          "T1203": 15,
+          "T1190": 9
+        },
+        "test_top3_patterns": [
+          {
+            "techniques": [
+              "T1203",
+              "T1190",
+              "T1068"
+            ],
+            "cves": 15
+          },
+          {
+            "techniques": [
+              "T1190",
+              "T1203",
+              "T1068"
+            ],
+            "cves": 9
+          }
+        ],
+        "top1_diversity": 2
+      },
+      {
+        "arm": "distmult",
+        "seed": 20261014,
+        "archived_target_ranks_reproduced": true,
+        "test_top1_counts": {
+          "T1203": 5,
+          "T1190": 19
+        },
+        "test_top3_patterns": [
+          {
+            "techniques": [
+              "T1190",
+              "T1203",
+              "T1068"
+            ],
+            "cves": 19
+          },
+          {
+            "techniques": [
+              "T1203",
+              "T1190",
+              "T1068"
+            ],
+            "cves": 5
+          }
+        ],
+        "top1_diversity": 2
+      },
+      {
+        "arm": "distmult",
+        "seed": 20261015,
+        "archived_target_ranks_reproduced": true,
+        "test_top1_counts": {
+          "T1068": 24
+        },
+        "test_top3_patterns": [
+          {
+            "techniques": [
+              "T1068",
+              "T1203",
+              "T1190"
+            ],
+            "cves": 21
+          },
+          {
+            "techniques": [
+              "T1068",
+              "T1190",
+              "T1203"
+            ],
+            "cves": 3
+          }
+        ],
+        "top1_diversity": 1
+      },
+      {
+        "arm": "rgcn",
+        "seed": 20261011,
+        "archived_target_ranks_reproduced": true,
+        "test_top1_counts": {
+          "T1190": 24
+        },
+        "test_top3_patterns": [
+          {
+            "techniques": [
+              "T1190",
+              "T1203",
+              "T1068"
+            ],
+            "cves": 24
+          }
+        ],
+        "top1_diversity": 1
+      },
+      {
+        "arm": "rgcn",
+        "seed": 20261012,
+        "archived_target_ranks_reproduced": true,
+        "test_top1_counts": {
+          "T1190": 24
+        },
+        "test_top3_patterns": [
+          {
+            "techniques": [
+              "T1190",
+              "T1203",
+              "T1068"
+            ],
+            "cves": 24
+          }
+        ],
+        "top1_diversity": 1
+      },
+      {
+        "arm": "rgcn",
+        "seed": 20261013,
+        "archived_target_ranks_reproduced": true,
+        "test_top1_counts": {
+          "T1190": 24
+        },
+        "test_top3_patterns": [
+          {
+            "techniques": [
+              "T1190",
+              "T1203",
+              "T1068"
+            ],
+            "cves": 24
+          }
+        ],
+        "top1_diversity": 1
+      },
+      {
+        "arm": "rgcn",
+        "seed": 20261014,
+        "archived_target_ranks_reproduced": true,
+        "test_top1_counts": {
+          "T1068": 3,
+          "T1203": 9,
+          "T1190": 12
+        },
+        "test_top3_patterns": [
+          {
+            "techniques": [
+              "T1190",
+              "T1203",
+              "T1068"
+            ],
+            "cves": 11
+          },
+          {
+            "techniques": [
+              "T1203",
+              "T1190",
+              "T1068"
+            ],
+            "cves": 7
+          },
+          {
+            "techniques": [
+              "T1068",
+              "T1190",
+              "T1203"
+            ],
+            "cves": 2
+          },
+          {
+            "techniques": [
+              "T1203",
+              "T1068",
+              "T1190"
+            ],
+            "cves": 2
+          },
+          {
+            "techniques": [
+              "T1068",
+              "T1203",
+              "T1190"
+            ],
+            "cves": 1
+          },
+          {
+            "techniques": [
+              "T1190",
+              "T1068",
+              "T1203"
+            ],
+            "cves": 1
+          }
+        ],
+        "top1_diversity": 3
+      },
+      {
+        "arm": "rgcn",
+        "seed": 20261015,
+        "archived_target_ranks_reproduced": true,
+        "test_top1_counts": {
+          "T1190": 24
+        },
+        "test_top3_patterns": [
+          {
+            "techniques": [
+              "T1190",
+              "T1203",
+              "T1068"
+            ],
+            "cves": 24
+          }
+        ],
+        "top1_diversity": 1
+      }
+    ]
+  },
+  "negative_sampling_calculation": {
+    "assumption": "Uniform tail corruption for a one-tail Train positive among 697 candidates; 6 techniques have Train positives.",
+    "candidate_count": 697,
+    "other_train_positive_techniques": 5,
+    "probability_per_draw": 0.007183908045977011,
+    "probability_at_least_one_in_ten_draws": 0.06956063197981788,
+    "interpretation": "Expected sampling frequency, not a measured per-epoch log."
+  },
+  "runtime_reproduction": {
+    "python": "3.12.14",
+    "torch": "2.9.1+cpu",
+    "cpu_capability": "AVX2",
+    "note": "Original code and dependency binding retained; ATEN_CPU_CAPABILITY=avx2 matched the archived runtime binding; all 10 existing main-model checkpoint rankings reproduced."
+  }
+}

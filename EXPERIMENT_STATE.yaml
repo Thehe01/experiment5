@@ -25,17 +25,27 @@ completed:
     status: verified
     evidence:
       source_commit: f30dc71bb0ca0980546b875a108f5725b4ca39db
-      workflow_count: 8
+      frozen_execution_workflow_count: 8
       path: .github/workflows
   - task: migrate_chapter5_bound_support_inputs
     status: verified
     evidence:
       source_commit: f30dc71bb0ca0980546b875a108f5725b4ca39db
-      root_data_files: 332
+      root_data_files: 217
       root_result_manifests: 1
       registration_files: 28
       registration_hash_mismatches: 0
       path_policy: inherited Chapter4 data explicitly bound by Chapter5 registration and preflight
+  - task: verify_latest_migration
+    status: verified
+    evidence:
+      source_manifest: docs/chapter5/migration-source-manifest.json
+      source_files: 802
+      verification_command: python scripts/verify_chapter5_migration.py
+      verification_workflow: .github/workflows/chapter5-migration-verify.yml
+      canonical_layout: chapter5
+      root_script_count: 2
+      analysis_document_count: 3
   - task: remove_duplicate_normalized_copies
     status: verified
     evidence:
@@ -61,6 +71,9 @@ migration:
       - EXPERIMENT_PLAN.md
       - registered Chapter5 support inputs under data/
       - registered Chapter5 support manifest under results/
+      - docs/chapter5
+      - scripts/verify_chapter5_expanded_data_v1.py
+      - scripts/verify_chapter5_expansion_completion_v1.py
     exclude:
       - .git
       - experiment4_state
