@@ -13,6 +13,8 @@ files keep their source paths and original hashes.
 Additional source files include eight Chapter5 execution workflows, two Chapter5
 audit scripts, three analysis documents, `EXPERIMENT_PLAN.md`, 217 inherited
 inputs required by `chapter5.verify`, and the registered C4 archive manifest.
+Other experiment5 data already present before this migration is retained and is
+not part of the latest Chapter5 source manifest.
 The 217 inputs are 84 Train/Dev Gold files, 130 source inventory files and three
 split/exposure/freeze metadata files. Chapter4 Test Gold files and unrelated
 Chapter4 runtime implementations are excluded.
